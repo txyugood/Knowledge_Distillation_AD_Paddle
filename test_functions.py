@@ -47,11 +47,11 @@ def detection_test(model, vgg, test_dataloader, config):
             total_loss = loss_1 + loss_2 + loss_3
         else:
             abs_loss_1 = paddle.mean((y_pred_1 - y_1) ** 2, axis=(1, 2, 3))
-            loss_1 = 1 - similarity_loss(y_pred_1.view(y_pred_1.shape[0], -1), y_1.view(y_1.shape[0], -1))
+            loss_1 = 1 - similarity_loss(y_pred_1.reshape([y_pred_1.shape[0], -1]), y_1.reshape([y_1.shape[0], -1]))
             abs_loss_2 = paddle.mean((y_pred_2 - y_2) ** 2, axis=(1, 2, 3))
-            loss_2 = 1 - similarity_loss(y_pred_2.view(y_pred_2.shape[0], -1), y_2.view(y_2.shape[0], -1))
+            loss_2 = 1 - similarity_loss(y_pred_2.reshape([y_pred_2.shape[0], -1]), y_2.reshape([y_2.shape[0], -1]))
             abs_loss_3 = paddle.mean((y_pred_3 - y_3) ** 2, axis=(1, 2, 3))
-            loss_3 = 1 - similarity_loss(y_pred_3.view(y_pred_3.shape[0], -1), y_3.view(y_3.shape[0], -1))
+            loss_3 = 1 - similarity_loss(y_pred_3.reshape([y_pred_3.shape[0], -1]), y_3.reshape([y_3.shape[0], -1]))
             total_loss = loss_1 + loss_2 + loss_3 + lamda * (abs_loss_1 + abs_loss_2 + abs_loss_3)
 
         label_score += list(zip(Y.cpu().data.numpy().tolist(), total_loss.cpu().data.numpy().tolist()))
