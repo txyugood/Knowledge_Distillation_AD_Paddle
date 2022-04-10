@@ -21,13 +21,14 @@ class VGG(nn.Layer):
     def activations_hook(self, grad):
         self.gradients = grad
 
-    def forward(self, x, target_layer=11):
+    def forward(self, x, target_layer=11, export=False):
         result = []
         for i in range(len(nn.LayerList(self.features))):
             x = self.features[i](x)
             if i == target_layer:
                 self.activation = x
-                h = x.register_hook(self.activations_hook)
+                if not export:
+                    h = x.register_hook(self.activations_hook)
             if i == 2 or i == 5 or i == 8 or i == 11 or i == 14 or i == 17 or i == 20 or i == 23 or i == 26 or i == 29 or i == 32 or i == 35 or i == 38:
                 result.append(x)
 

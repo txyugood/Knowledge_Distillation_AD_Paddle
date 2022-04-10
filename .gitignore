@@ -1,1 +1,3 @@
 /vgg16.pdparams
+/test_tipc/output/
+/test_tipc/results/

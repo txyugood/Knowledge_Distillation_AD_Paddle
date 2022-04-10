@@ -15,6 +15,7 @@ parser = ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/config.yaml', help="training configuration")
 parser.add_argument('--dataset_root', type=str, default=None)
 parser.add_argument('--normal_class', type=str, default='capsule')
+parser.add_argument('--save_dir', type=str, default='./output/')
 warnings.filterwarnings('ignore')
 
 def train(args, config):
@@ -69,8 +70,8 @@ def train(args, config):
                 print(f"[Eval] save best model at epoch {epoch}")
                 os.makedirs(f"./output/{normal_class}", exist_ok=True)
                 best_roc_auc = roc_auc
-                paddle.save(model.state_dict(), f'./output/{normal_class}/best_model.pdparams')
-                paddle.save(optimizer.state_dict(), f'./output/{normal_class}/best_model.pdopt')
+                paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdparams'))
+                paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdopt'))
 
 
 def main():
