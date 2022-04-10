@@ -3,18 +3,16 @@ from argparse import ArgumentParser
 import pickle
 
 import paddle
-from dataset import ImageFolder
-from paddle.vision.transforms import Compose, Resize
-from paddle.io import DataLoader
 
 from utils.utils import get_config
 from network import get_networks
+from dataloader import load_data
 from loss_functions import MseDirectionLoss, DirectionOnlyLoss
 from test_functions import detection_test
 
 parser = ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/config.yaml', help="training configuration")
-parser.add_argument('--dataset_root', type=str, default=None,)
+parser.add_argument('--dataset_root', type=str, default=None)
 
 def train(args, config):
     direction_loss_only = config["direction_loss_only"]
@@ -24,30 +22,7 @@ def train(args, config):
     lamda = config['lamda']
     batch_size = config['batch_size']
 
-    data_path = os.path.join(args.dataset_root, normal_class, 'train')
-
-    mvtec_img_size = config['mvtec_img_size']
-
-    orig_transform = Compose([
-        Resize([mvtec_img_size, mvtec_img_size]),
-    ])
-
-    train_dataset = ImageFolder(root=data_path, transform=orig_transform)
-
-    test_data_path = os.path.join(args.dataset_root, normal_class,'test')
-    test_dataset = ImageFolder(root=test_data_path, transform=orig_transform)
-
-    train_dataloader = DataLoader(
-        train_dataset,
-        batch_size=batch_size,
-        shuffle=True,
-    )
-    test_dataloader = DataLoader(
-        test_dataset,
-        batch_size=batch_size,
-        shuffle=False,
-    )
-
+    train_dataloader, test_dataloader = load_data(args, config)
     vgg, model = get_networks(config)
 
     if direction_loss_only:
