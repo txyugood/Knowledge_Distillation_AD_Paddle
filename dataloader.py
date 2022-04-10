@@ -52,6 +52,7 @@ def load_localization_data(args, config):
         test_set,
         batch_size=512,
         shuffle=False,
+        num_workers=8,
     )
 
     ground_data_path = os.path.join(args.dataset_root, normal_class, 'ground_truth')
@@ -59,8 +60,8 @@ def load_localization_data(args, config):
     ground_dataloader = DataLoader(
         ground_dataset,
         batch_size=512,
-        num_workers=0,
-        shuffle=False
+        shuffle=False,
+        num_workers=8,
     )
 
     x_ground = next(iter(ground_dataloader))[0].numpy()

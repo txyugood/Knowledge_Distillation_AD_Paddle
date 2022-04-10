@@ -78,14 +78,18 @@ def train(args, config):
 
             print(f"[Eval] {normal_class} class RocAUC detection: {detection_roc_auc} "
                   f"localization: {localization_roc_auc} at epoch {epoch}")
-            if detection_roc_auc > best_detection_roc_auc and \
-                localization_roc_auc > best_loc_roc_auc:
-                print(f"[Eval] save best model at epoch {epoch}")
-                os.makedirs(f"./output/{normal_class}", exist_ok=True)
+
+            if detection_roc_auc > best_detection_roc_auc:
+                print(f"[Eval] best detection_roc_auc at epoch {epoch}")
                 best_detection_roc_auc = detection_roc_auc
+
+            if localization_roc_auc > best_loc_roc_auc:
+                print(f"[Eval] best localization_roc_auc at epoch {epoch}")
                 best_loc_roc_auc = localization_roc_auc
-                paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdparams'))
-                paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdopt'))
+
+            os.makedirs(f"./output/{normal_class}", exist_ok=True)
+            paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/model_{epoch}.pdparams'))
+            paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/model_{epoch}.pdopt'))
 
     paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/final_model.pdparams'))
     paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/final_model.pdopt'))
