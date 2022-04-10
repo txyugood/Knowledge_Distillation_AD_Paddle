@@ -61,7 +61,7 @@ def train(args, config):
             model.clear_gradients()
 
         print('[Train] epoch [{}/{}], loss:{:.4f} class:{}'.format(epoch, num_epochs, epoch_loss, normal_class))
-        if epoch % 10 == 0 or epoch == num_epochs:
+        if (epoch % 10 == 0 and epoch != 0) or epoch == num_epochs:
             roc_auc = detection_test(model, vgg, test_dataloader, config)
             roc_aucs.append(roc_auc)
             print("[Eval] {} class RocAUC at epoch {}:".format(normal_class, epoch), roc_auc)
