@@ -1,3 +1,4 @@
+import warnings
 from argparse import ArgumentParser
 from utils.utils import get_config, load_pretrained_model
 from test_functions import detection_test, localization_test
@@ -9,7 +10,7 @@ parser.add_argument('--config', type=str, default='configs/config.yaml', help="t
 parser.add_argument('--dataset_root', type=str, default=None)
 parser.add_argument('--model_path', type=str, default=None)
 parser.add_argument('--normal_class', type=str, default='capsule')
-
+warnings.filterwarnings('ignore')
 
 
 def main():

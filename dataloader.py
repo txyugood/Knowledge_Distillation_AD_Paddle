@@ -27,11 +27,13 @@ def load_data(args, config):
         train_dataset,
         batch_size=batch_size,
         shuffle=True,
+        num_workers=8,
     )
     test_dataloader = DataLoader(
         test_dataset,
         batch_size=batch_size,
         shuffle=False,
+        num_workers=8,
     )
     return train_dataloader, test_dataloader
 

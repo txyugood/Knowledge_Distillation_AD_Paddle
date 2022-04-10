@@ -1,4 +1,5 @@
 import os
+import warnings
 from argparse import ArgumentParser
 import pickle
 
@@ -14,7 +15,7 @@ parser = ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/config.yaml', help="training configuration")
 parser.add_argument('--dataset_root', type=str, default=None)
 parser.add_argument('--normal_class', type=str, default='capsule')
-
+warnings.filterwarnings('ignore')
 
 def train(args, config):
     direction_loss_only = config["direction_loss_only"]
