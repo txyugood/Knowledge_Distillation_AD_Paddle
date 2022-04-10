@@ -7,9 +7,9 @@ import paddle
 
 from utils.utils import get_config
 from network import get_networks
-from dataloader import load_data
+from dataloader import load_data, load_localization_data
 from loss_functions import MseDirectionLoss, DirectionOnlyLoss
-from test_functions import detection_test
+from test_functions import detection_test, localization_test
 
 parser = ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/config.yaml', help="training configuration")
@@ -26,6 +26,8 @@ def train(args, config):
     lamda = config['lamda']
 
     train_dataloader, test_dataloader = load_data(args, config)
+    test_loc_dataloader, ground_truth = load_localization_data(args, config)
+
     vgg, model = get_networks(config)
 
     if direction_loss_only:
@@ -36,8 +38,9 @@ def train(args, config):
     optimizer = paddle.optimizer.Adam(parameters=model.parameters(),
                                       learning_rate=learning_rate)
     losses = []
-    roc_aucs = []
-    best_roc_auc = 0
+
+    best_detection_roc_auc = 0
+    best_loc_roc_auc = 0
     for epoch in range(num_epochs + 1):
         model.train()
         epoch_loss = 0
@@ -63,15 +66,29 @@ def train(args, config):
 
         print('[Train] epoch [{}/{}], loss:{:.4f} class:{}'.format(epoch, num_epochs, epoch_loss, normal_class))
         if (epoch % 10 == 0 and epoch != 0) or epoch == num_epochs:
-            roc_auc = detection_test(model, vgg, test_dataloader, config)
-            roc_aucs.append(roc_auc)
-            print("[Eval] {} class RocAUC at epoch {}:".format(normal_class, epoch), roc_auc)
-            if roc_auc > best_roc_auc:
+            detection_roc_auc = detection_test(model=model,
+                                               vgg=vgg,
+                                               test_dataloader=test_dataloader,
+                                               config=config)
+            localization_roc_auc = localization_test(model=model,
+                                                     vgg=vgg,
+                                                     test_dataloader=test_loc_dataloader,
+                                                     ground_truth=ground_truth,
+                                                     config=config)
+
+            print(f"[Eval] {normal_class} class RocAUC detection: {detection_roc_auc} "
+                  f"localization: {localization_roc_auc} at epoch {epoch}")
+            if detection_roc_auc > best_detection_roc_auc and \
+                localization_roc_auc > best_loc_roc_auc:
                 print(f"[Eval] save best model at epoch {epoch}")
                 os.makedirs(f"./output/{normal_class}", exist_ok=True)
-                best_roc_auc = roc_auc
+                best_detection_roc_auc = detection_roc_auc
+                best_loc_roc_auc = localization_roc_auc
                 paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdparams'))
                 paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/best_model.pdopt'))
+
+    paddle.save(model.state_dict(), os.path.join(args.save_dir, f'{normal_class}/final_model.pdparams'))
+    paddle.save(optimizer.state_dict(), os.path.join(args.save_dir, f'{normal_class}/final_model.pdopt'))
 
 
 def main():
