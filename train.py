@@ -13,6 +13,8 @@ from test_functions import detection_test
 parser = ArgumentParser()
 parser.add_argument('--config', type=str, default='configs/config.yaml', help="training configuration")
 parser.add_argument('--dataset_root', type=str, default=None)
+parser.add_argument('--normal_class', type=str, default='capsule')
+
 
 def train(args, config):
     direction_loss_only = config["direction_loss_only"]
@@ -20,7 +22,6 @@ def train(args, config):
     learning_rate = float(config['learning_rate'])
     num_epochs = config["num_epochs"]
     lamda = config['lamda']
-    batch_size = config['batch_size']
 
     train_dataloader, test_dataloader = load_data(args, config)
     vgg, model = get_networks(config)
@@ -58,32 +59,23 @@ def train(args, config):
             optimizer.step()
             model.clear_gradients()
 
-        print('epoch [{}/{}], loss:{:.4f}'.format(epoch, num_epochs, epoch_loss))
-        if epoch % 10 == 0:
+        print('[Train] epoch [{}/{}], loss:{:.4f} class:{}'.format(epoch, num_epochs, epoch_loss, normal_class))
+        if epoch % 10 == 0 or epoch == num_epochs:
             roc_auc = detection_test(model, vgg, test_dataloader, config)
             roc_aucs.append(roc_auc)
-            print("RocAUC at epoch {}:".format(epoch), roc_auc)
-        if roc_auc > best_roc_auc:
-            os.makedirs("./output",exist_ok=True)
-            best_roc_auc = best_roc_auc
-            paddle.save(model.state_dict(),
-                       '{}Cloner_{}_epoch_{}.pdparams'.format('./output/', normal_class, epoch))
-            paddle.save(optimizer.state_dict(),
-                       '{}Opt_{}_epoch_{}.pdopt'.format('./output/', normal_class, epoch))
+            print("[Eval] {} class RocAUC at epoch {}:".format(normal_class, epoch), roc_auc)
+            if roc_auc > best_roc_auc:
+                print(f"[Eval] save best model at epoch {epoch}")
+                os.makedirs(f"./output/{normal_class}", exist_ok=True)
+                best_roc_auc = roc_auc
+                paddle.save(model.state_dict(), f'./output/{normal_class}/best_model.pdparams')
+                paddle.save(optimizer.state_dict(), f'./output/{normal_class}/best_model.pdopt')
 
-
-        # if epoch % 50 == 0:
-        #     torch.save(model.state_dict(),
-        #                '{}Cloner_{}_epoch_{}.pth'.format(checkpoint_path, normal_class, epoch))
-        #     torch.save(optimizer.state_dict(),
-        #                '{}Opt_{}_epoch_{}.pth'.format(checkpoint_path, normal_class, epoch))
-        #     with open('{}Auc_{}_epoch_{}.pickle'.format(checkpoint_path, normal_class, epoch),
-        #               'wb') as f:
-        #         pickle.dump(roc_aucs, f)
 
 def main():
     args = parser.parse_args()
     config = get_config(args.config)
+    config['normal_class'] = args.normal_class
     train(args, config)
 
 

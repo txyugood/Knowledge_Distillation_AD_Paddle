@@ -8,6 +8,7 @@ from PIL import Image
 def has_file_allowed_extension(filename, extensions):
     return filename.lower().endswith(extensions)
 
+
 def make_dataset(directory, class_to_idx, extensions=None, is_valid_file=None):
     instances = []
     directory = os.path.expanduser(directory)
@@ -38,11 +39,11 @@ def pil_loader(path):
         return img.convert('RGB')
 
 class ImageFolder(Dataset):
-    def __init__(self, root, transform=None):
+    def __init__(self, root, transform=None, localization_test=False):
         extensions = ('.jpg', '.jpeg', '.png')
         self.root = root
         self.transform = transform
-        classes, class_to_idx = self._find_classes(self.root)
+        classes, class_to_idx = self._find_classes(self.root, localization_test)
         samples = make_dataset(self.root, class_to_idx, extensions)
         if len(samples) == 0:
             msg = "Found 0 files in subfolders of: {}\n".format(self.root)
@@ -58,8 +59,11 @@ class ImageFolder(Dataset):
         self.samples = samples
         self.targets = [s[1] for s in samples]
 
-    def _find_classes(self, dir):
-        classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+    def _find_classes(self, dir, localization_test=False):
+        if localization_test:
+            classes = [d.name for d in os.scandir(dir) if d.is_dir() and d.name != "good"]
+        else:
+            classes = [d.name for d in os.scandir(dir) if d.is_dir()]
         classes.sort()
         class_to_idx = {cls_name: i for i, cls_name in enumerate(classes)}
         return classes, class_to_idx

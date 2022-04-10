@@ -45,7 +45,7 @@ def load_localization_data(args, config):
     ])
 
     test_data_path = os.path.join(args.dataset_root, normal_class, 'test')
-    test_set = ImageFolder(root=test_data_path, transform=orig_transform)
+    test_set = ImageFolder(root=test_data_path, transform=orig_transform, localization_test=True)
     test_dataloader = DataLoader(
         test_set,
         batch_size=512,

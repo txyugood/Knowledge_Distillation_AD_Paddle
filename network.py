@@ -1,6 +1,7 @@
 import paddle.nn as nn
 
 from vgg import vgg16
+from param_init import xavier_uniform_
 
 
 class VGG(nn.Layer):
@@ -50,7 +51,7 @@ def make_layers(cfg, use_bias, batch_norm=False):
             layers += [nn.MaxPool2D(kernel_size=2, stride=2)]
         else:
             conv2d = nn.Conv2D(in_channels, cfg[i], kernel_size=3, padding=1, bias_attr=use_bias)
-
+            xavier_uniform_(conv2d.weight)
             if batch_norm and cfg[i + 1] != 'M':
                 layers += [conv2d, nn.BatchNorm2D(cfg[i]), nn.ReLU()]
             else:
