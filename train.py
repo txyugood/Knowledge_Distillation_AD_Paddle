@@ -69,8 +69,7 @@ def train(args, config):
                 X = X.repeat(1, 3, 1, 1)
 
             output_pred = model.forward(X)
-            with paddle.no_grad():
-                output_real = vgg(X)
+            output_real = vgg(X)
 
             total_loss = criterion(output_pred, output_real)
 
@@ -84,17 +83,18 @@ def train(args, config):
             optimizer.step()
             model.clear_gradients()
 
-        print('epoch [{}/{}], loss:{:.4f}'.format(epoch + 1, num_epochs, epoch_loss))
+        print('epoch [{}/{}], loss:{:.4f}'.format(epoch, num_epochs, epoch_loss))
         if epoch % 10 == 0:
             roc_auc = detection_test(model, vgg, test_dataloader, config)
             roc_aucs.append(roc_auc)
             print("RocAUC at epoch {}:".format(epoch), roc_auc)
         if roc_auc > best_roc_auc:
+            os.makedirs("./output",exist_ok=True)
             best_roc_auc = best_roc_auc
             paddle.save(model.state_dict(),
-                       '{}Cloner_{}_epoch_{}.pth'.format('./output', normal_class, epoch))
+                       '{}Cloner_{}_epoch_{}.pdparams'.format('./output/', normal_class, epoch))
             paddle.save(optimizer.state_dict(),
-                       '{}Opt_{}_epoch_{}.pth'.format('./output', normal_class, epoch))
+                       '{}Opt_{}_epoch_{}.pdopt'.format('./output/', normal_class, epoch))
 
 
         # if epoch % 50 == 0:

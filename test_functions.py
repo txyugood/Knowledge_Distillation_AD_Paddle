@@ -54,7 +54,7 @@ def detection_test(model, vgg, test_dataloader, config):
             loss_3 = 1 - similarity_loss(y_pred_3.reshape([y_pred_3.shape[0], -1]), y_3.reshape([y_3.shape[0], -1]))
             total_loss = loss_1 + loss_2 + loss_3 + lamda * (abs_loss_1 + abs_loss_2 + abs_loss_3)
 
-        label_score += list(zip(Y.cpu().data.numpy().tolist(), total_loss.cpu().data.numpy().tolist()))
+        label_score += list(zip(Y.detach().numpy().tolist(), total_loss.detach().numpy().tolist()))
 
     labels, scores = zip(*label_score)
     labels = np.array(labels)

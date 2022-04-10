@@ -78,6 +78,7 @@ class ImageFolder(Dataset):
             sample = self.transform(sample)
         sample = np.array(sample)
         sample = np.transpose(sample, [2, 0, 1]).astype('float32')
+        sample /= 255.0
 
         return sample, target
 
