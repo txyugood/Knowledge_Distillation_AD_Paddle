@@ -97,7 +97,7 @@ def grad_calc(inputs, model, vgg, config):
         total_loss.backward()
 
         temp[i] = inputs.grad[i]
-
+    model.clear_gradients()
     return temp
 
 

@@ -20,17 +20,17 @@
 
 ### Detection test on MVTecAD
 
-| Repo | Bottle | Hzelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean |
+| Repo | *Bottle* | Hazelnut | *Capsule* | Metal Nut | Leather | Pill | Wood | Carpet | Tile | *Grid* | *Cable* | Transistor | Toothbrush | Screw | Zipper | Mean |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Origin | 99.39 | 98.37 | 80.46 | 73.58 | 95.05 | 82.7 | 94.29 | 79.25 | 91.57 | 78.01 | 89.19 | 85.55 | 92.17 | 83.31 | 93.24 | 87.74 |
-| Paddle | 99.52 | 99.21 | 80.26 | 75.32 | 95.01 | 84.48 | 96.32 | 80.1 | 92.5 | 78.36 | 89.47 | 85.75 | 92.5 | 87.87 | 94.51 | 96.75% |
+| Paddle | 99.52 | 98.89 | 80.26 | 75.32 | 95.01 | 84.43 | 94.12 | 80.1 | 92.5 | 78.36 | 89.47 | 85.75 | 92.5 | 83.5 | 94.51 | 88.30 |
 
 ### Localization test on MVTecAD
 
-| Repo | Bottle | Hzelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean |
+| Repo | Bottle | Hazelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Origin | 96.32 | 94.62 | 95.86 | 86.38 | 98.05 | 89.63 | 84.8 | 95.64 | 82.77 | 91.78 | 82.4 | 76.45 | 96.12 | 95.96 | 93.9 | 90.71 |
-| Paddle | 95.60 | 93.90 | 95.70 | 86.59 | 98.06 | 89.56 | 79.02 | 95.69 | 82.87 | 91.24 | 82.18 | 76.49 | 96.02 | 95.56 | 94.91% | 96.75% |
+| Paddle | 95.60 | 94.32 | 95.70 | 86.59 | 98.06 | 89.98 | 85.29 | 95.69 | 82.87 | 91.24 | 82.18 | 76.49 | 96.02 | 96.20 | 94.91 | 90.71 |
 
 ## 3.数据集
 
