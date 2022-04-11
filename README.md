@@ -20,17 +20,24 @@
 
 ### Detection test on MVTecAD
 
-| Repo | *Bottle* | Hazelnut | *Capsule* | Metal Nut | Leather | Pill | Wood | Carpet | Tile | *Grid* | *Cable* | Transistor | Toothbrush | Screw | Zipper | Mean |
+| Repo | Bottle | Hazelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Origin | 99.39 | 98.37 | 80.46 | 73.58 | 95.05 | 82.7 | 94.29 | 79.25 | 91.57 | 78.01 | 89.19 | 85.55 | 92.17 | 83.31 | 93.24 | 87.74 |
-| Paddle | 99.52 | 98.89 | 80.26 | 75.32 | 95.01 | 84.43 | 94.12 | 80.1 | 92.5 | 78.36 | 89.47 | 85.75 | 92.5 | 83.5 | 94.51 | 88.30 |
+| Paddle | 99.29 | 98.89 | 81.17 | 75.32 | 95.01 | 84.43 | 94.12 | 80.1 | 92.5 | 78.11 | 89.43 | 85.75 | 92.5 | 83.5 | 94.51 | 88.30 |
 
 ### Localization test on MVTecAD
 
-| Repo | Bottle | Hazelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Repo | Bottle | Hazelnut | Capsule | Metal Nut | Leather | Pill | Wood | Carpet | Tile | Grid | Cable | Transistor | Toothbrush | Screw | Zipper | Mean  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |-------|
 | Origin | 96.32 | 94.62 | 95.86 | 86.38 | 98.05 | 89.63 | 84.8 | 95.64 | 82.77 | 91.78 | 82.4 | 76.45 | 96.12 | 95.96 | 93.9 | 90.71 |
-| Paddle | 95.60 | 94.32 | 95.70 | 86.59 | 98.06 | 89.98 | 85.29 | 95.69 | 82.87 | 91.24 | 82.18 | 76.49 | 96.02 | 96.20 | 94.91 | 90.71 |
+| Paddle | 96.20 | 94.32 | 96.12 | 86.59 | 98.06 | 89.98 | 85.29 | 95.69 | 82.87 | 91.84 | 83.46 | 76.49 | 96.02 | 96.20 | 94.91 | 90.94 |
+
+Detection test的Mean为88.30。
+
+Localization test的Mean为90.94。
+
+超越达到指标。
+
 
 ## 3.数据集
 
@@ -59,7 +66,11 @@ cp vgg16.pdparams Knowledge_Distillation_AD_Paddle/vgg16.pdparams
 
 15个模型权重下载地址:
 
-[]()
+链接: [https://pan.baidu.com/s/1ItWP6mXEZe3GPFErYKaLag](https://pan.baidu.com/s/1ItWP6mXEZe3GPFErYKaLag)
+
+提取码: bnwi 
+
+
 
 
 ## 4.环境依赖
@@ -143,6 +154,11 @@ model_path: 模型路径
 以toothbrush类别为例，输出的日志如下:
 
 ```shell
+Loading pretrained model from output/toothbrush/best_model.pdparams
+There are 45/45 variables loaded into VGG.
+Vanilla Backpropagation:
+mvtec: toothbrush class localization test RocAUC: 0.9602441191673279
+mvtec: toothbrush class detection test RocAUC: 0.925
 
 ```
 
@@ -175,23 +191,25 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/KDAD/train_infer
 ## 6.代码结构与详细说明
 
 ```
-Neighbor2Neighbor_Paddle
-├── A_log_BSD300.csv  # 验证模型日志
-├── README.md  # 说明文件
-├── arch_unet.py # 模型架构
-├── best_model.pdparams # 最优模型权重
-├── dataset.py # 数据集代码
-├── dataset_tool.py # 数据集转换文件
-├── export_model.py # 模型导出代码
-├── imgs # Readme中的图片资源文件
-├── infer.py # 推理代码
-├── param_init.py # 模型参数初始化方法
-├── test_tipc # TIPC 测试
-├── train.log # 训练日志
+Knowledge_Distillation_AD_Paddle
+├── README.md # 用户指南
+├── configs # 配置文件
+├── dataloader.py # 数据读取器
+├── dataset.py # 数据集
+├── export_model.py #模型导出
+├── imgs # 图片资源
+├── infer.py # 模型推理脚本
+├── logs # 训练与验证日志
+├── loss_functions.py # 损失函数
+├── network.py # 网络结构
+├── param_init.py # 参数初始化 
+├── test.py # 测试脚本
+├── test_functions.py # 测试函数
+├── test_tipc # TIPC 基础测试链条
 ├── train.py # 训练脚本
-├── utils.py # 工具
-├── val.py #验证脚本
-└── validation # 验证数据集
+├── utils # 工具链
+├── vgg.py # VGG模型架构 专家模型
+└── vgg16.pdparams # VGG在ImageNet上的权重
 
 ```
 
