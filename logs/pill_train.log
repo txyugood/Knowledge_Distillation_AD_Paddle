@@ -1,0 +1,793 @@
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:34.7246 class:pill
+[Train] epoch [1/601], loss:29.2217 class:pill
+[Train] epoch [2/601], loss:26.4302 class:pill
+[Train] epoch [3/601], loss:24.3288 class:pill
+[Train] epoch [4/601], loss:22.7431 class:pill
+[Train] epoch [5/601], loss:21.2556 class:pill
+[Train] epoch [6/601], loss:20.0099 class:pill
+[Train] epoch [7/601], loss:18.8296 class:pill
+[Train] epoch [8/601], loss:17.8114 class:pill
+[Train] epoch [9/601], loss:16.7863 class:pill
+[Train] epoch [10/601], loss:15.9517 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7414 localization: 0.8285495638847351 at epoch 10
+[Eval] best detection_roc_auc at epoch 10
+[Eval] best localization_roc_auc at epoch 10
+[Train] epoch [11/601], loss:15.6485 class:pill
+[Train] epoch [12/601], loss:15.3088 class:pill
+[Train] epoch [13/601], loss:14.5299 class:pill
+[Train] epoch [14/601], loss:13.8291 class:pill
+[Train] epoch [15/601], loss:13.2200 class:pill
+[Train] epoch [16/601], loss:12.6289 class:pill
+[Train] epoch [17/601], loss:12.0920 class:pill
+[Train] epoch [18/601], loss:11.7407 class:pill
+[Train] epoch [19/601], loss:11.2903 class:pill
+[Train] epoch [20/601], loss:10.8663 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7741 localization: 0.8712500929832458 at epoch 20
+[Eval] best detection_roc_auc at epoch 20
+[Eval] best localization_roc_auc at epoch 20
+[Train] epoch [21/601], loss:10.7544 class:pill
+[Train] epoch [22/601], loss:10.4349 class:pill
+[Train] epoch [23/601], loss:10.0562 class:pill
+[Train] epoch [24/601], loss:9.6782 class:pill
+[Train] epoch [25/601], loss:9.4465 class:pill
+[Train] epoch [26/601], loss:9.1395 class:pill
+[Train] epoch [27/601], loss:8.7535 class:pill
+[Train] epoch [28/601], loss:8.5163 class:pill
+[Train] epoch [29/601], loss:8.3079 class:pill
+[Train] epoch [30/601], loss:8.1363 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7853 localization: 0.8790329098701477 at epoch 30
+[Eval] best detection_roc_auc at epoch 30
+[Eval] best localization_roc_auc at epoch 30
+[Train] epoch [31/601], loss:8.0455 class:pill
+[Train] epoch [32/601], loss:7.9269 class:pill
+[Train] epoch [33/601], loss:7.6996 class:pill
+[Train] epoch [34/601], loss:7.4520 class:pill
+[Train] epoch [35/601], loss:7.2211 class:pill
+[Train] epoch [36/601], loss:7.0960 class:pill
+[Train] epoch [37/601], loss:6.8559 class:pill
+[Train] epoch [38/601], loss:6.7268 class:pill
+[Train] epoch [39/601], loss:6.5994 class:pill
+[Train] epoch [40/601], loss:6.4765 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7867 localization: 0.8798425793647766 at epoch 40
+[Eval] best detection_roc_auc at epoch 40
+[Eval] best localization_roc_auc at epoch 40
+[Train] epoch [41/601], loss:6.4766 class:pill
+[Train] epoch [42/601], loss:6.4252 class:pill
+[Train] epoch [43/601], loss:6.2178 class:pill
+[Train] epoch [44/601], loss:6.1277 class:pill
+[Train] epoch [45/601], loss:5.9439 class:pill
+[Train] epoch [46/601], loss:5.8275 class:pill
+[Train] epoch [47/601], loss:5.7007 class:pill
+[Train] epoch [48/601], loss:5.6044 class:pill
+[Train] epoch [49/601], loss:5.5020 class:pill
+[Train] epoch [50/601], loss:5.4321 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7941 localization: 0.8787772059440613 at epoch 50
+[Eval] best detection_roc_auc at epoch 50
+[Train] epoch [51/601], loss:5.4810 class:pill
+[Train] epoch [52/601], loss:5.5221 class:pill
+[Train] epoch [53/601], loss:5.3402 class:pill
+[Train] epoch [54/601], loss:5.2037 class:pill
+[Train] epoch [55/601], loss:5.0586 class:pill
+[Train] epoch [56/601], loss:4.9848 class:pill
+[Train] epoch [57/601], loss:4.9681 class:pill
+[Train] epoch [58/601], loss:4.8190 class:pill
+[Train] epoch [59/601], loss:4.8316 class:pill
+[Train] epoch [60/601], loss:4.7304 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7938 localization: 0.8753848075866699 at epoch 60
+[Train] epoch [61/601], loss:4.8582 class:pill
+[Train] epoch [62/601], loss:4.9116 class:pill
+[Train] epoch [63/601], loss:4.8247 class:pill
+[Train] epoch [64/601], loss:4.6609 class:pill
+[Train] epoch [65/601], loss:4.5506 class:pill
+[Train] epoch [66/601], loss:4.4532 class:pill
+[Train] epoch [67/601], loss:4.3676 class:pill
+[Train] epoch [68/601], loss:4.3856 class:pill
+[Train] epoch [69/601], loss:4.3073 class:pill
+[Train] epoch [70/601], loss:4.2219 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7968 localization: 0.8744073510169983 at epoch 70
+[Eval] best detection_roc_auc at epoch 70
+[Train] epoch [71/601], loss:4.4386 class:pill
+[Train] epoch [72/601], loss:4.5579 class:pill
+[Train] epoch [73/601], loss:4.4134 class:pill
+[Train] epoch [74/601], loss:4.2324 class:pill
+[Train] epoch [75/601], loss:4.2061 class:pill
+[Train] epoch [76/601], loss:4.1138 class:pill
+[Train] epoch [77/601], loss:3.9963 class:pill
+[Train] epoch [78/601], loss:4.0344 class:pill
+[Train] epoch [79/601], loss:3.9379 class:pill
+[Train] epoch [80/601], loss:3.9250 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7976 localization: 0.8757941126823425 at epoch 80
+[Eval] best detection_roc_auc at epoch 80
+[Train] epoch [81/601], loss:4.0791 class:pill
+[Train] epoch [82/601], loss:4.1356 class:pill
+[Train] epoch [83/601], loss:4.0118 class:pill
+[Train] epoch [84/601], loss:3.8644 class:pill
+[Train] epoch [85/601], loss:3.8506 class:pill
+[Train] epoch [86/601], loss:3.7859 class:pill
+[Train] epoch [87/601], loss:3.7341 class:pill
+[Train] epoch [88/601], loss:3.6910 class:pill
+[Train] epoch [89/601], loss:3.6809 class:pill
+[Train] epoch [90/601], loss:3.6023 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8011 localization: 0.8747424483299255 at epoch 90
+[Eval] best detection_roc_auc at epoch 90
+[Train] epoch [91/601], loss:3.8546 class:pill
+[Train] epoch [92/601], loss:3.9841 class:pill
+[Train] epoch [93/601], loss:3.8713 class:pill
+[Train] epoch [94/601], loss:3.7312 class:pill
+[Train] epoch [95/601], loss:3.6978 class:pill
+[Train] epoch [96/601], loss:3.6023 class:pill
+[Train] epoch [97/601], loss:3.5245 class:pill
+[Train] epoch [98/601], loss:3.4743 class:pill
+[Train] epoch [99/601], loss:3.4522 class:pill
+[Train] epoch [100/601], loss:3.4202 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7968 localization: 0.8766894936561584 at epoch 100
+[Train] epoch [101/601], loss:3.6349 class:pill
+[Train] epoch [102/601], loss:3.7682 class:pill
+[Train] epoch [103/601], loss:3.6458 class:pill
+[Train] epoch [104/601], loss:3.5777 class:pill
+[Train] epoch [105/601], loss:3.4118 class:pill
+[Train] epoch [106/601], loss:3.4518 class:pill
+[Train] epoch [107/601], loss:3.3678 class:pill
+[Train] epoch [108/601], loss:3.3611 class:pill
+[Train] epoch [109/601], loss:3.3032 class:pill
+[Train] epoch [110/601], loss:3.2853 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8006 localization: 0.84285569190979 at epoch 110
+[Train] epoch [111/601], loss:3.8132 class:pill
+[Train] epoch [112/601], loss:4.1743 class:pill
+[Train] epoch [113/601], loss:3.8527 class:pill
+[Train] epoch [114/601], loss:3.6196 class:pill
+[Train] epoch [115/601], loss:3.5117 class:pill
+[Train] epoch [116/601], loss:3.4040 class:pill
+[Train] epoch [117/601], loss:3.3547 class:pill
+[Train] epoch [118/601], loss:3.2612 class:pill
+[Train] epoch [119/601], loss:3.2525 class:pill
+[Train] epoch [120/601], loss:3.2004 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7924 localization: 0.8798221349716187 at epoch 120
+[Train] epoch [121/601], loss:3.2705 class:pill
+[Train] epoch [122/601], loss:3.3750 class:pill
+[Train] epoch [123/601], loss:3.3595 class:pill
+[Train] epoch [124/601], loss:3.2489 class:pill
+[Train] epoch [125/601], loss:3.2101 class:pill
+[Train] epoch [126/601], loss:3.1673 class:pill
+[Train] epoch [127/601], loss:3.0819 class:pill
+[Train] epoch [128/601], loss:3.1435 class:pill
+[Train] epoch [129/601], loss:3.0667 class:pill
+[Train] epoch [130/601], loss:3.0394 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7851 localization: 0.8707579374313354 at epoch 130
+[Train] epoch [131/601], loss:3.2623 class:pill
+[Train] epoch [132/601], loss:3.4988 class:pill
+[Train] epoch [133/601], loss:3.3385 class:pill
+[Train] epoch [134/601], loss:3.2319 class:pill
+[Train] epoch [135/601], loss:3.1353 class:pill
+[Train] epoch [136/601], loss:3.1079 class:pill
+[Train] epoch [137/601], loss:3.0730 class:pill
+[Train] epoch [138/601], loss:3.0296 class:pill
+[Train] epoch [139/601], loss:2.9929 class:pill
+[Train] epoch [140/601], loss:2.9601 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7913 localization: 0.8815174698829651 at epoch 140
+[Eval] best localization_roc_auc at epoch 140
+[Train] epoch [141/601], loss:3.0403 class:pill
+[Train] epoch [142/601], loss:3.0654 class:pill
+[Train] epoch [143/601], loss:3.0555 class:pill
+[Train] epoch [144/601], loss:2.9949 class:pill
+[Train] epoch [145/601], loss:3.0149 class:pill
+[Train] epoch [146/601], loss:2.9642 class:pill
+[Train] epoch [147/601], loss:2.9262 class:pill
+[Train] epoch [148/601], loss:2.8898 class:pill
+[Train] epoch [149/601], loss:2.9537 class:pill
+[Train] epoch [150/601], loss:2.8350 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7905 localization: 0.8808181881904602 at epoch 150
+[Train] epoch [151/601], loss:2.9177 class:pill
+[Train] epoch [152/601], loss:3.0295 class:pill
+[Train] epoch [153/601], loss:2.9546 class:pill
+[Train] epoch [154/601], loss:2.9043 class:pill
+[Train] epoch [155/601], loss:2.8953 class:pill
+[Train] epoch [156/601], loss:2.8839 class:pill
+[Train] epoch [157/601], loss:2.7913 class:pill
+[Train] epoch [158/601], loss:2.8287 class:pill
+[Train] epoch [159/601], loss:2.7681 class:pill
+[Train] epoch [160/601], loss:2.7440 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7867 localization: 0.879801869392395 at epoch 160
+[Train] epoch [161/601], loss:2.8734 class:pill
+[Train] epoch [162/601], loss:2.8934 class:pill
+[Train] epoch [163/601], loss:2.9024 class:pill
+[Train] epoch [164/601], loss:2.8295 class:pill
+[Train] epoch [165/601], loss:2.7998 class:pill
+[Train] epoch [166/601], loss:2.7705 class:pill
+[Train] epoch [167/601], loss:2.7888 class:pill
+[Train] epoch [168/601], loss:2.7279 class:pill
+[Train] epoch [169/601], loss:2.7387 class:pill
+[Train] epoch [170/601], loss:2.6802 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7902 localization: 0.87682044506073 at epoch 170
+[Train] epoch [171/601], loss:2.8787 class:pill
+[Train] epoch [172/601], loss:2.8798 class:pill
+[Train] epoch [173/601], loss:2.8228 class:pill
+[Train] epoch [174/601], loss:2.8239 class:pill
+[Train] epoch [175/601], loss:2.7800 class:pill
+[Train] epoch [176/601], loss:2.7438 class:pill
+[Train] epoch [177/601], loss:2.7276 class:pill
+[Train] epoch [178/601], loss:2.7020 class:pill
+[Train] epoch [179/601], loss:2.6883 class:pill
+[Train] epoch [180/601], loss:2.6751 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7834 localization: 0.8689651489257812 at epoch 180
+[Train] epoch [181/601], loss:2.8203 class:pill
+[Train] epoch [182/601], loss:2.8939 class:pill
+[Train] epoch [183/601], loss:2.7929 class:pill
+[Train] epoch [184/601], loss:2.7598 class:pill
+[Train] epoch [185/601], loss:2.7155 class:pill
+[Train] epoch [186/601], loss:2.6641 class:pill
+[Train] epoch [187/601], loss:2.6941 class:pill
+[Train] epoch [188/601], loss:2.6717 class:pill
+[Train] epoch [189/601], loss:2.6036 class:pill
+[Train] epoch [190/601], loss:2.6572 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7897 localization: 0.8724300265312195 at epoch 190
+[Train] epoch [191/601], loss:2.6948 class:pill
+[Train] epoch [192/601], loss:2.7462 class:pill
+[Train] epoch [193/601], loss:2.6762 class:pill
+[Train] epoch [194/601], loss:2.6629 class:pill
+[Train] epoch [195/601], loss:2.6254 class:pill
+[Train] epoch [196/601], loss:2.6209 class:pill
+[Train] epoch [197/601], loss:2.6233 class:pill
+[Train] epoch [198/601], loss:2.5816 class:pill
+[Train] epoch [199/601], loss:2.5967 class:pill
+[Train] epoch [200/601], loss:2.5291 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7981 localization: 0.8785971999168396 at epoch 200
+[Train] epoch [201/601], loss:2.6502 class:pill
+[Train] epoch [202/601], loss:2.6289 class:pill
+[Train] epoch [203/601], loss:2.6037 class:pill
+[Train] epoch [204/601], loss:2.5583 class:pill
+[Train] epoch [205/601], loss:2.5586 class:pill
+[Train] epoch [206/601], loss:2.5042 class:pill
+[Train] epoch [207/601], loss:2.5239 class:pill
+[Train] epoch [208/601], loss:2.5365 class:pill
+[Train] epoch [209/601], loss:2.5685 class:pill
+[Train] epoch [210/601], loss:2.5159 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7979 localization: 0.8778417706489563 at epoch 210
+[Train] epoch [211/601], loss:2.5532 class:pill
+[Train] epoch [212/601], loss:2.5791 class:pill
+[Train] epoch [213/601], loss:2.5304 class:pill
+[Train] epoch [214/601], loss:2.4999 class:pill
+[Train] epoch [215/601], loss:2.4771 class:pill
+[Train] epoch [216/601], loss:2.4880 class:pill
+[Train] epoch [217/601], loss:2.4819 class:pill
+[Train] epoch [218/601], loss:2.4994 class:pill
+[Train] epoch [219/601], loss:2.4381 class:pill
+[Train] epoch [220/601], loss:2.4892 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.7951 localization: 0.8809311985969543 at epoch 220
+[Train] epoch [221/601], loss:2.4864 class:pill
+[Train] epoch [222/601], loss:2.5087 class:pill
+[Train] epoch [223/601], loss:2.4647 class:pill
+[Train] epoch [224/601], loss:2.4208 class:pill
+[Train] epoch [225/601], loss:2.4351 class:pill
+[Train] epoch [226/601], loss:2.4540 class:pill
+[Train] epoch [227/601], loss:2.4285 class:pill
+[Train] epoch [228/601], loss:2.4300 class:pill
+[Train] epoch [229/601], loss:2.4037 class:pill
+[Train] epoch [230/601], loss:2.3881 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8014 localization: 0.8832483887672424 at epoch 230
+[Eval] best detection_roc_auc at epoch 230
+[Eval] best localization_roc_auc at epoch 230
+[Train] epoch [231/601], loss:2.4987 class:pill
+[Train] epoch [232/601], loss:2.4563 class:pill
+[Train] epoch [233/601], loss:2.4070 class:pill
+[Train] epoch [234/601], loss:2.4495 class:pill
+[Train] epoch [235/601], loss:2.4065 class:pill
+[Train] epoch [236/601], loss:2.4069 class:pill
+[Train] epoch [237/601], loss:2.4151 class:pill
+[Train] epoch [238/601], loss:2.3479 class:pill
+[Train] epoch [239/601], loss:2.3729 class:pill
+[Train] epoch [240/601], loss:2.4121 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8088 localization: 0.8874194622039795 at epoch 240
+[Eval] best detection_roc_auc at epoch 240
+[Eval] best localization_roc_auc at epoch 240
+[Train] epoch [241/601], loss:2.4119 class:pill
+[Train] epoch [242/601], loss:2.3960 class:pill
+[Train] epoch [243/601], loss:2.3726 class:pill
+[Train] epoch [244/601], loss:2.3783 class:pill
+[Train] epoch [245/601], loss:2.4109 class:pill
+[Train] epoch [246/601], loss:2.3467 class:pill
+[Train] epoch [247/601], loss:2.3715 class:pill
+[Train] epoch [248/601], loss:2.3338 class:pill
+[Train] epoch [249/601], loss:2.3371 class:pill
+[Train] epoch [250/601], loss:2.3488 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8156 localization: 0.8920211791992188 at epoch 250
+[Eval] best detection_roc_auc at epoch 250
+[Eval] best localization_roc_auc at epoch 250
+[Train] epoch [251/601], loss:2.3413 class:pill
+[Train] epoch [252/601], loss:2.3669 class:pill
+[Train] epoch [253/601], loss:2.3264 class:pill
+[Train] epoch [254/601], loss:2.3568 class:pill
+[Train] epoch [255/601], loss:2.3211 class:pill
+[Train] epoch [256/601], loss:2.3470 class:pill
+[Train] epoch [257/601], loss:2.3173 class:pill
+[Train] epoch [258/601], loss:2.3177 class:pill
+[Train] epoch [259/601], loss:2.2836 class:pill
+[Train] epoch [260/601], loss:2.3026 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8129 localization: 0.8931885361671448 at epoch 260
+[Eval] best localization_roc_auc at epoch 260
+[Train] epoch [261/601], loss:2.3459 class:pill
+[Train] epoch [262/601], loss:2.3230 class:pill
+[Train] epoch [263/601], loss:2.3501 class:pill
+[Train] epoch [264/601], loss:2.2949 class:pill
+[Train] epoch [265/601], loss:2.2984 class:pill
+[Train] epoch [266/601], loss:2.2784 class:pill
+[Train] epoch [267/601], loss:2.2943 class:pill
+[Train] epoch [268/601], loss:2.2541 class:pill
+[Train] epoch [269/601], loss:2.2583 class:pill
+[Train] epoch [270/601], loss:2.2654 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.817 localization: 0.8931745886802673 at epoch 270
+[Eval] best detection_roc_auc at epoch 270
+[Train] epoch [271/601], loss:2.2943 class:pill
+[Train] epoch [272/601], loss:2.3336 class:pill
+[Train] epoch [273/601], loss:2.3083 class:pill
+[Train] epoch [274/601], loss:2.2655 class:pill
+[Train] epoch [275/601], loss:2.3030 class:pill
+[Train] epoch [276/601], loss:2.2613 class:pill
+[Train] epoch [277/601], loss:2.2485 class:pill
+[Train] epoch [278/601], loss:2.2323 class:pill
+[Train] epoch [279/601], loss:2.2628 class:pill
+[Train] epoch [280/601], loss:2.2437 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8107 localization: 0.8924691081047058 at epoch 280
+[Train] epoch [281/601], loss:2.2610 class:pill
+[Train] epoch [282/601], loss:2.2954 class:pill
+[Train] epoch [283/601], loss:2.2417 class:pill
+[Train] epoch [284/601], loss:2.2671 class:pill
+[Train] epoch [285/601], loss:2.2003 class:pill
+[Train] epoch [286/601], loss:2.2322 class:pill
+[Train] epoch [287/601], loss:2.1951 class:pill
+[Train] epoch [288/601], loss:2.2025 class:pill
+[Train] epoch [289/601], loss:2.1895 class:pill
+[Train] epoch [290/601], loss:2.1581 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8096 localization: 0.890564501285553 at epoch 290
+[Train] epoch [291/601], loss:2.2467 class:pill
+[Train] epoch [292/601], loss:2.2468 class:pill
+[Train] epoch [293/601], loss:2.2544 class:pill
+[Train] epoch [294/601], loss:2.2050 class:pill
+[Train] epoch [295/601], loss:2.1966 class:pill
+[Train] epoch [296/601], loss:2.2022 class:pill
+[Train] epoch [297/601], loss:2.1653 class:pill
+[Train] epoch [298/601], loss:2.1847 class:pill
+[Train] epoch [299/601], loss:2.1814 class:pill
+[Train] epoch [300/601], loss:2.2071 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8142 localization: 0.8930308818817139 at epoch 300
+[Train] epoch [301/601], loss:2.2256 class:pill
+[Train] epoch [302/601], loss:2.2516 class:pill
+[Train] epoch [303/601], loss:2.2130 class:pill
+[Train] epoch [304/601], loss:2.1914 class:pill
+[Train] epoch [305/601], loss:2.1648 class:pill
+[Train] epoch [306/601], loss:2.1681 class:pill
+[Train] epoch [307/601], loss:2.1645 class:pill
+[Train] epoch [308/601], loss:2.1424 class:pill
+[Train] epoch [309/601], loss:2.1593 class:pill
+[Train] epoch [310/601], loss:2.1575 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8159 localization: 0.8935105800628662 at epoch 310
+[Eval] best localization_roc_auc at epoch 310
+[Train] epoch [311/601], loss:2.1980 class:pill
+[Train] epoch [312/601], loss:2.2084 class:pill
+[Train] epoch [313/601], loss:2.1625 class:pill
+[Train] epoch [314/601], loss:2.1654 class:pill
+[Train] epoch [315/601], loss:2.1700 class:pill
+[Train] epoch [316/601], loss:2.1091 class:pill
+[Train] epoch [317/601], loss:2.1546 class:pill
+[Train] epoch [318/601], loss:2.1742 class:pill
+[Train] epoch [319/601], loss:2.1070 class:pill
+[Train] epoch [320/601], loss:2.1342 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8151 localization: 0.8965749144554138 at epoch 320
+[Eval] best localization_roc_auc at epoch 320
+[Train] epoch [321/601], loss:2.1586 class:pill
+[Train] epoch [322/601], loss:2.1704 class:pill
+[Train] epoch [323/601], loss:2.1528 class:pill
+[Train] epoch [324/601], loss:2.0906 class:pill
+[Train] epoch [325/601], loss:2.0990 class:pill
+[Train] epoch [326/601], loss:2.1121 class:pill
+[Train] epoch [327/601], loss:2.1058 class:pill
+[Train] epoch [328/601], loss:2.1019 class:pill
+[Train] epoch [329/601], loss:2.1106 class:pill
+[Train] epoch [330/601], loss:2.1473 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8115 localization: 0.8977421522140503 at epoch 330
+[Eval] best localization_roc_auc at epoch 330
+[Train] epoch [331/601], loss:2.1702 class:pill
+[Train] epoch [332/601], loss:2.1348 class:pill
+[Train] epoch [333/601], loss:2.1054 class:pill
+[Train] epoch [334/601], loss:2.0981 class:pill
+[Train] epoch [335/601], loss:2.0824 class:pill
+[Train] epoch [336/601], loss:2.0949 class:pill
+[Train] epoch [337/601], loss:2.1170 class:pill
+[Train] epoch [338/601], loss:2.0545 class:pill
+[Train] epoch [339/601], loss:2.0617 class:pill
+[Train] epoch [340/601], loss:2.0828 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8126 localization: 0.8960091471672058 at epoch 340
+[Train] epoch [341/601], loss:2.1137 class:pill
+[Train] epoch [342/601], loss:2.1198 class:pill
+[Train] epoch [343/601], loss:2.1177 class:pill
+[Train] epoch [344/601], loss:2.0917 class:pill
+[Train] epoch [345/601], loss:2.0519 class:pill
+[Train] epoch [346/601], loss:2.0643 class:pill
+[Train] epoch [347/601], loss:2.0422 class:pill
+[Train] epoch [348/601], loss:2.0503 class:pill
+[Train] epoch [349/601], loss:2.0458 class:pill
+[Train] epoch [350/601], loss:2.0306 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8156 localization: 0.8948373198509216 at epoch 350
+[Train] epoch [351/601], loss:2.0976 class:pill
+[Train] epoch [352/601], loss:2.1452 class:pill
+[Train] epoch [353/601], loss:2.1054 class:pill
+[Train] epoch [354/601], loss:2.0581 class:pill
+[Train] epoch [355/601], loss:2.0526 class:pill
+[Train] epoch [356/601], loss:2.0309 class:pill
+[Train] epoch [357/601], loss:2.0359 class:pill
+[Train] epoch [358/601], loss:2.0595 class:pill
+[Train] epoch [359/601], loss:2.0483 class:pill
+[Train] epoch [360/601], loss:1.9964 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8121 localization: 0.8946672677993774 at epoch 360
+[Train] epoch [361/601], loss:2.0715 class:pill
+[Train] epoch [362/601], loss:2.0648 class:pill
+[Train] epoch [363/601], loss:2.0511 class:pill
+[Train] epoch [364/601], loss:2.0703 class:pill
+[Train] epoch [365/601], loss:2.0187 class:pill
+[Train] epoch [366/601], loss:2.0367 class:pill
+[Train] epoch [367/601], loss:2.0139 class:pill
+[Train] epoch [368/601], loss:2.0370 class:pill
+[Train] epoch [369/601], loss:2.0176 class:pill
+[Train] epoch [370/601], loss:2.0049 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8115 localization: 0.8954430818557739 at epoch 370
+[Train] epoch [371/601], loss:2.0694 class:pill
+[Train] epoch [372/601], loss:2.0603 class:pill
+[Train] epoch [373/601], loss:2.0250 class:pill
+[Train] epoch [374/601], loss:2.0008 class:pill
+[Train] epoch [375/601], loss:2.0118 class:pill
+[Train] epoch [376/601], loss:1.9819 class:pill
+[Train] epoch [377/601], loss:1.9890 class:pill
+[Train] epoch [378/601], loss:1.9920 class:pill
+[Train] epoch [379/601], loss:1.9926 class:pill
+[Train] epoch [380/601], loss:1.9493 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8159 localization: 0.8969292640686035 at epoch 380
+[Train] epoch [381/601], loss:2.0336 class:pill
+[Train] epoch [382/601], loss:2.0594 class:pill
+[Train] epoch [383/601], loss:1.9956 class:pill
+[Train] epoch [384/601], loss:1.9831 class:pill
+[Train] epoch [385/601], loss:1.9875 class:pill
+[Train] epoch [386/601], loss:1.9811 class:pill
+[Train] epoch [387/601], loss:1.9857 class:pill
+[Train] epoch [388/601], loss:1.9580 class:pill
+[Train] epoch [389/601], loss:1.9585 class:pill
+[Train] epoch [390/601], loss:1.9682 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8202 localization: 0.8972876071929932 at epoch 390
+[Eval] best detection_roc_auc at epoch 390
+[Train] epoch [391/601], loss:2.0610 class:pill
+[Train] epoch [392/601], loss:2.0090 class:pill
+[Train] epoch [393/601], loss:1.9743 class:pill
+[Train] epoch [394/601], loss:1.9802 class:pill
+[Train] epoch [395/601], loss:1.9644 class:pill
+[Train] epoch [396/601], loss:1.9396 class:pill
+[Train] epoch [397/601], loss:1.9247 class:pill
+[Train] epoch [398/601], loss:1.9506 class:pill
+[Train] epoch [399/601], loss:1.9362 class:pill
+[Train] epoch [400/601], loss:1.9563 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8243 localization: 0.8998423218727112 at epoch 400
+[Eval] best detection_roc_auc at epoch 400
+[Eval] best localization_roc_auc at epoch 400
+[Train] epoch [401/601], loss:2.0101 class:pill
+[Train] epoch [402/601], loss:1.9544 class:pill
+[Train] epoch [403/601], loss:1.9718 class:pill
+[Train] epoch [404/601], loss:1.9276 class:pill
+[Train] epoch [405/601], loss:1.9079 class:pill
+[Train] epoch [406/601], loss:1.9422 class:pill
+[Train] epoch [407/601], loss:1.9129 class:pill
+[Train] epoch [408/601], loss:1.8881 class:pill
+[Train] epoch [409/601], loss:1.9024 class:pill
+[Train] epoch [410/601], loss:1.9019 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8175 localization: 0.8977743983268738 at epoch 410
+[Train] epoch [411/601], loss:1.9815 class:pill
+[Train] epoch [412/601], loss:1.9424 class:pill
+[Train] epoch [413/601], loss:1.9546 class:pill
+[Train] epoch [414/601], loss:1.9108 class:pill
+[Train] epoch [415/601], loss:1.8778 class:pill
+[Train] epoch [416/601], loss:1.9036 class:pill
+[Train] epoch [417/601], loss:1.8782 class:pill
+[Train] epoch [418/601], loss:1.8590 class:pill
+[Train] epoch [419/601], loss:1.8860 class:pill
+[Train] epoch [420/601], loss:1.9071 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8161 localization: 0.8899702429771423 at epoch 420
+[Train] epoch [421/601], loss:1.9311 class:pill
+[Train] epoch [422/601], loss:1.9200 class:pill
+[Train] epoch [423/601], loss:1.9096 class:pill
+[Train] epoch [424/601], loss:1.8807 class:pill
+[Train] epoch [425/601], loss:1.8893 class:pill
+[Train] epoch [426/601], loss:1.8606 class:pill
+[Train] epoch [427/601], loss:1.8906 class:pill
+[Train] epoch [428/601], loss:1.8794 class:pill
+[Train] epoch [429/601], loss:1.8465 class:pill
+[Train] epoch [430/601], loss:1.8435 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8197 localization: 0.8821581602096558 at epoch 430
+[Train] epoch [431/601], loss:1.9078 class:pill
+[Train] epoch [432/601], loss:1.8753 class:pill
+[Train] epoch [433/601], loss:1.9024 class:pill
+[Train] epoch [434/601], loss:1.8418 class:pill
+[Train] epoch [435/601], loss:1.8442 class:pill
+[Train] epoch [436/601], loss:1.8675 class:pill
+[Train] epoch [437/601], loss:1.8941 class:pill
+[Train] epoch [438/601], loss:1.8581 class:pill
+[Train] epoch [439/601], loss:1.8218 class:pill
+[Train] epoch [440/601], loss:1.8338 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8172 localization: 0.8787704706192017 at epoch 440
+[Train] epoch [441/601], loss:1.8697 class:pill
+[Train] epoch [442/601], loss:1.8867 class:pill
+[Train] epoch [443/601], loss:1.8629 class:pill
+[Train] epoch [444/601], loss:1.9014 class:pill
+[Train] epoch [445/601], loss:1.8480 class:pill
+[Train] epoch [446/601], loss:1.8388 class:pill
+[Train] epoch [447/601], loss:1.8469 class:pill
+[Train] epoch [448/601], loss:1.8368 class:pill
+[Train] epoch [449/601], loss:1.8240 class:pill
+[Train] epoch [450/601], loss:1.8252 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8178 localization: 0.8779488205909729 at epoch 450
+[Train] epoch [451/601], loss:1.8554 class:pill
+[Train] epoch [452/601], loss:1.8284 class:pill
+[Train] epoch [453/601], loss:1.8135 class:pill
+[Train] epoch [454/601], loss:1.8294 class:pill
+[Train] epoch [455/601], loss:1.8358 class:pill
+[Train] epoch [456/601], loss:1.8015 class:pill
+[Train] epoch [457/601], loss:1.8212 class:pill
+[Train] epoch [458/601], loss:1.7936 class:pill
+[Train] epoch [459/601], loss:1.7821 class:pill
+[Train] epoch [460/601], loss:1.8014 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8167 localization: 0.8768004775047302 at epoch 460
+[Train] epoch [461/601], loss:1.8676 class:pill
+[Train] epoch [462/601], loss:1.8474 class:pill
+[Train] epoch [463/601], loss:1.8382 class:pill
+[Train] epoch [464/601], loss:1.8159 class:pill
+[Train] epoch [465/601], loss:1.8201 class:pill
+[Train] epoch [466/601], loss:1.7887 class:pill
+[Train] epoch [467/601], loss:1.7880 class:pill
+[Train] epoch [468/601], loss:1.8020 class:pill
+[Train] epoch [469/601], loss:1.7833 class:pill
+[Train] epoch [470/601], loss:1.7661 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8197 localization: 0.875616192817688 at epoch 470
+[Train] epoch [471/601], loss:1.8125 class:pill
+[Train] epoch [472/601], loss:1.7962 class:pill
+[Train] epoch [473/601], loss:1.8293 class:pill
+[Train] epoch [474/601], loss:1.7960 class:pill
+[Train] epoch [475/601], loss:1.7767 class:pill
+[Train] epoch [476/601], loss:1.7742 class:pill
+[Train] epoch [477/601], loss:1.7658 class:pill
+[Train] epoch [478/601], loss:1.7516 class:pill
+[Train] epoch [479/601], loss:1.7698 class:pill
+[Train] epoch [480/601], loss:1.7738 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8066 localization: 0.8682877421379089 at epoch 480
+[Train] epoch [481/601], loss:1.8885 class:pill
+[Train] epoch [482/601], loss:1.8640 class:pill
+[Train] epoch [483/601], loss:1.8259 class:pill
+[Train] epoch [484/601], loss:1.7791 class:pill
+[Train] epoch [485/601], loss:1.7588 class:pill
+[Train] epoch [486/601], loss:1.7820 class:pill
+[Train] epoch [487/601], loss:1.8059 class:pill
+[Train] epoch [488/601], loss:1.7575 class:pill
+[Train] epoch [489/601], loss:1.7463 class:pill
+[Train] epoch [490/601], loss:1.7445 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8156 localization: 0.8697508573532104 at epoch 490
+[Train] epoch [491/601], loss:1.7715 class:pill
+[Train] epoch [492/601], loss:1.7751 class:pill
+[Train] epoch [493/601], loss:1.7631 class:pill
+[Train] epoch [494/601], loss:1.7839 class:pill
+[Train] epoch [495/601], loss:1.7462 class:pill
+[Train] epoch [496/601], loss:1.7389 class:pill
+[Train] epoch [497/601], loss:1.7268 class:pill
+[Train] epoch [498/601], loss:1.7859 class:pill
+[Train] epoch [499/601], loss:1.7531 class:pill
+[Train] epoch [500/601], loss:1.7206 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8224 localization: 0.8672012686729431 at epoch 500
+[Train] epoch [501/601], loss:1.8292 class:pill
+[Train] epoch [502/601], loss:1.8218 class:pill
+[Train] epoch [503/601], loss:1.8002 class:pill
+[Train] epoch [504/601], loss:1.7522 class:pill
+[Train] epoch [505/601], loss:1.7440 class:pill
+[Train] epoch [506/601], loss:1.7354 class:pill
+[Train] epoch [507/601], loss:1.7131 class:pill
+[Train] epoch [508/601], loss:1.7475 class:pill
+[Train] epoch [509/601], loss:1.7203 class:pill
+[Train] epoch [510/601], loss:1.7535 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8211 localization: 0.8735580444335938 at epoch 510
+[Train] epoch [511/601], loss:1.7599 class:pill
+[Train] epoch [512/601], loss:1.7362 class:pill
+[Train] epoch [513/601], loss:1.7364 class:pill
+[Train] epoch [514/601], loss:1.7301 class:pill
+[Train] epoch [515/601], loss:1.7133 class:pill
+[Train] epoch [516/601], loss:1.7523 class:pill
+[Train] epoch [517/601], loss:1.7273 class:pill
+[Train] epoch [518/601], loss:1.7046 class:pill
+[Train] epoch [519/601], loss:1.7039 class:pill
+[Train] epoch [520/601], loss:1.6929 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8148 localization: 0.8713130950927734 at epoch 520
+[Train] epoch [521/601], loss:1.7580 class:pill
+[Train] epoch [522/601], loss:1.7613 class:pill
+[Train] epoch [523/601], loss:1.7260 class:pill
+[Train] epoch [524/601], loss:1.7327 class:pill
+[Train] epoch [525/601], loss:1.6980 class:pill
+[Train] epoch [526/601], loss:1.7018 class:pill
+[Train] epoch [527/601], loss:1.7103 class:pill
+[Train] epoch [528/601], loss:1.6982 class:pill
+[Train] epoch [529/601], loss:1.6888 class:pill
+[Train] epoch [530/601], loss:1.7001 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8238 localization: 0.8741840720176697 at epoch 530
+[Train] epoch [531/601], loss:1.7112 class:pill
+[Train] epoch [532/601], loss:1.7197 class:pill
+[Train] epoch [533/601], loss:1.7173 class:pill
+[Train] epoch [534/601], loss:1.7033 class:pill
+[Train] epoch [535/601], loss:1.6823 class:pill
+[Train] epoch [536/601], loss:1.6837 class:pill
+[Train] epoch [537/601], loss:1.6693 class:pill
+[Train] epoch [538/601], loss:1.7112 class:pill
+[Train] epoch [539/601], loss:1.6641 class:pill
+[Train] epoch [540/601], loss:1.6988 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8279 localization: 0.8774198293685913 at epoch 540
+[Eval] best detection_roc_auc at epoch 540
+[Train] epoch [541/601], loss:1.7581 class:pill
+[Train] epoch [542/601], loss:1.7726 class:pill
+[Train] epoch [543/601], loss:1.7202 class:pill
+[Train] epoch [544/601], loss:1.6785 class:pill
+[Train] epoch [545/601], loss:1.6956 class:pill
+[Train] epoch [546/601], loss:1.6735 class:pill
+[Train] epoch [547/601], loss:1.6938 class:pill
+[Train] epoch [548/601], loss:1.7034 class:pill
+[Train] epoch [549/601], loss:1.6629 class:pill
+[Train] epoch [550/601], loss:1.6723 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8129 localization: 0.8771233558654785 at epoch 550
+[Train] epoch [551/601], loss:1.7011 class:pill
+[Train] epoch [552/601], loss:1.6776 class:pill
+[Train] epoch [553/601], loss:1.6617 class:pill
+[Train] epoch [554/601], loss:1.6715 class:pill
+[Train] epoch [555/601], loss:1.6871 class:pill
+[Train] epoch [556/601], loss:1.6826 class:pill
+[Train] epoch [557/601], loss:1.6625 class:pill
+[Train] epoch [558/601], loss:1.6503 class:pill
+[Train] epoch [559/601], loss:1.6627 class:pill
+[Train] epoch [560/601], loss:1.6754 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8172 localization: 0.8817964196205139 at epoch 560
+[Train] epoch [561/601], loss:1.7037 class:pill
+[Train] epoch [562/601], loss:1.7050 class:pill
+[Train] epoch [563/601], loss:1.6717 class:pill
+[Train] epoch [564/601], loss:1.6708 class:pill
+[Train] epoch [565/601], loss:1.6527 class:pill
+[Train] epoch [566/601], loss:1.6617 class:pill
+[Train] epoch [567/601], loss:1.6345 class:pill
+[Train] epoch [568/601], loss:1.6512 class:pill
+[Train] epoch [569/601], loss:1.6460 class:pill
+[Train] epoch [570/601], loss:1.6212 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8265 localization: 0.8857823014259338 at epoch 570
+[Train] epoch [571/601], loss:1.6930 class:pill
+[Train] epoch [572/601], loss:1.6795 class:pill
+[Train] epoch [573/601], loss:1.6591 class:pill
+[Train] epoch [574/601], loss:1.6398 class:pill
+[Train] epoch [575/601], loss:1.6318 class:pill
+[Train] epoch [576/601], loss:1.6280 class:pill
+[Train] epoch [577/601], loss:1.6158 class:pill
+[Train] epoch [578/601], loss:1.6370 class:pill
+[Train] epoch [579/601], loss:1.6106 class:pill
+[Train] epoch [580/601], loss:1.6114 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.823 localization: 0.8859533667564392 at epoch 580
+[Train] epoch [581/601], loss:1.6341 class:pill
+[Train] epoch [582/601], loss:1.6609 class:pill
+[Train] epoch [583/601], loss:1.6539 class:pill
+[Train] epoch [584/601], loss:1.6281 class:pill
+[Train] epoch [585/601], loss:1.6388 class:pill
+[Train] epoch [586/601], loss:1.6118 class:pill
+[Train] epoch [587/601], loss:1.6332 class:pill
+[Train] epoch [588/601], loss:1.6177 class:pill
+[Train] epoch [589/601], loss:1.6330 class:pill
+[Train] epoch [590/601], loss:1.6067 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8202 localization: 0.8859009146690369 at epoch 590
+[Train] epoch [591/601], loss:1.6840 class:pill
+[Train] epoch [592/601], loss:1.6560 class:pill
+[Train] epoch [593/601], loss:1.6453 class:pill
+[Train] epoch [594/601], loss:1.6325 class:pill
+[Train] epoch [595/601], loss:1.6187 class:pill
+[Train] epoch [596/601], loss:1.6127 class:pill
+[Train] epoch [597/601], loss:1.6049 class:pill
+[Train] epoch [598/601], loss:1.6051 class:pill
+[Train] epoch [599/601], loss:1.5976 class:pill
+[Train] epoch [600/601], loss:1.5902 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.8232 localization: 0.8857605457305908 at epoch 600
+[Train] epoch [601/601], loss:1.7425 class:pill
+Vanilla Backpropagation:
+[Eval] pill class RocAUC detection: 0.727 localization: 0.8296096324920654 at epoch 601

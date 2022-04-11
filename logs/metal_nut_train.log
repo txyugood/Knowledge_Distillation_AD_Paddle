@@ -1,0 +1,734 @@
+W0410 17:20:54.922861 21094 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 17:20:54.927580 21094 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:37.9510 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 0: 0.1867
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:34.3565 class:metal_nut
+[Train] epoch [2/601], loss:32.0412 class:metal_nut
+[Train] epoch [3/601], loss:30.2947 class:metal_nut
+[Train] epoch [4/601], loss:28.9215 class:metal_nut
+[Train] epoch [5/601], loss:27.6461 class:metal_nut
+[Train] epoch [6/601], loss:26.5503 class:metal_nut
+[Train] epoch [7/601], loss:25.5769 class:metal_nut
+[Train] epoch [8/601], loss:24.7115 class:metal_nut
+[Train] epoch [9/601], loss:23.7723 class:metal_nut
+[Train] epoch [10/601], loss:22.9856 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 10: 0.2771
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:22.1885 class:metal_nut
+[Train] epoch [12/601], loss:21.4886 class:metal_nut
+[Train] epoch [13/601], loss:20.7358 class:metal_nut
+[Train] epoch [14/601], loss:20.1723 class:metal_nut
+[Train] epoch [15/601], loss:19.5052 class:metal_nut
+[Train] epoch [16/601], loss:19.0009 class:metal_nut
+[Train] epoch [17/601], loss:18.4503 class:metal_nut
+[Train] epoch [18/601], loss:17.9384 class:metal_nut
+[Train] epoch [19/601], loss:17.4528 class:metal_nut
+[Train] epoch [20/601], loss:17.0071 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 20: 0.4306
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:16.5727 class:metal_nut
+[Train] epoch [22/601], loss:16.1510 class:metal_nut
+[Train] epoch [23/601], loss:15.7673 class:metal_nut
+[Train] epoch [24/601], loss:15.4382 class:metal_nut
+[Train] epoch [25/601], loss:15.0632 class:metal_nut
+[Train] epoch [26/601], loss:14.7516 class:metal_nut
+[Train] epoch [27/601], loss:14.4651 class:metal_nut
+[Train] epoch [28/601], loss:14.1615 class:metal_nut
+[Train] epoch [29/601], loss:13.8892 class:metal_nut
+[Train] epoch [30/601], loss:13.6060 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 30: 0.5093
+[Eval] save best model at epoch 30
+[Train] epoch [31/601], loss:13.3439 class:metal_nut
+[Train] epoch [32/601], loss:13.0250 class:metal_nut
+[Train] epoch [33/601], loss:12.8655 class:metal_nut
+[Train] epoch [34/601], loss:12.6234 class:metal_nut
+[Train] epoch [35/601], loss:12.3694 class:metal_nut
+[Train] epoch [36/601], loss:12.1459 class:metal_nut
+[Train] epoch [37/601], loss:11.9573 class:metal_nut
+[Train] epoch [38/601], loss:11.7588 class:metal_nut
+[Train] epoch [39/601], loss:11.5435 class:metal_nut
+[Train] epoch [40/601], loss:11.3952 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 40: 0.5679
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:11.2171 class:metal_nut
+[Train] epoch [42/601], loss:11.0338 class:metal_nut
+[Train] epoch [43/601], loss:10.8305 class:metal_nut
+[Train] epoch [44/601], loss:10.6724 class:metal_nut
+[Train] epoch [45/601], loss:10.5515 class:metal_nut
+[Train] epoch [46/601], loss:10.3446 class:metal_nut
+[Train] epoch [47/601], loss:10.2388 class:metal_nut
+[Train] epoch [48/601], loss:10.0384 class:metal_nut
+[Train] epoch [49/601], loss:9.9342 class:metal_nut
+[Train] epoch [50/601], loss:9.7567 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 50: 0.6041
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:9.6586 class:metal_nut
+[Train] epoch [52/601], loss:9.4743 class:metal_nut
+[Train] epoch [53/601], loss:9.3841 class:metal_nut
+[Train] epoch [54/601], loss:9.3025 class:metal_nut
+[Train] epoch [55/601], loss:9.1104 class:metal_nut
+[Train] epoch [56/601], loss:9.0100 class:metal_nut
+[Train] epoch [57/601], loss:8.9019 class:metal_nut
+[Train] epoch [58/601], loss:8.7918 class:metal_nut
+[Train] epoch [59/601], loss:8.6750 class:metal_nut
+[Train] epoch [60/601], loss:8.5875 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 60: 0.6251
+[Eval] save best model at epoch 60
+[Train] epoch [61/601], loss:8.4904 class:metal_nut
+[Train] epoch [62/601], loss:8.3687 class:metal_nut
+[Train] epoch [63/601], loss:8.3014 class:metal_nut
+[Train] epoch [64/601], loss:8.1691 class:metal_nut
+[Train] epoch [65/601], loss:8.0823 class:metal_nut
+[Train] epoch [66/601], loss:8.0009 class:metal_nut
+[Train] epoch [67/601], loss:7.9004 class:metal_nut
+[Train] epoch [68/601], loss:7.7939 class:metal_nut
+[Train] epoch [69/601], loss:7.7384 class:metal_nut
+[Train] epoch [70/601], loss:7.6576 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 70: 0.6427
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:7.5744 class:metal_nut
+[Train] epoch [72/601], loss:7.5182 class:metal_nut
+[Train] epoch [73/601], loss:7.4063 class:metal_nut
+[Train] epoch [74/601], loss:7.3394 class:metal_nut
+[Train] epoch [75/601], loss:7.2776 class:metal_nut
+[Train] epoch [76/601], loss:7.2120 class:metal_nut
+[Train] epoch [77/601], loss:7.1271 class:metal_nut
+[Train] epoch [78/601], loss:7.0522 class:metal_nut
+[Train] epoch [79/601], loss:7.0267 class:metal_nut
+[Train] epoch [80/601], loss:6.9611 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 80: 0.6584
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:6.8792 class:metal_nut
+[Train] epoch [82/601], loss:6.8365 class:metal_nut
+[Train] epoch [83/601], loss:6.7435 class:metal_nut
+[Train] epoch [84/601], loss:6.6933 class:metal_nut
+[Train] epoch [85/601], loss:6.6158 class:metal_nut
+[Train] epoch [86/601], loss:6.5908 class:metal_nut
+[Train] epoch [87/601], loss:6.5216 class:metal_nut
+[Train] epoch [88/601], loss:6.4659 class:metal_nut
+[Train] epoch [89/601], loss:6.4264 class:metal_nut
+[Train] epoch [90/601], loss:6.3952 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 90: 0.6623
+[Eval] save best model at epoch 90
+[Train] epoch [91/601], loss:6.3279 class:metal_nut
+[Train] epoch [92/601], loss:6.2597 class:metal_nut
+[Train] epoch [93/601], loss:6.2104 class:metal_nut
+[Train] epoch [94/601], loss:6.1742 class:metal_nut
+[Train] epoch [95/601], loss:6.1237 class:metal_nut
+[Train] epoch [96/601], loss:6.1142 class:metal_nut
+[Train] epoch [97/601], loss:6.0565 class:metal_nut
+[Train] epoch [98/601], loss:6.0157 class:metal_nut
+[Train] epoch [99/601], loss:5.9566 class:metal_nut
+[Train] epoch [100/601], loss:5.9185 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 100: 0.6872
+[Eval] save best model at epoch 100
+[Train] epoch [101/601], loss:5.8532 class:metal_nut
+[Train] epoch [102/601], loss:5.8536 class:metal_nut
+[Train] epoch [103/601], loss:5.7900 class:metal_nut
+[Train] epoch [104/601], loss:5.7924 class:metal_nut
+[Train] epoch [105/601], loss:5.7422 class:metal_nut
+[Train] epoch [106/601], loss:5.6964 class:metal_nut
+[Train] epoch [107/601], loss:5.6662 class:metal_nut
+[Train] epoch [108/601], loss:5.6256 class:metal_nut
+[Train] epoch [109/601], loss:5.5932 class:metal_nut
+[Train] epoch [110/601], loss:5.5670 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 110: 0.6838
+[Train] epoch [111/601], loss:5.5251 class:metal_nut
+[Train] epoch [112/601], loss:5.5109 class:metal_nut
+[Train] epoch [113/601], loss:5.4718 class:metal_nut
+[Train] epoch [114/601], loss:5.4185 class:metal_nut
+[Train] epoch [115/601], loss:5.4093 class:metal_nut
+[Train] epoch [116/601], loss:5.3566 class:metal_nut
+[Train] epoch [117/601], loss:5.3398 class:metal_nut
+[Train] epoch [118/601], loss:5.3146 class:metal_nut
+[Train] epoch [119/601], loss:5.2963 class:metal_nut
+[Train] epoch [120/601], loss:5.2572 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 120: 0.6975
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:5.2243 class:metal_nut
+[Train] epoch [122/601], loss:5.2045 class:metal_nut
+[Train] epoch [123/601], loss:5.2120 class:metal_nut
+[Train] epoch [124/601], loss:5.1560 class:metal_nut
+[Train] epoch [125/601], loss:5.1189 class:metal_nut
+[Train] epoch [126/601], loss:5.1227 class:metal_nut
+[Train] epoch [127/601], loss:5.0778 class:metal_nut
+[Train] epoch [128/601], loss:5.0384 class:metal_nut
+[Train] epoch [129/601], loss:5.0337 class:metal_nut
+[Train] epoch [130/601], loss:5.0134 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 130: 0.7009
+[Eval] save best model at epoch 130
+[Train] epoch [131/601], loss:5.0075 class:metal_nut
+[Train] epoch [132/601], loss:4.9772 class:metal_nut
+[Train] epoch [133/601], loss:4.9258 class:metal_nut
+[Train] epoch [134/601], loss:4.9096 class:metal_nut
+[Train] epoch [135/601], loss:4.8838 class:metal_nut
+[Train] epoch [136/601], loss:4.8474 class:metal_nut
+[Train] epoch [137/601], loss:4.8568 class:metal_nut
+[Train] epoch [138/601], loss:4.8386 class:metal_nut
+[Train] epoch [139/601], loss:4.8020 class:metal_nut
+[Train] epoch [140/601], loss:4.7796 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 140: 0.7053
+[Eval] save best model at epoch 140
+[Train] epoch [141/601], loss:4.7531 class:metal_nut
+[Train] epoch [142/601], loss:4.7338 class:metal_nut
+[Train] epoch [143/601], loss:4.7210 class:metal_nut
+[Train] epoch [144/601], loss:4.7268 class:metal_nut
+[Train] epoch [145/601], loss:4.6913 class:metal_nut
+[Train] epoch [146/601], loss:4.6923 class:metal_nut
+[Train] epoch [147/601], loss:4.6768 class:metal_nut
+[Train] epoch [148/601], loss:4.6351 class:metal_nut
+[Train] epoch [149/601], loss:4.6182 class:metal_nut
+[Train] epoch [150/601], loss:4.6237 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 150: 0.6994
+[Train] epoch [151/601], loss:4.6077 class:metal_nut
+[Train] epoch [152/601], loss:4.5808 class:metal_nut
+[Train] epoch [153/601], loss:4.5713 class:metal_nut
+[Train] epoch [154/601], loss:4.5499 class:metal_nut
+[Train] epoch [155/601], loss:4.5132 class:metal_nut
+[Train] epoch [156/601], loss:4.4872 class:metal_nut
+[Train] epoch [157/601], loss:4.5036 class:metal_nut
+[Train] epoch [158/601], loss:4.4902 class:metal_nut
+[Train] epoch [159/601], loss:4.4690 class:metal_nut
+[Train] epoch [160/601], loss:4.4347 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 160: 0.7141
+[Eval] save best model at epoch 160
+[Train] epoch [161/601], loss:4.4675 class:metal_nut
+[Train] epoch [162/601], loss:4.4309 class:metal_nut
+[Train] epoch [163/601], loss:4.4129 class:metal_nut
+[Train] epoch [164/601], loss:4.3997 class:metal_nut
+[Train] epoch [165/601], loss:4.4111 class:metal_nut
+[Train] epoch [166/601], loss:4.3877 class:metal_nut
+[Train] epoch [167/601], loss:4.3480 class:metal_nut
+[Train] epoch [168/601], loss:4.3369 class:metal_nut
+[Train] epoch [169/601], loss:4.3170 class:metal_nut
+[Train] epoch [170/601], loss:4.3076 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 170: 0.7107
+[Train] epoch [171/601], loss:4.3271 class:metal_nut
+[Train] epoch [172/601], loss:4.2974 class:metal_nut
+[Train] epoch [173/601], loss:4.2712 class:metal_nut
+[Train] epoch [174/601], loss:4.2445 class:metal_nut
+[Train] epoch [175/601], loss:4.2533 class:metal_nut
+[Train] epoch [176/601], loss:4.2452 class:metal_nut
+[Train] epoch [177/601], loss:4.2295 class:metal_nut
+[Train] epoch [178/601], loss:4.2018 class:metal_nut
+[Train] epoch [179/601], loss:4.1950 class:metal_nut
+[Train] epoch [180/601], loss:4.1718 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 180: 0.7209
+[Eval] save best model at epoch 180
+[Train] epoch [181/601], loss:4.1578 class:metal_nut
+[Train] epoch [182/601], loss:4.1671 class:metal_nut
+[Train] epoch [183/601], loss:4.1539 class:metal_nut
+[Train] epoch [184/601], loss:4.1432 class:metal_nut
+[Train] epoch [185/601], loss:4.1478 class:metal_nut
+[Train] epoch [186/601], loss:4.0926 class:metal_nut
+[Train] epoch [187/601], loss:4.0916 class:metal_nut
+[Train] epoch [188/601], loss:4.0900 class:metal_nut
+[Train] epoch [189/601], loss:4.1181 class:metal_nut
+[Train] epoch [190/601], loss:4.0905 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 190: 0.7155
+[Train] epoch [191/601], loss:4.0660 class:metal_nut
+[Train] epoch [192/601], loss:4.0672 class:metal_nut
+[Train] epoch [193/601], loss:4.0450 class:metal_nut
+[Train] epoch [194/601], loss:4.0353 class:metal_nut
+[Train] epoch [195/601], loss:4.0211 class:metal_nut
+[Train] epoch [196/601], loss:4.0258 class:metal_nut
+[Train] epoch [197/601], loss:4.0159 class:metal_nut
+[Train] epoch [198/601], loss:4.0239 class:metal_nut
+[Train] epoch [199/601], loss:3.9848 class:metal_nut
+[Train] epoch [200/601], loss:3.9851 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 200: 0.7214
+[Eval] save best model at epoch 200
+[Train] epoch [201/601], loss:3.9655 class:metal_nut
+[Train] epoch [202/601], loss:3.9732 class:metal_nut
+[Train] epoch [203/601], loss:3.9640 class:metal_nut
+[Train] epoch [204/601], loss:3.9532 class:metal_nut
+[Train] epoch [205/601], loss:3.9441 class:metal_nut
+[Train] epoch [206/601], loss:3.9059 class:metal_nut
+[Train] epoch [207/601], loss:3.9391 class:metal_nut
+[Train] epoch [208/601], loss:3.8843 class:metal_nut
+[Train] epoch [209/601], loss:3.9089 class:metal_nut
+[Train] epoch [210/601], loss:3.8888 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 210: 0.716
+[Train] epoch [211/601], loss:3.9159 class:metal_nut
+[Train] epoch [212/601], loss:3.8616 class:metal_nut
+[Train] epoch [213/601], loss:3.8804 class:metal_nut
+[Train] epoch [214/601], loss:3.8695 class:metal_nut
+[Train] epoch [215/601], loss:3.8574 class:metal_nut
+[Train] epoch [216/601], loss:3.8381 class:metal_nut
+[Train] epoch [217/601], loss:3.8365 class:metal_nut
+[Train] epoch [218/601], loss:3.8223 class:metal_nut
+[Train] epoch [219/601], loss:3.8347 class:metal_nut
+[Train] epoch [220/601], loss:3.8143 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 220: 0.7155
+[Train] epoch [221/601], loss:3.8172 class:metal_nut
+[Train] epoch [222/601], loss:3.8064 class:metal_nut
+[Train] epoch [223/601], loss:3.7913 class:metal_nut
+[Train] epoch [224/601], loss:3.7780 class:metal_nut
+[Train] epoch [225/601], loss:3.7801 class:metal_nut
+[Train] epoch [226/601], loss:3.7762 class:metal_nut
+[Train] epoch [227/601], loss:3.7630 class:metal_nut
+[Train] epoch [228/601], loss:3.7454 class:metal_nut
+[Train] epoch [229/601], loss:3.7704 class:metal_nut
+[Train] epoch [230/601], loss:3.7804 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 230: 0.7111
+[Train] epoch [231/601], loss:3.7323 class:metal_nut
+[Train] epoch [232/601], loss:3.7299 class:metal_nut
+[Train] epoch [233/601], loss:3.7348 class:metal_nut
+[Train] epoch [234/601], loss:3.7464 class:metal_nut
+[Train] epoch [235/601], loss:3.7255 class:metal_nut
+[Train] epoch [236/601], loss:3.7420 class:metal_nut
+[Train] epoch [237/601], loss:3.6956 class:metal_nut
+[Train] epoch [238/601], loss:3.6973 class:metal_nut
+[Train] epoch [239/601], loss:3.6828 class:metal_nut
+[Train] epoch [240/601], loss:3.6988 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 240: 0.719
+[Train] epoch [241/601], loss:3.6631 class:metal_nut
+[Train] epoch [242/601], loss:3.6866 class:metal_nut
+[Train] epoch [243/601], loss:3.6693 class:metal_nut
+[Train] epoch [244/601], loss:3.6605 class:metal_nut
+[Train] epoch [245/601], loss:3.6473 class:metal_nut
+[Train] epoch [246/601], loss:3.6579 class:metal_nut
+[Train] epoch [247/601], loss:3.6187 class:metal_nut
+[Train] epoch [248/601], loss:3.6308 class:metal_nut
+[Train] epoch [249/601], loss:3.6159 class:metal_nut
+[Train] epoch [250/601], loss:3.6254 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 250: 0.7273
+[Eval] save best model at epoch 250
+[Train] epoch [251/601], loss:3.6225 class:metal_nut
+[Train] epoch [252/601], loss:3.6155 class:metal_nut
+[Train] epoch [253/601], loss:3.6165 class:metal_nut
+[Train] epoch [254/601], loss:3.5957 class:metal_nut
+[Train] epoch [255/601], loss:3.5810 class:metal_nut
+[Train] epoch [256/601], loss:3.5738 class:metal_nut
+[Train] epoch [257/601], loss:3.5744 class:metal_nut
+[Train] epoch [258/601], loss:3.5503 class:metal_nut
+[Train] epoch [259/601], loss:3.5474 class:metal_nut
+[Train] epoch [260/601], loss:3.5724 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 260: 0.7219
+[Train] epoch [261/601], loss:3.5519 class:metal_nut
+[Train] epoch [262/601], loss:3.5601 class:metal_nut
+[Train] epoch [263/601], loss:3.5746 class:metal_nut
+[Train] epoch [264/601], loss:3.5457 class:metal_nut
+[Train] epoch [265/601], loss:3.5494 class:metal_nut
+[Train] epoch [266/601], loss:3.5629 class:metal_nut
+[Train] epoch [267/601], loss:3.5163 class:metal_nut
+[Train] epoch [268/601], loss:3.5385 class:metal_nut
+[Train] epoch [269/601], loss:3.5174 class:metal_nut
+[Train] epoch [270/601], loss:3.5178 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 270: 0.7204
+[Train] epoch [271/601], loss:3.5042 class:metal_nut
+[Train] epoch [272/601], loss:3.4951 class:metal_nut
+[Train] epoch [273/601], loss:3.4904 class:metal_nut
+[Train] epoch [274/601], loss:3.4917 class:metal_nut
+[Train] epoch [275/601], loss:3.5068 class:metal_nut
+[Train] epoch [276/601], loss:3.5007 class:metal_nut
+[Train] epoch [277/601], loss:3.4746 class:metal_nut
+[Train] epoch [278/601], loss:3.4680 class:metal_nut
+[Train] epoch [279/601], loss:3.4581 class:metal_nut
+[Train] epoch [280/601], loss:3.4574 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 280: 0.7253
+[Train] epoch [281/601], loss:3.4636 class:metal_nut
+[Train] epoch [282/601], loss:3.4481 class:metal_nut
+[Train] epoch [283/601], loss:3.4307 class:metal_nut
+[Train] epoch [284/601], loss:3.4448 class:metal_nut
+[Train] epoch [285/601], loss:3.4429 class:metal_nut
+[Train] epoch [286/601], loss:3.4377 class:metal_nut
+[Train] epoch [287/601], loss:3.4509 class:metal_nut
+[Train] epoch [288/601], loss:3.4187 class:metal_nut
+[Train] epoch [289/601], loss:3.4335 class:metal_nut
+[Train] epoch [290/601], loss:3.4380 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 290: 0.7297
+[Eval] save best model at epoch 290
+[Train] epoch [291/601], loss:3.4179 class:metal_nut
+[Train] epoch [292/601], loss:3.4017 class:metal_nut
+[Train] epoch [293/601], loss:3.4002 class:metal_nut
+[Train] epoch [294/601], loss:3.4004 class:metal_nut
+[Train] epoch [295/601], loss:3.3922 class:metal_nut
+[Train] epoch [296/601], loss:3.3918 class:metal_nut
+[Train] epoch [297/601], loss:3.3844 class:metal_nut
+[Train] epoch [298/601], loss:3.3857 class:metal_nut
+[Train] epoch [299/601], loss:3.3924 class:metal_nut
+[Train] epoch [300/601], loss:3.3615 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 300: 0.7361
+[Eval] save best model at epoch 300
+[Train] epoch [301/601], loss:3.3804 class:metal_nut
+[Train] epoch [302/601], loss:3.3797 class:metal_nut
+[Train] epoch [303/601], loss:3.3506 class:metal_nut
+[Train] epoch [304/601], loss:3.3570 class:metal_nut
+[Train] epoch [305/601], loss:3.3737 class:metal_nut
+[Train] epoch [306/601], loss:3.3498 class:metal_nut
+[Train] epoch [307/601], loss:3.3672 class:metal_nut
+[Train] epoch [308/601], loss:3.3301 class:metal_nut
+[Train] epoch [309/601], loss:3.3281 class:metal_nut
+[Train] epoch [310/601], loss:3.3252 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 310: 0.7346
+[Train] epoch [311/601], loss:3.3236 class:metal_nut
+[Train] epoch [312/601], loss:3.3074 class:metal_nut
+[Train] epoch [313/601], loss:3.3287 class:metal_nut
+[Train] epoch [314/601], loss:3.3336 class:metal_nut
+[Train] epoch [315/601], loss:3.3282 class:metal_nut
+[Train] epoch [316/601], loss:3.3004 class:metal_nut
+[Train] epoch [317/601], loss:3.3126 class:metal_nut
+[Train] epoch [318/601], loss:3.2904 class:metal_nut
+[Train] epoch [319/601], loss:3.3131 class:metal_nut
+[Train] epoch [320/601], loss:3.3226 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 320: 0.7219
+[Train] epoch [321/601], loss:3.3021 class:metal_nut
+[Train] epoch [322/601], loss:3.3024 class:metal_nut
+[Train] epoch [323/601], loss:3.3075 class:metal_nut
+[Train] epoch [324/601], loss:3.2845 class:metal_nut
+[Train] epoch [325/601], loss:3.3069 class:metal_nut
+[Train] epoch [326/601], loss:3.2831 class:metal_nut
+[Train] epoch [327/601], loss:3.2814 class:metal_nut
+[Train] epoch [328/601], loss:3.2623 class:metal_nut
+[Train] epoch [329/601], loss:3.2666 class:metal_nut
+[Train] epoch [330/601], loss:3.2574 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 330: 0.7248
+[Train] epoch [331/601], loss:3.2626 class:metal_nut
+[Train] epoch [332/601], loss:3.2449 class:metal_nut
+[Train] epoch [333/601], loss:3.2611 class:metal_nut
+[Train] epoch [334/601], loss:3.2586 class:metal_nut
+[Train] epoch [335/601], loss:3.2596 class:metal_nut
+[Train] epoch [336/601], loss:3.2253 class:metal_nut
+[Train] epoch [337/601], loss:3.2341 class:metal_nut
+[Train] epoch [338/601], loss:3.2490 class:metal_nut
+[Train] epoch [339/601], loss:3.2470 class:metal_nut
+[Train] epoch [340/601], loss:3.2331 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 340: 0.7395
+[Eval] save best model at epoch 340
+[Train] epoch [341/601], loss:3.2493 class:metal_nut
+[Train] epoch [342/601], loss:3.2296 class:metal_nut
+[Train] epoch [343/601], loss:3.2199 class:metal_nut
+[Train] epoch [344/601], loss:3.2162 class:metal_nut
+[Train] epoch [345/601], loss:3.2028 class:metal_nut
+[Train] epoch [346/601], loss:3.2198 class:metal_nut
+[Train] epoch [347/601], loss:3.2093 class:metal_nut
+[Train] epoch [348/601], loss:3.1960 class:metal_nut
+[Train] epoch [349/601], loss:3.1830 class:metal_nut
+[Train] epoch [350/601], loss:3.1895 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 350: 0.737
+[Train] epoch [351/601], loss:3.1918 class:metal_nut
+[Train] epoch [352/601], loss:3.1973 class:metal_nut
+[Train] epoch [353/601], loss:3.1992 class:metal_nut
+[Train] epoch [354/601], loss:3.1808 class:metal_nut
+[Train] epoch [355/601], loss:3.1906 class:metal_nut
+[Train] epoch [356/601], loss:3.1894 class:metal_nut
+[Train] epoch [357/601], loss:3.1898 class:metal_nut
+[Train] epoch [358/601], loss:3.1948 class:metal_nut
+[Train] epoch [359/601], loss:3.1849 class:metal_nut
+[Train] epoch [360/601], loss:3.1700 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 360: 0.7385
+[Train] epoch [361/601], loss:3.1544 class:metal_nut
+[Train] epoch [362/601], loss:3.1619 class:metal_nut
+[Train] epoch [363/601], loss:3.1445 class:metal_nut
+[Train] epoch [364/601], loss:3.1834 class:metal_nut
+[Train] epoch [365/601], loss:3.1452 class:metal_nut
+[Train] epoch [366/601], loss:3.1472 class:metal_nut
+[Train] epoch [367/601], loss:3.1493 class:metal_nut
+[Train] epoch [368/601], loss:3.1331 class:metal_nut
+[Train] epoch [369/601], loss:3.1639 class:metal_nut
+[Train] epoch [370/601], loss:3.1476 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 370: 0.737
+[Train] epoch [371/601], loss:3.1604 class:metal_nut
+[Train] epoch [372/601], loss:3.1222 class:metal_nut
+[Train] epoch [373/601], loss:3.1227 class:metal_nut
+[Train] epoch [374/601], loss:3.1371 class:metal_nut
+[Train] epoch [375/601], loss:3.1267 class:metal_nut
+[Train] epoch [376/601], loss:3.1249 class:metal_nut
+[Train] epoch [377/601], loss:3.1281 class:metal_nut
+[Train] epoch [378/601], loss:3.1371 class:metal_nut
+[Train] epoch [379/601], loss:3.1190 class:metal_nut
+[Train] epoch [380/601], loss:3.1167 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 380: 0.7385
+[Train] epoch [381/601], loss:3.1263 class:metal_nut
+[Train] epoch [382/601], loss:3.1041 class:metal_nut
+[Train] epoch [383/601], loss:3.1006 class:metal_nut
+[Train] epoch [384/601], loss:3.1059 class:metal_nut
+[Train] epoch [385/601], loss:3.1109 class:metal_nut
+[Train] epoch [386/601], loss:3.1038 class:metal_nut
+[Train] epoch [387/601], loss:3.1004 class:metal_nut
+[Train] epoch [388/601], loss:3.1019 class:metal_nut
+[Train] epoch [389/601], loss:3.1106 class:metal_nut
+[Train] epoch [390/601], loss:3.0970 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 390: 0.739
+[Train] epoch [391/601], loss:3.0918 class:metal_nut
+[Train] epoch [392/601], loss:3.0870 class:metal_nut
+[Train] epoch [393/601], loss:3.0673 class:metal_nut
+[Train] epoch [394/601], loss:3.0711 class:metal_nut
+[Train] epoch [395/601], loss:3.0982 class:metal_nut
+[Train] epoch [396/601], loss:3.0801 class:metal_nut
+[Train] epoch [397/601], loss:3.0758 class:metal_nut
+[Train] epoch [398/601], loss:3.0705 class:metal_nut
+[Train] epoch [399/601], loss:3.0707 class:metal_nut
+[Train] epoch [400/601], loss:3.0829 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 400: 0.7366
+[Train] epoch [401/601], loss:3.0566 class:metal_nut
+[Train] epoch [402/601], loss:3.0558 class:metal_nut
+[Train] epoch [403/601], loss:3.0520 class:metal_nut
+[Train] epoch [404/601], loss:3.0545 class:metal_nut
+[Train] epoch [405/601], loss:3.0393 class:metal_nut
+[Train] epoch [406/601], loss:3.0439 class:metal_nut
+[Train] epoch [407/601], loss:3.0602 class:metal_nut
+[Train] epoch [408/601], loss:3.0364 class:metal_nut
+[Train] epoch [409/601], loss:3.0355 class:metal_nut
+[Train] epoch [410/601], loss:3.0321 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 410: 0.7434
+[Eval] save best model at epoch 410
+[Train] epoch [411/601], loss:3.0426 class:metal_nut
+[Train] epoch [412/601], loss:3.0452 class:metal_nut
+[Train] epoch [413/601], loss:3.0318 class:metal_nut
+[Train] epoch [414/601], loss:3.0548 class:metal_nut
+[Train] epoch [415/601], loss:3.0557 class:metal_nut
+[Train] epoch [416/601], loss:3.0619 class:metal_nut
+[Train] epoch [417/601], loss:3.0458 class:metal_nut
+[Train] epoch [418/601], loss:3.0287 class:metal_nut
+[Train] epoch [419/601], loss:3.0284 class:metal_nut
+[Train] epoch [420/601], loss:3.0115 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 420: 0.7478
+[Eval] save best model at epoch 420
+[Train] epoch [421/601], loss:3.0186 class:metal_nut
+[Train] epoch [422/601], loss:3.0482 class:metal_nut
+[Train] epoch [423/601], loss:3.0121 class:metal_nut
+[Train] epoch [424/601], loss:3.0184 class:metal_nut
+[Train] epoch [425/601], loss:3.0185 class:metal_nut
+[Train] epoch [426/601], loss:2.9965 class:metal_nut
+[Train] epoch [427/601], loss:3.0118 class:metal_nut
+[Train] epoch [428/601], loss:2.9956 class:metal_nut
+[Train] epoch [429/601], loss:2.9974 class:metal_nut
+[Train] epoch [430/601], loss:2.9947 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 430: 0.7483
+[Eval] save best model at epoch 430
+[Train] epoch [431/601], loss:3.0018 class:metal_nut
+[Train] epoch [432/601], loss:3.0128 class:metal_nut
+[Train] epoch [433/601], loss:3.0114 class:metal_nut
+[Train] epoch [434/601], loss:2.9873 class:metal_nut
+[Train] epoch [435/601], loss:3.0038 class:metal_nut
+[Train] epoch [436/601], loss:3.0083 class:metal_nut
+[Train] epoch [437/601], loss:2.9906 class:metal_nut
+[Train] epoch [438/601], loss:2.9866 class:metal_nut
+[Train] epoch [439/601], loss:2.9867 class:metal_nut
+[Train] epoch [440/601], loss:2.9816 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 440: 0.7439
+[Train] epoch [441/601], loss:2.9727 class:metal_nut
+[Train] epoch [442/601], loss:2.9970 class:metal_nut
+[Train] epoch [443/601], loss:2.9959 class:metal_nut
+[Train] epoch [444/601], loss:2.9810 class:metal_nut
+[Train] epoch [445/601], loss:2.9849 class:metal_nut
+[Train] epoch [446/601], loss:2.9784 class:metal_nut
+[Train] epoch [447/601], loss:2.9756 class:metal_nut
+[Train] epoch [448/601], loss:2.9737 class:metal_nut
+[Train] epoch [449/601], loss:2.9859 class:metal_nut
+[Train] epoch [450/601], loss:2.9799 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 450: 0.7473
+[Train] epoch [451/601], loss:2.9890 class:metal_nut
+[Train] epoch [452/601], loss:2.9490 class:metal_nut
+[Train] epoch [453/601], loss:2.9780 class:metal_nut
+[Train] epoch [454/601], loss:2.9530 class:metal_nut
+[Train] epoch [455/601], loss:2.9548 class:metal_nut
+[Train] epoch [456/601], loss:2.9565 class:metal_nut
+[Train] epoch [457/601], loss:2.9517 class:metal_nut
+[Train] epoch [458/601], loss:2.9579 class:metal_nut
+[Train] epoch [459/601], loss:2.9360 class:metal_nut
+[Train] epoch [460/601], loss:2.9377 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 460: 0.7444
+[Train] epoch [461/601], loss:2.9461 class:metal_nut
+[Train] epoch [462/601], loss:2.9495 class:metal_nut
+[Train] epoch [463/601], loss:2.9393 class:metal_nut
+[Train] epoch [464/601], loss:2.9398 class:metal_nut
+[Train] epoch [465/601], loss:2.9472 class:metal_nut
+[Train] epoch [466/601], loss:2.9342 class:metal_nut
+[Train] epoch [467/601], loss:2.9406 class:metal_nut
+[Train] epoch [468/601], loss:2.9512 class:metal_nut
+[Train] epoch [469/601], loss:2.9348 class:metal_nut
+[Train] epoch [470/601], loss:2.9292 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 470: 0.7434
+[Train] epoch [471/601], loss:2.9255 class:metal_nut
+[Train] epoch [472/601], loss:2.9342 class:metal_nut
+[Train] epoch [473/601], loss:2.9396 class:metal_nut
+[Train] epoch [474/601], loss:2.9303 class:metal_nut
+[Train] epoch [475/601], loss:2.9234 class:metal_nut
+[Train] epoch [476/601], loss:2.9253 class:metal_nut
+[Train] epoch [477/601], loss:2.9106 class:metal_nut
+[Train] epoch [478/601], loss:2.9224 class:metal_nut
+[Train] epoch [479/601], loss:2.9029 class:metal_nut
+[Train] epoch [480/601], loss:2.9076 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 480: 0.7444
+[Train] epoch [481/601], loss:2.9025 class:metal_nut
+[Train] epoch [482/601], loss:2.9089 class:metal_nut
+[Train] epoch [483/601], loss:2.9133 class:metal_nut
+[Train] epoch [484/601], loss:2.9290 class:metal_nut
+[Train] epoch [485/601], loss:2.9116 class:metal_nut
+[Train] epoch [486/601], loss:2.8940 class:metal_nut
+[Train] epoch [487/601], loss:2.9034 class:metal_nut
+[Train] epoch [488/601], loss:2.9188 class:metal_nut
+[Train] epoch [489/601], loss:2.9102 class:metal_nut
+[Train] epoch [490/601], loss:2.9109 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 490: 0.7434
+[Train] epoch [491/601], loss:2.8889 class:metal_nut
+[Train] epoch [492/601], loss:2.9031 class:metal_nut
+[Train] epoch [493/601], loss:2.8894 class:metal_nut
+[Train] epoch [494/601], loss:2.8858 class:metal_nut
+[Train] epoch [495/601], loss:2.8796 class:metal_nut
+[Train] epoch [496/601], loss:2.8930 class:metal_nut
+[Train] epoch [497/601], loss:2.8971 class:metal_nut
+[Train] epoch [498/601], loss:2.8914 class:metal_nut
+[Train] epoch [499/601], loss:2.8828 class:metal_nut
+[Train] epoch [500/601], loss:2.8806 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 500: 0.7434
+[Train] epoch [501/601], loss:2.8587 class:metal_nut
+[Train] epoch [502/601], loss:2.8797 class:metal_nut
+[Train] epoch [503/601], loss:2.8505 class:metal_nut
+[Train] epoch [504/601], loss:2.8812 class:metal_nut
+[Train] epoch [505/601], loss:2.8708 class:metal_nut
+[Train] epoch [506/601], loss:2.8692 class:metal_nut
+[Train] epoch [507/601], loss:2.8549 class:metal_nut
+[Train] epoch [508/601], loss:2.8649 class:metal_nut
+[Train] epoch [509/601], loss:2.8600 class:metal_nut
+[Train] epoch [510/601], loss:2.8526 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 510: 0.7483
+[Train] epoch [511/601], loss:2.8684 class:metal_nut
+[Train] epoch [512/601], loss:2.8600 class:metal_nut
+[Train] epoch [513/601], loss:2.8487 class:metal_nut
+[Train] epoch [514/601], loss:2.8540 class:metal_nut
+[Train] epoch [515/601], loss:2.8594 class:metal_nut
+[Train] epoch [516/601], loss:2.8448 class:metal_nut
+[Train] epoch [517/601], loss:2.8439 class:metal_nut
+[Train] epoch [518/601], loss:2.8607 class:metal_nut
+[Train] epoch [519/601], loss:2.8258 class:metal_nut
+[Train] epoch [520/601], loss:2.8307 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 520: 0.7483
+[Train] epoch [521/601], loss:2.8387 class:metal_nut
+[Train] epoch [522/601], loss:2.8478 class:metal_nut
+[Train] epoch [523/601], loss:2.8420 class:metal_nut
+[Train] epoch [524/601], loss:2.8604 class:metal_nut
+[Train] epoch [525/601], loss:2.8535 class:metal_nut
+[Train] epoch [526/601], loss:2.8389 class:metal_nut
+[Train] epoch [527/601], loss:2.8465 class:metal_nut
+[Train] epoch [528/601], loss:2.8300 class:metal_nut
+[Train] epoch [529/601], loss:2.8345 class:metal_nut
+[Train] epoch [530/601], loss:2.8228 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 530: 0.7483
+[Train] epoch [531/601], loss:2.8276 class:metal_nut
+[Train] epoch [532/601], loss:2.8336 class:metal_nut
+[Train] epoch [533/601], loss:2.8257 class:metal_nut
+[Train] epoch [534/601], loss:2.8172 class:metal_nut
+[Train] epoch [535/601], loss:2.8164 class:metal_nut
+[Train] epoch [536/601], loss:2.8246 class:metal_nut
+[Train] epoch [537/601], loss:2.8213 class:metal_nut
+[Train] epoch [538/601], loss:2.8283 class:metal_nut
+[Train] epoch [539/601], loss:2.8206 class:metal_nut
+[Train] epoch [540/601], loss:2.8261 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 540: 0.7444
+[Train] epoch [541/601], loss:2.8253 class:metal_nut
+[Train] epoch [542/601], loss:2.8283 class:metal_nut
+[Train] epoch [543/601], loss:2.8328 class:metal_nut
+[Train] epoch [544/601], loss:2.8157 class:metal_nut
+[Train] epoch [545/601], loss:2.8119 class:metal_nut
+[Train] epoch [546/601], loss:2.8078 class:metal_nut
+[Train] epoch [547/601], loss:2.8138 class:metal_nut
+[Train] epoch [548/601], loss:2.8195 class:metal_nut
+[Train] epoch [549/601], loss:2.8042 class:metal_nut
+[Train] epoch [550/601], loss:2.8251 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 550: 0.7439
+[Train] epoch [551/601], loss:2.8003 class:metal_nut
+[Train] epoch [552/601], loss:2.8103 class:metal_nut
+[Train] epoch [553/601], loss:2.7922 class:metal_nut
+[Train] epoch [554/601], loss:2.7959 class:metal_nut
+[Train] epoch [555/601], loss:2.8114 class:metal_nut
+[Train] epoch [556/601], loss:2.8096 class:metal_nut
+[Train] epoch [557/601], loss:2.7949 class:metal_nut
+[Train] epoch [558/601], loss:2.7981 class:metal_nut
+[Train] epoch [559/601], loss:2.7936 class:metal_nut
+[Train] epoch [560/601], loss:2.7810 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 560: 0.7493
+[Eval] save best model at epoch 560
+[Train] epoch [561/601], loss:2.7992 class:metal_nut
+[Train] epoch [562/601], loss:2.7881 class:metal_nut
+[Train] epoch [563/601], loss:2.8160 class:metal_nut
+[Train] epoch [564/601], loss:2.8145 class:metal_nut
+[Train] epoch [565/601], loss:2.7968 class:metal_nut
+[Train] epoch [566/601], loss:2.8053 class:metal_nut
+[Train] epoch [567/601], loss:2.7968 class:metal_nut
+[Train] epoch [568/601], loss:2.7772 class:metal_nut
+[Train] epoch [569/601], loss:2.7956 class:metal_nut
+[Train] epoch [570/601], loss:2.7795 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 570: 0.7498
+[Eval] save best model at epoch 570
+[Train] epoch [571/601], loss:2.7718 class:metal_nut
+[Train] epoch [572/601], loss:2.7895 class:metal_nut
+[Train] epoch [573/601], loss:2.7718 class:metal_nut
+[Train] epoch [574/601], loss:2.7913 class:metal_nut
+[Train] epoch [575/601], loss:2.7875 class:metal_nut
+[Train] epoch [576/601], loss:2.7908 class:metal_nut
+[Train] epoch [577/601], loss:2.7541 class:metal_nut
+[Train] epoch [578/601], loss:2.7976 class:metal_nut
+[Train] epoch [579/601], loss:2.7686 class:metal_nut
+[Train] epoch [580/601], loss:2.7925 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 580: 0.7419
+[Train] epoch [581/601], loss:2.7749 class:metal_nut
+[Train] epoch [582/601], loss:2.8060 class:metal_nut
+[Train] epoch [583/601], loss:2.7751 class:metal_nut
+[Train] epoch [584/601], loss:2.7613 class:metal_nut
+[Train] epoch [585/601], loss:2.7798 class:metal_nut
+[Train] epoch [586/601], loss:2.7706 class:metal_nut
+[Train] epoch [587/601], loss:2.7636 class:metal_nut
+[Train] epoch [588/601], loss:2.7571 class:metal_nut
+[Train] epoch [589/601], loss:2.7529 class:metal_nut
+[Train] epoch [590/601], loss:2.7742 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 590: 0.7498
+[Train] epoch [591/601], loss:2.7429 class:metal_nut
+[Train] epoch [592/601], loss:2.7480 class:metal_nut
+[Train] epoch [593/601], loss:2.7582 class:metal_nut
+[Train] epoch [594/601], loss:2.7467 class:metal_nut
+[Train] epoch [595/601], loss:2.7533 class:metal_nut
+[Train] epoch [596/601], loss:2.7409 class:metal_nut
+[Train] epoch [597/601], loss:2.7533 class:metal_nut
+[Train] epoch [598/601], loss:2.7575 class:metal_nut
+[Train] epoch [599/601], loss:2.7465 class:metal_nut
+[Train] epoch [600/601], loss:2.7444 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 600: 0.7532
+[Eval] save best model at epoch 600
+[Train] epoch [601/601], loss:2.7492 class:metal_nut
+[Eval] metal_nut class RocAUC at epoch 601: 0.7527

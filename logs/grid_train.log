@@ -1,0 +1,814 @@
+W0411 13:39:16.865885 40506 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0411 13:39:16.870779 40506 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:68.0713 class:grid
+[Train] epoch [1/601], loss:60.1442 class:grid
+[Train] epoch [2/601], loss:55.4038 class:grid
+[Train] epoch [3/601], loss:51.5539 class:grid
+[Train] epoch [4/601], loss:49.1168 class:grid
+[Train] epoch [5/601], loss:45.9913 class:grid
+[Train] epoch [6/601], loss:43.9078 class:grid
+[Train] epoch [7/601], loss:40.8917 class:grid
+[Train] epoch [8/601], loss:39.5367 class:grid
+[Train] epoch [9/601], loss:38.2391 class:grid
+[Train] epoch [10/601], loss:36.9339 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.665 localization: 0.48107418417930603 at epoch 10
+[Eval] best detection_roc_auc at epoch 10
+[Eval] best localization_roc_auc at epoch 10
+[Train] epoch [11/601], loss:35.7603 class:grid
+[Train] epoch [12/601], loss:33.1031 class:grid
+[Train] epoch [13/601], loss:32.1914 class:grid
+[Train] epoch [14/601], loss:31.4843 class:grid
+[Train] epoch [15/601], loss:29.8266 class:grid
+[Train] epoch [16/601], loss:29.2839 class:grid
+[Train] epoch [17/601], loss:28.1207 class:grid
+[Train] epoch [18/601], loss:26.7751 class:grid
+[Train] epoch [19/601], loss:26.4576 class:grid
+[Train] epoch [20/601], loss:25.8980 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6583 localization: 0.5676625370979309 at epoch 20
+[Eval] best localization_roc_auc at epoch 20
+[Train] epoch [21/601], loss:25.3011 class:grid
+[Train] epoch [22/601], loss:23.5925 class:grid
+[Train] epoch [23/601], loss:23.6077 class:grid
+[Train] epoch [24/601], loss:22.4145 class:grid
+[Train] epoch [25/601], loss:21.7583 class:grid
+[Train] epoch [26/601], loss:21.6722 class:grid
+[Train] epoch [27/601], loss:21.6026 class:grid
+[Train] epoch [28/601], loss:20.5024 class:grid
+[Train] epoch [29/601], loss:19.9513 class:grid
+[Train] epoch [30/601], loss:19.9836 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6608 localization: 0.5909565687179565 at epoch 30
+[Eval] best localization_roc_auc at epoch 30
+[Train] epoch [31/601], loss:19.1853 class:grid
+[Train] epoch [32/601], loss:18.7884 class:grid
+[Train] epoch [33/601], loss:18.4326 class:grid
+[Train] epoch [34/601], loss:18.0646 class:grid
+[Train] epoch [35/601], loss:17.7114 class:grid
+[Train] epoch [36/601], loss:17.5347 class:grid
+[Train] epoch [37/601], loss:16.9760 class:grid
+[Train] epoch [38/601], loss:17.5421 class:grid
+[Train] epoch [39/601], loss:16.6975 class:grid
+[Train] epoch [40/601], loss:15.7391 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6449 localization: 0.62418133020401 at epoch 40
+[Eval] best localization_roc_auc at epoch 40
+[Train] epoch [41/601], loss:15.9381 class:grid
+[Train] epoch [42/601], loss:15.3730 class:grid
+[Train] epoch [43/601], loss:15.2930 class:grid
+[Train] epoch [44/601], loss:15.5417 class:grid
+[Train] epoch [45/601], loss:14.8554 class:grid
+[Train] epoch [46/601], loss:14.5757 class:grid
+[Train] epoch [47/601], loss:14.3018 class:grid
+[Train] epoch [48/601], loss:14.1187 class:grid
+[Train] epoch [49/601], loss:13.8835 class:grid
+[Train] epoch [50/601], loss:13.7645 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6416 localization: 0.6507503986358643 at epoch 50
+[Eval] best localization_roc_auc at epoch 50
+[Train] epoch [51/601], loss:13.7088 class:grid
+[Train] epoch [52/601], loss:12.9893 class:grid
+[Train] epoch [53/601], loss:13.2111 class:grid
+[Train] epoch [54/601], loss:13.5652 class:grid
+[Train] epoch [55/601], loss:12.6696 class:grid
+[Train] epoch [56/601], loss:12.4887 class:grid
+[Train] epoch [57/601], loss:12.5065 class:grid
+[Train] epoch [58/601], loss:12.3521 class:grid
+[Train] epoch [59/601], loss:11.9929 class:grid
+[Train] epoch [60/601], loss:11.8395 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.65 localization: 0.6868423223495483 at epoch 60
+[Eval] best localization_roc_auc at epoch 60
+[Train] epoch [61/601], loss:11.9038 class:grid
+[Train] epoch [62/601], loss:11.6717 class:grid
+[Train] epoch [63/601], loss:11.3210 class:grid
+[Train] epoch [64/601], loss:11.2171 class:grid
+[Train] epoch [65/601], loss:11.3655 class:grid
+[Train] epoch [66/601], loss:10.9308 class:grid
+[Train] epoch [67/601], loss:10.9401 class:grid
+[Train] epoch [68/601], loss:11.2969 class:grid
+[Train] epoch [69/601], loss:10.7936 class:grid
+[Train] epoch [70/601], loss:11.1284 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6399 localization: 0.7034189701080322 at epoch 70
+[Eval] best localization_roc_auc at epoch 70
+[Train] epoch [71/601], loss:10.7704 class:grid
+[Train] epoch [72/601], loss:10.1529 class:grid
+[Train] epoch [73/601], loss:10.1710 class:grid
+[Train] epoch [74/601], loss:10.3308 class:grid
+[Train] epoch [75/601], loss:9.8418 class:grid
+[Train] epoch [76/601], loss:10.1617 class:grid
+[Train] epoch [77/601], loss:9.9826 class:grid
+[Train] epoch [78/601], loss:9.7085 class:grid
+[Train] epoch [79/601], loss:9.8753 class:grid
+[Train] epoch [80/601], loss:9.8415 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6391 localization: 0.7171246409416199 at epoch 80
+[Eval] best localization_roc_auc at epoch 80
+[Train] epoch [81/601], loss:9.7439 class:grid
+[Train] epoch [82/601], loss:9.7517 class:grid
+[Train] epoch [83/601], loss:9.5444 class:grid
+[Train] epoch [84/601], loss:9.1887 class:grid
+[Train] epoch [85/601], loss:9.4954 class:grid
+[Train] epoch [86/601], loss:9.1353 class:grid
+[Train] epoch [87/601], loss:8.9356 class:grid
+[Train] epoch [88/601], loss:9.3063 class:grid
+[Train] epoch [89/601], loss:8.8819 class:grid
+[Train] epoch [90/601], loss:8.9174 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6633 localization: 0.7449703812599182 at epoch 90
+[Eval] best localization_roc_auc at epoch 90
+[Train] epoch [91/601], loss:8.8043 class:grid
+[Train] epoch [92/601], loss:8.7079 class:grid
+[Train] epoch [93/601], loss:8.5255 class:grid
+[Train] epoch [94/601], loss:8.6917 class:grid
+[Train] epoch [95/601], loss:8.4713 class:grid
+[Train] epoch [96/601], loss:8.3125 class:grid
+[Train] epoch [97/601], loss:8.6024 class:grid
+[Train] epoch [98/601], loss:8.3484 class:grid
+[Train] epoch [99/601], loss:8.2767 class:grid
+[Train] epoch [100/601], loss:8.2101 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6449 localization: 0.7631080150604248 at epoch 100
+[Eval] best localization_roc_auc at epoch 100
+[Train] epoch [101/601], loss:8.1315 class:grid
+[Train] epoch [102/601], loss:8.2447 class:grid
+[Train] epoch [103/601], loss:7.8235 class:grid
+[Train] epoch [104/601], loss:7.8917 class:grid
+[Train] epoch [105/601], loss:7.9490 class:grid
+[Train] epoch [106/601], loss:7.8324 class:grid
+[Train] epoch [107/601], loss:7.8732 class:grid
+[Train] epoch [108/601], loss:7.7886 class:grid
+[Train] epoch [109/601], loss:7.4647 class:grid
+[Train] epoch [110/601], loss:7.7101 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.67 localization: 0.7759304642677307 at epoch 110
+[Eval] best detection_roc_auc at epoch 110
+[Eval] best localization_roc_auc at epoch 110
+[Train] epoch [111/601], loss:7.5189 class:grid
+[Train] epoch [112/601], loss:7.5354 class:grid
+[Train] epoch [113/601], loss:7.4228 class:grid
+[Train] epoch [114/601], loss:7.2741 class:grid
+[Train] epoch [115/601], loss:7.3759 class:grid
+[Train] epoch [116/601], loss:7.2464 class:grid
+[Train] epoch [117/601], loss:7.3038 class:grid
+[Train] epoch [118/601], loss:7.0806 class:grid
+[Train] epoch [119/601], loss:7.4010 class:grid
+[Train] epoch [120/601], loss:7.1009 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6533 localization: 0.8014246821403503 at epoch 120
+[Eval] best localization_roc_auc at epoch 120
+[Train] epoch [121/601], loss:7.1256 class:grid
+[Train] epoch [122/601], loss:7.1294 class:grid
+[Train] epoch [123/601], loss:6.8041 class:grid
+[Train] epoch [124/601], loss:7.0022 class:grid
+[Train] epoch [125/601], loss:7.0362 class:grid
+[Train] epoch [126/601], loss:6.8121 class:grid
+[Train] epoch [127/601], loss:6.7657 class:grid
+[Train] epoch [128/601], loss:6.7253 class:grid
+[Train] epoch [129/601], loss:6.8434 class:grid
+[Train] epoch [130/601], loss:6.8535 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6734 localization: 0.799710750579834 at epoch 130
+[Eval] best detection_roc_auc at epoch 130
+[Train] epoch [131/601], loss:6.7675 class:grid
+[Train] epoch [132/601], loss:6.4942 class:grid
+[Train] epoch [133/601], loss:6.6181 class:grid
+[Train] epoch [134/601], loss:6.4409 class:grid
+[Train] epoch [135/601], loss:6.4572 class:grid
+[Train] epoch [136/601], loss:6.3846 class:grid
+[Train] epoch [137/601], loss:6.3257 class:grid
+[Train] epoch [138/601], loss:6.3426 class:grid
+[Train] epoch [139/601], loss:6.3282 class:grid
+[Train] epoch [140/601], loss:6.3140 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6759 localization: 0.8245031833648682 at epoch 140
+[Eval] best detection_roc_auc at epoch 140
+[Eval] best localization_roc_auc at epoch 140
+[Train] epoch [141/601], loss:6.4199 class:grid
+[Train] epoch [142/601], loss:6.4608 class:grid
+[Train] epoch [143/601], loss:6.2480 class:grid
+[Train] epoch [144/601], loss:6.2264 class:grid
+[Train] epoch [145/601], loss:6.0579 class:grid
+[Train] epoch [146/601], loss:6.2439 class:grid
+[Train] epoch [147/601], loss:6.1134 class:grid
+[Train] epoch [148/601], loss:6.0561 class:grid
+[Train] epoch [149/601], loss:6.1639 class:grid
+[Train] epoch [150/601], loss:6.0613 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6934 localization: 0.8234743475914001 at epoch 150
+[Eval] best detection_roc_auc at epoch 150
+[Train] epoch [151/601], loss:5.9300 class:grid
+[Train] epoch [152/601], loss:5.8450 class:grid
+[Train] epoch [153/601], loss:5.9293 class:grid
+[Train] epoch [154/601], loss:5.8934 class:grid
+[Train] epoch [155/601], loss:6.2077 class:grid
+[Train] epoch [156/601], loss:5.7507 class:grid
+[Train] epoch [157/601], loss:5.9887 class:grid
+[Train] epoch [158/601], loss:5.8443 class:grid
+[Train] epoch [159/601], loss:5.8124 class:grid
+[Train] epoch [160/601], loss:5.7329 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6992 localization: 0.8349015712738037 at epoch 160
+[Eval] best detection_roc_auc at epoch 160
+[Eval] best localization_roc_auc at epoch 160
+[Train] epoch [161/601], loss:5.9084 class:grid
+[Train] epoch [162/601], loss:5.6628 class:grid
+[Train] epoch [163/601], loss:6.0701 class:grid
+[Train] epoch [164/601], loss:5.7831 class:grid
+[Train] epoch [165/601], loss:5.6472 class:grid
+[Train] epoch [166/601], loss:5.5085 class:grid
+[Train] epoch [167/601], loss:5.5049 class:grid
+[Train] epoch [168/601], loss:5.6970 class:grid
+[Train] epoch [169/601], loss:5.6600 class:grid
+[Train] epoch [170/601], loss:5.6156 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6675 localization: 0.8391549587249756 at epoch 170
+[Eval] best localization_roc_auc at epoch 170
+[Train] epoch [171/601], loss:5.4385 class:grid
+[Train] epoch [172/601], loss:5.5473 class:grid
+[Train] epoch [173/601], loss:5.5515 class:grid
+[Train] epoch [174/601], loss:5.4214 class:grid
+[Train] epoch [175/601], loss:5.4067 class:grid
+[Train] epoch [176/601], loss:5.3575 class:grid
+[Train] epoch [177/601], loss:5.3998 class:grid
+[Train] epoch [178/601], loss:5.3240 class:grid
+[Train] epoch [179/601], loss:5.1571 class:grid
+[Train] epoch [180/601], loss:5.1961 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7093 localization: 0.8501091599464417 at epoch 180
+[Eval] best detection_roc_auc at epoch 180
+[Eval] best localization_roc_auc at epoch 180
+[Train] epoch [181/601], loss:5.2431 class:grid
+[Train] epoch [182/601], loss:5.5128 class:grid
+[Train] epoch [183/601], loss:5.1345 class:grid
+[Train] epoch [184/601], loss:5.3452 class:grid
+[Train] epoch [185/601], loss:5.4624 class:grid
+[Train] epoch [186/601], loss:5.2006 class:grid
+[Train] epoch [187/601], loss:5.4523 class:grid
+[Train] epoch [188/601], loss:5.1646 class:grid
+[Train] epoch [189/601], loss:5.2755 class:grid
+[Train] epoch [190/601], loss:5.3043 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.6834 localization: 0.8603107929229736 at epoch 190
+[Eval] best localization_roc_auc at epoch 190
+[Train] epoch [191/601], loss:5.1287 class:grid
+[Train] epoch [192/601], loss:5.3658 class:grid
+[Train] epoch [193/601], loss:5.1087 class:grid
+[Train] epoch [194/601], loss:5.1053 class:grid
+[Train] epoch [195/601], loss:5.3285 class:grid
+[Train] epoch [196/601], loss:5.1000 class:grid
+[Train] epoch [197/601], loss:5.3530 class:grid
+[Train] epoch [198/601], loss:5.1593 class:grid
+[Train] epoch [199/601], loss:4.9813 class:grid
+[Train] epoch [200/601], loss:4.9848 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.68 localization: 0.8545578122138977 at epoch 200
+[Train] epoch [201/601], loss:5.1372 class:grid
+[Train] epoch [202/601], loss:4.9728 class:grid
+[Train] epoch [203/601], loss:4.9467 class:grid
+[Train] epoch [204/601], loss:5.0686 class:grid
+[Train] epoch [205/601], loss:5.1220 class:grid
+[Train] epoch [206/601], loss:4.8584 class:grid
+[Train] epoch [207/601], loss:4.8190 class:grid
+[Train] epoch [208/601], loss:4.8745 class:grid
+[Train] epoch [209/601], loss:4.7510 class:grid
+[Train] epoch [210/601], loss:4.9758 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7026 localization: 0.8714472055435181 at epoch 210
+[Eval] best localization_roc_auc at epoch 210
+[Train] epoch [211/601], loss:5.0713 class:grid
+[Train] epoch [212/601], loss:4.7863 class:grid
+[Train] epoch [213/601], loss:4.8375 class:grid
+[Train] epoch [214/601], loss:4.9275 class:grid
+[Train] epoch [215/601], loss:4.9810 class:grid
+[Train] epoch [216/601], loss:4.6743 class:grid
+[Train] epoch [217/601], loss:4.6301 class:grid
+[Train] epoch [218/601], loss:5.0957 class:grid
+[Train] epoch [219/601], loss:5.0061 class:grid
+[Train] epoch [220/601], loss:4.6406 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7034 localization: 0.8649123311042786 at epoch 220
+[Train] epoch [221/601], loss:4.7548 class:grid
+[Train] epoch [222/601], loss:4.7525 class:grid
+[Train] epoch [223/601], loss:4.6528 class:grid
+[Train] epoch [224/601], loss:4.6518 class:grid
+[Train] epoch [225/601], loss:4.7140 class:grid
+[Train] epoch [226/601], loss:4.5692 class:grid
+[Train] epoch [227/601], loss:4.7336 class:grid
+[Train] epoch [228/601], loss:4.6032 class:grid
+[Train] epoch [229/601], loss:4.7889 class:grid
+[Train] epoch [230/601], loss:4.6554 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7327 localization: 0.8646643161773682 at epoch 230
+[Eval] best detection_roc_auc at epoch 230
+[Train] epoch [231/601], loss:4.6347 class:grid
+[Train] epoch [232/601], loss:4.7530 class:grid
+[Train] epoch [233/601], loss:4.7096 class:grid
+[Train] epoch [234/601], loss:4.5080 class:grid
+[Train] epoch [235/601], loss:4.6321 class:grid
+[Train] epoch [236/601], loss:4.6682 class:grid
+[Train] epoch [237/601], loss:4.6252 class:grid
+[Train] epoch [238/601], loss:4.6038 class:grid
+[Train] epoch [239/601], loss:4.4104 class:grid
+[Train] epoch [240/601], loss:4.4834 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7093 localization: 0.8742275238037109 at epoch 240
+[Eval] best localization_roc_auc at epoch 240
+[Train] epoch [241/601], loss:4.5495 class:grid
+[Train] epoch [242/601], loss:4.4200 class:grid
+[Train] epoch [243/601], loss:4.5162 class:grid
+[Train] epoch [244/601], loss:4.3887 class:grid
+[Train] epoch [245/601], loss:4.7552 class:grid
+[Train] epoch [246/601], loss:4.4240 class:grid
+[Train] epoch [247/601], loss:4.3890 class:grid
+[Train] epoch [248/601], loss:4.5159 class:grid
+[Train] epoch [249/601], loss:4.2752 class:grid
+[Train] epoch [250/601], loss:4.4293 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7277 localization: 0.8875165581703186 at epoch 250
+[Eval] best localization_roc_auc at epoch 250
+[Train] epoch [251/601], loss:4.3916 class:grid
+[Train] epoch [252/601], loss:4.4002 class:grid
+[Train] epoch [253/601], loss:4.4342 class:grid
+[Train] epoch [254/601], loss:4.3166 class:grid
+[Train] epoch [255/601], loss:4.3877 class:grid
+[Train] epoch [256/601], loss:4.2906 class:grid
+[Train] epoch [257/601], loss:4.1282 class:grid
+[Train] epoch [258/601], loss:4.4179 class:grid
+[Train] epoch [259/601], loss:4.4524 class:grid
+[Train] epoch [260/601], loss:4.2556 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7402 localization: 0.8892619609832764 at epoch 260
+[Eval] best detection_roc_auc at epoch 260
+[Eval] best localization_roc_auc at epoch 260
+[Train] epoch [261/601], loss:4.1916 class:grid
+[Train] epoch [262/601], loss:4.2786 class:grid
+[Train] epoch [263/601], loss:4.2512 class:grid
+[Train] epoch [264/601], loss:4.1799 class:grid
+[Train] epoch [265/601], loss:4.2633 class:grid
+[Train] epoch [266/601], loss:4.2764 class:grid
+[Train] epoch [267/601], loss:4.1545 class:grid
+[Train] epoch [268/601], loss:4.2075 class:grid
+[Train] epoch [269/601], loss:4.2986 class:grid
+[Train] epoch [270/601], loss:4.3972 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7302 localization: 0.876719057559967 at epoch 270
+[Train] epoch [271/601], loss:4.1533 class:grid
+[Train] epoch [272/601], loss:4.4645 class:grid
+[Train] epoch [273/601], loss:4.2248 class:grid
+[Train] epoch [274/601], loss:4.3318 class:grid
+[Train] epoch [275/601], loss:4.2044 class:grid
+[Train] epoch [276/601], loss:4.1795 class:grid
+[Train] epoch [277/601], loss:4.2996 class:grid
+[Train] epoch [278/601], loss:4.1254 class:grid
+[Train] epoch [279/601], loss:4.0467 class:grid
+[Train] epoch [280/601], loss:3.9648 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7352 localization: 0.8901499509811401 at epoch 280
+[Eval] best localization_roc_auc at epoch 280
+[Train] epoch [281/601], loss:4.0424 class:grid
+[Train] epoch [282/601], loss:4.1007 class:grid
+[Train] epoch [283/601], loss:4.1016 class:grid
+[Train] epoch [284/601], loss:4.0506 class:grid
+[Train] epoch [285/601], loss:4.6081 class:grid
+[Train] epoch [286/601], loss:4.1296 class:grid
+[Train] epoch [287/601], loss:4.1743 class:grid
+[Train] epoch [288/601], loss:4.0774 class:grid
+[Train] epoch [289/601], loss:4.1221 class:grid
+[Train] epoch [290/601], loss:4.1948 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7577 localization: 0.8856766223907471 at epoch 290
+[Eval] best detection_roc_auc at epoch 290
+[Train] epoch [291/601], loss:4.1626 class:grid
+[Train] epoch [292/601], loss:4.2309 class:grid
+[Train] epoch [293/601], loss:4.1057 class:grid
+[Train] epoch [294/601], loss:4.1645 class:grid
+[Train] epoch [295/601], loss:4.1155 class:grid
+[Train] epoch [296/601], loss:3.9620 class:grid
+[Train] epoch [297/601], loss:4.0139 class:grid
+[Train] epoch [298/601], loss:3.9783 class:grid
+[Train] epoch [299/601], loss:3.9869 class:grid
+[Train] epoch [300/601], loss:4.1518 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7652 localization: 0.8866090178489685 at epoch 300
+[Eval] best detection_roc_auc at epoch 300
+[Train] epoch [301/601], loss:4.0623 class:grid
+[Train] epoch [302/601], loss:4.1630 class:grid
+[Train] epoch [303/601], loss:3.9522 class:grid
+[Train] epoch [304/601], loss:4.2128 class:grid
+[Train] epoch [305/601], loss:4.1138 class:grid
+[Train] epoch [306/601], loss:3.9764 class:grid
+[Train] epoch [307/601], loss:4.0248 class:grid
+[Train] epoch [308/601], loss:3.8418 class:grid
+[Train] epoch [309/601], loss:3.8947 class:grid
+[Train] epoch [310/601], loss:3.9327 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7611 localization: 0.8993544578552246 at epoch 310
+[Eval] best localization_roc_auc at epoch 310
+[Train] epoch [311/601], loss:4.0238 class:grid
+[Train] epoch [312/601], loss:3.8705 class:grid
+[Train] epoch [313/601], loss:3.9070 class:grid
+[Train] epoch [314/601], loss:3.8077 class:grid
+[Train] epoch [315/601], loss:4.0438 class:grid
+[Train] epoch [316/601], loss:4.0243 class:grid
+[Train] epoch [317/601], loss:3.9570 class:grid
+[Train] epoch [318/601], loss:3.8633 class:grid
+[Train] epoch [319/601], loss:3.9329 class:grid
+[Train] epoch [320/601], loss:3.9196 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7678 localization: 0.891288161277771 at epoch 320
+[Eval] best detection_roc_auc at epoch 320
+[Train] epoch [321/601], loss:3.8980 class:grid
+[Train] epoch [322/601], loss:3.8817 class:grid
+[Train] epoch [323/601], loss:4.1559 class:grid
+[Train] epoch [324/601], loss:3.9142 class:grid
+[Train] epoch [325/601], loss:3.8846 class:grid
+[Train] epoch [326/601], loss:3.9431 class:grid
+[Train] epoch [327/601], loss:3.8891 class:grid
+[Train] epoch [328/601], loss:3.7717 class:grid
+[Train] epoch [329/601], loss:3.9750 class:grid
+[Train] epoch [330/601], loss:3.7444 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7586 localization: 0.9003968834877014 at epoch 330
+[Eval] best localization_roc_auc at epoch 330
+[Train] epoch [331/601], loss:3.9550 class:grid
+[Train] epoch [332/601], loss:3.7692 class:grid
+[Train] epoch [333/601], loss:3.9459 class:grid
+[Train] epoch [334/601], loss:3.8096 class:grid
+[Train] epoch [335/601], loss:3.8823 class:grid
+[Train] epoch [336/601], loss:3.9292 class:grid
+[Train] epoch [337/601], loss:3.7838 class:grid
+[Train] epoch [338/601], loss:3.7519 class:grid
+[Train] epoch [339/601], loss:3.9086 class:grid
+[Train] epoch [340/601], loss:3.6933 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7611 localization: 0.8869524598121643 at epoch 340
+[Train] epoch [341/601], loss:3.8940 class:grid
+[Train] epoch [342/601], loss:3.7069 class:grid
+[Train] epoch [343/601], loss:3.7857 class:grid
+[Train] epoch [344/601], loss:3.7464 class:grid
+[Train] epoch [345/601], loss:3.5891 class:grid
+[Train] epoch [346/601], loss:3.8253 class:grid
+[Train] epoch [347/601], loss:3.8251 class:grid
+[Train] epoch [348/601], loss:3.7530 class:grid
+[Train] epoch [349/601], loss:3.6219 class:grid
+[Train] epoch [350/601], loss:3.6771 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7686 localization: 0.9036375284194946 at epoch 350
+[Eval] best detection_roc_auc at epoch 350
+[Eval] best localization_roc_auc at epoch 350
+[Train] epoch [351/601], loss:3.8447 class:grid
+[Train] epoch [352/601], loss:3.8599 class:grid
+[Train] epoch [353/601], loss:3.5957 class:grid
+[Train] epoch [354/601], loss:3.7182 class:grid
+[Train] epoch [355/601], loss:3.5832 class:grid
+[Train] epoch [356/601], loss:3.6090 class:grid
+[Train] epoch [357/601], loss:3.6928 class:grid
+[Train] epoch [358/601], loss:3.8843 class:grid
+[Train] epoch [359/601], loss:3.8212 class:grid
+[Train] epoch [360/601], loss:3.5792 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7769 localization: 0.8891229629516602 at epoch 360
+[Eval] best detection_roc_auc at epoch 360
+[Train] epoch [361/601], loss:3.7882 class:grid
+[Train] epoch [362/601], loss:3.5010 class:grid
+[Train] epoch [363/601], loss:3.8864 class:grid
+[Train] epoch [364/601], loss:3.7622 class:grid
+[Train] epoch [365/601], loss:3.7273 class:grid
+[Train] epoch [366/601], loss:3.8793 class:grid
+[Train] epoch [367/601], loss:3.8266 class:grid
+[Train] epoch [368/601], loss:3.6603 class:grid
+[Train] epoch [369/601], loss:3.8899 class:grid
+[Train] epoch [370/601], loss:3.6437 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7552 localization: 0.9051904678344727 at epoch 370
+[Eval] best localization_roc_auc at epoch 370
+[Train] epoch [371/601], loss:3.8995 class:grid
+[Train] epoch [372/601], loss:3.9497 class:grid
+[Train] epoch [373/601], loss:3.6308 class:grid
+[Train] epoch [374/601], loss:3.6675 class:grid
+[Train] epoch [375/601], loss:3.6545 class:grid
+[Train] epoch [376/601], loss:3.9897 class:grid
+[Train] epoch [377/601], loss:3.6898 class:grid
+[Train] epoch [378/601], loss:3.6246 class:grid
+[Train] epoch [379/601], loss:3.7188 class:grid
+[Train] epoch [380/601], loss:3.5136 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7611 localization: 0.8943622708320618 at epoch 380
+[Train] epoch [381/601], loss:3.6748 class:grid
+[Train] epoch [382/601], loss:3.8830 class:grid
+[Train] epoch [383/601], loss:3.6727 class:grid
+[Train] epoch [384/601], loss:3.6770 class:grid
+[Train] epoch [385/601], loss:3.5401 class:grid
+[Train] epoch [386/601], loss:3.5027 class:grid
+[Train] epoch [387/601], loss:3.5279 class:grid
+[Train] epoch [388/601], loss:3.5878 class:grid
+[Train] epoch [389/601], loss:3.6615 class:grid
+[Train] epoch [390/601], loss:3.5081 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7602 localization: 0.900039553642273 at epoch 390
+[Train] epoch [391/601], loss:3.4000 class:grid
+[Train] epoch [392/601], loss:3.5079 class:grid
+[Train] epoch [393/601], loss:3.5102 class:grid
+[Train] epoch [394/601], loss:3.5529 class:grid
+[Train] epoch [395/601], loss:3.9404 class:grid
+[Train] epoch [396/601], loss:3.6387 class:grid
+[Train] epoch [397/601], loss:3.5464 class:grid
+[Train] epoch [398/601], loss:3.7217 class:grid
+[Train] epoch [399/601], loss:3.4929 class:grid
+[Train] epoch [400/601], loss:3.5183 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7602 localization: 0.9121204614639282 at epoch 400
+[Eval] best localization_roc_auc at epoch 400
+[Train] epoch [401/601], loss:3.7422 class:grid
+[Train] epoch [402/601], loss:3.6182 class:grid
+[Train] epoch [403/601], loss:3.5156 class:grid
+[Train] epoch [404/601], loss:3.4920 class:grid
+[Train] epoch [405/601], loss:3.4454 class:grid
+[Train] epoch [406/601], loss:3.5384 class:grid
+[Train] epoch [407/601], loss:3.8359 class:grid
+[Train] epoch [408/601], loss:3.4699 class:grid
+[Train] epoch [409/601], loss:3.5040 class:grid
+[Train] epoch [410/601], loss:3.5354 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7669 localization: 0.9085602760314941 at epoch 410
+[Train] epoch [411/601], loss:3.3681 class:grid
+[Train] epoch [412/601], loss:3.4749 class:grid
+[Train] epoch [413/601], loss:3.5204 class:grid
+[Train] epoch [414/601], loss:3.5271 class:grid
+[Train] epoch [415/601], loss:3.4705 class:grid
+[Train] epoch [416/601], loss:3.5385 class:grid
+[Train] epoch [417/601], loss:3.3810 class:grid
+[Train] epoch [418/601], loss:3.7027 class:grid
+[Train] epoch [419/601], loss:3.4884 class:grid
+[Train] epoch [420/601], loss:3.4999 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7728 localization: 0.8956486582756042 at epoch 420
+[Train] epoch [421/601], loss:3.5071 class:grid
+[Train] epoch [422/601], loss:3.3575 class:grid
+[Train] epoch [423/601], loss:3.4824 class:grid
+[Train] epoch [424/601], loss:3.4281 class:grid
+[Train] epoch [425/601], loss:3.5261 class:grid
+[Train] epoch [426/601], loss:3.4814 class:grid
+[Train] epoch [427/601], loss:3.5647 class:grid
+[Train] epoch [428/601], loss:3.4382 class:grid
+[Train] epoch [429/601], loss:3.4538 class:grid
+[Train] epoch [430/601], loss:3.3296 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7636 localization: 0.9079289436340332 at epoch 430
+[Train] epoch [431/601], loss:3.4853 class:grid
+[Train] epoch [432/601], loss:3.6047 class:grid
+[Train] epoch [433/601], loss:3.8660 class:grid
+[Train] epoch [434/601], loss:3.4252 class:grid
+[Train] epoch [435/601], loss:3.5016 class:grid
+[Train] epoch [436/601], loss:3.3883 class:grid
+[Train] epoch [437/601], loss:3.6589 class:grid
+[Train] epoch [438/601], loss:3.7224 class:grid
+[Train] epoch [439/601], loss:3.3754 class:grid
+[Train] epoch [440/601], loss:3.3734 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7845 localization: 0.9150647521018982 at epoch 440
+[Eval] best detection_roc_auc at epoch 440
+[Eval] best localization_roc_auc at epoch 440
+[Train] epoch [441/601], loss:3.4769 class:grid
+[Train] epoch [442/601], loss:3.6158 class:grid
+[Train] epoch [443/601], loss:3.4262 class:grid
+[Train] epoch [444/601], loss:3.5663 class:grid
+[Train] epoch [445/601], loss:3.2588 class:grid
+[Train] epoch [446/601], loss:3.5364 class:grid
+[Train] epoch [447/601], loss:3.3485 class:grid
+[Train] epoch [448/601], loss:3.4821 class:grid
+[Train] epoch [449/601], loss:3.5262 class:grid
+[Train] epoch [450/601], loss:3.4801 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7803 localization: 0.9115336537361145 at epoch 450
+[Train] epoch [451/601], loss:3.4027 class:grid
+[Train] epoch [452/601], loss:3.2519 class:grid
+[Train] epoch [453/601], loss:3.3102 class:grid
+[Train] epoch [454/601], loss:3.3476 class:grid
+[Train] epoch [455/601], loss:3.2875 class:grid
+[Train] epoch [456/601], loss:3.5115 class:grid
+[Train] epoch [457/601], loss:3.4439 class:grid
+[Train] epoch [458/601], loss:3.4126 class:grid
+[Train] epoch [459/601], loss:3.3937 class:grid
+[Train] epoch [460/601], loss:3.3793 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7753 localization: 0.9083409905433655 at epoch 460
+[Train] epoch [461/601], loss:3.4719 class:grid
+[Train] epoch [462/601], loss:3.2955 class:grid
+[Train] epoch [463/601], loss:3.3143 class:grid
+[Train] epoch [464/601], loss:3.5178 class:grid
+[Train] epoch [465/601], loss:3.3843 class:grid
+[Train] epoch [466/601], loss:3.4012 class:grid
+[Train] epoch [467/601], loss:3.3159 class:grid
+[Train] epoch [468/601], loss:3.2098 class:grid
+[Train] epoch [469/601], loss:3.2826 class:grid
+[Train] epoch [470/601], loss:3.2272 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7694 localization: 0.9172760844230652 at epoch 470
+[Eval] best localization_roc_auc at epoch 470
+[Train] epoch [471/601], loss:3.2827 class:grid
+[Train] epoch [472/601], loss:3.3048 class:grid
+[Train] epoch [473/601], loss:3.4860 class:grid
+[Train] epoch [474/601], loss:3.2807 class:grid
+[Train] epoch [475/601], loss:3.4118 class:grid
+[Train] epoch [476/601], loss:3.4206 class:grid
+[Train] epoch [477/601], loss:3.1953 class:grid
+[Train] epoch [478/601], loss:3.1456 class:grid
+[Train] epoch [479/601], loss:3.2543 class:grid
+[Train] epoch [480/601], loss:3.3846 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7577 localization: 0.9109492301940918 at epoch 480
+[Train] epoch [481/601], loss:3.2559 class:grid
+[Train] epoch [482/601], loss:3.3373 class:grid
+[Train] epoch [483/601], loss:3.3143 class:grid
+[Train] epoch [484/601], loss:3.3252 class:grid
+[Train] epoch [485/601], loss:3.6357 class:grid
+[Train] epoch [486/601], loss:3.5835 class:grid
+[Train] epoch [487/601], loss:3.4751 class:grid
+[Train] epoch [488/601], loss:3.4315 class:grid
+[Train] epoch [489/601], loss:3.2052 class:grid
+[Train] epoch [490/601], loss:3.4280 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7761 localization: 0.9139630794525146 at epoch 490
+[Train] epoch [491/601], loss:3.2616 class:grid
+[Train] epoch [492/601], loss:3.3563 class:grid
+[Train] epoch [493/601], loss:3.2139 class:grid
+[Train] epoch [494/601], loss:3.4187 class:grid
+[Train] epoch [495/601], loss:3.4157 class:grid
+[Train] epoch [496/601], loss:3.3713 class:grid
+[Train] epoch [497/601], loss:3.2653 class:grid
+[Train] epoch [498/601], loss:3.6901 class:grid
+[Train] epoch [499/601], loss:3.2401 class:grid
+[Train] epoch [500/601], loss:3.2295 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7636 localization: 0.8996258974075317 at epoch 500
+[Train] epoch [501/601], loss:3.4931 class:grid
+[Train] epoch [502/601], loss:3.2469 class:grid
+[Train] epoch [503/601], loss:3.2648 class:grid
+[Train] epoch [504/601], loss:3.2447 class:grid
+[Train] epoch [505/601], loss:3.3397 class:grid
+[Train] epoch [506/601], loss:3.2353 class:grid
+[Train] epoch [507/601], loss:3.1580 class:grid
+[Train] epoch [508/601], loss:3.2117 class:grid
+[Train] epoch [509/601], loss:3.3565 class:grid
+[Train] epoch [510/601], loss:3.1560 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7736 localization: 0.9100974202156067 at epoch 510
+[Train] epoch [511/601], loss:3.2841 class:grid
+[Train] epoch [512/601], loss:3.2136 class:grid
+[Train] epoch [513/601], loss:3.2111 class:grid
+[Train] epoch [514/601], loss:3.1815 class:grid
+[Train] epoch [515/601], loss:3.1503 class:grid
+[Train] epoch [516/601], loss:3.1887 class:grid
+[Train] epoch [517/601], loss:3.4190 class:grid
+[Train] epoch [518/601], loss:3.2528 class:grid
+[Train] epoch [519/601], loss:3.1519 class:grid
+[Train] epoch [520/601], loss:3.1599 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7761 localization: 0.9171971678733826 at epoch 520
+[Train] epoch [521/601], loss:3.1933 class:grid
+[Train] epoch [522/601], loss:3.1064 class:grid
+[Train] epoch [523/601], loss:3.2372 class:grid
+[Train] epoch [524/601], loss:3.1603 class:grid
+[Train] epoch [525/601], loss:3.5476 class:grid
+[Train] epoch [526/601], loss:3.2183 class:grid
+[Train] epoch [527/601], loss:3.2413 class:grid
+[Train] epoch [528/601], loss:3.3509 class:grid
+[Train] epoch [529/601], loss:3.3420 class:grid
+[Train] epoch [530/601], loss:3.1752 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.782 localization: 0.9080806374549866 at epoch 530
+[Train] epoch [531/601], loss:3.2686 class:grid
+[Train] epoch [532/601], loss:3.2291 class:grid
+[Train] epoch [533/601], loss:3.3697 class:grid
+[Train] epoch [534/601], loss:3.2514 class:grid
+[Train] epoch [535/601], loss:3.2304 class:grid
+[Train] epoch [536/601], loss:3.2784 class:grid
+[Train] epoch [537/601], loss:3.3844 class:grid
+[Train] epoch [538/601], loss:3.2802 class:grid
+[Train] epoch [539/601], loss:3.1990 class:grid
+[Train] epoch [540/601], loss:3.2480 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7811 localization: 0.9183968901634216 at epoch 540
+[Eval] best localization_roc_auc at epoch 540
+[Train] epoch [541/601], loss:3.3902 class:grid
+[Train] epoch [542/601], loss:3.2262 class:grid
+[Train] epoch [543/601], loss:3.2782 class:grid
+[Train] epoch [544/601], loss:3.4359 class:grid
+[Train] epoch [545/601], loss:3.2251 class:grid
+[Train] epoch [546/601], loss:3.1975 class:grid
+[Train] epoch [547/601], loss:3.1019 class:grid
+[Train] epoch [548/601], loss:3.0963 class:grid
+[Train] epoch [549/601], loss:3.7242 class:grid
+[Train] epoch [550/601], loss:3.2681 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7811 localization: 0.9078401923179626 at epoch 550
+[Train] epoch [551/601], loss:3.3781 class:grid
+[Train] epoch [552/601], loss:3.1645 class:grid
+[Train] epoch [553/601], loss:3.0848 class:grid
+[Train] epoch [554/601], loss:3.1047 class:grid
+[Train] epoch [555/601], loss:3.0537 class:grid
+[Train] epoch [556/601], loss:3.0509 class:grid
+[Train] epoch [557/601], loss:3.0241 class:grid
+[Train] epoch [558/601], loss:3.0507 class:grid
+[Train] epoch [559/601], loss:3.1290 class:grid
+[Train] epoch [560/601], loss:3.1488 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7811 localization: 0.9064683318138123 at epoch 560
+[Train] epoch [561/601], loss:3.1425 class:grid
+[Train] epoch [562/601], loss:3.1641 class:grid
+[Train] epoch [563/601], loss:3.2614 class:grid
+[Train] epoch [564/601], loss:3.0497 class:grid
+[Train] epoch [565/601], loss:3.1184 class:grid
+[Train] epoch [566/601], loss:3.3954 class:grid
+[Train] epoch [567/601], loss:3.3843 class:grid
+[Train] epoch [568/601], loss:3.0772 class:grid
+[Train] epoch [569/601], loss:3.4134 class:grid
+[Train] epoch [570/601], loss:3.1739 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7911 localization: 0.909967303276062 at epoch 570
+[Eval] best detection_roc_auc at epoch 570
+[Train] epoch [571/601], loss:3.1894 class:grid
+[Train] epoch [572/601], loss:3.1967 class:grid
+[Train] epoch [573/601], loss:3.3875 class:grid
+[Train] epoch [574/601], loss:3.1238 class:grid
+[Train] epoch [575/601], loss:3.2620 class:grid
+[Train] epoch [576/601], loss:3.0954 class:grid
+[Train] epoch [577/601], loss:3.1986 class:grid
+[Train] epoch [578/601], loss:3.1306 class:grid
+[Train] epoch [579/601], loss:3.1315 class:grid
+[Train] epoch [580/601], loss:3.1302 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7744 localization: 0.9202247858047485 at epoch 580
+[Eval] best localization_roc_auc at epoch 580
+[Train] epoch [581/601], loss:3.0574 class:grid
+[Train] epoch [582/601], loss:3.0561 class:grid
+[Train] epoch [583/601], loss:3.0410 class:grid
+[Train] epoch [584/601], loss:3.0024 class:grid
+[Train] epoch [585/601], loss:2.9853 class:grid
+[Train] epoch [586/601], loss:3.0928 class:grid
+[Train] epoch [587/601], loss:3.0649 class:grid
+[Train] epoch [588/601], loss:3.2993 class:grid
+[Train] epoch [589/601], loss:3.3894 class:grid
+[Train] epoch [590/601], loss:3.1584 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7811 localization: 0.904223620891571 at epoch 590
+[Train] epoch [591/601], loss:3.0783 class:grid
+[Train] epoch [592/601], loss:3.1296 class:grid
+[Train] epoch [593/601], loss:3.2656 class:grid
+[Train] epoch [594/601], loss:3.1481 class:grid
+[Train] epoch [595/601], loss:2.9930 class:grid
+[Train] epoch [596/601], loss:3.0956 class:grid
+[Train] epoch [597/601], loss:3.1962 class:grid
+[Train] epoch [598/601], loss:3.3267 class:grid
+[Train] epoch [599/601], loss:3.2425 class:grid
+[Train] epoch [600/601], loss:3.0964 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7703 localization: 0.9114478826522827 at epoch 600
+[Train] epoch [601/601], loss:3.1795 class:grid
+Vanilla Backpropagation:
+[Eval] grid class RocAUC detection: 0.7786 localization: 0.8910269737243652 at epoch 601

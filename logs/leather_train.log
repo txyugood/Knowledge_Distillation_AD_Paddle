@@ -1,0 +1,737 @@
+W0410 17:19:44.239912 29688 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 17:19:44.245923 29688 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:15.0031 class:leather
+[Eval] leather class RocAUC at epoch 0: 0.5961
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:10.1647 class:leather
+[Train] epoch [2/601], loss:7.6436 class:leather
+[Train] epoch [3/601], loss:6.3607 class:leather
+[Train] epoch [4/601], loss:5.5588 class:leather
+[Train] epoch [5/601], loss:4.9810 class:leather
+[Train] epoch [6/601], loss:4.5409 class:leather
+[Train] epoch [7/601], loss:4.1921 class:leather
+[Train] epoch [8/601], loss:3.9151 class:leather
+[Train] epoch [9/601], loss:3.6771 class:leather
+[Train] epoch [10/601], loss:3.4761 class:leather
+[Eval] leather class RocAUC at epoch 10: 0.7106
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:3.2967 class:leather
+[Train] epoch [12/601], loss:3.1427 class:leather
+[Train] epoch [13/601], loss:3.0022 class:leather
+[Train] epoch [14/601], loss:2.8709 class:leather
+[Train] epoch [15/601], loss:2.7589 class:leather
+[Train] epoch [16/601], loss:2.6487 class:leather
+[Train] epoch [17/601], loss:2.5538 class:leather
+[Train] epoch [18/601], loss:2.4576 class:leather
+[Train] epoch [19/601], loss:2.3726 class:leather
+[Train] epoch [20/601], loss:2.2937 class:leather
+[Eval] leather class RocAUC at epoch 20: 0.8132
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:2.2156 class:leather
+[Train] epoch [22/601], loss:2.1482 class:leather
+[Train] epoch [23/601], loss:2.0848 class:leather
+[Train] epoch [24/601], loss:2.0208 class:leather
+[Train] epoch [25/601], loss:1.9689 class:leather
+[Train] epoch [26/601], loss:1.9126 class:leather
+[Train] epoch [27/601], loss:1.8684 class:leather
+[Train] epoch [28/601], loss:1.8252 class:leather
+[Train] epoch [29/601], loss:1.7798 class:leather
+[Train] epoch [30/601], loss:1.7413 class:leather
+[Eval] leather class RocAUC at epoch 30: 0.8325
+[Eval] save best model at epoch 30
+[Train] epoch [31/601], loss:1.6999 class:leather
+[Train] epoch [32/601], loss:1.6702 class:leather
+[Train] epoch [33/601], loss:1.6317 class:leather
+[Train] epoch [34/601], loss:1.5997 class:leather
+[Train] epoch [35/601], loss:1.5754 class:leather
+[Train] epoch [36/601], loss:1.5455 class:leather
+[Train] epoch [37/601], loss:1.5183 class:leather
+[Train] epoch [38/601], loss:1.4950 class:leather
+[Train] epoch [39/601], loss:1.4784 class:leather
+[Train] epoch [40/601], loss:1.4520 class:leather
+[Eval] leather class RocAUC at epoch 40: 0.8499
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:1.4336 class:leather
+[Train] epoch [42/601], loss:1.4160 class:leather
+[Train] epoch [43/601], loss:1.4022 class:leather
+[Train] epoch [44/601], loss:1.3819 class:leather
+[Train] epoch [45/601], loss:1.3692 class:leather
+[Train] epoch [46/601], loss:1.3565 class:leather
+[Train] epoch [47/601], loss:1.3398 class:leather
+[Train] epoch [48/601], loss:1.3255 class:leather
+[Train] epoch [49/601], loss:1.3133 class:leather
+[Train] epoch [50/601], loss:1.2984 class:leather
+[Eval] leather class RocAUC at epoch 50: 0.8509
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:1.2896 class:leather
+[Train] epoch [52/601], loss:1.2835 class:leather
+[Train] epoch [53/601], loss:1.2667 class:leather
+[Train] epoch [54/601], loss:1.2591 class:leather
+[Train] epoch [55/601], loss:1.2446 class:leather
+[Train] epoch [56/601], loss:1.2386 class:leather
+[Train] epoch [57/601], loss:1.2264 class:leather
+[Train] epoch [58/601], loss:1.2151 class:leather
+[Train] epoch [59/601], loss:1.2084 class:leather
+[Train] epoch [60/601], loss:1.1976 class:leather
+[Eval] leather class RocAUC at epoch 60: 0.8631
+[Eval] save best model at epoch 60
+[Train] epoch [61/601], loss:1.1896 class:leather
+[Train] epoch [62/601], loss:1.1818 class:leather
+[Train] epoch [63/601], loss:1.1693 class:leather
+[Train] epoch [64/601], loss:1.1667 class:leather
+[Train] epoch [65/601], loss:1.1542 class:leather
+[Train] epoch [66/601], loss:1.1479 class:leather
+[Train] epoch [67/601], loss:1.1401 class:leather
+[Train] epoch [68/601], loss:1.1360 class:leather
+[Train] epoch [69/601], loss:1.1264 class:leather
+[Train] epoch [70/601], loss:1.1150 class:leather
+[Eval] leather class RocAUC at epoch 70: 0.8747
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:1.1090 class:leather
+[Train] epoch [72/601], loss:1.1044 class:leather
+[Train] epoch [73/601], loss:1.0971 class:leather
+[Train] epoch [74/601], loss:1.0952 class:leather
+[Train] epoch [75/601], loss:1.0838 class:leather
+[Train] epoch [76/601], loss:1.0751 class:leather
+[Train] epoch [77/601], loss:1.0652 class:leather
+[Train] epoch [78/601], loss:1.0612 class:leather
+[Train] epoch [79/601], loss:1.0539 class:leather
+[Train] epoch [80/601], loss:1.0489 class:leather
+[Eval] leather class RocAUC at epoch 80: 0.8818
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:1.0539 class:leather
+[Train] epoch [82/601], loss:1.0383 class:leather
+[Train] epoch [83/601], loss:1.0319 class:leather
+[Train] epoch [84/601], loss:1.0258 class:leather
+[Train] epoch [85/601], loss:1.0193 class:leather
+[Train] epoch [86/601], loss:1.0116 class:leather
+[Train] epoch [87/601], loss:1.0092 class:leather
+[Train] epoch [88/601], loss:1.0029 class:leather
+[Train] epoch [89/601], loss:1.0010 class:leather
+[Train] epoch [90/601], loss:0.9919 class:leather
+[Eval] leather class RocAUC at epoch 90: 0.8957
+[Eval] save best model at epoch 90
+[Train] epoch [91/601], loss:0.9872 class:leather
+[Train] epoch [92/601], loss:0.9828 class:leather
+[Train] epoch [93/601], loss:0.9778 class:leather
+[Train] epoch [94/601], loss:0.9721 class:leather
+[Train] epoch [95/601], loss:0.9708 class:leather
+[Train] epoch [96/601], loss:0.9624 class:leather
+[Train] epoch [97/601], loss:0.9581 class:leather
+[Train] epoch [98/601], loss:0.9529 class:leather
+[Train] epoch [99/601], loss:0.9515 class:leather
+[Train] epoch [100/601], loss:0.9445 class:leather
+[Eval] leather class RocAUC at epoch 100: 0.9015
+[Eval] save best model at epoch 100
+[Train] epoch [101/601], loss:0.9394 class:leather
+[Train] epoch [102/601], loss:0.9384 class:leather
+[Train] epoch [103/601], loss:0.9308 class:leather
+[Train] epoch [104/601], loss:0.9263 class:leather
+[Train] epoch [105/601], loss:0.9221 class:leather
+[Train] epoch [106/601], loss:0.9218 class:leather
+[Train] epoch [107/601], loss:0.9149 class:leather
+[Train] epoch [108/601], loss:0.9129 class:leather
+[Train] epoch [109/601], loss:0.9102 class:leather
+[Train] epoch [110/601], loss:0.9086 class:leather
+[Eval] leather class RocAUC at epoch 110: 0.9062
+[Eval] save best model at epoch 110
+[Train] epoch [111/601], loss:0.9024 class:leather
+[Train] epoch [112/601], loss:0.8999 class:leather
+[Train] epoch [113/601], loss:0.8942 class:leather
+[Train] epoch [114/601], loss:0.8935 class:leather
+[Train] epoch [115/601], loss:0.8891 class:leather
+[Train] epoch [116/601], loss:0.8828 class:leather
+[Train] epoch [117/601], loss:0.8802 class:leather
+[Train] epoch [118/601], loss:0.8771 class:leather
+[Train] epoch [119/601], loss:0.8742 class:leather
+[Train] epoch [120/601], loss:0.8706 class:leather
+[Eval] leather class RocAUC at epoch 120: 0.909
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:0.8647 class:leather
+[Train] epoch [122/601], loss:0.8622 class:leather
+[Train] epoch [123/601], loss:0.8584 class:leather
+[Train] epoch [124/601], loss:0.8575 class:leather
+[Train] epoch [125/601], loss:0.8537 class:leather
+[Train] epoch [126/601], loss:0.8473 class:leather
+[Train] epoch [127/601], loss:0.8470 class:leather
+[Train] epoch [128/601], loss:0.8451 class:leather
+[Train] epoch [129/601], loss:0.8394 class:leather
+[Train] epoch [130/601], loss:0.8378 class:leather
+[Eval] leather class RocAUC at epoch 130: 0.9117
+[Eval] save best model at epoch 130
+[Train] epoch [131/601], loss:0.8337 class:leather
+[Train] epoch [132/601], loss:0.8311 class:leather
+[Train] epoch [133/601], loss:0.8261 class:leather
+[Train] epoch [134/601], loss:0.8233 class:leather
+[Train] epoch [135/601], loss:0.8217 class:leather
+[Train] epoch [136/601], loss:0.8186 class:leather
+[Train] epoch [137/601], loss:0.8135 class:leather
+[Train] epoch [138/601], loss:0.8129 class:leather
+[Train] epoch [139/601], loss:0.8093 class:leather
+[Train] epoch [140/601], loss:0.8077 class:leather
+[Eval] leather class RocAUC at epoch 140: 0.9161
+[Eval] save best model at epoch 140
+[Train] epoch [141/601], loss:0.8068 class:leather
+[Train] epoch [142/601], loss:0.8036 class:leather
+[Train] epoch [143/601], loss:0.7981 class:leather
+[Train] epoch [144/601], loss:0.7972 class:leather
+[Train] epoch [145/601], loss:0.7948 class:leather
+[Train] epoch [146/601], loss:0.7904 class:leather
+[Train] epoch [147/601], loss:0.7892 class:leather
+[Train] epoch [148/601], loss:0.7849 class:leather
+[Train] epoch [149/601], loss:0.7846 class:leather
+[Train] epoch [150/601], loss:0.7777 class:leather
+[Eval] leather class RocAUC at epoch 150: 0.9178
+[Eval] save best model at epoch 150
+[Train] epoch [151/601], loss:0.7750 class:leather
+[Train] epoch [152/601], loss:0.7755 class:leather
+[Train] epoch [153/601], loss:0.7727 class:leather
+[Train] epoch [154/601], loss:0.7686 class:leather
+[Train] epoch [155/601], loss:0.7651 class:leather
+[Train] epoch [156/601], loss:0.7618 class:leather
+[Train] epoch [157/601], loss:0.7626 class:leather
+[Train] epoch [158/601], loss:0.7584 class:leather
+[Train] epoch [159/601], loss:0.7568 class:leather
+[Train] epoch [160/601], loss:0.7547 class:leather
+[Eval] leather class RocAUC at epoch 160: 0.9205
+[Eval] save best model at epoch 160
+[Train] epoch [161/601], loss:0.7517 class:leather
+[Train] epoch [162/601], loss:0.7504 class:leather
+[Train] epoch [163/601], loss:0.7505 class:leather
+[Train] epoch [164/601], loss:0.7535 class:leather
+[Train] epoch [165/601], loss:0.7427 class:leather
+[Train] epoch [166/601], loss:0.7522 class:leather
+[Train] epoch [167/601], loss:0.7428 class:leather
+[Train] epoch [168/601], loss:0.7361 class:leather
+[Train] epoch [169/601], loss:0.7366 class:leather
+[Train] epoch [170/601], loss:0.7381 class:leather
+[Eval] leather class RocAUC at epoch 170: 0.9222
+[Eval] save best model at epoch 170
+[Train] epoch [171/601], loss:0.7374 class:leather
+[Train] epoch [172/601], loss:0.7282 class:leather
+[Train] epoch [173/601], loss:0.7277 class:leather
+[Train] epoch [174/601], loss:0.7231 class:leather
+[Train] epoch [175/601], loss:0.7228 class:leather
+[Train] epoch [176/601], loss:0.7197 class:leather
+[Train] epoch [177/601], loss:0.7205 class:leather
+[Train] epoch [178/601], loss:0.7154 class:leather
+[Train] epoch [179/601], loss:0.7098 class:leather
+[Train] epoch [180/601], loss:0.7100 class:leather
+[Eval] leather class RocAUC at epoch 180: 0.9195
+[Train] epoch [181/601], loss:0.7068 class:leather
+[Train] epoch [182/601], loss:0.7058 class:leather
+[Train] epoch [183/601], loss:0.7021 class:leather
+[Train] epoch [184/601], loss:0.6988 class:leather
+[Train] epoch [185/601], loss:0.7006 class:leather
+[Train] epoch [186/601], loss:0.6981 class:leather
+[Train] epoch [187/601], loss:0.6970 class:leather
+[Train] epoch [188/601], loss:0.6944 class:leather
+[Train] epoch [189/601], loss:0.6904 class:leather
+[Train] epoch [190/601], loss:0.6880 class:leather
+[Eval] leather class RocAUC at epoch 190: 0.9215
+[Train] epoch [191/601], loss:0.6863 class:leather
+[Train] epoch [192/601], loss:0.6836 class:leather
+[Train] epoch [193/601], loss:0.6825 class:leather
+[Train] epoch [194/601], loss:0.6787 class:leather
+[Train] epoch [195/601], loss:0.6900 class:leather
+[Train] epoch [196/601], loss:0.6810 class:leather
+[Train] epoch [197/601], loss:0.6785 class:leather
+[Train] epoch [198/601], loss:0.6768 class:leather
+[Train] epoch [199/601], loss:0.6732 class:leather
+[Train] epoch [200/601], loss:0.6708 class:leather
+[Eval] leather class RocAUC at epoch 200: 0.9266
+[Eval] save best model at epoch 200
+[Train] epoch [201/601], loss:0.6688 class:leather
+[Train] epoch [202/601], loss:0.6687 class:leather
+[Train] epoch [203/601], loss:0.6653 class:leather
+[Train] epoch [204/601], loss:0.6684 class:leather
+[Train] epoch [205/601], loss:0.6627 class:leather
+[Train] epoch [206/601], loss:0.6617 class:leather
+[Train] epoch [207/601], loss:0.6600 class:leather
+[Train] epoch [208/601], loss:0.6600 class:leather
+[Train] epoch [209/601], loss:0.6589 class:leather
+[Train] epoch [210/601], loss:0.6538 class:leather
+[Eval] leather class RocAUC at epoch 210: 0.9293
+[Eval] save best model at epoch 210
+[Train] epoch [211/601], loss:0.6496 class:leather
+[Train] epoch [212/601], loss:0.6476 class:leather
+[Train] epoch [213/601], loss:0.6450 class:leather
+[Train] epoch [214/601], loss:0.6451 class:leather
+[Train] epoch [215/601], loss:0.6491 class:leather
+[Train] epoch [216/601], loss:0.6447 class:leather
+[Train] epoch [217/601], loss:0.6439 class:leather
+[Train] epoch [218/601], loss:0.6415 class:leather
+[Train] epoch [219/601], loss:0.6371 class:leather
+[Train] epoch [220/601], loss:0.6388 class:leather
+[Eval] leather class RocAUC at epoch 220: 0.9324
+[Eval] save best model at epoch 220
+[Train] epoch [221/601], loss:0.6351 class:leather
+[Train] epoch [222/601], loss:0.6320 class:leather
+[Train] epoch [223/601], loss:0.6344 class:leather
+[Train] epoch [224/601], loss:0.6291 class:leather
+[Train] epoch [225/601], loss:0.6280 class:leather
+[Train] epoch [226/601], loss:0.6253 class:leather
+[Train] epoch [227/601], loss:0.6242 class:leather
+[Train] epoch [228/601], loss:0.6220 class:leather
+[Train] epoch [229/601], loss:0.6229 class:leather
+[Train] epoch [230/601], loss:0.6202 class:leather
+[Eval] leather class RocAUC at epoch 230: 0.9338
+[Eval] save best model at epoch 230
+[Train] epoch [231/601], loss:0.6238 class:leather
+[Train] epoch [232/601], loss:0.6221 class:leather
+[Train] epoch [233/601], loss:0.6212 class:leather
+[Train] epoch [234/601], loss:0.6219 class:leather
+[Train] epoch [235/601], loss:0.6213 class:leather
+[Train] epoch [236/601], loss:0.6215 class:leather
+[Train] epoch [237/601], loss:0.6137 class:leather
+[Train] epoch [238/601], loss:0.6125 class:leather
+[Train] epoch [239/601], loss:0.6074 class:leather
+[Train] epoch [240/601], loss:0.6056 class:leather
+[Eval] leather class RocAUC at epoch 240: 0.9307
+[Train] epoch [241/601], loss:0.6057 class:leather
+[Train] epoch [242/601], loss:0.6034 class:leather
+[Train] epoch [243/601], loss:0.6062 class:leather
+[Train] epoch [244/601], loss:0.6023 class:leather
+[Train] epoch [245/601], loss:0.6028 class:leather
+[Train] epoch [246/601], loss:0.5999 class:leather
+[Train] epoch [247/601], loss:0.5968 class:leather
+[Train] epoch [248/601], loss:0.5951 class:leather
+[Train] epoch [249/601], loss:0.5965 class:leather
+[Train] epoch [250/601], loss:0.5973 class:leather
+[Eval] leather class RocAUC at epoch 250: 0.9297
+[Train] epoch [251/601], loss:0.5952 class:leather
+[Train] epoch [252/601], loss:0.5924 class:leather
+[Train] epoch [253/601], loss:0.5957 class:leather
+[Train] epoch [254/601], loss:0.5921 class:leather
+[Train] epoch [255/601], loss:0.5889 class:leather
+[Train] epoch [256/601], loss:0.5870 class:leather
+[Train] epoch [257/601], loss:0.5832 class:leather
+[Train] epoch [258/601], loss:0.5819 class:leather
+[Train] epoch [259/601], loss:0.5883 class:leather
+[Train] epoch [260/601], loss:0.5823 class:leather
+[Eval] leather class RocAUC at epoch 260: 0.9331
+[Train] epoch [261/601], loss:0.5820 class:leather
+[Train] epoch [262/601], loss:0.5790 class:leather
+[Train] epoch [263/601], loss:0.5866 class:leather
+[Train] epoch [264/601], loss:0.5800 class:leather
+[Train] epoch [265/601], loss:0.5806 class:leather
+[Train] epoch [266/601], loss:0.5777 class:leather
+[Train] epoch [267/601], loss:0.5741 class:leather
+[Train] epoch [268/601], loss:0.5788 class:leather
+[Train] epoch [269/601], loss:0.5743 class:leather
+[Train] epoch [270/601], loss:0.5703 class:leather
+[Eval] leather class RocAUC at epoch 270: 0.929
+[Train] epoch [271/601], loss:0.5685 class:leather
+[Train] epoch [272/601], loss:0.5642 class:leather
+[Train] epoch [273/601], loss:0.5645 class:leather
+[Train] epoch [274/601], loss:0.5697 class:leather
+[Train] epoch [275/601], loss:0.5636 class:leather
+[Train] epoch [276/601], loss:0.5711 class:leather
+[Train] epoch [277/601], loss:0.5632 class:leather
+[Train] epoch [278/601], loss:0.5650 class:leather
+[Train] epoch [279/601], loss:0.5647 class:leather
+[Train] epoch [280/601], loss:0.5601 class:leather
+[Eval] leather class RocAUC at epoch 280: 0.9378
+[Eval] save best model at epoch 280
+[Train] epoch [281/601], loss:0.5586 class:leather
+[Train] epoch [282/601], loss:0.5630 class:leather
+[Train] epoch [283/601], loss:0.5588 class:leather
+[Train] epoch [284/601], loss:0.5545 class:leather
+[Train] epoch [285/601], loss:0.5546 class:leather
+[Train] epoch [286/601], loss:0.5515 class:leather
+[Train] epoch [287/601], loss:0.5530 class:leather
+[Train] epoch [288/601], loss:0.5512 class:leather
+[Train] epoch [289/601], loss:0.5515 class:leather
+[Train] epoch [290/601], loss:0.5499 class:leather
+[Eval] leather class RocAUC at epoch 290: 0.9341
+[Train] epoch [291/601], loss:0.5506 class:leather
+[Train] epoch [292/601], loss:0.5471 class:leather
+[Train] epoch [293/601], loss:0.5501 class:leather
+[Train] epoch [294/601], loss:0.5460 class:leather
+[Train] epoch [295/601], loss:0.5477 class:leather
+[Train] epoch [296/601], loss:0.5439 class:leather
+[Train] epoch [297/601], loss:0.5422 class:leather
+[Train] epoch [298/601], loss:0.5434 class:leather
+[Train] epoch [299/601], loss:0.5435 class:leather
+[Train] epoch [300/601], loss:0.5484 class:leather
+[Eval] leather class RocAUC at epoch 300: 0.9358
+[Train] epoch [301/601], loss:0.5432 class:leather
+[Train] epoch [302/601], loss:0.5419 class:leather
+[Train] epoch [303/601], loss:0.5377 class:leather
+[Train] epoch [304/601], loss:0.5388 class:leather
+[Train] epoch [305/601], loss:0.5346 class:leather
+[Train] epoch [306/601], loss:0.5377 class:leather
+[Train] epoch [307/601], loss:0.5343 class:leather
+[Train] epoch [308/601], loss:0.5332 class:leather
+[Train] epoch [309/601], loss:0.5308 class:leather
+[Train] epoch [310/601], loss:0.5297 class:leather
+[Eval] leather class RocAUC at epoch 310: 0.9317
+[Train] epoch [311/601], loss:0.5296 class:leather
+[Train] epoch [312/601], loss:0.5332 class:leather
+[Train] epoch [313/601], loss:0.5275 class:leather
+[Train] epoch [314/601], loss:0.5294 class:leather
+[Train] epoch [315/601], loss:0.5285 class:leather
+[Train] epoch [316/601], loss:0.5251 class:leather
+[Train] epoch [317/601], loss:0.5258 class:leather
+[Train] epoch [318/601], loss:0.5234 class:leather
+[Train] epoch [319/601], loss:0.5249 class:leather
+[Train] epoch [320/601], loss:0.5205 class:leather
+[Eval] leather class RocAUC at epoch 320: 0.9372
+[Train] epoch [321/601], loss:0.5206 class:leather
+[Train] epoch [322/601], loss:0.5209 class:leather
+[Train] epoch [323/601], loss:0.5176 class:leather
+[Train] epoch [324/601], loss:0.5199 class:leather
+[Train] epoch [325/601], loss:0.5234 class:leather
+[Train] epoch [326/601], loss:0.5179 class:leather
+[Train] epoch [327/601], loss:0.5169 class:leather
+[Train] epoch [328/601], loss:0.5180 class:leather
+[Train] epoch [329/601], loss:0.5138 class:leather
+[Train] epoch [330/601], loss:0.5209 class:leather
+[Eval] leather class RocAUC at epoch 330: 0.9368
+[Train] epoch [331/601], loss:0.5115 class:leather
+[Train] epoch [332/601], loss:0.5103 class:leather
+[Train] epoch [333/601], loss:0.5165 class:leather
+[Train] epoch [334/601], loss:0.5153 class:leather
+[Train] epoch [335/601], loss:0.5141 class:leather
+[Train] epoch [336/601], loss:0.5083 class:leather
+[Train] epoch [337/601], loss:0.5078 class:leather
+[Train] epoch [338/601], loss:0.5110 class:leather
+[Train] epoch [339/601], loss:0.5084 class:leather
+[Train] epoch [340/601], loss:0.5073 class:leather
+[Eval] leather class RocAUC at epoch 340: 0.9331
+[Train] epoch [341/601], loss:0.5069 class:leather
+[Train] epoch [342/601], loss:0.5055 class:leather
+[Train] epoch [343/601], loss:0.5115 class:leather
+[Train] epoch [344/601], loss:0.5049 class:leather
+[Train] epoch [345/601], loss:0.5012 class:leather
+[Train] epoch [346/601], loss:0.5003 class:leather
+[Train] epoch [347/601], loss:0.4998 class:leather
+[Train] epoch [348/601], loss:0.5015 class:leather
+[Train] epoch [349/601], loss:0.5006 class:leather
+[Train] epoch [350/601], loss:0.4988 class:leather
+[Eval] leather class RocAUC at epoch 350: 0.9365
+[Train] epoch [351/601], loss:0.4952 class:leather
+[Train] epoch [352/601], loss:0.5013 class:leather
+[Train] epoch [353/601], loss:0.5073 class:leather
+[Train] epoch [354/601], loss:0.4999 class:leather
+[Train] epoch [355/601], loss:0.4980 class:leather
+[Train] epoch [356/601], loss:0.4982 class:leather
+[Train] epoch [357/601], loss:0.4947 class:leather
+[Train] epoch [358/601], loss:0.4988 class:leather
+[Train] epoch [359/601], loss:0.4947 class:leather
+[Train] epoch [360/601], loss:0.4917 class:leather
+[Eval] leather class RocAUC at epoch 360: 0.9416
+[Eval] save best model at epoch 360
+[Train] epoch [361/601], loss:0.4938 class:leather
+[Train] epoch [362/601], loss:0.4900 class:leather
+[Train] epoch [363/601], loss:0.4921 class:leather
+[Train] epoch [364/601], loss:0.4931 class:leather
+[Train] epoch [365/601], loss:0.4911 class:leather
+[Train] epoch [366/601], loss:0.4951 class:leather
+[Train] epoch [367/601], loss:0.4913 class:leather
+[Train] epoch [368/601], loss:0.4991 class:leather
+[Train] epoch [369/601], loss:0.4909 class:leather
+[Train] epoch [370/601], loss:0.4934 class:leather
+[Eval] leather class RocAUC at epoch 370: 0.9334
+[Train] epoch [371/601], loss:0.4887 class:leather
+[Train] epoch [372/601], loss:0.4857 class:leather
+[Train] epoch [373/601], loss:0.4835 class:leather
+[Train] epoch [374/601], loss:0.4822 class:leather
+[Train] epoch [375/601], loss:0.4863 class:leather
+[Train] epoch [376/601], loss:0.4838 class:leather
+[Train] epoch [377/601], loss:0.4836 class:leather
+[Train] epoch [378/601], loss:0.4832 class:leather
+[Train] epoch [379/601], loss:0.4825 class:leather
+[Train] epoch [380/601], loss:0.4804 class:leather
+[Eval] leather class RocAUC at epoch 380: 0.9399
+[Train] epoch [381/601], loss:0.4840 class:leather
+[Train] epoch [382/601], loss:0.4782 class:leather
+[Train] epoch [383/601], loss:0.4764 class:leather
+[Train] epoch [384/601], loss:0.4790 class:leather
+[Train] epoch [385/601], loss:0.4834 class:leather
+[Train] epoch [386/601], loss:0.4786 class:leather
+[Train] epoch [387/601], loss:0.4753 class:leather
+[Train] epoch [388/601], loss:0.4769 class:leather
+[Train] epoch [389/601], loss:0.4758 class:leather
+[Train] epoch [390/601], loss:0.4750 class:leather
+[Eval] leather class RocAUC at epoch 390: 0.9334
+[Train] epoch [391/601], loss:0.4755 class:leather
+[Train] epoch [392/601], loss:0.4782 class:leather
+[Train] epoch [393/601], loss:0.4732 class:leather
+[Train] epoch [394/601], loss:0.4751 class:leather
+[Train] epoch [395/601], loss:0.4726 class:leather
+[Train] epoch [396/601], loss:0.4716 class:leather
+[Train] epoch [397/601], loss:0.4717 class:leather
+[Train] epoch [398/601], loss:0.4714 class:leather
+[Train] epoch [399/601], loss:0.4710 class:leather
+[Train] epoch [400/601], loss:0.4671 class:leather
+[Eval] leather class RocAUC at epoch 400: 0.9378
+[Train] epoch [401/601], loss:0.4710 class:leather
+[Train] epoch [402/601], loss:0.4671 class:leather
+[Train] epoch [403/601], loss:0.4675 class:leather
+[Train] epoch [404/601], loss:0.4689 class:leather
+[Train] epoch [405/601], loss:0.4658 class:leather
+[Train] epoch [406/601], loss:0.4652 class:leather
+[Train] epoch [407/601], loss:0.4700 class:leather
+[Train] epoch [408/601], loss:0.4687 class:leather
+[Train] epoch [409/601], loss:0.4672 class:leather
+[Train] epoch [410/601], loss:0.4632 class:leather
+[Eval] leather class RocAUC at epoch 410: 0.9341
+[Train] epoch [411/601], loss:0.4673 class:leather
+[Train] epoch [412/601], loss:0.4659 class:leather
+[Train] epoch [413/601], loss:0.4651 class:leather
+[Train] epoch [414/601], loss:0.4633 class:leather
+[Train] epoch [415/601], loss:0.4597 class:leather
+[Train] epoch [416/601], loss:0.4643 class:leather
+[Train] epoch [417/601], loss:0.4645 class:leather
+[Train] epoch [418/601], loss:0.4591 class:leather
+[Train] epoch [419/601], loss:0.4574 class:leather
+[Train] epoch [420/601], loss:0.4610 class:leather
+[Eval] leather class RocAUC at epoch 420: 0.9423
+[Eval] save best model at epoch 420
+[Train] epoch [421/601], loss:0.4590 class:leather
+[Train] epoch [422/601], loss:0.4576 class:leather
+[Train] epoch [423/601], loss:0.4600 class:leather
+[Train] epoch [424/601], loss:0.4564 class:leather
+[Train] epoch [425/601], loss:0.4559 class:leather
+[Train] epoch [426/601], loss:0.4537 class:leather
+[Train] epoch [427/601], loss:0.4545 class:leather
+[Train] epoch [428/601], loss:0.4563 class:leather
+[Train] epoch [429/601], loss:0.4589 class:leather
+[Train] epoch [430/601], loss:0.4557 class:leather
+[Eval] leather class RocAUC at epoch 430: 0.945
+[Eval] save best model at epoch 430
+[Train] epoch [431/601], loss:0.4507 class:leather
+[Train] epoch [432/601], loss:0.4523 class:leather
+[Train] epoch [433/601], loss:0.4532 class:leather
+[Train] epoch [434/601], loss:0.4498 class:leather
+[Train] epoch [435/601], loss:0.4487 class:leather
+[Train] epoch [436/601], loss:0.4505 class:leather
+[Train] epoch [437/601], loss:0.4501 class:leather
+[Train] epoch [438/601], loss:0.4507 class:leather
+[Train] epoch [439/601], loss:0.4501 class:leather
+[Train] epoch [440/601], loss:0.4478 class:leather
+[Eval] leather class RocAUC at epoch 440: 0.9361
+[Train] epoch [441/601], loss:0.4476 class:leather
+[Train] epoch [442/601], loss:0.4466 class:leather
+[Train] epoch [443/601], loss:0.4463 class:leather
+[Train] epoch [444/601], loss:0.4447 class:leather
+[Train] epoch [445/601], loss:0.4484 class:leather
+[Train] epoch [446/601], loss:0.4457 class:leather
+[Train] epoch [447/601], loss:0.4489 class:leather
+[Train] epoch [448/601], loss:0.4471 class:leather
+[Train] epoch [449/601], loss:0.4465 class:leather
+[Train] epoch [450/601], loss:0.4450 class:leather
+[Eval] leather class RocAUC at epoch 450: 0.9419
+[Train] epoch [451/601], loss:0.4417 class:leather
+[Train] epoch [452/601], loss:0.4414 class:leather
+[Train] epoch [453/601], loss:0.4431 class:leather
+[Train] epoch [454/601], loss:0.4406 class:leather
+[Train] epoch [455/601], loss:0.4412 class:leather
+[Train] epoch [456/601], loss:0.4401 class:leather
+[Train] epoch [457/601], loss:0.4391 class:leather
+[Train] epoch [458/601], loss:0.4401 class:leather
+[Train] epoch [459/601], loss:0.4418 class:leather
+[Train] epoch [460/601], loss:0.4421 class:leather
+[Eval] leather class RocAUC at epoch 460: 0.9463
+[Eval] save best model at epoch 460
+[Train] epoch [461/601], loss:0.4402 class:leather
+[Train] epoch [462/601], loss:0.4374 class:leather
+[Train] epoch [463/601], loss:0.4388 class:leather
+[Train] epoch [464/601], loss:0.4392 class:leather
+[Train] epoch [465/601], loss:0.4353 class:leather
+[Train] epoch [466/601], loss:0.4344 class:leather
+[Train] epoch [467/601], loss:0.4343 class:leather
+[Train] epoch [468/601], loss:0.4463 class:leather
+[Train] epoch [469/601], loss:0.4401 class:leather
+[Train] epoch [470/601], loss:0.4344 class:leather
+[Eval] leather class RocAUC at epoch 470: 0.9355
+[Train] epoch [471/601], loss:0.4363 class:leather
+[Train] epoch [472/601], loss:0.4332 class:leather
+[Train] epoch [473/601], loss:0.4408 class:leather
+[Train] epoch [474/601], loss:0.4370 class:leather
+[Train] epoch [475/601], loss:0.4353 class:leather
+[Train] epoch [476/601], loss:0.4350 class:leather
+[Train] epoch [477/601], loss:0.4331 class:leather
+[Train] epoch [478/601], loss:0.4340 class:leather
+[Train] epoch [479/601], loss:0.4336 class:leather
+[Train] epoch [480/601], loss:0.4303 class:leather
+[Eval] leather class RocAUC at epoch 480: 0.9409
+[Train] epoch [481/601], loss:0.4336 class:leather
+[Train] epoch [482/601], loss:0.4350 class:leather
+[Train] epoch [483/601], loss:0.4338 class:leather
+[Train] epoch [484/601], loss:0.4385 class:leather
+[Train] epoch [485/601], loss:0.4362 class:leather
+[Train] epoch [486/601], loss:0.4346 class:leather
+[Train] epoch [487/601], loss:0.4310 class:leather
+[Train] epoch [488/601], loss:0.4281 class:leather
+[Train] epoch [489/601], loss:0.4279 class:leather
+[Train] epoch [490/601], loss:0.4310 class:leather
+[Eval] leather class RocAUC at epoch 490: 0.9484
+[Eval] save best model at epoch 490
+[Train] epoch [491/601], loss:0.4324 class:leather
+[Train] epoch [492/601], loss:0.4298 class:leather
+[Train] epoch [493/601], loss:0.4257 class:leather
+[Train] epoch [494/601], loss:0.4266 class:leather
+[Train] epoch [495/601], loss:0.4308 class:leather
+[Train] epoch [496/601], loss:0.4295 class:leather
+[Train] epoch [497/601], loss:0.4262 class:leather
+[Train] epoch [498/601], loss:0.4268 class:leather
+[Train] epoch [499/601], loss:0.4280 class:leather
+[Train] epoch [500/601], loss:0.4258 class:leather
+[Eval] leather class RocAUC at epoch 500: 0.9412
+[Train] epoch [501/601], loss:0.4235 class:leather
+[Train] epoch [502/601], loss:0.4258 class:leather
+[Train] epoch [503/601], loss:0.4252 class:leather
+[Train] epoch [504/601], loss:0.4239 class:leather
+[Train] epoch [505/601], loss:0.4259 class:leather
+[Train] epoch [506/601], loss:0.4236 class:leather
+[Train] epoch [507/601], loss:0.4206 class:leather
+[Train] epoch [508/601], loss:0.4210 class:leather
+[Train] epoch [509/601], loss:0.4310 class:leather
+[Train] epoch [510/601], loss:0.4203 class:leather
+[Eval] leather class RocAUC at epoch 510: 0.9392
+[Train] epoch [511/601], loss:0.4234 class:leather
+[Train] epoch [512/601], loss:0.4207 class:leather
+[Train] epoch [513/601], loss:0.4197 class:leather
+[Train] epoch [514/601], loss:0.4279 class:leather
+[Train] epoch [515/601], loss:0.4243 class:leather
+[Train] epoch [516/601], loss:0.4221 class:leather
+[Train] epoch [517/601], loss:0.4195 class:leather
+[Train] epoch [518/601], loss:0.4234 class:leather
+[Train] epoch [519/601], loss:0.4221 class:leather
+[Train] epoch [520/601], loss:0.4219 class:leather
+[Eval] leather class RocAUC at epoch 520: 0.944
+[Train] epoch [521/601], loss:0.4189 class:leather
+[Train] epoch [522/601], loss:0.4175 class:leather
+[Train] epoch [523/601], loss:0.4189 class:leather
+[Train] epoch [524/601], loss:0.4171 class:leather
+[Train] epoch [525/601], loss:0.4173 class:leather
+[Train] epoch [526/601], loss:0.4142 class:leather
+[Train] epoch [527/601], loss:0.4156 class:leather
+[Train] epoch [528/601], loss:0.4160 class:leather
+[Train] epoch [529/601], loss:0.4129 class:leather
+[Train] epoch [530/601], loss:0.4178 class:leather
+[Eval] leather class RocAUC at epoch 530: 0.9426
+[Train] epoch [531/601], loss:0.4188 class:leather
+[Train] epoch [532/601], loss:0.4166 class:leather
+[Train] epoch [533/601], loss:0.4164 class:leather
+[Train] epoch [534/601], loss:0.4194 class:leather
+[Train] epoch [535/601], loss:0.4139 class:leather
+[Train] epoch [536/601], loss:0.4195 class:leather
+[Train] epoch [537/601], loss:0.4154 class:leather
+[Train] epoch [538/601], loss:0.4143 class:leather
+[Train] epoch [539/601], loss:0.4153 class:leather
+[Train] epoch [540/601], loss:0.4128 class:leather
+[Eval] leather class RocAUC at epoch 540: 0.944
+[Train] epoch [541/601], loss:0.4168 class:leather
+[Train] epoch [542/601], loss:0.4176 class:leather
+[Train] epoch [543/601], loss:0.4116 class:leather
+[Train] epoch [544/601], loss:0.4102 class:leather
+[Train] epoch [545/601], loss:0.4119 class:leather
+[Train] epoch [546/601], loss:0.4086 class:leather
+[Train] epoch [547/601], loss:0.4133 class:leather
+[Train] epoch [548/601], loss:0.4076 class:leather
+[Train] epoch [549/601], loss:0.4122 class:leather
+[Train] epoch [550/601], loss:0.4083 class:leather
+[Eval] leather class RocAUC at epoch 550: 0.946
+[Train] epoch [551/601], loss:0.4099 class:leather
+[Train] epoch [552/601], loss:0.4095 class:leather
+[Train] epoch [553/601], loss:0.4082 class:leather
+[Train] epoch [554/601], loss:0.4093 class:leather
+[Train] epoch [555/601], loss:0.4090 class:leather
+[Train] epoch [556/601], loss:0.4129 class:leather
+[Train] epoch [557/601], loss:0.4088 class:leather
+[Train] epoch [558/601], loss:0.4090 class:leather
+[Train] epoch [559/601], loss:0.4040 class:leather
+[Train] epoch [560/601], loss:0.4070 class:leather
+[Eval] leather class RocAUC at epoch 560: 0.949
+[Eval] save best model at epoch 560
+[Train] epoch [561/601], loss:0.4050 class:leather
+[Train] epoch [562/601], loss:0.4048 class:leather
+[Train] epoch [563/601], loss:0.4038 class:leather
+[Train] epoch [564/601], loss:0.4023 class:leather
+[Train] epoch [565/601], loss:0.4036 class:leather
+[Train] epoch [566/601], loss:0.4055 class:leather
+[Train] epoch [567/601], loss:0.4038 class:leather
+[Train] epoch [568/601], loss:0.4033 class:leather
+[Train] epoch [569/601], loss:0.4072 class:leather
+[Train] epoch [570/601], loss:0.4100 class:leather
+[Eval] leather class RocAUC at epoch 570: 0.9392
+[Train] epoch [571/601], loss:0.4078 class:leather
+[Train] epoch [572/601], loss:0.4051 class:leather
+[Train] epoch [573/601], loss:0.4015 class:leather
+[Train] epoch [574/601], loss:0.3997 class:leather
+[Train] epoch [575/601], loss:0.3993 class:leather
+[Train] epoch [576/601], loss:0.4058 class:leather
+[Train] epoch [577/601], loss:0.4036 class:leather
+[Train] epoch [578/601], loss:0.4006 class:leather
+[Train] epoch [579/601], loss:0.4041 class:leather
+[Train] epoch [580/601], loss:0.4034 class:leather
+[Eval] leather class RocAUC at epoch 580: 0.9412
+[Train] epoch [581/601], loss:0.4018 class:leather
+[Train] epoch [582/601], loss:0.3992 class:leather
+[Train] epoch [583/601], loss:0.3987 class:leather
+[Train] epoch [584/601], loss:0.4009 class:leather
+[Train] epoch [585/601], loss:0.3981 class:leather
+[Train] epoch [586/601], loss:0.3982 class:leather
+[Train] epoch [587/601], loss:0.3980 class:leather
+[Train] epoch [588/601], loss:0.4036 class:leather
+[Train] epoch [589/601], loss:0.3945 class:leather
+[Train] epoch [590/601], loss:0.3988 class:leather
+[Eval] leather class RocAUC at epoch 590: 0.9501
+[Eval] save best model at epoch 590
+[Train] epoch [591/601], loss:0.3956 class:leather
+[Train] epoch [592/601], loss:0.3950 class:leather
+[Train] epoch [593/601], loss:0.3938 class:leather
+[Train] epoch [594/601], loss:0.3946 class:leather
+[Train] epoch [595/601], loss:0.3962 class:leather
+[Train] epoch [596/601], loss:0.3983 class:leather
+[Train] epoch [597/601], loss:0.4006 class:leather
+[Train] epoch [598/601], loss:0.3956 class:leather
+[Train] epoch [599/601], loss:0.3966 class:leather
+[Train] epoch [600/601], loss:0.3983 class:leather
+[Eval] leather class RocAUC at epoch 600: 0.9419
+[Train] epoch [601/601], loss:0.3963 class:leather
+[Eval] leather class RocAUC at epoch 601: 0.9409

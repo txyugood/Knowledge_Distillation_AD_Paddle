@@ -1,0 +1,738 @@
+W0410 20:22:06.578758 29878 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 20:22:06.583555 29878 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:27.1594 class:zipper
+[Eval] zipper class RocAUC at epoch 0: 0.4428
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:22.6678 class:zipper
+[Train] epoch [2/601], loss:19.9717 class:zipper
+[Train] epoch [3/601], loss:18.1888 class:zipper
+[Train] epoch [4/601], loss:16.7847 class:zipper
+[Train] epoch [5/601], loss:15.5922 class:zipper
+[Train] epoch [6/601], loss:14.5608 class:zipper
+[Train] epoch [7/601], loss:13.6480 class:zipper
+[Train] epoch [8/601], loss:12.8304 class:zipper
+[Train] epoch [9/601], loss:12.0939 class:zipper
+[Train] epoch [10/601], loss:11.4198 class:zipper
+[Eval] zipper class RocAUC at epoch 10: 0.6037
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:10.8197 class:zipper
+[Train] epoch [12/601], loss:10.2452 class:zipper
+[Train] epoch [13/601], loss:9.7300 class:zipper
+[Train] epoch [14/601], loss:9.2463 class:zipper
+[Train] epoch [15/601], loss:8.8005 class:zipper
+[Train] epoch [16/601], loss:8.3815 class:zipper
+[Train] epoch [17/601], loss:8.0003 class:zipper
+[Train] epoch [18/601], loss:7.6421 class:zipper
+[Train] epoch [19/601], loss:7.2987 class:zipper
+[Train] epoch [20/601], loss:6.9903 class:zipper
+[Eval] zipper class RocAUC at epoch 20: 0.8472
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:6.6959 class:zipper
+[Train] epoch [22/601], loss:6.4307 class:zipper
+[Train] epoch [23/601], loss:6.1676 class:zipper
+[Train] epoch [24/601], loss:5.9223 class:zipper
+[Train] epoch [25/601], loss:5.6978 class:zipper
+[Train] epoch [26/601], loss:5.4904 class:zipper
+[Train] epoch [27/601], loss:5.2925 class:zipper
+[Train] epoch [28/601], loss:5.1089 class:zipper
+[Train] epoch [29/601], loss:4.9335 class:zipper
+[Train] epoch [30/601], loss:4.7772 class:zipper
+[Eval] zipper class RocAUC at epoch 30: 0.8666
+[Eval] save best model at epoch 30
+[Train] epoch [31/601], loss:4.6198 class:zipper
+[Train] epoch [32/601], loss:4.4771 class:zipper
+[Train] epoch [33/601], loss:4.3439 class:zipper
+[Train] epoch [34/601], loss:4.2208 class:zipper
+[Train] epoch [35/601], loss:4.1034 class:zipper
+[Train] epoch [36/601], loss:3.9904 class:zipper
+[Train] epoch [37/601], loss:3.8892 class:zipper
+[Train] epoch [38/601], loss:3.7889 class:zipper
+[Train] epoch [39/601], loss:3.6959 class:zipper
+[Train] epoch [40/601], loss:3.6056 class:zipper
+[Eval] zipper class RocAUC at epoch 40: 0.8852
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:3.5271 class:zipper
+[Train] epoch [42/601], loss:3.4453 class:zipper
+[Train] epoch [43/601], loss:3.3634 class:zipper
+[Train] epoch [44/601], loss:3.2973 class:zipper
+[Train] epoch [45/601], loss:3.2354 class:zipper
+[Train] epoch [46/601], loss:3.1714 class:zipper
+[Train] epoch [47/601], loss:3.1024 class:zipper
+[Train] epoch [48/601], loss:3.0518 class:zipper
+[Train] epoch [49/601], loss:2.9983 class:zipper
+[Train] epoch [50/601], loss:2.9498 class:zipper
+[Eval] zipper class RocAUC at epoch 50: 0.8934
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:2.9002 class:zipper
+[Train] epoch [52/601], loss:2.8513 class:zipper
+[Train] epoch [53/601], loss:2.8091 class:zipper
+[Train] epoch [54/601], loss:2.7653 class:zipper
+[Train] epoch [55/601], loss:2.7309 class:zipper
+[Train] epoch [56/601], loss:2.6889 class:zipper
+[Train] epoch [57/601], loss:2.6526 class:zipper
+[Train] epoch [58/601], loss:2.6108 class:zipper
+[Train] epoch [59/601], loss:2.5782 class:zipper
+[Train] epoch [60/601], loss:2.5539 class:zipper
+[Eval] zipper class RocAUC at epoch 60: 0.895
+[Eval] save best model at epoch 60
+[Train] epoch [61/601], loss:2.5189 class:zipper
+[Train] epoch [62/601], loss:2.4895 class:zipper
+[Train] epoch [63/601], loss:2.4613 class:zipper
+[Train] epoch [64/601], loss:2.4374 class:zipper
+[Train] epoch [65/601], loss:2.4078 class:zipper
+[Train] epoch [66/601], loss:2.3748 class:zipper
+[Train] epoch [67/601], loss:2.3524 class:zipper
+[Train] epoch [68/601], loss:2.3359 class:zipper
+[Train] epoch [69/601], loss:2.3174 class:zipper
+[Train] epoch [70/601], loss:2.2850 class:zipper
+[Eval] zipper class RocAUC at epoch 70: 0.8997
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:2.2618 class:zipper
+[Train] epoch [72/601], loss:2.2422 class:zipper
+[Train] epoch [73/601], loss:2.2326 class:zipper
+[Train] epoch [74/601], loss:2.1986 class:zipper
+[Train] epoch [75/601], loss:2.1835 class:zipper
+[Train] epoch [76/601], loss:2.1670 class:zipper
+[Train] epoch [77/601], loss:2.1522 class:zipper
+[Train] epoch [78/601], loss:2.1348 class:zipper
+[Train] epoch [79/601], loss:2.1223 class:zipper
+[Train] epoch [80/601], loss:2.1038 class:zipper
+[Eval] zipper class RocAUC at epoch 80: 0.8999
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:2.0865 class:zipper
+[Train] epoch [82/601], loss:2.0752 class:zipper
+[Train] epoch [83/601], loss:2.0595 class:zipper
+[Train] epoch [84/601], loss:2.0415 class:zipper
+[Train] epoch [85/601], loss:2.0276 class:zipper
+[Train] epoch [86/601], loss:2.0129 class:zipper
+[Train] epoch [87/601], loss:1.9973 class:zipper
+[Train] epoch [88/601], loss:1.9884 class:zipper
+[Train] epoch [89/601], loss:1.9791 class:zipper
+[Train] epoch [90/601], loss:1.9627 class:zipper
+[Eval] zipper class RocAUC at epoch 90: 0.9047
+[Eval] save best model at epoch 90
+[Train] epoch [91/601], loss:1.9581 class:zipper
+[Train] epoch [92/601], loss:1.9493 class:zipper
+[Train] epoch [93/601], loss:1.9438 class:zipper
+[Train] epoch [94/601], loss:1.9193 class:zipper
+[Train] epoch [95/601], loss:1.9103 class:zipper
+[Train] epoch [96/601], loss:1.9045 class:zipper
+[Train] epoch [97/601], loss:1.8858 class:zipper
+[Train] epoch [98/601], loss:1.8848 class:zipper
+[Train] epoch [99/601], loss:1.8767 class:zipper
+[Train] epoch [100/601], loss:1.8630 class:zipper
+[Eval] zipper class RocAUC at epoch 100: 0.9057
+[Eval] save best model at epoch 100
+[Train] epoch [101/601], loss:1.8592 class:zipper
+[Train] epoch [102/601], loss:1.8484 class:zipper
+[Train] epoch [103/601], loss:1.8381 class:zipper
+[Train] epoch [104/601], loss:1.8248 class:zipper
+[Train] epoch [105/601], loss:1.8226 class:zipper
+[Train] epoch [106/601], loss:1.8181 class:zipper
+[Train] epoch [107/601], loss:1.8136 class:zipper
+[Train] epoch [108/601], loss:1.7959 class:zipper
+[Train] epoch [109/601], loss:1.7860 class:zipper
+[Train] epoch [110/601], loss:1.7844 class:zipper
+[Eval] zipper class RocAUC at epoch 110: 0.9062
+[Eval] save best model at epoch 110
+[Train] epoch [111/601], loss:1.7729 class:zipper
+[Train] epoch [112/601], loss:1.7612 class:zipper
+[Train] epoch [113/601], loss:1.7567 class:zipper
+[Train] epoch [114/601], loss:1.7514 class:zipper
+[Train] epoch [115/601], loss:1.7457 class:zipper
+[Train] epoch [116/601], loss:1.7369 class:zipper
+[Train] epoch [117/601], loss:1.7290 class:zipper
+[Train] epoch [118/601], loss:1.7246 class:zipper
+[Train] epoch [119/601], loss:1.7105 class:zipper
+[Train] epoch [120/601], loss:1.7074 class:zipper
+[Eval] zipper class RocAUC at epoch 120: 0.907
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:1.7045 class:zipper
+[Train] epoch [122/601], loss:1.6944 class:zipper
+[Train] epoch [123/601], loss:1.6871 class:zipper
+[Train] epoch [124/601], loss:1.6848 class:zipper
+[Train] epoch [125/601], loss:1.6712 class:zipper
+[Train] epoch [126/601], loss:1.6671 class:zipper
+[Train] epoch [127/601], loss:1.6592 class:zipper
+[Train] epoch [128/601], loss:1.6567 class:zipper
+[Train] epoch [129/601], loss:1.6410 class:zipper
+[Train] epoch [130/601], loss:1.6374 class:zipper
+[Eval] zipper class RocAUC at epoch 130: 0.9084
+[Eval] save best model at epoch 130
+[Train] epoch [131/601], loss:1.6295 class:zipper
+[Train] epoch [132/601], loss:1.6316 class:zipper
+[Train] epoch [133/601], loss:1.6237 class:zipper
+[Train] epoch [134/601], loss:1.6203 class:zipper
+[Train] epoch [135/601], loss:1.6126 class:zipper
+[Train] epoch [136/601], loss:1.6035 class:zipper
+[Train] epoch [137/601], loss:1.6027 class:zipper
+[Train] epoch [138/601], loss:1.5933 class:zipper
+[Train] epoch [139/601], loss:1.5851 class:zipper
+[Train] epoch [140/601], loss:1.5792 class:zipper
+[Eval] zipper class RocAUC at epoch 140: 0.9112
+[Eval] save best model at epoch 140
+[Train] epoch [141/601], loss:1.5745 class:zipper
+[Train] epoch [142/601], loss:1.5668 class:zipper
+[Train] epoch [143/601], loss:1.5616 class:zipper
+[Train] epoch [144/601], loss:1.5594 class:zipper
+[Train] epoch [145/601], loss:1.5558 class:zipper
+[Train] epoch [146/601], loss:1.5471 class:zipper
+[Train] epoch [147/601], loss:1.5437 class:zipper
+[Train] epoch [148/601], loss:1.5395 class:zipper
+[Train] epoch [149/601], loss:1.5379 class:zipper
+[Train] epoch [150/601], loss:1.5315 class:zipper
+[Eval] zipper class RocAUC at epoch 150: 0.9118
+[Eval] save best model at epoch 150
+[Train] epoch [151/601], loss:1.5285 class:zipper
+[Train] epoch [152/601], loss:1.5278 class:zipper
+[Train] epoch [153/601], loss:1.5217 class:zipper
+[Train] epoch [154/601], loss:1.5155 class:zipper
+[Train] epoch [155/601], loss:1.5104 class:zipper
+[Train] epoch [156/601], loss:1.5042 class:zipper
+[Train] epoch [157/601], loss:1.4895 class:zipper
+[Train] epoch [158/601], loss:1.4881 class:zipper
+[Train] epoch [159/601], loss:1.4741 class:zipper
+[Train] epoch [160/601], loss:1.4702 class:zipper
+[Eval] zipper class RocAUC at epoch 160: 0.9136
+[Eval] save best model at epoch 160
+[Train] epoch [161/601], loss:1.4713 class:zipper
+[Train] epoch [162/601], loss:1.4740 class:zipper
+[Train] epoch [163/601], loss:1.4570 class:zipper
+[Train] epoch [164/601], loss:1.4475 class:zipper
+[Train] epoch [165/601], loss:1.4468 class:zipper
+[Train] epoch [166/601], loss:1.4435 class:zipper
+[Train] epoch [167/601], loss:1.4420 class:zipper
+[Train] epoch [168/601], loss:1.4310 class:zipper
+[Train] epoch [169/601], loss:1.4258 class:zipper
+[Train] epoch [170/601], loss:1.4235 class:zipper
+[Eval] zipper class RocAUC at epoch 170: 0.9144
+[Eval] save best model at epoch 170
+[Train] epoch [171/601], loss:1.4182 class:zipper
+[Train] epoch [172/601], loss:1.4204 class:zipper
+[Train] epoch [173/601], loss:1.4217 class:zipper
+[Train] epoch [174/601], loss:1.4158 class:zipper
+[Train] epoch [175/601], loss:1.4063 class:zipper
+[Train] epoch [176/601], loss:1.4073 class:zipper
+[Train] epoch [177/601], loss:1.4017 class:zipper
+[Train] epoch [178/601], loss:1.3954 class:zipper
+[Train] epoch [179/601], loss:1.3864 class:zipper
+[Train] epoch [180/601], loss:1.3831 class:zipper
+[Eval] zipper class RocAUC at epoch 180: 0.9173
+[Eval] save best model at epoch 180
+[Train] epoch [181/601], loss:1.3792 class:zipper
+[Train] epoch [182/601], loss:1.3786 class:zipper
+[Train] epoch [183/601], loss:1.3732 class:zipper
+[Train] epoch [184/601], loss:1.3692 class:zipper
+[Train] epoch [185/601], loss:1.3581 class:zipper
+[Train] epoch [186/601], loss:1.3568 class:zipper
+[Train] epoch [187/601], loss:1.3514 class:zipper
+[Train] epoch [188/601], loss:1.3594 class:zipper
+[Train] epoch [189/601], loss:1.3528 class:zipper
+[Train] epoch [190/601], loss:1.3551 class:zipper
+[Eval] zipper class RocAUC at epoch 190: 0.916
+[Train] epoch [191/601], loss:1.3431 class:zipper
+[Train] epoch [192/601], loss:1.3388 class:zipper
+[Train] epoch [193/601], loss:1.3390 class:zipper
+[Train] epoch [194/601], loss:1.3388 class:zipper
+[Train] epoch [195/601], loss:1.3294 class:zipper
+[Train] epoch [196/601], loss:1.3314 class:zipper
+[Train] epoch [197/601], loss:1.3323 class:zipper
+[Train] epoch [198/601], loss:1.3288 class:zipper
+[Train] epoch [199/601], loss:1.3280 class:zipper
+[Train] epoch [200/601], loss:1.3208 class:zipper
+[Eval] zipper class RocAUC at epoch 200: 0.9165
+[Train] epoch [201/601], loss:1.3180 class:zipper
+[Train] epoch [202/601], loss:1.3084 class:zipper
+[Train] epoch [203/601], loss:1.3114 class:zipper
+[Train] epoch [204/601], loss:1.3038 class:zipper
+[Train] epoch [205/601], loss:1.3009 class:zipper
+[Train] epoch [206/601], loss:1.2990 class:zipper
+[Train] epoch [207/601], loss:1.3030 class:zipper
+[Train] epoch [208/601], loss:1.2883 class:zipper
+[Train] epoch [209/601], loss:1.2880 class:zipper
+[Train] epoch [210/601], loss:1.2840 class:zipper
+[Eval] zipper class RocAUC at epoch 210: 0.9162
+[Train] epoch [211/601], loss:1.2772 class:zipper
+[Train] epoch [212/601], loss:1.2739 class:zipper
+[Train] epoch [213/601], loss:1.2692 class:zipper
+[Train] epoch [214/601], loss:1.2808 class:zipper
+[Train] epoch [215/601], loss:1.2722 class:zipper
+[Train] epoch [216/601], loss:1.2633 class:zipper
+[Train] epoch [217/601], loss:1.2662 class:zipper
+[Train] epoch [218/601], loss:1.2625 class:zipper
+[Train] epoch [219/601], loss:1.2565 class:zipper
+[Train] epoch [220/601], loss:1.2438 class:zipper
+[Eval] zipper class RocAUC at epoch 220: 0.9165
+[Train] epoch [221/601], loss:1.2513 class:zipper
+[Train] epoch [222/601], loss:1.2471 class:zipper
+[Train] epoch [223/601], loss:1.2416 class:zipper
+[Train] epoch [224/601], loss:1.2372 class:zipper
+[Train] epoch [225/601], loss:1.2382 class:zipper
+[Train] epoch [226/601], loss:1.2354 class:zipper
+[Train] epoch [227/601], loss:1.2319 class:zipper
+[Train] epoch [228/601], loss:1.2276 class:zipper
+[Train] epoch [229/601], loss:1.2250 class:zipper
+[Train] epoch [230/601], loss:1.2195 class:zipper
+[Eval] zipper class RocAUC at epoch 230: 0.9181
+[Eval] save best model at epoch 230
+[Train] epoch [231/601], loss:1.2156 class:zipper
+[Train] epoch [232/601], loss:1.2158 class:zipper
+[Train] epoch [233/601], loss:1.2178 class:zipper
+[Train] epoch [234/601], loss:1.2141 class:zipper
+[Train] epoch [235/601], loss:1.2143 class:zipper
+[Train] epoch [236/601], loss:1.2161 class:zipper
+[Train] epoch [237/601], loss:1.2092 class:zipper
+[Train] epoch [238/601], loss:1.2026 class:zipper
+[Train] epoch [239/601], loss:1.1993 class:zipper
+[Train] epoch [240/601], loss:1.1996 class:zipper
+[Eval] zipper class RocAUC at epoch 240: 0.9186
+[Eval] save best model at epoch 240
+[Train] epoch [241/601], loss:1.1970 class:zipper
+[Train] epoch [242/601], loss:1.1929 class:zipper
+[Train] epoch [243/601], loss:1.1904 class:zipper
+[Train] epoch [244/601], loss:1.1873 class:zipper
+[Train] epoch [245/601], loss:1.1902 class:zipper
+[Train] epoch [246/601], loss:1.1793 class:zipper
+[Train] epoch [247/601], loss:1.1790 class:zipper
+[Train] epoch [248/601], loss:1.1776 class:zipper
+[Train] epoch [249/601], loss:1.1715 class:zipper
+[Train] epoch [250/601], loss:1.1695 class:zipper
+[Eval] zipper class RocAUC at epoch 250: 0.9223
+[Eval] save best model at epoch 250
+[Train] epoch [251/601], loss:1.1769 class:zipper
+[Train] epoch [252/601], loss:1.1736 class:zipper
+[Train] epoch [253/601], loss:1.1677 class:zipper
+[Train] epoch [254/601], loss:1.1652 class:zipper
+[Train] epoch [255/601], loss:1.1688 class:zipper
+[Train] epoch [256/601], loss:1.1657 class:zipper
+[Train] epoch [257/601], loss:1.1572 class:zipper
+[Train] epoch [258/601], loss:1.1593 class:zipper
+[Train] epoch [259/601], loss:1.1515 class:zipper
+[Train] epoch [260/601], loss:1.1522 class:zipper
+[Eval] zipper class RocAUC at epoch 260: 0.9178
+[Train] epoch [261/601], loss:1.1501 class:zipper
+[Train] epoch [262/601], loss:1.1501 class:zipper
+[Train] epoch [263/601], loss:1.1409 class:zipper
+[Train] epoch [264/601], loss:1.1407 class:zipper
+[Train] epoch [265/601], loss:1.1368 class:zipper
+[Train] epoch [266/601], loss:1.1344 class:zipper
+[Train] epoch [267/601], loss:1.1310 class:zipper
+[Train] epoch [268/601], loss:1.1324 class:zipper
+[Train] epoch [269/601], loss:1.1366 class:zipper
+[Train] epoch [270/601], loss:1.1277 class:zipper
+[Eval] zipper class RocAUC at epoch 270: 0.9189
+[Train] epoch [271/601], loss:1.1221 class:zipper
+[Train] epoch [272/601], loss:1.1238 class:zipper
+[Train] epoch [273/601], loss:1.1242 class:zipper
+[Train] epoch [274/601], loss:1.1199 class:zipper
+[Train] epoch [275/601], loss:1.1246 class:zipper
+[Train] epoch [276/601], loss:1.1135 class:zipper
+[Train] epoch [277/601], loss:1.1149 class:zipper
+[Train] epoch [278/601], loss:1.1080 class:zipper
+[Train] epoch [279/601], loss:1.1057 class:zipper
+[Train] epoch [280/601], loss:1.1045 class:zipper
+[Eval] zipper class RocAUC at epoch 280: 0.9215
+[Train] epoch [281/601], loss:1.1088 class:zipper
+[Train] epoch [282/601], loss:1.1099 class:zipper
+[Train] epoch [283/601], loss:1.0985 class:zipper
+[Train] epoch [284/601], loss:1.1001 class:zipper
+[Train] epoch [285/601], loss:1.0968 class:zipper
+[Train] epoch [286/601], loss:1.0944 class:zipper
+[Train] epoch [287/601], loss:1.0954 class:zipper
+[Train] epoch [288/601], loss:1.0897 class:zipper
+[Train] epoch [289/601], loss:1.0917 class:zipper
+[Train] epoch [290/601], loss:1.0871 class:zipper
+[Eval] zipper class RocAUC at epoch 290: 0.922
+[Train] epoch [291/601], loss:1.0864 class:zipper
+[Train] epoch [292/601], loss:1.0853 class:zipper
+[Train] epoch [293/601], loss:1.0816 class:zipper
+[Train] epoch [294/601], loss:1.0859 class:zipper
+[Train] epoch [295/601], loss:1.0825 class:zipper
+[Train] epoch [296/601], loss:1.0778 class:zipper
+[Train] epoch [297/601], loss:1.0701 class:zipper
+[Train] epoch [298/601], loss:1.0657 class:zipper
+[Train] epoch [299/601], loss:1.0680 class:zipper
+[Train] epoch [300/601], loss:1.0674 class:zipper
+[Eval] zipper class RocAUC at epoch 300: 0.9254
+[Eval] save best model at epoch 300
+[Train] epoch [301/601], loss:1.0696 class:zipper
+[Train] epoch [302/601], loss:1.0695 class:zipper
+[Train] epoch [303/601], loss:1.0655 class:zipper
+[Train] epoch [304/601], loss:1.0602 class:zipper
+[Train] epoch [305/601], loss:1.0604 class:zipper
+[Train] epoch [306/601], loss:1.0558 class:zipper
+[Train] epoch [307/601], loss:1.0552 class:zipper
+[Train] epoch [308/601], loss:1.0547 class:zipper
+[Train] epoch [309/601], loss:1.0530 class:zipper
+[Train] epoch [310/601], loss:1.0520 class:zipper
+[Eval] zipper class RocAUC at epoch 310: 0.9202
+[Train] epoch [311/601], loss:1.0474 class:zipper
+[Train] epoch [312/601], loss:1.0434 class:zipper
+[Train] epoch [313/601], loss:1.0427 class:zipper
+[Train] epoch [314/601], loss:1.0408 class:zipper
+[Train] epoch [315/601], loss:1.0427 class:zipper
+[Train] epoch [316/601], loss:1.0393 class:zipper
+[Train] epoch [317/601], loss:1.0409 class:zipper
+[Train] epoch [318/601], loss:1.0344 class:zipper
+[Train] epoch [319/601], loss:1.0355 class:zipper
+[Train] epoch [320/601], loss:1.0366 class:zipper
+[Eval] zipper class RocAUC at epoch 320: 0.9333
+[Eval] save best model at epoch 320
+[Train] epoch [321/601], loss:1.0324 class:zipper
+[Train] epoch [322/601], loss:1.0332 class:zipper
+[Train] epoch [323/601], loss:1.0277 class:zipper
+[Train] epoch [324/601], loss:1.0255 class:zipper
+[Train] epoch [325/601], loss:1.0276 class:zipper
+[Train] epoch [326/601], loss:1.0274 class:zipper
+[Train] epoch [327/601], loss:1.0290 class:zipper
+[Train] epoch [328/601], loss:1.0312 class:zipper
+[Train] epoch [329/601], loss:1.0244 class:zipper
+[Train] epoch [330/601], loss:1.0227 class:zipper
+[Eval] zipper class RocAUC at epoch 330: 0.9312
+[Train] epoch [331/601], loss:1.0234 class:zipper
+[Train] epoch [332/601], loss:1.0169 class:zipper
+[Train] epoch [333/601], loss:1.0138 class:zipper
+[Train] epoch [334/601], loss:1.0145 class:zipper
+[Train] epoch [335/601], loss:1.0144 class:zipper
+[Train] epoch [336/601], loss:1.0169 class:zipper
+[Train] epoch [337/601], loss:1.0101 class:zipper
+[Train] epoch [338/601], loss:1.0077 class:zipper
+[Train] epoch [339/601], loss:1.0085 class:zipper
+[Train] epoch [340/601], loss:1.0044 class:zipper
+[Eval] zipper class RocAUC at epoch 340: 0.9322
+[Train] epoch [341/601], loss:1.0032 class:zipper
+[Train] epoch [342/601], loss:1.0020 class:zipper
+[Train] epoch [343/601], loss:1.0034 class:zipper
+[Train] epoch [344/601], loss:0.9993 class:zipper
+[Train] epoch [345/601], loss:0.9940 class:zipper
+[Train] epoch [346/601], loss:0.9983 class:zipper
+[Train] epoch [347/601], loss:0.9968 class:zipper
+[Train] epoch [348/601], loss:0.9984 class:zipper
+[Train] epoch [349/601], loss:0.9950 class:zipper
+[Train] epoch [350/601], loss:0.9917 class:zipper
+[Eval] zipper class RocAUC at epoch 350: 0.9325
+[Train] epoch [351/601], loss:0.9932 class:zipper
+[Train] epoch [352/601], loss:0.9902 class:zipper
+[Train] epoch [353/601], loss:0.9825 class:zipper
+[Train] epoch [354/601], loss:0.9846 class:zipper
+[Train] epoch [355/601], loss:0.9820 class:zipper
+[Train] epoch [356/601], loss:0.9826 class:zipper
+[Train] epoch [357/601], loss:0.9860 class:zipper
+[Train] epoch [358/601], loss:0.9814 class:zipper
+[Train] epoch [359/601], loss:0.9793 class:zipper
+[Train] epoch [360/601], loss:0.9841 class:zipper
+[Eval] zipper class RocAUC at epoch 360: 0.9291
+[Train] epoch [361/601], loss:0.9807 class:zipper
+[Train] epoch [362/601], loss:0.9862 class:zipper
+[Train] epoch [363/601], loss:0.9876 class:zipper
+[Train] epoch [364/601], loss:0.9848 class:zipper
+[Train] epoch [365/601], loss:0.9757 class:zipper
+[Train] epoch [366/601], loss:0.9747 class:zipper
+[Train] epoch [367/601], loss:0.9730 class:zipper
+[Train] epoch [368/601], loss:0.9720 class:zipper
+[Train] epoch [369/601], loss:0.9681 class:zipper
+[Train] epoch [370/601], loss:0.9625 class:zipper
+[Eval] zipper class RocAUC at epoch 370: 0.9307
+[Train] epoch [371/601], loss:0.9613 class:zipper
+[Train] epoch [372/601], loss:0.9644 class:zipper
+[Train] epoch [373/601], loss:0.9606 class:zipper
+[Train] epoch [374/601], loss:0.9629 class:zipper
+[Train] epoch [375/601], loss:0.9591 class:zipper
+[Train] epoch [376/601], loss:0.9581 class:zipper
+[Train] epoch [377/601], loss:0.9506 class:zipper
+[Train] epoch [378/601], loss:0.9553 class:zipper
+[Train] epoch [379/601], loss:0.9597 class:zipper
+[Train] epoch [380/601], loss:0.9570 class:zipper
+[Eval] zipper class RocAUC at epoch 380: 0.9299
+[Train] epoch [381/601], loss:0.9524 class:zipper
+[Train] epoch [382/601], loss:0.9490 class:zipper
+[Train] epoch [383/601], loss:0.9432 class:zipper
+[Train] epoch [384/601], loss:0.9427 class:zipper
+[Train] epoch [385/601], loss:0.9424 class:zipper
+[Train] epoch [386/601], loss:0.9434 class:zipper
+[Train] epoch [387/601], loss:0.9468 class:zipper
+[Train] epoch [388/601], loss:0.9406 class:zipper
+[Train] epoch [389/601], loss:0.9436 class:zipper
+[Train] epoch [390/601], loss:0.9443 class:zipper
+[Eval] zipper class RocAUC at epoch 390: 0.9317
+[Train] epoch [391/601], loss:0.9428 class:zipper
+[Train] epoch [392/601], loss:0.9407 class:zipper
+[Train] epoch [393/601], loss:0.9379 class:zipper
+[Train] epoch [394/601], loss:0.9356 class:zipper
+[Train] epoch [395/601], loss:0.9358 class:zipper
+[Train] epoch [396/601], loss:0.9421 class:zipper
+[Train] epoch [397/601], loss:0.9374 class:zipper
+[Train] epoch [398/601], loss:0.9333 class:zipper
+[Train] epoch [399/601], loss:0.9311 class:zipper
+[Train] epoch [400/601], loss:0.9342 class:zipper
+[Eval] zipper class RocAUC at epoch 400: 0.9336
+[Eval] save best model at epoch 400
+[Train] epoch [401/601], loss:0.9334 class:zipper
+[Train] epoch [402/601], loss:0.9292 class:zipper
+[Train] epoch [403/601], loss:0.9283 class:zipper
+[Train] epoch [404/601], loss:0.9299 class:zipper
+[Train] epoch [405/601], loss:0.9258 class:zipper
+[Train] epoch [406/601], loss:0.9251 class:zipper
+[Train] epoch [407/601], loss:0.9233 class:zipper
+[Train] epoch [408/601], loss:0.9230 class:zipper
+[Train] epoch [409/601], loss:0.9217 class:zipper
+[Train] epoch [410/601], loss:0.9209 class:zipper
+[Eval] zipper class RocAUC at epoch 410: 0.9315
+[Train] epoch [411/601], loss:0.9195 class:zipper
+[Train] epoch [412/601], loss:0.9251 class:zipper
+[Train] epoch [413/601], loss:0.9233 class:zipper
+[Train] epoch [414/601], loss:0.9233 class:zipper
+[Train] epoch [415/601], loss:0.9168 class:zipper
+[Train] epoch [416/601], loss:0.9159 class:zipper
+[Train] epoch [417/601], loss:0.9156 class:zipper
+[Train] epoch [418/601], loss:0.9202 class:zipper
+[Train] epoch [419/601], loss:0.9218 class:zipper
+[Train] epoch [420/601], loss:0.9140 class:zipper
+[Eval] zipper class RocAUC at epoch 420: 0.9346
+[Eval] save best model at epoch 420
+[Train] epoch [421/601], loss:0.9082 class:zipper
+[Train] epoch [422/601], loss:0.9035 class:zipper
+[Train] epoch [423/601], loss:0.9041 class:zipper
+[Train] epoch [424/601], loss:0.9084 class:zipper
+[Train] epoch [425/601], loss:0.9040 class:zipper
+[Train] epoch [426/601], loss:0.9021 class:zipper
+[Train] epoch [427/601], loss:0.9016 class:zipper
+[Train] epoch [428/601], loss:0.9015 class:zipper
+[Train] epoch [429/601], loss:0.9005 class:zipper
+[Train] epoch [430/601], loss:0.8969 class:zipper
+[Eval] zipper class RocAUC at epoch 430: 0.9412
+[Eval] save best model at epoch 430
+[Train] epoch [431/601], loss:0.8982 class:zipper
+[Train] epoch [432/601], loss:0.8981 class:zipper
+[Train] epoch [433/601], loss:0.9029 class:zipper
+[Train] epoch [434/601], loss:0.9023 class:zipper
+[Train] epoch [435/601], loss:0.9005 class:zipper
+[Train] epoch [436/601], loss:0.8976 class:zipper
+[Train] epoch [437/601], loss:0.8908 class:zipper
+[Train] epoch [438/601], loss:0.8924 class:zipper
+[Train] epoch [439/601], loss:0.8874 class:zipper
+[Train] epoch [440/601], loss:0.8846 class:zipper
+[Eval] zipper class RocAUC at epoch 440: 0.9383
+[Train] epoch [441/601], loss:0.8866 class:zipper
+[Train] epoch [442/601], loss:0.8897 class:zipper
+[Train] epoch [443/601], loss:0.8897 class:zipper
+[Train] epoch [444/601], loss:0.8937 class:zipper
+[Train] epoch [445/601], loss:0.8913 class:zipper
+[Train] epoch [446/601], loss:0.8837 class:zipper
+[Train] epoch [447/601], loss:0.8792 class:zipper
+[Train] epoch [448/601], loss:0.8795 class:zipper
+[Train] epoch [449/601], loss:0.8810 class:zipper
+[Train] epoch [450/601], loss:0.8795 class:zipper
+[Eval] zipper class RocAUC at epoch 450: 0.9338
+[Train] epoch [451/601], loss:0.8777 class:zipper
+[Train] epoch [452/601], loss:0.8808 class:zipper
+[Train] epoch [453/601], loss:0.8815 class:zipper
+[Train] epoch [454/601], loss:0.8803 class:zipper
+[Train] epoch [455/601], loss:0.8780 class:zipper
+[Train] epoch [456/601], loss:0.8797 class:zipper
+[Train] epoch [457/601], loss:0.8709 class:zipper
+[Train] epoch [458/601], loss:0.8704 class:zipper
+[Train] epoch [459/601], loss:0.8680 class:zipper
+[Train] epoch [460/601], loss:0.8688 class:zipper
+[Eval] zipper class RocAUC at epoch 460: 0.9338
+[Train] epoch [461/601], loss:0.8687 class:zipper
+[Train] epoch [462/601], loss:0.8703 class:zipper
+[Train] epoch [463/601], loss:0.8696 class:zipper
+[Train] epoch [464/601], loss:0.8681 class:zipper
+[Train] epoch [465/601], loss:0.8648 class:zipper
+[Train] epoch [466/601], loss:0.8632 class:zipper
+[Train] epoch [467/601], loss:0.8693 class:zipper
+[Train] epoch [468/601], loss:0.8641 class:zipper
+[Train] epoch [469/601], loss:0.8649 class:zipper
+[Train] epoch [470/601], loss:0.8701 class:zipper
+[Eval] zipper class RocAUC at epoch 470: 0.9409
+[Train] epoch [471/601], loss:0.8727 class:zipper
+[Train] epoch [472/601], loss:0.8664 class:zipper
+[Train] epoch [473/601], loss:0.8676 class:zipper
+[Train] epoch [474/601], loss:0.8743 class:zipper
+[Train] epoch [475/601], loss:0.8655 class:zipper
+[Train] epoch [476/601], loss:0.8596 class:zipper
+[Train] epoch [477/601], loss:0.8565 class:zipper
+[Train] epoch [478/601], loss:0.8585 class:zipper
+[Train] epoch [479/601], loss:0.8584 class:zipper
+[Train] epoch [480/601], loss:0.8575 class:zipper
+[Eval] zipper class RocAUC at epoch 480: 0.9359
+[Train] epoch [481/601], loss:0.8539 class:zipper
+[Train] epoch [482/601], loss:0.8511 class:zipper
+[Train] epoch [483/601], loss:0.8516 class:zipper
+[Train] epoch [484/601], loss:0.8471 class:zipper
+[Train] epoch [485/601], loss:0.8516 class:zipper
+[Train] epoch [486/601], loss:0.8481 class:zipper
+[Train] epoch [487/601], loss:0.8510 class:zipper
+[Train] epoch [488/601], loss:0.8500 class:zipper
+[Train] epoch [489/601], loss:0.8478 class:zipper
+[Train] epoch [490/601], loss:0.8468 class:zipper
+[Eval] zipper class RocAUC at epoch 490: 0.9414
+[Eval] save best model at epoch 490
+[Train] epoch [491/601], loss:0.8440 class:zipper
+[Train] epoch [492/601], loss:0.8469 class:zipper
+[Train] epoch [493/601], loss:0.8442 class:zipper
+[Train] epoch [494/601], loss:0.8497 class:zipper
+[Train] epoch [495/601], loss:0.8412 class:zipper
+[Train] epoch [496/601], loss:0.8409 class:zipper
+[Train] epoch [497/601], loss:0.8403 class:zipper
+[Train] epoch [498/601], loss:0.8462 class:zipper
+[Train] epoch [499/601], loss:0.8407 class:zipper
+[Train] epoch [500/601], loss:0.8400 class:zipper
+[Eval] zipper class RocAUC at epoch 500: 0.9399
+[Train] epoch [501/601], loss:0.8383 class:zipper
+[Train] epoch [502/601], loss:0.8416 class:zipper
+[Train] epoch [503/601], loss:0.8387 class:zipper
+[Train] epoch [504/601], loss:0.8421 class:zipper
+[Train] epoch [505/601], loss:0.8375 class:zipper
+[Train] epoch [506/601], loss:0.8350 class:zipper
+[Train] epoch [507/601], loss:0.8317 class:zipper
+[Train] epoch [508/601], loss:0.8373 class:zipper
+[Train] epoch [509/601], loss:0.8359 class:zipper
+[Train] epoch [510/601], loss:0.8352 class:zipper
+[Eval] zipper class RocAUC at epoch 510: 0.9399
+[Train] epoch [511/601], loss:0.8329 class:zipper
+[Train] epoch [512/601], loss:0.8338 class:zipper
+[Train] epoch [513/601], loss:0.8340 class:zipper
+[Train] epoch [514/601], loss:0.8366 class:zipper
+[Train] epoch [515/601], loss:0.8385 class:zipper
+[Train] epoch [516/601], loss:0.8321 class:zipper
+[Train] epoch [517/601], loss:0.8297 class:zipper
+[Train] epoch [518/601], loss:0.8288 class:zipper
+[Train] epoch [519/601], loss:0.8292 class:zipper
+[Train] epoch [520/601], loss:0.8295 class:zipper
+[Eval] zipper class RocAUC at epoch 520: 0.9325
+[Train] epoch [521/601], loss:0.8325 class:zipper
+[Train] epoch [522/601], loss:0.8289 class:zipper
+[Train] epoch [523/601], loss:0.8275 class:zipper
+[Train] epoch [524/601], loss:0.8284 class:zipper
+[Train] epoch [525/601], loss:0.8241 class:zipper
+[Train] epoch [526/601], loss:0.8193 class:zipper
+[Train] epoch [527/601], loss:0.8178 class:zipper
+[Train] epoch [528/601], loss:0.8150 class:zipper
+[Train] epoch [529/601], loss:0.8182 class:zipper
+[Train] epoch [530/601], loss:0.8179 class:zipper
+[Eval] zipper class RocAUC at epoch 530: 0.9428
+[Eval] save best model at epoch 530
+[Train] epoch [531/601], loss:0.8199 class:zipper
+[Train] epoch [532/601], loss:0.8176 class:zipper
+[Train] epoch [533/601], loss:0.8149 class:zipper
+[Train] epoch [534/601], loss:0.8133 class:zipper
+[Train] epoch [535/601], loss:0.8140 class:zipper
+[Train] epoch [536/601], loss:0.8144 class:zipper
+[Train] epoch [537/601], loss:0.8153 class:zipper
+[Train] epoch [538/601], loss:0.8126 class:zipper
+[Train] epoch [539/601], loss:0.8136 class:zipper
+[Train] epoch [540/601], loss:0.8106 class:zipper
+[Eval] zipper class RocAUC at epoch 540: 0.9396
+[Train] epoch [541/601], loss:0.8099 class:zipper
+[Train] epoch [542/601], loss:0.8164 class:zipper
+[Train] epoch [543/601], loss:0.8126 class:zipper
+[Train] epoch [544/601], loss:0.8067 class:zipper
+[Train] epoch [545/601], loss:0.8093 class:zipper
+[Train] epoch [546/601], loss:0.8056 class:zipper
+[Train] epoch [547/601], loss:0.8068 class:zipper
+[Train] epoch [548/601], loss:0.8037 class:zipper
+[Train] epoch [549/601], loss:0.8042 class:zipper
+[Train] epoch [550/601], loss:0.8013 class:zipper
+[Eval] zipper class RocAUC at epoch 550: 0.9443
+[Eval] save best model at epoch 550
+[Train] epoch [551/601], loss:0.8017 class:zipper
+[Train] epoch [552/601], loss:0.8052 class:zipper
+[Train] epoch [553/601], loss:0.8031 class:zipper
+[Train] epoch [554/601], loss:0.8042 class:zipper
+[Train] epoch [555/601], loss:0.8027 class:zipper
+[Train] epoch [556/601], loss:0.8009 class:zipper
+[Train] epoch [557/601], loss:0.8042 class:zipper
+[Train] epoch [558/601], loss:0.8021 class:zipper
+[Train] epoch [559/601], loss:0.8011 class:zipper
+[Train] epoch [560/601], loss:0.7991 class:zipper
+[Eval] zipper class RocAUC at epoch 560: 0.9391
+[Train] epoch [561/601], loss:0.7990 class:zipper
+[Train] epoch [562/601], loss:0.7960 class:zipper
+[Train] epoch [563/601], loss:0.7938 class:zipper
+[Train] epoch [564/601], loss:0.7955 class:zipper
+[Train] epoch [565/601], loss:0.8012 class:zipper
+[Train] epoch [566/601], loss:0.7984 class:zipper
+[Train] epoch [567/601], loss:0.7937 class:zipper
+[Train] epoch [568/601], loss:0.7999 class:zipper
+[Train] epoch [569/601], loss:0.7975 class:zipper
+[Train] epoch [570/601], loss:0.7941 class:zipper
+[Eval] zipper class RocAUC at epoch 570: 0.9393
+[Train] epoch [571/601], loss:0.7952 class:zipper
+[Train] epoch [572/601], loss:0.7910 class:zipper
+[Train] epoch [573/601], loss:0.7949 class:zipper
+[Train] epoch [574/601], loss:0.8011 class:zipper
+[Train] epoch [575/601], loss:0.7955 class:zipper
+[Train] epoch [576/601], loss:0.7947 class:zipper
+[Train] epoch [577/601], loss:0.7892 class:zipper
+[Train] epoch [578/601], loss:0.7881 class:zipper
+[Train] epoch [579/601], loss:0.7870 class:zipper
+[Train] epoch [580/601], loss:0.7875 class:zipper
+[Eval] zipper class RocAUC at epoch 580: 0.9383
+[Train] epoch [581/601], loss:0.7881 class:zipper
+[Train] epoch [582/601], loss:0.7860 class:zipper
+[Train] epoch [583/601], loss:0.7900 class:zipper
+[Train] epoch [584/601], loss:0.7926 class:zipper
+[Train] epoch [585/601], loss:0.7912 class:zipper
+[Train] epoch [586/601], loss:0.7882 class:zipper
+[Train] epoch [587/601], loss:0.7871 class:zipper
+[Train] epoch [588/601], loss:0.7863 class:zipper
+[Train] epoch [589/601], loss:0.7793 class:zipper
+[Train] epoch [590/601], loss:0.7821 class:zipper
+[Eval] zipper class RocAUC at epoch 590: 0.9425
+[Train] epoch [591/601], loss:0.7786 class:zipper
+[Train] epoch [592/601], loss:0.7773 class:zipper
+[Train] epoch [593/601], loss:0.7817 class:zipper
+[Train] epoch [594/601], loss:0.7800 class:zipper
+[Train] epoch [595/601], loss:0.7752 class:zipper
+[Train] epoch [596/601], loss:0.7770 class:zipper
+[Train] epoch [597/601], loss:0.7769 class:zipper
+[Train] epoch [598/601], loss:0.7760 class:zipper
+[Train] epoch [599/601], loss:0.7775 class:zipper
+[Train] epoch [600/601], loss:0.7735 class:zipper
+[Eval] zipper class RocAUC at epoch 600: 0.9396
+[Train] epoch [601/601], loss:0.7786 class:zipper
+[Eval] zipper class RocAUC at epoch 601: 0.9451
+[Eval] save best model at epoch 601

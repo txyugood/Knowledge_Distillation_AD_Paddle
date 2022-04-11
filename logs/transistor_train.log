@@ -1,0 +1,747 @@
+W0410 19:23:51.455909 10763 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 19:23:51.460592 10763 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:59.6409 class:transistor
+[Eval] transistor class RocAUC at epoch 0: 0.4721
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:54.1997 class:transistor
+[Train] epoch [2/601], loss:50.5875 class:transistor
+[Train] epoch [3/601], loss:47.3704 class:transistor
+[Train] epoch [4/601], loss:44.5593 class:transistor
+[Train] epoch [5/601], loss:41.9866 class:transistor
+[Train] epoch [6/601], loss:40.0055 class:transistor
+[Train] epoch [7/601], loss:37.9873 class:transistor
+[Train] epoch [8/601], loss:36.3669 class:transistor
+[Train] epoch [9/601], loss:34.9334 class:transistor
+[Train] epoch [10/601], loss:33.6852 class:transistor
+[Eval] transistor class RocAUC at epoch 10: 0.5471
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:32.4767 class:transistor
+[Train] epoch [12/601], loss:31.4744 class:transistor
+[Train] epoch [13/601], loss:30.4605 class:transistor
+[Train] epoch [14/601], loss:29.5230 class:transistor
+[Train] epoch [15/601], loss:28.6926 class:transistor
+[Train] epoch [16/601], loss:27.9540 class:transistor
+[Train] epoch [17/601], loss:27.1280 class:transistor
+[Train] epoch [18/601], loss:26.3686 class:transistor
+[Train] epoch [19/601], loss:25.7831 class:transistor
+[Train] epoch [20/601], loss:24.9903 class:transistor
+[Eval] transistor class RocAUC at epoch 20: 0.5971
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:24.4096 class:transistor
+[Train] epoch [22/601], loss:23.8101 class:transistor
+[Train] epoch [23/601], loss:23.1805 class:transistor
+[Train] epoch [24/601], loss:22.6570 class:transistor
+[Train] epoch [25/601], loss:22.1313 class:transistor
+[Train] epoch [26/601], loss:21.7069 class:transistor
+[Train] epoch [27/601], loss:21.0545 class:transistor
+[Train] epoch [28/601], loss:20.6022 class:transistor
+[Train] epoch [29/601], loss:20.0789 class:transistor
+[Train] epoch [30/601], loss:19.6842 class:transistor
+[Eval] transistor class RocAUC at epoch 30: 0.6183
+[Eval] save best model at epoch 30
+[Train] epoch [31/601], loss:19.3291 class:transistor
+[Train] epoch [32/601], loss:18.8293 class:transistor
+[Train] epoch [33/601], loss:18.4840 class:transistor
+[Train] epoch [34/601], loss:18.0909 class:transistor
+[Train] epoch [35/601], loss:17.6600 class:transistor
+[Train] epoch [36/601], loss:17.3133 class:transistor
+[Train] epoch [37/601], loss:16.9137 class:transistor
+[Train] epoch [38/601], loss:16.6358 class:transistor
+[Train] epoch [39/601], loss:16.2582 class:transistor
+[Train] epoch [40/601], loss:15.9114 class:transistor
+[Eval] transistor class RocAUC at epoch 40: 0.6342
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:15.6863 class:transistor
+[Train] epoch [42/601], loss:15.3105 class:transistor
+[Train] epoch [43/601], loss:15.1436 class:transistor
+[Train] epoch [44/601], loss:14.8356 class:transistor
+[Train] epoch [45/601], loss:14.5620 class:transistor
+[Train] epoch [46/601], loss:14.2738 class:transistor
+[Train] epoch [47/601], loss:14.0269 class:transistor
+[Train] epoch [48/601], loss:13.8417 class:transistor
+[Train] epoch [49/601], loss:13.4947 class:transistor
+[Train] epoch [50/601], loss:13.2975 class:transistor
+[Eval] transistor class RocAUC at epoch 50: 0.6542
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:13.0924 class:transistor
+[Train] epoch [52/601], loss:12.8700 class:transistor
+[Train] epoch [53/601], loss:12.6693 class:transistor
+[Train] epoch [54/601], loss:12.4183 class:transistor
+[Train] epoch [55/601], loss:12.2443 class:transistor
+[Train] epoch [56/601], loss:12.0862 class:transistor
+[Train] epoch [57/601], loss:11.9043 class:transistor
+[Train] epoch [58/601], loss:11.7248 class:transistor
+[Train] epoch [59/601], loss:11.5178 class:transistor
+[Train] epoch [60/601], loss:11.3741 class:transistor
+[Eval] transistor class RocAUC at epoch 60: 0.6762
+[Eval] save best model at epoch 60
+[Train] epoch [61/601], loss:11.1726 class:transistor
+[Train] epoch [62/601], loss:11.1186 class:transistor
+[Train] epoch [63/601], loss:10.9006 class:transistor
+[Train] epoch [64/601], loss:10.7242 class:transistor
+[Train] epoch [65/601], loss:10.6206 class:transistor
+[Train] epoch [66/601], loss:10.4863 class:transistor
+[Train] epoch [67/601], loss:10.2699 class:transistor
+[Train] epoch [68/601], loss:10.1466 class:transistor
+[Train] epoch [69/601], loss:10.0235 class:transistor
+[Train] epoch [70/601], loss:9.8708 class:transistor
+[Eval] transistor class RocAUC at epoch 70: 0.7
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:9.7625 class:transistor
+[Train] epoch [72/601], loss:9.6518 class:transistor
+[Train] epoch [73/601], loss:9.5844 class:transistor
+[Train] epoch [74/601], loss:9.4361 class:transistor
+[Train] epoch [75/601], loss:9.3244 class:transistor
+[Train] epoch [76/601], loss:9.2062 class:transistor
+[Train] epoch [77/601], loss:9.1266 class:transistor
+[Train] epoch [78/601], loss:9.0155 class:transistor
+[Train] epoch [79/601], loss:8.8789 class:transistor
+[Train] epoch [80/601], loss:8.7947 class:transistor
+[Eval] transistor class RocAUC at epoch 80: 0.7175
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:8.6395 class:transistor
+[Train] epoch [82/601], loss:8.5935 class:transistor
+[Train] epoch [83/601], loss:8.4455 class:transistor
+[Train] epoch [84/601], loss:8.3785 class:transistor
+[Train] epoch [85/601], loss:8.3029 class:transistor
+[Train] epoch [86/601], loss:8.1827 class:transistor
+[Train] epoch [87/601], loss:8.1589 class:transistor
+[Train] epoch [88/601], loss:8.0475 class:transistor
+[Train] epoch [89/601], loss:7.9513 class:transistor
+[Train] epoch [90/601], loss:7.9170 class:transistor
+[Eval] transistor class RocAUC at epoch 90: 0.7321
+[Eval] save best model at epoch 90
+[Train] epoch [91/601], loss:7.7945 class:transistor
+[Train] epoch [92/601], loss:7.7703 class:transistor
+[Train] epoch [93/601], loss:7.6810 class:transistor
+[Train] epoch [94/601], loss:7.5574 class:transistor
+[Train] epoch [95/601], loss:7.5933 class:transistor
+[Train] epoch [96/601], loss:7.5042 class:transistor
+[Train] epoch [97/601], loss:7.3736 class:transistor
+[Train] epoch [98/601], loss:7.3728 class:transistor
+[Train] epoch [99/601], loss:7.2666 class:transistor
+[Train] epoch [100/601], loss:7.2781 class:transistor
+[Eval] transistor class RocAUC at epoch 100: 0.7483
+[Eval] save best model at epoch 100
+[Train] epoch [101/601], loss:7.1330 class:transistor
+[Train] epoch [102/601], loss:7.1100 class:transistor
+[Train] epoch [103/601], loss:7.0476 class:transistor
+[Train] epoch [104/601], loss:6.9788 class:transistor
+[Train] epoch [105/601], loss:6.9319 class:transistor
+[Train] epoch [106/601], loss:6.9373 class:transistor
+[Train] epoch [107/601], loss:6.8297 class:transistor
+[Train] epoch [108/601], loss:6.7718 class:transistor
+[Train] epoch [109/601], loss:6.7500 class:transistor
+[Train] epoch [110/601], loss:6.6495 class:transistor
+[Eval] transistor class RocAUC at epoch 110: 0.7567
+[Eval] save best model at epoch 110
+[Train] epoch [111/601], loss:6.6489 class:transistor
+[Train] epoch [112/601], loss:6.5461 class:transistor
+[Train] epoch [113/601], loss:6.5278 class:transistor
+[Train] epoch [114/601], loss:6.4822 class:transistor
+[Train] epoch [115/601], loss:6.4390 class:transistor
+[Train] epoch [116/601], loss:6.4215 class:transistor
+[Train] epoch [117/601], loss:6.3609 class:transistor
+[Train] epoch [118/601], loss:6.3059 class:transistor
+[Train] epoch [119/601], loss:6.2491 class:transistor
+[Train] epoch [120/601], loss:6.2292 class:transistor
+[Eval] transistor class RocAUC at epoch 120: 0.7642
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:6.1797 class:transistor
+[Train] epoch [122/601], loss:6.1326 class:transistor
+[Train] epoch [123/601], loss:6.0789 class:transistor
+[Train] epoch [124/601], loss:6.0332 class:transistor
+[Train] epoch [125/601], loss:6.0435 class:transistor
+[Train] epoch [126/601], loss:6.0203 class:transistor
+[Train] epoch [127/601], loss:5.9389 class:transistor
+[Train] epoch [128/601], loss:5.8837 class:transistor
+[Train] epoch [129/601], loss:5.8810 class:transistor
+[Train] epoch [130/601], loss:5.8157 class:transistor
+[Eval] transistor class RocAUC at epoch 130: 0.7729
+[Eval] save best model at epoch 130
+[Train] epoch [131/601], loss:5.8187 class:transistor
+[Train] epoch [132/601], loss:5.8285 class:transistor
+[Train] epoch [133/601], loss:5.7294 class:transistor
+[Train] epoch [134/601], loss:5.6878 class:transistor
+[Train] epoch [135/601], loss:5.7432 class:transistor
+[Train] epoch [136/601], loss:5.6471 class:transistor
+[Train] epoch [137/601], loss:5.6547 class:transistor
+[Train] epoch [138/601], loss:5.5537 class:transistor
+[Train] epoch [139/601], loss:5.5499 class:transistor
+[Train] epoch [140/601], loss:5.5620 class:transistor
+[Eval] transistor class RocAUC at epoch 140: 0.7783
+[Eval] save best model at epoch 140
+[Train] epoch [141/601], loss:5.4768 class:transistor
+[Train] epoch [142/601], loss:5.4676 class:transistor
+[Train] epoch [143/601], loss:5.4309 class:transistor
+[Train] epoch [144/601], loss:5.4131 class:transistor
+[Train] epoch [145/601], loss:5.3963 class:transistor
+[Train] epoch [146/601], loss:5.3709 class:transistor
+[Train] epoch [147/601], loss:5.3455 class:transistor
+[Train] epoch [148/601], loss:5.3376 class:transistor
+[Train] epoch [149/601], loss:5.3028 class:transistor
+[Train] epoch [150/601], loss:5.3160 class:transistor
+[Eval] transistor class RocAUC at epoch 150: 0.7875
+[Eval] save best model at epoch 150
+[Train] epoch [151/601], loss:5.2303 class:transistor
+[Train] epoch [152/601], loss:5.2467 class:transistor
+[Train] epoch [153/601], loss:5.1736 class:transistor
+[Train] epoch [154/601], loss:5.1410 class:transistor
+[Train] epoch [155/601], loss:5.1732 class:transistor
+[Train] epoch [156/601], loss:5.1409 class:transistor
+[Train] epoch [157/601], loss:5.0751 class:transistor
+[Train] epoch [158/601], loss:5.0967 class:transistor
+[Train] epoch [159/601], loss:5.0122 class:transistor
+[Train] epoch [160/601], loss:5.0436 class:transistor
+[Eval] transistor class RocAUC at epoch 160: 0.7967
+[Eval] save best model at epoch 160
+[Train] epoch [161/601], loss:5.0278 class:transistor
+[Train] epoch [162/601], loss:4.9921 class:transistor
+[Train] epoch [163/601], loss:5.0111 class:transistor
+[Train] epoch [164/601], loss:4.9714 class:transistor
+[Train] epoch [165/601], loss:4.9018 class:transistor
+[Train] epoch [166/601], loss:4.8691 class:transistor
+[Train] epoch [167/601], loss:4.8902 class:transistor
+[Train] epoch [168/601], loss:4.8577 class:transistor
+[Train] epoch [169/601], loss:4.8615 class:transistor
+[Train] epoch [170/601], loss:4.8325 class:transistor
+[Eval] transistor class RocAUC at epoch 170: 0.8004
+[Eval] save best model at epoch 170
+[Train] epoch [171/601], loss:4.8308 class:transistor
+[Train] epoch [172/601], loss:4.8075 class:transistor
+[Train] epoch [173/601], loss:4.7688 class:transistor
+[Train] epoch [174/601], loss:4.7786 class:transistor
+[Train] epoch [175/601], loss:4.7965 class:transistor
+[Train] epoch [176/601], loss:4.7113 class:transistor
+[Train] epoch [177/601], loss:4.7465 class:transistor
+[Train] epoch [178/601], loss:4.7129 class:transistor
+[Train] epoch [179/601], loss:4.6390 class:transistor
+[Train] epoch [180/601], loss:4.6331 class:transistor
+[Eval] transistor class RocAUC at epoch 180: 0.8062
+[Eval] save best model at epoch 180
+[Train] epoch [181/601], loss:4.6288 class:transistor
+[Train] epoch [182/601], loss:4.6588 class:transistor
+[Train] epoch [183/601], loss:4.5921 class:transistor
+[Train] epoch [184/601], loss:4.5862 class:transistor
+[Train] epoch [185/601], loss:4.5296 class:transistor
+[Train] epoch [186/601], loss:4.5439 class:transistor
+[Train] epoch [187/601], loss:4.6186 class:transistor
+[Train] epoch [188/601], loss:4.5353 class:transistor
+[Train] epoch [189/601], loss:4.5385 class:transistor
+[Train] epoch [190/601], loss:4.5584 class:transistor
+[Eval] transistor class RocAUC at epoch 190: 0.8108
+[Eval] save best model at epoch 190
+[Train] epoch [191/601], loss:4.5117 class:transistor
+[Train] epoch [192/601], loss:4.4668 class:transistor
+[Train] epoch [193/601], loss:4.4868 class:transistor
+[Train] epoch [194/601], loss:4.4722 class:transistor
+[Train] epoch [195/601], loss:4.4493 class:transistor
+[Train] epoch [196/601], loss:4.4094 class:transistor
+[Train] epoch [197/601], loss:4.3888 class:transistor
+[Train] epoch [198/601], loss:4.4134 class:transistor
+[Train] epoch [199/601], loss:4.3933 class:transistor
+[Train] epoch [200/601], loss:4.4070 class:transistor
+[Eval] transistor class RocAUC at epoch 200: 0.8083
+[Train] epoch [201/601], loss:4.3520 class:transistor
+[Train] epoch [202/601], loss:4.3314 class:transistor
+[Train] epoch [203/601], loss:4.3447 class:transistor
+[Train] epoch [204/601], loss:4.3394 class:transistor
+[Train] epoch [205/601], loss:4.3199 class:transistor
+[Train] epoch [206/601], loss:4.2628 class:transistor
+[Train] epoch [207/601], loss:4.3093 class:transistor
+[Train] epoch [208/601], loss:4.2461 class:transistor
+[Train] epoch [209/601], loss:4.2545 class:transistor
+[Train] epoch [210/601], loss:4.2639 class:transistor
+[Eval] transistor class RocAUC at epoch 210: 0.8142
+[Eval] save best model at epoch 210
+[Train] epoch [211/601], loss:4.2261 class:transistor
+[Train] epoch [212/601], loss:4.2389 class:transistor
+[Train] epoch [213/601], loss:4.2468 class:transistor
+[Train] epoch [214/601], loss:4.2227 class:transistor
+[Train] epoch [215/601], loss:4.1796 class:transistor
+[Train] epoch [216/601], loss:4.1548 class:transistor
+[Train] epoch [217/601], loss:4.1799 class:transistor
+[Train] epoch [218/601], loss:4.1413 class:transistor
+[Train] epoch [219/601], loss:4.1354 class:transistor
+[Train] epoch [220/601], loss:4.1152 class:transistor
+[Eval] transistor class RocAUC at epoch 220: 0.82
+[Eval] save best model at epoch 220
+[Train] epoch [221/601], loss:4.1579 class:transistor
+[Train] epoch [222/601], loss:4.0949 class:transistor
+[Train] epoch [223/601], loss:4.0804 class:transistor
+[Train] epoch [224/601], loss:4.0883 class:transistor
+[Train] epoch [225/601], loss:4.0860 class:transistor
+[Train] epoch [226/601], loss:4.0827 class:transistor
+[Train] epoch [227/601], loss:4.0470 class:transistor
+[Train] epoch [228/601], loss:4.0516 class:transistor
+[Train] epoch [229/601], loss:4.0625 class:transistor
+[Train] epoch [230/601], loss:4.0436 class:transistor
+[Eval] transistor class RocAUC at epoch 230: 0.8217
+[Eval] save best model at epoch 230
+[Train] epoch [231/601], loss:4.0425 class:transistor
+[Train] epoch [232/601], loss:4.0449 class:transistor
+[Train] epoch [233/601], loss:4.0310 class:transistor
+[Train] epoch [234/601], loss:4.0012 class:transistor
+[Train] epoch [235/601], loss:3.9773 class:transistor
+[Train] epoch [236/601], loss:4.0077 class:transistor
+[Train] epoch [237/601], loss:3.9603 class:transistor
+[Train] epoch [238/601], loss:3.9545 class:transistor
+[Train] epoch [239/601], loss:3.9351 class:transistor
+[Train] epoch [240/601], loss:3.9766 class:transistor
+[Eval] transistor class RocAUC at epoch 240: 0.8246
+[Eval] save best model at epoch 240
+[Train] epoch [241/601], loss:3.9121 class:transistor
+[Train] epoch [242/601], loss:3.9177 class:transistor
+[Train] epoch [243/601], loss:3.9099 class:transistor
+[Train] epoch [244/601], loss:3.9113 class:transistor
+[Train] epoch [245/601], loss:3.8793 class:transistor
+[Train] epoch [246/601], loss:3.8622 class:transistor
+[Train] epoch [247/601], loss:3.8672 class:transistor
+[Train] epoch [248/601], loss:3.8574 class:transistor
+[Train] epoch [249/601], loss:3.8808 class:transistor
+[Train] epoch [250/601], loss:3.8299 class:transistor
+[Eval] transistor class RocAUC at epoch 250: 0.8246
+[Train] epoch [251/601], loss:3.8551 class:transistor
+[Train] epoch [252/601], loss:3.8223 class:transistor
+[Train] epoch [253/601], loss:3.7895 class:transistor
+[Train] epoch [254/601], loss:3.7887 class:transistor
+[Train] epoch [255/601], loss:3.8444 class:transistor
+[Train] epoch [256/601], loss:3.8192 class:transistor
+[Train] epoch [257/601], loss:3.8450 class:transistor
+[Train] epoch [258/601], loss:3.7697 class:transistor
+[Train] epoch [259/601], loss:3.7881 class:transistor
+[Train] epoch [260/601], loss:3.7531 class:transistor
+[Eval] transistor class RocAUC at epoch 260: 0.8283
+[Eval] save best model at epoch 260
+[Train] epoch [261/601], loss:3.7573 class:transistor
+[Train] epoch [262/601], loss:3.7687 class:transistor
+[Train] epoch [263/601], loss:3.7982 class:transistor
+[Train] epoch [264/601], loss:3.7511 class:transistor
+[Train] epoch [265/601], loss:3.7442 class:transistor
+[Train] epoch [266/601], loss:3.7653 class:transistor
+[Train] epoch [267/601], loss:3.7369 class:transistor
+[Train] epoch [268/601], loss:3.7298 class:transistor
+[Train] epoch [269/601], loss:3.7458 class:transistor
+[Train] epoch [270/601], loss:3.7751 class:transistor
+[Eval] transistor class RocAUC at epoch 270: 0.8283
+[Train] epoch [271/601], loss:3.7099 class:transistor
+[Train] epoch [272/601], loss:3.6982 class:transistor
+[Train] epoch [273/601], loss:3.6909 class:transistor
+[Train] epoch [274/601], loss:3.6752 class:transistor
+[Train] epoch [275/601], loss:3.6914 class:transistor
+[Train] epoch [276/601], loss:3.6604 class:transistor
+[Train] epoch [277/601], loss:3.6773 class:transistor
+[Train] epoch [278/601], loss:3.6296 class:transistor
+[Train] epoch [279/601], loss:3.6882 class:transistor
+[Train] epoch [280/601], loss:3.6618 class:transistor
+[Eval] transistor class RocAUC at epoch 280: 0.8325
+[Eval] save best model at epoch 280
+[Train] epoch [281/601], loss:3.6296 class:transistor
+[Train] epoch [282/601], loss:3.6449 class:transistor
+[Train] epoch [283/601], loss:3.5991 class:transistor
+[Train] epoch [284/601], loss:3.6062 class:transistor
+[Train] epoch [285/601], loss:3.6163 class:transistor
+[Train] epoch [286/601], loss:3.6152 class:transistor
+[Train] epoch [287/601], loss:3.6158 class:transistor
+[Train] epoch [288/601], loss:3.5720 class:transistor
+[Train] epoch [289/601], loss:3.5718 class:transistor
+[Train] epoch [290/601], loss:3.5871 class:transistor
+[Eval] transistor class RocAUC at epoch 290: 0.8338
+[Eval] save best model at epoch 290
+[Train] epoch [291/601], loss:3.5665 class:transistor
+[Train] epoch [292/601], loss:3.5441 class:transistor
+[Train] epoch [293/601], loss:3.5492 class:transistor
+[Train] epoch [294/601], loss:3.5794 class:transistor
+[Train] epoch [295/601], loss:3.5570 class:transistor
+[Train] epoch [296/601], loss:3.5582 class:transistor
+[Train] epoch [297/601], loss:3.5397 class:transistor
+[Train] epoch [298/601], loss:3.5382 class:transistor
+[Train] epoch [299/601], loss:3.5658 class:transistor
+[Train] epoch [300/601], loss:3.5237 class:transistor
+[Eval] transistor class RocAUC at epoch 300: 0.8375
+[Eval] save best model at epoch 300
+[Train] epoch [301/601], loss:3.5156 class:transistor
+[Train] epoch [302/601], loss:3.5278 class:transistor
+[Train] epoch [303/601], loss:3.5144 class:transistor
+[Train] epoch [304/601], loss:3.4968 class:transistor
+[Train] epoch [305/601], loss:3.4986 class:transistor
+[Train] epoch [306/601], loss:3.4986 class:transistor
+[Train] epoch [307/601], loss:3.4904 class:transistor
+[Train] epoch [308/601], loss:3.4830 class:transistor
+[Train] epoch [309/601], loss:3.4535 class:transistor
+[Train] epoch [310/601], loss:3.4727 class:transistor
+[Eval] transistor class RocAUC at epoch 310: 0.8404
+[Eval] save best model at epoch 310
+[Train] epoch [311/601], loss:3.4627 class:transistor
+[Train] epoch [312/601], loss:3.4432 class:transistor
+[Train] epoch [313/601], loss:3.4696 class:transistor
+[Train] epoch [314/601], loss:3.4427 class:transistor
+[Train] epoch [315/601], loss:3.4807 class:transistor
+[Train] epoch [316/601], loss:3.4278 class:transistor
+[Train] epoch [317/601], loss:3.4489 class:transistor
+[Train] epoch [318/601], loss:3.4471 class:transistor
+[Train] epoch [319/601], loss:3.4337 class:transistor
+[Train] epoch [320/601], loss:3.4163 class:transistor
+[Eval] transistor class RocAUC at epoch 320: 0.8396
+[Train] epoch [321/601], loss:3.4078 class:transistor
+[Train] epoch [322/601], loss:3.4218 class:transistor
+[Train] epoch [323/601], loss:3.4231 class:transistor
+[Train] epoch [324/601], loss:3.4075 class:transistor
+[Train] epoch [325/601], loss:3.4229 class:transistor
+[Train] epoch [326/601], loss:3.4047 class:transistor
+[Train] epoch [327/601], loss:3.3810 class:transistor
+[Train] epoch [328/601], loss:3.3866 class:transistor
+[Train] epoch [329/601], loss:3.3757 class:transistor
+[Train] epoch [330/601], loss:3.3670 class:transistor
+[Eval] transistor class RocAUC at epoch 330: 0.8425
+[Eval] save best model at epoch 330
+[Train] epoch [331/601], loss:3.3748 class:transistor
+[Train] epoch [332/601], loss:3.3704 class:transistor
+[Train] epoch [333/601], loss:3.3641 class:transistor
+[Train] epoch [334/601], loss:3.3907 class:transistor
+[Train] epoch [335/601], loss:3.3676 class:transistor
+[Train] epoch [336/601], loss:3.3301 class:transistor
+[Train] epoch [337/601], loss:3.3677 class:transistor
+[Train] epoch [338/601], loss:3.3387 class:transistor
+[Train] epoch [339/601], loss:3.3291 class:transistor
+[Train] epoch [340/601], loss:3.3495 class:transistor
+[Eval] transistor class RocAUC at epoch 340: 0.8462
+[Eval] save best model at epoch 340
+[Train] epoch [341/601], loss:3.3469 class:transistor
+[Train] epoch [342/601], loss:3.3037 class:transistor
+[Train] epoch [343/601], loss:3.3492 class:transistor
+[Train] epoch [344/601], loss:3.3114 class:transistor
+[Train] epoch [345/601], loss:3.3380 class:transistor
+[Train] epoch [346/601], loss:3.2842 class:transistor
+[Train] epoch [347/601], loss:3.3212 class:transistor
+[Train] epoch [348/601], loss:3.2865 class:transistor
+[Train] epoch [349/601], loss:3.3143 class:transistor
+[Train] epoch [350/601], loss:3.2997 class:transistor
+[Eval] transistor class RocAUC at epoch 350: 0.8412
+[Train] epoch [351/601], loss:3.2634 class:transistor
+[Train] epoch [352/601], loss:3.2813 class:transistor
+[Train] epoch [353/601], loss:3.2844 class:transistor
+[Train] epoch [354/601], loss:3.3167 class:transistor
+[Train] epoch [355/601], loss:3.3232 class:transistor
+[Train] epoch [356/601], loss:3.3082 class:transistor
+[Train] epoch [357/601], loss:3.2817 class:transistor
+[Train] epoch [358/601], loss:3.2406 class:transistor
+[Train] epoch [359/601], loss:3.2804 class:transistor
+[Train] epoch [360/601], loss:3.2545 class:transistor
+[Eval] transistor class RocAUC at epoch 360: 0.8446
+[Train] epoch [361/601], loss:3.2739 class:transistor
+[Train] epoch [362/601], loss:3.2364 class:transistor
+[Train] epoch [363/601], loss:3.2235 class:transistor
+[Train] epoch [364/601], loss:3.2226 class:transistor
+[Train] epoch [365/601], loss:3.2243 class:transistor
+[Train] epoch [366/601], loss:3.1874 class:transistor
+[Train] epoch [367/601], loss:3.2178 class:transistor
+[Train] epoch [368/601], loss:3.2193 class:transistor
+[Train] epoch [369/601], loss:3.2141 class:transistor
+[Train] epoch [370/601], loss:3.2364 class:transistor
+[Eval] transistor class RocAUC at epoch 370: 0.8458
+[Train] epoch [371/601], loss:3.2207 class:transistor
+[Train] epoch [372/601], loss:3.1988 class:transistor
+[Train] epoch [373/601], loss:3.1921 class:transistor
+[Train] epoch [374/601], loss:3.2058 class:transistor
+[Train] epoch [375/601], loss:3.2047 class:transistor
+[Train] epoch [376/601], loss:3.1677 class:transistor
+[Train] epoch [377/601], loss:3.1943 class:transistor
+[Train] epoch [378/601], loss:3.2024 class:transistor
+[Train] epoch [379/601], loss:3.1639 class:transistor
+[Train] epoch [380/601], loss:3.1827 class:transistor
+[Eval] transistor class RocAUC at epoch 380: 0.8488
+[Eval] save best model at epoch 380
+[Train] epoch [381/601], loss:3.1696 class:transistor
+[Train] epoch [382/601], loss:3.1687 class:transistor
+[Train] epoch [383/601], loss:3.1582 class:transistor
+[Train] epoch [384/601], loss:3.1725 class:transistor
+[Train] epoch [385/601], loss:3.1604 class:transistor
+[Train] epoch [386/601], loss:3.1544 class:transistor
+[Train] epoch [387/601], loss:3.1680 class:transistor
+[Train] epoch [388/601], loss:3.1414 class:transistor
+[Train] epoch [389/601], loss:3.1651 class:transistor
+[Train] epoch [390/601], loss:3.1538 class:transistor
+[Eval] transistor class RocAUC at epoch 390: 0.8504
+[Eval] save best model at epoch 390
+[Train] epoch [391/601], loss:3.1534 class:transistor
+[Train] epoch [392/601], loss:3.1373 class:transistor
+[Train] epoch [393/601], loss:3.1300 class:transistor
+[Train] epoch [394/601], loss:3.1064 class:transistor
+[Train] epoch [395/601], loss:3.1336 class:transistor
+[Train] epoch [396/601], loss:3.1387 class:transistor
+[Train] epoch [397/601], loss:3.1376 class:transistor
+[Train] epoch [398/601], loss:3.1229 class:transistor
+[Train] epoch [399/601], loss:3.1454 class:transistor
+[Train] epoch [400/601], loss:3.1294 class:transistor
+[Eval] transistor class RocAUC at epoch 400: 0.8467
+[Train] epoch [401/601], loss:3.0924 class:transistor
+[Train] epoch [402/601], loss:3.1314 class:transistor
+[Train] epoch [403/601], loss:3.1135 class:transistor
+[Train] epoch [404/601], loss:3.1078 class:transistor
+[Train] epoch [405/601], loss:3.1155 class:transistor
+[Train] epoch [406/601], loss:3.1248 class:transistor
+[Train] epoch [407/601], loss:3.0992 class:transistor
+[Train] epoch [408/601], loss:3.1151 class:transistor
+[Train] epoch [409/601], loss:3.0951 class:transistor
+[Train] epoch [410/601], loss:3.0871 class:transistor
+[Eval] transistor class RocAUC at epoch 410: 0.8508
+[Eval] save best model at epoch 410
+[Train] epoch [411/601], loss:3.1137 class:transistor
+[Train] epoch [412/601], loss:3.1022 class:transistor
+[Train] epoch [413/601], loss:3.0460 class:transistor
+[Train] epoch [414/601], loss:3.0605 class:transistor
+[Train] epoch [415/601], loss:3.1289 class:transistor
+[Train] epoch [416/601], loss:3.0495 class:transistor
+[Train] epoch [417/601], loss:3.0557 class:transistor
+[Train] epoch [418/601], loss:3.0773 class:transistor
+[Train] epoch [419/601], loss:3.0562 class:transistor
+[Train] epoch [420/601], loss:3.0325 class:transistor
+[Eval] transistor class RocAUC at epoch 420: 0.8512
+[Eval] save best model at epoch 420
+[Train] epoch [421/601], loss:3.0725 class:transistor
+[Train] epoch [422/601], loss:3.0693 class:transistor
+[Train] epoch [423/601], loss:3.0698 class:transistor
+[Train] epoch [424/601], loss:3.0493 class:transistor
+[Train] epoch [425/601], loss:3.0500 class:transistor
+[Train] epoch [426/601], loss:3.0242 class:transistor
+[Train] epoch [427/601], loss:3.0767 class:transistor
+[Train] epoch [428/601], loss:3.0156 class:transistor
+[Train] epoch [429/601], loss:3.0265 class:transistor
+[Train] epoch [430/601], loss:3.0321 class:transistor
+[Eval] transistor class RocAUC at epoch 430: 0.8496
+[Train] epoch [431/601], loss:3.0370 class:transistor
+[Train] epoch [432/601], loss:3.0640 class:transistor
+[Train] epoch [433/601], loss:3.0291 class:transistor
+[Train] epoch [434/601], loss:2.9916 class:transistor
+[Train] epoch [435/601], loss:3.0130 class:transistor
+[Train] epoch [436/601], loss:3.0268 class:transistor
+[Train] epoch [437/601], loss:3.0129 class:transistor
+[Train] epoch [438/601], loss:2.9803 class:transistor
+[Train] epoch [439/601], loss:2.9862 class:transistor
+[Train] epoch [440/601], loss:2.9999 class:transistor
+[Eval] transistor class RocAUC at epoch 440: 0.8529
+[Eval] save best model at epoch 440
+[Train] epoch [441/601], loss:3.0080 class:transistor
+[Train] epoch [442/601], loss:3.0014 class:transistor
+[Train] epoch [443/601], loss:2.9764 class:transistor
+[Train] epoch [444/601], loss:3.0041 class:transistor
+[Train] epoch [445/601], loss:3.0089 class:transistor
+[Train] epoch [446/601], loss:2.9942 class:transistor
+[Train] epoch [447/601], loss:2.9946 class:transistor
+[Train] epoch [448/601], loss:2.9736 class:transistor
+[Train] epoch [449/601], loss:2.9509 class:transistor
+[Train] epoch [450/601], loss:2.9527 class:transistor
+[Eval] transistor class RocAUC at epoch 450: 0.8479
+[Train] epoch [451/601], loss:2.9680 class:transistor
+[Train] epoch [452/601], loss:2.9620 class:transistor
+[Train] epoch [453/601], loss:2.9997 class:transistor
+[Train] epoch [454/601], loss:2.9519 class:transistor
+[Train] epoch [455/601], loss:2.9706 class:transistor
+[Train] epoch [456/601], loss:2.9661 class:transistor
+[Train] epoch [457/601], loss:2.9460 class:transistor
+[Train] epoch [458/601], loss:2.9246 class:transistor
+[Train] epoch [459/601], loss:2.9569 class:transistor
+[Train] epoch [460/601], loss:2.9237 class:transistor
+[Eval] transistor class RocAUC at epoch 460: 0.8508
+[Train] epoch [461/601], loss:2.9481 class:transistor
+[Train] epoch [462/601], loss:2.9583 class:transistor
+[Train] epoch [463/601], loss:2.9173 class:transistor
+[Train] epoch [464/601], loss:2.9404 class:transistor
+[Train] epoch [465/601], loss:2.9409 class:transistor
+[Train] epoch [466/601], loss:2.9241 class:transistor
+[Train] epoch [467/601], loss:2.9489 class:transistor
+[Train] epoch [468/601], loss:2.9223 class:transistor
+[Train] epoch [469/601], loss:2.9251 class:transistor
+[Train] epoch [470/601], loss:2.9092 class:transistor
+[Eval] transistor class RocAUC at epoch 470: 0.8542
+[Eval] save best model at epoch 470
+[Train] epoch [471/601], loss:2.9111 class:transistor
+[Train] epoch [472/601], loss:2.9349 class:transistor
+[Train] epoch [473/601], loss:2.9269 class:transistor
+[Train] epoch [474/601], loss:2.9145 class:transistor
+[Train] epoch [475/601], loss:2.9004 class:transistor
+[Train] epoch [476/601], loss:2.9095 class:transistor
+[Train] epoch [477/601], loss:2.8925 class:transistor
+[Train] epoch [478/601], loss:2.8854 class:transistor
+[Train] epoch [479/601], loss:2.8825 class:transistor
+[Train] epoch [480/601], loss:2.9145 class:transistor
+[Eval] transistor class RocAUC at epoch 480: 0.8517
+[Train] epoch [481/601], loss:2.9070 class:transistor
+[Train] epoch [482/601], loss:2.8781 class:transistor
+[Train] epoch [483/601], loss:2.8831 class:transistor
+[Train] epoch [484/601], loss:2.8928 class:transistor
+[Train] epoch [485/601], loss:2.9127 class:transistor
+[Train] epoch [486/601], loss:2.8788 class:transistor
+[Train] epoch [487/601], loss:2.8650 class:transistor
+[Train] epoch [488/601], loss:2.8803 class:transistor
+[Train] epoch [489/601], loss:2.8596 class:transistor
+[Train] epoch [490/601], loss:2.8952 class:transistor
+[Eval] transistor class RocAUC at epoch 490: 0.8512
+[Train] epoch [491/601], loss:2.9145 class:transistor
+[Train] epoch [492/601], loss:2.8939 class:transistor
+[Train] epoch [493/601], loss:2.8685 class:transistor
+[Train] epoch [494/601], loss:2.8540 class:transistor
+[Train] epoch [495/601], loss:2.8754 class:transistor
+[Train] epoch [496/601], loss:2.8509 class:transistor
+[Train] epoch [497/601], loss:2.8666 class:transistor
+[Train] epoch [498/601], loss:2.8953 class:transistor
+[Train] epoch [499/601], loss:2.8514 class:transistor
+[Train] epoch [500/601], loss:2.8484 class:transistor
+[Eval] transistor class RocAUC at epoch 500: 0.8512
+[Train] epoch [501/601], loss:2.8620 class:transistor
+[Train] epoch [502/601], loss:2.8209 class:transistor
+[Train] epoch [503/601], loss:2.8381 class:transistor
+[Train] epoch [504/601], loss:2.8377 class:transistor
+[Train] epoch [505/601], loss:2.8329 class:transistor
+[Train] epoch [506/601], loss:2.8353 class:transistor
+[Train] epoch [507/601], loss:2.8420 class:transistor
+[Train] epoch [508/601], loss:2.8554 class:transistor
+[Train] epoch [509/601], loss:2.8434 class:transistor
+[Train] epoch [510/601], loss:2.8518 class:transistor
+[Eval] transistor class RocAUC at epoch 510: 0.8529
+[Train] epoch [511/601], loss:2.8309 class:transistor
+[Train] epoch [512/601], loss:2.8366 class:transistor
+[Train] epoch [513/601], loss:2.8406 class:transistor
+[Train] epoch [514/601], loss:2.8138 class:transistor
+[Train] epoch [515/601], loss:2.8301 class:transistor
+[Train] epoch [516/601], loss:2.8038 class:transistor
+[Train] epoch [517/601], loss:2.8287 class:transistor
+[Train] epoch [518/601], loss:2.8137 class:transistor
+[Train] epoch [519/601], loss:2.7958 class:transistor
+[Train] epoch [520/601], loss:2.8187 class:transistor
+[Eval] transistor class RocAUC at epoch 520: 0.8533
+[Train] epoch [521/601], loss:2.8349 class:transistor
+[Train] epoch [522/601], loss:2.8143 class:transistor
+[Train] epoch [523/601], loss:2.7989 class:transistor
+[Train] epoch [524/601], loss:2.7849 class:transistor
+[Train] epoch [525/601], loss:2.8353 class:transistor
+[Train] epoch [526/601], loss:2.8388 class:transistor
+[Train] epoch [527/601], loss:2.8098 class:transistor
+[Train] epoch [528/601], loss:2.8046 class:transistor
+[Train] epoch [529/601], loss:2.8361 class:transistor
+[Train] epoch [530/601], loss:2.8236 class:transistor
+[Eval] transistor class RocAUC at epoch 530: 0.8512
+[Train] epoch [531/601], loss:2.7912 class:transistor
+[Train] epoch [532/601], loss:2.8178 class:transistor
+[Train] epoch [533/601], loss:2.7877 class:transistor
+[Train] epoch [534/601], loss:2.8011 class:transistor
+[Train] epoch [535/601], loss:2.7944 class:transistor
+[Train] epoch [536/601], loss:2.7522 class:transistor
+[Train] epoch [537/601], loss:2.7670 class:transistor
+[Train] epoch [538/601], loss:2.7943 class:transistor
+[Train] epoch [539/601], loss:2.7578 class:transistor
+[Train] epoch [540/601], loss:2.7575 class:transistor
+[Eval] transistor class RocAUC at epoch 540: 0.8562
+[Eval] save best model at epoch 540
+[Train] epoch [541/601], loss:2.7473 class:transistor
+[Train] epoch [542/601], loss:2.7794 class:transistor
+[Train] epoch [543/601], loss:2.7705 class:transistor
+[Train] epoch [544/601], loss:2.7918 class:transistor
+[Train] epoch [545/601], loss:2.7691 class:transistor
+[Train] epoch [546/601], loss:2.7676 class:transistor
+[Train] epoch [547/601], loss:2.7854 class:transistor
+[Train] epoch [548/601], loss:2.7775 class:transistor
+[Train] epoch [549/601], loss:2.7711 class:transistor
+[Train] epoch [550/601], loss:2.7722 class:transistor
+[Eval] transistor class RocAUC at epoch 550: 0.8567
+[Eval] save best model at epoch 550
+[Train] epoch [551/601], loss:2.7825 class:transistor
+[Train] epoch [552/601], loss:2.7655 class:transistor
+[Train] epoch [553/601], loss:2.7543 class:transistor
+[Train] epoch [554/601], loss:2.7593 class:transistor
+[Train] epoch [555/601], loss:2.7577 class:transistor
+[Train] epoch [556/601], loss:2.7442 class:transistor
+[Train] epoch [557/601], loss:2.7564 class:transistor
+[Train] epoch [558/601], loss:2.7415 class:transistor
+[Train] epoch [559/601], loss:2.7373 class:transistor
+[Train] epoch [560/601], loss:2.7211 class:transistor
+[Eval] transistor class RocAUC at epoch 560: 0.8525
+[Train] epoch [561/601], loss:2.7379 class:transistor
+[Train] epoch [562/601], loss:2.7427 class:transistor
+[Train] epoch [563/601], loss:2.7223 class:transistor
+[Train] epoch [564/601], loss:2.7314 class:transistor
+[Train] epoch [565/601], loss:2.7492 class:transistor
+[Train] epoch [566/601], loss:2.7498 class:transistor
+[Train] epoch [567/601], loss:2.7383 class:transistor
+[Train] epoch [568/601], loss:2.7247 class:transistor
+[Train] epoch [569/601], loss:2.7493 class:transistor
+[Train] epoch [570/601], loss:2.7359 class:transistor
+[Eval] transistor class RocAUC at epoch 570: 0.8575
+[Eval] save best model at epoch 570
+[Train] epoch [571/601], loss:2.7241 class:transistor
+[Train] epoch [572/601], loss:2.7261 class:transistor
+[Train] epoch [573/601], loss:2.7368 class:transistor
+[Train] epoch [574/601], loss:2.6917 class:transistor
+[Train] epoch [575/601], loss:2.7302 class:transistor
+[Train] epoch [576/601], loss:2.7100 class:transistor
+[Train] epoch [577/601], loss:2.7331 class:transistor
+[Train] epoch [578/601], loss:2.7396 class:transistor
+[Train] epoch [579/601], loss:2.7025 class:transistor
+[Train] epoch [580/601], loss:2.7302 class:transistor
+[Eval] transistor class RocAUC at epoch 580: 0.8554
+[Train] epoch [581/601], loss:2.6949 class:transistor
+[Train] epoch [582/601], loss:2.7144 class:transistor
+[Train] epoch [583/601], loss:2.7080 class:transistor
+[Train] epoch [584/601], loss:2.7571 class:transistor
+[Train] epoch [585/601], loss:2.7312 class:transistor
+[Train] epoch [586/601], loss:2.7210 class:transistor
+[Train] epoch [587/601], loss:2.6877 class:transistor
+[Train] epoch [588/601], loss:2.6955 class:transistor
+[Train] epoch [589/601], loss:2.7342 class:transistor
+[Train] epoch [590/601], loss:2.7155 class:transistor
+[Eval] transistor class RocAUC at epoch 590: 0.8554
+[Train] epoch [591/601], loss:2.7030 class:transistor
+[Train] epoch [592/601], loss:2.7276 class:transistor
+[Train] epoch [593/601], loss:2.7064 class:transistor
+[Train] epoch [594/601], loss:2.6983 class:transistor
+[Train] epoch [595/601], loss:2.6810 class:transistor
+[Train] epoch [596/601], loss:2.7228 class:transistor
+[Train] epoch [597/601], loss:2.6933 class:transistor
+[Train] epoch [598/601], loss:2.6844 class:transistor
+[Train] epoch [599/601], loss:2.7088 class:transistor
+[Train] epoch [600/601], loss:2.7034 class:transistor
+[Eval] transistor class RocAUC at epoch 600: 0.8567
+[Train] epoch [601/601], loss:2.6744 class:transistor
+[Eval] transistor class RocAUC at epoch 601: 0.8575

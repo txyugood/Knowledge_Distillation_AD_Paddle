@@ -1,0 +1,790 @@
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:27.8074 class:screw
+[Train] epoch [1/601], loss:23.4442 class:screw
+[Train] epoch [2/601], loss:21.0036 class:screw
+[Train] epoch [3/601], loss:19.2579 class:screw
+[Train] epoch [4/601], loss:17.8600 class:screw
+[Train] epoch [5/601], loss:16.6796 class:screw
+[Train] epoch [6/601], loss:15.6850 class:screw
+[Train] epoch [7/601], loss:14.8204 class:screw
+[Train] epoch [8/601], loss:14.0789 class:screw
+[Train] epoch [9/601], loss:13.4146 class:screw
+[Train] epoch [10/601], loss:12.8280 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7657 localization: 0.9051275253295898 at epoch 10
+[Eval] best detection_roc_auc at epoch 10
+[Eval] best localization_roc_auc at epoch 10
+[Train] epoch [11/601], loss:13.0611 class:screw
+[Train] epoch [12/601], loss:12.6961 class:screw
+[Train] epoch [13/601], loss:12.1396 class:screw
+[Train] epoch [14/601], loss:11.6551 class:screw
+[Train] epoch [15/601], loss:11.2474 class:screw
+[Train] epoch [16/601], loss:10.8953 class:screw
+[Train] epoch [17/601], loss:10.5842 class:screw
+[Train] epoch [18/601], loss:10.3052 class:screw
+[Train] epoch [19/601], loss:10.0499 class:screw
+[Train] epoch [20/601], loss:9.8083 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6243 localization: 0.9204410314559937 at epoch 20
+[Eval] best localization_roc_auc at epoch 20
+[Train] epoch [21/601], loss:9.7413 class:screw
+[Train] epoch [22/601], loss:9.5718 class:screw
+[Train] epoch [23/601], loss:9.3471 class:screw
+[Train] epoch [24/601], loss:9.1110 class:screw
+[Train] epoch [25/601], loss:8.9098 class:screw
+[Train] epoch [26/601], loss:8.7249 class:screw
+[Train] epoch [27/601], loss:8.5612 class:screw
+[Train] epoch [28/601], loss:8.3923 class:screw
+[Train] epoch [29/601], loss:8.2397 class:screw
+[Train] epoch [30/601], loss:8.0977 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6669 localization: 0.9188724756240845 at epoch 30
+[Train] epoch [31/601], loss:8.0960 class:screw
+[Train] epoch [32/601], loss:8.0094 class:screw
+[Train] epoch [33/601], loss:7.8581 class:screw
+[Train] epoch [34/601], loss:7.6999 class:screw
+[Train] epoch [35/601], loss:7.5532 class:screw
+[Train] epoch [36/601], loss:7.4307 class:screw
+[Train] epoch [37/601], loss:7.3129 class:screw
+[Train] epoch [38/601], loss:7.1925 class:screw
+[Train] epoch [39/601], loss:7.0872 class:screw
+[Train] epoch [40/601], loss:6.9839 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.5653 localization: 0.9115244746208191 at epoch 40
+[Train] epoch [41/601], loss:7.2949 class:screw
+[Train] epoch [42/601], loss:7.1886 class:screw
+[Train] epoch [43/601], loss:6.9930 class:screw
+[Train] epoch [44/601], loss:6.8114 class:screw
+[Train] epoch [45/601], loss:6.6755 class:screw
+[Train] epoch [46/601], loss:6.5505 class:screw
+[Train] epoch [47/601], loss:6.4674 class:screw
+[Train] epoch [48/601], loss:6.3563 class:screw
+[Train] epoch [49/601], loss:6.2688 class:screw
+[Train] epoch [50/601], loss:6.1814 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6678 localization: 0.9281461834907532 at epoch 50
+[Eval] best localization_roc_auc at epoch 50
+[Train] epoch [51/601], loss:6.1703 class:screw
+[Train] epoch [52/601], loss:6.1339 class:screw
+[Train] epoch [53/601], loss:6.0424 class:screw
+[Train] epoch [54/601], loss:5.9473 class:screw
+[Train] epoch [55/601], loss:5.8548 class:screw
+[Train] epoch [56/601], loss:5.7822 class:screw
+[Train] epoch [57/601], loss:5.7055 class:screw
+[Train] epoch [58/601], loss:5.6482 class:screw
+[Train] epoch [59/601], loss:5.5763 class:screw
+[Train] epoch [60/601], loss:5.5200 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6639 localization: 0.932273268699646 at epoch 60
+[Eval] best localization_roc_auc at epoch 60
+[Train] epoch [61/601], loss:5.5457 class:screw
+[Train] epoch [62/601], loss:5.5135 class:screw
+[Train] epoch [63/601], loss:5.4336 class:screw
+[Train] epoch [64/601], loss:5.3525 class:screw
+[Train] epoch [65/601], loss:5.2774 class:screw
+[Train] epoch [66/601], loss:5.2087 class:screw
+[Train] epoch [67/601], loss:5.1595 class:screw
+[Train] epoch [68/601], loss:5.0959 class:screw
+[Train] epoch [69/601], loss:5.0446 class:screw
+[Train] epoch [70/601], loss:4.9958 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6799 localization: 0.9266207218170166 at epoch 70
+[Train] epoch [71/601], loss:5.3449 class:screw
+[Train] epoch [72/601], loss:5.3889 class:screw
+[Train] epoch [73/601], loss:5.1999 class:screw
+[Train] epoch [74/601], loss:5.0524 class:screw
+[Train] epoch [75/601], loss:4.9474 class:screw
+[Train] epoch [76/601], loss:4.8737 class:screw
+[Train] epoch [77/601], loss:4.8061 class:screw
+[Train] epoch [78/601], loss:4.7521 class:screw
+[Train] epoch [79/601], loss:4.6936 class:screw
+[Train] epoch [80/601], loss:4.6431 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6868 localization: 0.9198992848396301 at epoch 80
+[Train] epoch [81/601], loss:4.8935 class:screw
+[Train] epoch [82/601], loss:4.9828 class:screw
+[Train] epoch [83/601], loss:4.8464 class:screw
+[Train] epoch [84/601], loss:4.7150 class:screw
+[Train] epoch [85/601], loss:4.6213 class:screw
+[Train] epoch [86/601], loss:4.5387 class:screw
+[Train] epoch [87/601], loss:4.4804 class:screw
+[Train] epoch [88/601], loss:4.4319 class:screw
+[Train] epoch [89/601], loss:4.3865 class:screw
+[Train] epoch [90/601], loss:4.3502 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6758 localization: 0.9238695502281189 at epoch 90
+[Train] epoch [91/601], loss:4.4871 class:screw
+[Train] epoch [92/601], loss:4.5345 class:screw
+[Train] epoch [93/601], loss:4.4589 class:screw
+[Train] epoch [94/601], loss:4.3432 class:screw
+[Train] epoch [95/601], loss:4.2924 class:screw
+[Train] epoch [96/601], loss:4.2337 class:screw
+[Train] epoch [97/601], loss:4.1798 class:screw
+[Train] epoch [98/601], loss:4.1311 class:screw
+[Train] epoch [99/601], loss:4.1139 class:screw
+[Train] epoch [100/601], loss:4.0687 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6628 localization: 0.9365239143371582 at epoch 100
+[Eval] best localization_roc_auc at epoch 100
+[Train] epoch [101/601], loss:4.0704 class:screw
+[Train] epoch [102/601], loss:4.0620 class:screw
+[Train] epoch [103/601], loss:4.0190 class:screw
+[Train] epoch [104/601], loss:3.9867 class:screw
+[Train] epoch [105/601], loss:3.9423 class:screw
+[Train] epoch [106/601], loss:3.9188 class:screw
+[Train] epoch [107/601], loss:3.8915 class:screw
+[Train] epoch [108/601], loss:3.8585 class:screw
+[Train] epoch [109/601], loss:3.8486 class:screw
+[Train] epoch [110/601], loss:3.8151 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6848 localization: 0.9409704208374023 at epoch 110
+[Eval] best localization_roc_auc at epoch 110
+[Train] epoch [111/601], loss:3.8577 class:screw
+[Train] epoch [112/601], loss:3.8506 class:screw
+[Train] epoch [113/601], loss:3.8083 class:screw
+[Train] epoch [114/601], loss:3.7730 class:screw
+[Train] epoch [115/601], loss:3.7370 class:screw
+[Train] epoch [116/601], loss:3.7061 class:screw
+[Train] epoch [117/601], loss:3.6754 class:screw
+[Train] epoch [118/601], loss:3.6525 class:screw
+[Train] epoch [119/601], loss:3.6260 class:screw
+[Train] epoch [120/601], loss:3.6118 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6922 localization: 0.9421061873435974 at epoch 120
+[Eval] best localization_roc_auc at epoch 120
+[Train] epoch [121/601], loss:3.6656 class:screw
+[Train] epoch [122/601], loss:3.6706 class:screw
+[Train] epoch [123/601], loss:3.6282 class:screw
+[Train] epoch [124/601], loss:3.5912 class:screw
+[Train] epoch [125/601], loss:3.5529 class:screw
+[Train] epoch [126/601], loss:3.5201 class:screw
+[Train] epoch [127/601], loss:3.4932 class:screw
+[Train] epoch [128/601], loss:3.4756 class:screw
+[Train] epoch [129/601], loss:3.4576 class:screw
+[Train] epoch [130/601], loss:3.4363 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7069 localization: 0.9434789419174194 at epoch 130
+[Eval] best localization_roc_auc at epoch 130
+[Train] epoch [131/601], loss:3.5029 class:screw
+[Train] epoch [132/601], loss:3.5131 class:screw
+[Train] epoch [133/601], loss:3.4621 class:screw
+[Train] epoch [134/601], loss:3.4243 class:screw
+[Train] epoch [135/601], loss:3.3862 class:screw
+[Train] epoch [136/601], loss:3.3706 class:screw
+[Train] epoch [137/601], loss:3.3406 class:screw
+[Train] epoch [138/601], loss:3.3255 class:screw
+[Train] epoch [139/601], loss:3.3125 class:screw
+[Train] epoch [140/601], loss:3.2934 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.71 localization: 0.9473314881324768 at epoch 140
+[Eval] best localization_roc_auc at epoch 140
+[Train] epoch [141/601], loss:3.3429 class:screw
+[Train] epoch [142/601], loss:3.3698 class:screw
+[Train] epoch [143/601], loss:3.3095 class:screw
+[Train] epoch [144/601], loss:3.2787 class:screw
+[Train] epoch [145/601], loss:3.2441 class:screw
+[Train] epoch [146/601], loss:3.2227 class:screw
+[Train] epoch [147/601], loss:3.2026 class:screw
+[Train] epoch [148/601], loss:3.1865 class:screw
+[Train] epoch [149/601], loss:3.1839 class:screw
+[Train] epoch [150/601], loss:3.1586 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7159 localization: 0.9486598968505859 at epoch 150
+[Eval] best localization_roc_auc at epoch 150
+[Train] epoch [151/601], loss:3.2380 class:screw
+[Train] epoch [152/601], loss:3.2741 class:screw
+[Train] epoch [153/601], loss:3.2121 class:screw
+[Train] epoch [154/601], loss:3.1719 class:screw
+[Train] epoch [155/601], loss:3.1324 class:screw
+[Train] epoch [156/601], loss:3.1094 class:screw
+[Train] epoch [157/601], loss:3.0897 class:screw
+[Train] epoch [158/601], loss:3.0774 class:screw
+[Train] epoch [159/601], loss:3.0548 class:screw
+[Train] epoch [160/601], loss:3.0419 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.717 localization: 0.9540466666221619 at epoch 160
+[Eval] best localization_roc_auc at epoch 160
+[Train] epoch [161/601], loss:3.2335 class:screw
+[Train] epoch [162/601], loss:3.2638 class:screw
+[Train] epoch [163/601], loss:3.1587 class:screw
+[Train] epoch [164/601], loss:3.1079 class:screw
+[Train] epoch [165/601], loss:3.0617 class:screw
+[Train] epoch [166/601], loss:3.0346 class:screw
+[Train] epoch [167/601], loss:3.0077 class:screw
+[Train] epoch [168/601], loss:2.9776 class:screw
+[Train] epoch [169/601], loss:2.9670 class:screw
+[Train] epoch [170/601], loss:2.9521 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7368 localization: 0.9593629837036133 at epoch 170
+[Eval] best localization_roc_auc at epoch 170
+[Train] epoch [171/601], loss:3.0998 class:screw
+[Train] epoch [172/601], loss:3.1645 class:screw
+[Train] epoch [173/601], loss:3.0718 class:screw
+[Train] epoch [174/601], loss:3.0090 class:screw
+[Train] epoch [175/601], loss:2.9641 class:screw
+[Train] epoch [176/601], loss:2.9373 class:screw
+[Train] epoch [177/601], loss:2.9219 class:screw
+[Train] epoch [178/601], loss:2.8862 class:screw
+[Train] epoch [179/601], loss:2.8766 class:screw
+[Train] epoch [180/601], loss:2.8594 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7516 localization: 0.9627180695533752 at epoch 180
+[Eval] best localization_roc_auc at epoch 180
+[Train] epoch [181/601], loss:3.1580 class:screw
+[Train] epoch [182/601], loss:3.2990 class:screw
+[Train] epoch [183/601], loss:3.1588 class:screw
+[Train] epoch [184/601], loss:3.0564 class:screw
+[Train] epoch [185/601], loss:2.9888 class:screw
+[Train] epoch [186/601], loss:2.9350 class:screw
+[Train] epoch [187/601], loss:2.8907 class:screw
+[Train] epoch [188/601], loss:2.8709 class:screw
+[Train] epoch [189/601], loss:2.8587 class:screw
+[Train] epoch [190/601], loss:2.8321 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6901 localization: 0.9631288647651672 at epoch 190
+[Eval] best localization_roc_auc at epoch 190
+[Train] epoch [191/601], loss:3.3255 class:screw
+[Train] epoch [192/601], loss:3.4876 class:screw
+[Train] epoch [193/601], loss:3.2554 class:screw
+[Train] epoch [194/601], loss:3.1128 class:screw
+[Train] epoch [195/601], loss:3.0118 class:screw
+[Train] epoch [196/601], loss:2.9390 class:screw
+[Train] epoch [197/601], loss:2.9073 class:screw
+[Train] epoch [198/601], loss:2.8513 class:screw
+[Train] epoch [199/601], loss:2.8246 class:screw
+[Train] epoch [200/601], loss:2.8037 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7247 localization: 0.9637349247932434 at epoch 200
+[Eval] best localization_roc_auc at epoch 200
+[Train] epoch [201/601], loss:2.8436 class:screw
+[Train] epoch [202/601], loss:2.8390 class:screw
+[Train] epoch [203/601], loss:2.8036 class:screw
+[Train] epoch [204/601], loss:2.7721 class:screw
+[Train] epoch [205/601], loss:2.7516 class:screw
+[Train] epoch [206/601], loss:2.7315 class:screw
+[Train] epoch [207/601], loss:2.7362 class:screw
+[Train] epoch [208/601], loss:2.7115 class:screw
+[Train] epoch [209/601], loss:2.7001 class:screw
+[Train] epoch [210/601], loss:2.6956 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7448 localization: 0.962034285068512 at epoch 210
+[Train] epoch [211/601], loss:2.7062 class:screw
+[Train] epoch [212/601], loss:2.6931 class:screw
+[Train] epoch [213/601], loss:2.6804 class:screw
+[Train] epoch [214/601], loss:2.6701 class:screw
+[Train] epoch [215/601], loss:2.6616 class:screw
+[Train] epoch [216/601], loss:2.6414 class:screw
+[Train] epoch [217/601], loss:2.6357 class:screw
+[Train] epoch [218/601], loss:2.6201 class:screw
+[Train] epoch [219/601], loss:2.6216 class:screw
+[Train] epoch [220/601], loss:2.6023 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7559 localization: 0.9603946805000305 at epoch 220
+[Train] epoch [221/601], loss:2.6317 class:screw
+[Train] epoch [222/601], loss:2.6262 class:screw
+[Train] epoch [223/601], loss:2.5992 class:screw
+[Train] epoch [224/601], loss:2.5899 class:screw
+[Train] epoch [225/601], loss:2.5762 class:screw
+[Train] epoch [226/601], loss:2.5807 class:screw
+[Train] epoch [227/601], loss:2.5654 class:screw
+[Train] epoch [228/601], loss:2.5653 class:screw
+[Train] epoch [229/601], loss:2.5561 class:screw
+[Train] epoch [230/601], loss:2.5524 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7612 localization: 0.9617546200752258 at epoch 230
+[Train] epoch [231/601], loss:2.5665 class:screw
+[Train] epoch [232/601], loss:2.5655 class:screw
+[Train] epoch [233/601], loss:2.5508 class:screw
+[Train] epoch [234/601], loss:2.5392 class:screw
+[Train] epoch [235/601], loss:2.5256 class:screw
+[Train] epoch [236/601], loss:2.5103 class:screw
+[Train] epoch [237/601], loss:2.5101 class:screw
+[Train] epoch [238/601], loss:2.4999 class:screw
+[Train] epoch [239/601], loss:2.4967 class:screw
+[Train] epoch [240/601], loss:2.4851 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7653 localization: 0.9629920125007629 at epoch 240
+[Train] epoch [241/601], loss:2.4920 class:screw
+[Train] epoch [242/601], loss:2.4959 class:screw
+[Train] epoch [243/601], loss:2.4753 class:screw
+[Train] epoch [244/601], loss:2.4663 class:screw
+[Train] epoch [245/601], loss:2.4563 class:screw
+[Train] epoch [246/601], loss:2.4497 class:screw
+[Train] epoch [247/601], loss:2.4408 class:screw
+[Train] epoch [248/601], loss:2.4439 class:screw
+[Train] epoch [249/601], loss:2.4478 class:screw
+[Train] epoch [250/601], loss:2.4361 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7622 localization: 0.9613538384437561 at epoch 250
+[Train] epoch [251/601], loss:2.4789 class:screw
+[Train] epoch [252/601], loss:2.4784 class:screw
+[Train] epoch [253/601], loss:2.4652 class:screw
+[Train] epoch [254/601], loss:2.4358 class:screw
+[Train] epoch [255/601], loss:2.4244 class:screw
+[Train] epoch [256/601], loss:2.4071 class:screw
+[Train] epoch [257/601], loss:2.3994 class:screw
+[Train] epoch [258/601], loss:2.4066 class:screw
+[Train] epoch [259/601], loss:2.3888 class:screw
+[Train] epoch [260/601], loss:2.3810 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7553 localization: 0.9607826471328735 at epoch 260
+[Train] epoch [261/601], loss:2.4391 class:screw
+[Train] epoch [262/601], loss:2.4453 class:screw
+[Train] epoch [263/601], loss:2.4184 class:screw
+[Train] epoch [264/601], loss:2.4149 class:screw
+[Train] epoch [265/601], loss:2.3805 class:screw
+[Train] epoch [266/601], loss:2.3731 class:screw
+[Train] epoch [267/601], loss:2.3764 class:screw
+[Train] epoch [268/601], loss:2.3609 class:screw
+[Train] epoch [269/601], loss:2.3536 class:screw
+[Train] epoch [270/601], loss:2.3446 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7524 localization: 0.9620431065559387 at epoch 270
+[Train] epoch [271/601], loss:2.3777 class:screw
+[Train] epoch [272/601], loss:2.3847 class:screw
+[Train] epoch [273/601], loss:2.3679 class:screw
+[Train] epoch [274/601], loss:2.3385 class:screw
+[Train] epoch [275/601], loss:2.3352 class:screw
+[Train] epoch [276/601], loss:2.3215 class:screw
+[Train] epoch [277/601], loss:2.3333 class:screw
+[Train] epoch [278/601], loss:2.3148 class:screw
+[Train] epoch [279/601], loss:2.3185 class:screw
+[Train] epoch [280/601], loss:2.3046 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7635 localization: 0.9627673029899597 at epoch 280
+[Train] epoch [281/601], loss:2.3464 class:screw
+[Train] epoch [282/601], loss:2.3312 class:screw
+[Train] epoch [283/601], loss:2.3358 class:screw
+[Train] epoch [284/601], loss:2.3196 class:screw
+[Train] epoch [285/601], loss:2.2973 class:screw
+[Train] epoch [286/601], loss:2.2930 class:screw
+[Train] epoch [287/601], loss:2.2915 class:screw
+[Train] epoch [288/601], loss:2.2765 class:screw
+[Train] epoch [289/601], loss:2.2748 class:screw
+[Train] epoch [290/601], loss:2.2568 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7631 localization: 0.9636014103889465 at epoch 290
+[Train] epoch [291/601], loss:2.3084 class:screw
+[Train] epoch [292/601], loss:2.3243 class:screw
+[Train] epoch [293/601], loss:2.2836 class:screw
+[Train] epoch [294/601], loss:2.2767 class:screw
+[Train] epoch [295/601], loss:2.2687 class:screw
+[Train] epoch [296/601], loss:2.2549 class:screw
+[Train] epoch [297/601], loss:2.2405 class:screw
+[Train] epoch [298/601], loss:2.2296 class:screw
+[Train] epoch [299/601], loss:2.2315 class:screw
+[Train] epoch [300/601], loss:2.2238 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7694 localization: 0.9610463976860046 at epoch 300
+[Eval] best detection_roc_auc at epoch 300
+[Train] epoch [301/601], loss:2.2784 class:screw
+[Train] epoch [302/601], loss:2.2698 class:screw
+[Train] epoch [303/601], loss:2.2424 class:screw
+[Train] epoch [304/601], loss:2.2341 class:screw
+[Train] epoch [305/601], loss:2.2213 class:screw
+[Train] epoch [306/601], loss:2.2133 class:screw
+[Train] epoch [307/601], loss:2.2024 class:screw
+[Train] epoch [308/601], loss:2.2087 class:screw
+[Train] epoch [309/601], loss:2.1956 class:screw
+[Train] epoch [310/601], loss:2.2004 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.769 localization: 0.9577187895774841 at epoch 310
+[Train] epoch [311/601], loss:2.2279 class:screw
+[Train] epoch [312/601], loss:2.2239 class:screw
+[Train] epoch [313/601], loss:2.2066 class:screw
+[Train] epoch [314/601], loss:2.1987 class:screw
+[Train] epoch [315/601], loss:2.1820 class:screw
+[Train] epoch [316/601], loss:2.1725 class:screw
+[Train] epoch [317/601], loss:2.1758 class:screw
+[Train] epoch [318/601], loss:2.1785 class:screw
+[Train] epoch [319/601], loss:2.1708 class:screw
+[Train] epoch [320/601], loss:2.1569 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7784 localization: 0.961757481098175 at epoch 320
+[Eval] best detection_roc_auc at epoch 320
+[Train] epoch [321/601], loss:2.2528 class:screw
+[Train] epoch [322/601], loss:2.2493 class:screw
+[Train] epoch [323/601], loss:2.2144 class:screw
+[Train] epoch [324/601], loss:2.2020 class:screw
+[Train] epoch [325/601], loss:2.1781 class:screw
+[Train] epoch [326/601], loss:2.1589 class:screw
+[Train] epoch [327/601], loss:2.1422 class:screw
+[Train] epoch [328/601], loss:2.1463 class:screw
+[Train] epoch [329/601], loss:2.1362 class:screw
+[Train] epoch [330/601], loss:2.1201 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7698 localization: 0.9615061283111572 at epoch 330
+[Train] epoch [331/601], loss:2.2844 class:screw
+[Train] epoch [332/601], loss:2.3279 class:screw
+[Train] epoch [333/601], loss:2.2717 class:screw
+[Train] epoch [334/601], loss:2.2422 class:screw
+[Train] epoch [335/601], loss:2.1923 class:screw
+[Train] epoch [336/601], loss:2.1799 class:screw
+[Train] epoch [337/601], loss:2.1626 class:screw
+[Train] epoch [338/601], loss:2.1414 class:screw
+[Train] epoch [339/601], loss:2.1384 class:screw
+[Train] epoch [340/601], loss:2.1215 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7848 localization: 0.9632903933525085 at epoch 340
+[Eval] best detection_roc_auc at epoch 340
+[Train] epoch [341/601], loss:2.1913 class:screw
+[Train] epoch [342/601], loss:2.2326 class:screw
+[Train] epoch [343/601], loss:2.1778 class:screw
+[Train] epoch [344/601], loss:2.1615 class:screw
+[Train] epoch [345/601], loss:2.1395 class:screw
+[Train] epoch [346/601], loss:2.1280 class:screw
+[Train] epoch [347/601], loss:2.1216 class:screw
+[Train] epoch [348/601], loss:2.1054 class:screw
+[Train] epoch [349/601], loss:2.0920 class:screw
+[Train] epoch [350/601], loss:2.0873 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7977 localization: 0.9626790881156921 at epoch 350
+[Eval] best detection_roc_auc at epoch 350
+[Train] epoch [351/601], loss:2.1702 class:screw
+[Train] epoch [352/601], loss:2.1930 class:screw
+[Train] epoch [353/601], loss:2.1502 class:screw
+[Train] epoch [354/601], loss:2.1268 class:screw
+[Train] epoch [355/601], loss:2.1073 class:screw
+[Train] epoch [356/601], loss:2.0912 class:screw
+[Train] epoch [357/601], loss:2.0870 class:screw
+[Train] epoch [358/601], loss:2.0693 class:screw
+[Train] epoch [359/601], loss:2.0710 class:screw
+[Train] epoch [360/601], loss:2.0582 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.835 localization: 0.9620396494865417 at epoch 360
+[Eval] best detection_roc_auc at epoch 360
+[Train] epoch [361/601], loss:2.2888 class:screw
+[Train] epoch [362/601], loss:2.3334 class:screw
+[Train] epoch [363/601], loss:2.2482 class:screw
+[Train] epoch [364/601], loss:2.1838 class:screw
+[Train] epoch [365/601], loss:2.1372 class:screw
+[Train] epoch [366/601], loss:2.1051 class:screw
+[Train] epoch [367/601], loss:2.0917 class:screw
+[Train] epoch [368/601], loss:2.0686 class:screw
+[Train] epoch [369/601], loss:2.0636 class:screw
+[Train] epoch [370/601], loss:2.0489 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6514 localization: 0.9612101912498474 at epoch 370
+[Train] epoch [371/601], loss:2.2456 class:screw
+[Train] epoch [372/601], loss:2.2701 class:screw
+[Train] epoch [373/601], loss:2.1834 class:screw
+[Train] epoch [374/601], loss:2.1330 class:screw
+[Train] epoch [375/601], loss:2.1070 class:screw
+[Train] epoch [376/601], loss:2.0783 class:screw
+[Train] epoch [377/601], loss:2.0668 class:screw
+[Train] epoch [378/601], loss:2.0535 class:screw
+[Train] epoch [379/601], loss:2.0365 class:screw
+[Train] epoch [380/601], loss:2.0420 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6604 localization: 0.9584039449691772 at epoch 380
+[Train] epoch [381/601], loss:2.4007 class:screw
+[Train] epoch [382/601], loss:2.4866 class:screw
+[Train] epoch [383/601], loss:2.3496 class:screw
+[Train] epoch [384/601], loss:2.2348 class:screw
+[Train] epoch [385/601], loss:2.1605 class:screw
+[Train] epoch [386/601], loss:2.1172 class:screw
+[Train] epoch [387/601], loss:2.1054 class:screw
+[Train] epoch [388/601], loss:2.0717 class:screw
+[Train] epoch [389/601], loss:2.0489 class:screw
+[Train] epoch [390/601], loss:2.0431 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7606 localization: 0.9629356861114502 at epoch 390
+[Train] epoch [391/601], loss:2.3958 class:screw
+[Train] epoch [392/601], loss:2.3981 class:screw
+[Train] epoch [393/601], loss:2.2488 class:screw
+[Train] epoch [394/601], loss:2.1667 class:screw
+[Train] epoch [395/601], loss:2.1138 class:screw
+[Train] epoch [396/601], loss:2.0693 class:screw
+[Train] epoch [397/601], loss:2.0475 class:screw
+[Train] epoch [398/601], loss:2.0368 class:screw
+[Train] epoch [399/601], loss:2.0203 class:screw
+[Train] epoch [400/601], loss:2.0123 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6567 localization: 0.9616128206253052 at epoch 400
+[Train] epoch [401/601], loss:2.8126 class:screw
+[Train] epoch [402/601], loss:2.7864 class:screw
+[Train] epoch [403/601], loss:2.4944 class:screw
+[Train] epoch [404/601], loss:2.3309 class:screw
+[Train] epoch [405/601], loss:2.2342 class:screw
+[Train] epoch [406/601], loss:2.1603 class:screw
+[Train] epoch [407/601], loss:2.1150 class:screw
+[Train] epoch [408/601], loss:2.0886 class:screw
+[Train] epoch [409/601], loss:2.0572 class:screw
+[Train] epoch [410/601], loss:2.0330 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7458 localization: 0.9632193446159363 at epoch 410
+[Train] epoch [411/601], loss:2.0911 class:screw
+[Train] epoch [412/601], loss:2.1048 class:screw
+[Train] epoch [413/601], loss:2.0784 class:screw
+[Train] epoch [414/601], loss:2.0513 class:screw
+[Train] epoch [415/601], loss:2.0354 class:screw
+[Train] epoch [416/601], loss:2.0310 class:screw
+[Train] epoch [417/601], loss:2.0026 class:screw
+[Train] epoch [418/601], loss:1.9965 class:screw
+[Train] epoch [419/601], loss:1.9805 class:screw
+[Train] epoch [420/601], loss:1.9826 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7821 localization: 0.9628515243530273 at epoch 420
+[Train] epoch [421/601], loss:2.1624 class:screw
+[Train] epoch [422/601], loss:2.2481 class:screw
+[Train] epoch [423/601], loss:2.1813 class:screw
+[Train] epoch [424/601], loss:2.1197 class:screw
+[Train] epoch [425/601], loss:2.0636 class:screw
+[Train] epoch [426/601], loss:2.0273 class:screw
+[Train] epoch [427/601], loss:2.0112 class:screw
+[Train] epoch [428/601], loss:1.9941 class:screw
+[Train] epoch [429/601], loss:1.9806 class:screw
+[Train] epoch [430/601], loss:1.9759 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7893 localization: 0.9641702175140381 at epoch 430
+[Eval] best localization_roc_auc at epoch 430
+[Train] epoch [431/601], loss:2.0484 class:screw
+[Train] epoch [432/601], loss:2.0692 class:screw
+[Train] epoch [433/601], loss:2.0274 class:screw
+[Train] epoch [434/601], loss:1.9971 class:screw
+[Train] epoch [435/601], loss:1.9774 class:screw
+[Train] epoch [436/601], loss:1.9608 class:screw
+[Train] epoch [437/601], loss:1.9562 class:screw
+[Train] epoch [438/601], loss:1.9576 class:screw
+[Train] epoch [439/601], loss:1.9443 class:screw
+[Train] epoch [440/601], loss:1.9365 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7692 localization: 0.9640679359436035 at epoch 440
+[Train] epoch [441/601], loss:2.1337 class:screw
+[Train] epoch [442/601], loss:2.1444 class:screw
+[Train] epoch [443/601], loss:2.0741 class:screw
+[Train] epoch [444/601], loss:2.0246 class:screw
+[Train] epoch [445/601], loss:1.9925 class:screw
+[Train] epoch [446/601], loss:1.9693 class:screw
+[Train] epoch [447/601], loss:1.9507 class:screw
+[Train] epoch [448/601], loss:1.9421 class:screw
+[Train] epoch [449/601], loss:1.9347 class:screw
+[Train] epoch [450/601], loss:1.9301 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7237 localization: 0.9650046229362488 at epoch 450
+[Eval] best localization_roc_auc at epoch 450
+[Train] epoch [451/601], loss:2.3007 class:screw
+[Train] epoch [452/601], loss:2.2457 class:screw
+[Train] epoch [453/601], loss:2.1403 class:screw
+[Train] epoch [454/601], loss:2.0692 class:screw
+[Train] epoch [455/601], loss:2.0195 class:screw
+[Train] epoch [456/601], loss:1.9806 class:screw
+[Train] epoch [457/601], loss:1.9599 class:screw
+[Train] epoch [458/601], loss:1.9338 class:screw
+[Train] epoch [459/601], loss:1.9274 class:screw
+[Train] epoch [460/601], loss:1.9154 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7803 localization: 0.9644809365272522 at epoch 460
+[Train] epoch [461/601], loss:2.0505 class:screw
+[Train] epoch [462/601], loss:2.1136 class:screw
+[Train] epoch [463/601], loss:2.0476 class:screw
+[Train] epoch [464/601], loss:2.0038 class:screw
+[Train] epoch [465/601], loss:1.9644 class:screw
+[Train] epoch [466/601], loss:1.9445 class:screw
+[Train] epoch [467/601], loss:1.9339 class:screw
+[Train] epoch [468/601], loss:1.9156 class:screw
+[Train] epoch [469/601], loss:1.9078 class:screw
+[Train] epoch [470/601], loss:1.9025 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7977 localization: 0.9645500183105469 at epoch 470
+[Train] epoch [471/601], loss:2.1234 class:screw
+[Train] epoch [472/601], loss:2.1558 class:screw
+[Train] epoch [473/601], loss:2.0614 class:screw
+[Train] epoch [474/601], loss:2.0084 class:screw
+[Train] epoch [475/601], loss:1.9712 class:screw
+[Train] epoch [476/601], loss:1.9543 class:screw
+[Train] epoch [477/601], loss:1.9253 class:screw
+[Train] epoch [478/601], loss:1.9151 class:screw
+[Train] epoch [479/601], loss:1.8970 class:screw
+[Train] epoch [480/601], loss:1.8882 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7237 localization: 0.9645695090293884 at epoch 480
+[Train] epoch [481/601], loss:2.3325 class:screw
+[Train] epoch [482/601], loss:2.2964 class:screw
+[Train] epoch [483/601], loss:2.1690 class:screw
+[Train] epoch [484/601], loss:2.0669 class:screw
+[Train] epoch [485/601], loss:2.0054 class:screw
+[Train] epoch [486/601], loss:1.9661 class:screw
+[Train] epoch [487/601], loss:1.9362 class:screw
+[Train] epoch [488/601], loss:1.9147 class:screw
+[Train] epoch [489/601], loss:1.9208 class:screw
+[Train] epoch [490/601], loss:1.9035 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6954 localization: 0.9641141891479492 at epoch 490
+[Train] epoch [491/601], loss:2.0674 class:screw
+[Train] epoch [492/601], loss:2.0635 class:screw
+[Train] epoch [493/601], loss:1.9916 class:screw
+[Train] epoch [494/601], loss:1.9608 class:screw
+[Train] epoch [495/601], loss:1.9274 class:screw
+[Train] epoch [496/601], loss:1.9007 class:screw
+[Train] epoch [497/601], loss:1.8908 class:screw
+[Train] epoch [498/601], loss:1.8781 class:screw
+[Train] epoch [499/601], loss:1.8768 class:screw
+[Train] epoch [500/601], loss:1.8683 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.704 localization: 0.9648730158805847 at epoch 500
+[Train] epoch [501/601], loss:2.0453 class:screw
+[Train] epoch [502/601], loss:2.0465 class:screw
+[Train] epoch [503/601], loss:1.9704 class:screw
+[Train] epoch [504/601], loss:1.9289 class:screw
+[Train] epoch [505/601], loss:1.9082 class:screw
+[Train] epoch [506/601], loss:1.8838 class:screw
+[Train] epoch [507/601], loss:1.8796 class:screw
+[Train] epoch [508/601], loss:1.8624 class:screw
+[Train] epoch [509/601], loss:1.8521 class:screw
+[Train] epoch [510/601], loss:1.8429 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7866 localization: 0.9651995301246643 at epoch 510
+[Eval] best localization_roc_auc at epoch 510
+[Train] epoch [511/601], loss:2.0623 class:screw
+[Train] epoch [512/601], loss:2.0435 class:screw
+[Train] epoch [513/601], loss:1.9629 class:screw
+[Train] epoch [514/601], loss:1.9168 class:screw
+[Train] epoch [515/601], loss:1.8948 class:screw
+[Train] epoch [516/601], loss:1.8704 class:screw
+[Train] epoch [517/601], loss:1.8650 class:screw
+[Train] epoch [518/601], loss:1.8531 class:screw
+[Train] epoch [519/601], loss:1.8449 class:screw
+[Train] epoch [520/601], loss:1.8408 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7868 localization: 0.9642493724822998 at epoch 520
+[Train] epoch [521/601], loss:2.0384 class:screw
+[Train] epoch [522/601], loss:2.0119 class:screw
+[Train] epoch [523/601], loss:1.9453 class:screw
+[Train] epoch [524/601], loss:1.9143 class:screw
+[Train] epoch [525/601], loss:1.8824 class:screw
+[Train] epoch [526/601], loss:1.8527 class:screw
+[Train] epoch [527/601], loss:1.8397 class:screw
+[Train] epoch [528/601], loss:1.8432 class:screw
+[Train] epoch [529/601], loss:1.8251 class:screw
+[Train] epoch [530/601], loss:1.8270 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.6919 localization: 0.9605279564857483 at epoch 530
+[Train] epoch [531/601], loss:2.4240 class:screw
+[Train] epoch [532/601], loss:2.3092 class:screw
+[Train] epoch [533/601], loss:2.1541 class:screw
+[Train] epoch [534/601], loss:2.0314 class:screw
+[Train] epoch [535/601], loss:1.9559 class:screw
+[Train] epoch [536/601], loss:1.9227 class:screw
+[Train] epoch [537/601], loss:1.8737 class:screw
+[Train] epoch [538/601], loss:1.8530 class:screw
+[Train] epoch [539/601], loss:1.8454 class:screw
+[Train] epoch [540/601], loss:1.8314 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.777 localization: 0.9626624584197998 at epoch 540
+[Train] epoch [541/601], loss:1.8639 class:screw
+[Train] epoch [542/601], loss:1.8741 class:screw
+[Train] epoch [543/601], loss:1.8513 class:screw
+[Train] epoch [544/601], loss:1.8345 class:screw
+[Train] epoch [545/601], loss:1.8210 class:screw
+[Train] epoch [546/601], loss:1.8177 class:screw
+[Train] epoch [547/601], loss:1.8126 class:screw
+[Train] epoch [548/601], loss:1.8151 class:screw
+[Train] epoch [549/601], loss:1.8035 class:screw
+[Train] epoch [550/601], loss:1.8012 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.792 localization: 0.9641441702842712 at epoch 550
+[Train] epoch [551/601], loss:1.9250 class:screw
+[Train] epoch [552/601], loss:1.9394 class:screw
+[Train] epoch [553/601], loss:1.8957 class:screw
+[Train] epoch [554/601], loss:1.8594 class:screw
+[Train] epoch [555/601], loss:1.8266 class:screw
+[Train] epoch [556/601], loss:1.8155 class:screw
+[Train] epoch [557/601], loss:1.8060 class:screw
+[Train] epoch [558/601], loss:1.7915 class:screw
+[Train] epoch [559/601], loss:1.7973 class:screw
+[Train] epoch [560/601], loss:1.7927 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.809 localization: 0.9646685123443604 at epoch 560
+[Train] epoch [561/601], loss:2.1662 class:screw
+[Train] epoch [562/601], loss:2.1983 class:screw
+[Train] epoch [563/601], loss:2.0368 class:screw
+[Train] epoch [564/601], loss:1.9458 class:screw
+[Train] epoch [565/601], loss:1.9038 class:screw
+[Train] epoch [566/601], loss:1.8540 class:screw
+[Train] epoch [567/601], loss:1.8381 class:screw
+[Train] epoch [568/601], loss:1.8218 class:screw
+[Train] epoch [569/601], loss:1.7987 class:screw
+[Train] epoch [570/601], loss:1.8001 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7975 localization: 0.9657019972801208 at epoch 570
+[Eval] best localization_roc_auc at epoch 570
+[Train] epoch [571/601], loss:1.9030 class:screw
+[Train] epoch [572/601], loss:1.9187 class:screw
+[Train] epoch [573/601], loss:1.8729 class:screw
+[Train] epoch [574/601], loss:1.8394 class:screw
+[Train] epoch [575/601], loss:1.8227 class:screw
+[Train] epoch [576/601], loss:1.8155 class:screw
+[Train] epoch [577/601], loss:1.7996 class:screw
+[Train] epoch [578/601], loss:1.7979 class:screw
+[Train] epoch [579/601], loss:1.7820 class:screw
+[Train] epoch [580/601], loss:1.7730 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.8 localization: 0.9644804000854492 at epoch 580
+[Train] epoch [581/601], loss:1.8390 class:screw
+[Train] epoch [582/601], loss:1.8455 class:screw
+[Train] epoch [583/601], loss:1.8076 class:screw
+[Train] epoch [584/601], loss:1.7950 class:screw
+[Train] epoch [585/601], loss:1.7842 class:screw
+[Train] epoch [586/601], loss:1.7768 class:screw
+[Train] epoch [587/601], loss:1.7755 class:screw
+[Train] epoch [588/601], loss:1.7782 class:screw
+[Train] epoch [589/601], loss:1.7663 class:screw
+[Train] epoch [590/601], loss:1.7587 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.7914 localization: 0.964975893497467 at epoch 590
+[Train] epoch [591/601], loss:1.7910 class:screw
+[Train] epoch [592/601], loss:1.7922 class:screw
+[Train] epoch [593/601], loss:1.7754 class:screw
+[Train] epoch [594/601], loss:1.7672 class:screw
+[Train] epoch [595/601], loss:1.7715 class:screw
+[Train] epoch [596/601], loss:1.7513 class:screw
+[Train] epoch [597/601], loss:1.7503 class:screw
+[Train] epoch [598/601], loss:1.7650 class:screw
+[Train] epoch [599/601], loss:1.7504 class:screw
+[Train] epoch [600/601], loss:1.7489 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.8131 localization: 0.9655055403709412 at epoch 600
+[Train] epoch [601/601], loss:1.7824 class:screw
+Vanilla Backpropagation:
+[Eval] screw class RocAUC detection: 0.8096 localization: 0.9456068277359009 at epoch 601

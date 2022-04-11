@@ -1,0 +1,788 @@
+W0410 22:24:34.041703 20151 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 22:24:34.048877 20151 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:20.4994 class:wood
+[Train] epoch [1/601], loss:15.8852 class:wood
+[Train] epoch [2/601], loss:13.4621 class:wood
+[Train] epoch [3/601], loss:12.0517 class:wood
+[Train] epoch [4/601], loss:11.0262 class:wood
+[Train] epoch [5/601], loss:10.2277 class:wood
+[Train] epoch [6/601], loss:9.5748 class:wood
+[Train] epoch [7/601], loss:9.0199 class:wood
+[Train] epoch [8/601], loss:8.5600 class:wood
+[Train] epoch [9/601], loss:8.1456 class:wood
+[Train] epoch [10/601], loss:7.7816 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9465 localization: 0.7873469591140747 at epoch 10
+[Eval] best detection_roc_auc at epoch 10
+[Eval] best localization_roc_auc at epoch 10
+[Train] epoch [11/601], loss:7.5364 class:wood
+[Train] epoch [12/601], loss:7.3754 class:wood
+[Train] epoch [13/601], loss:7.1165 class:wood
+[Train] epoch [14/601], loss:6.8602 class:wood
+[Train] epoch [15/601], loss:6.6211 class:wood
+[Train] epoch [16/601], loss:6.4088 class:wood
+[Train] epoch [17/601], loss:6.2388 class:wood
+[Train] epoch [18/601], loss:6.0603 class:wood
+[Train] epoch [19/601], loss:5.9153 class:wood
+[Train] epoch [20/601], loss:5.7739 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9439 localization: 0.8116458058357239 at epoch 20
+[Eval] best localization_roc_auc at epoch 20
+[Train] epoch [21/601], loss:5.6935 class:wood
+[Train] epoch [22/601], loss:5.6383 class:wood
+[Train] epoch [23/601], loss:5.5048 class:wood
+[Train] epoch [24/601], loss:5.3837 class:wood
+[Train] epoch [25/601], loss:5.2816 class:wood
+[Train] epoch [26/601], loss:5.1784 class:wood
+[Train] epoch [27/601], loss:5.0832 class:wood
+[Train] epoch [28/601], loss:5.0128 class:wood
+[Train] epoch [29/601], loss:4.9272 class:wood
+[Train] epoch [30/601], loss:4.8674 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9298 localization: 0.8116112351417542 at epoch 30
+[Train] epoch [31/601], loss:4.8357 class:wood
+[Train] epoch [32/601], loss:4.8091 class:wood
+[Train] epoch [33/601], loss:4.7411 class:wood
+[Train] epoch [34/601], loss:4.6639 class:wood
+[Train] epoch [35/601], loss:4.6045 class:wood
+[Train] epoch [36/601], loss:4.5499 class:wood
+[Train] epoch [37/601], loss:4.4940 class:wood
+[Train] epoch [38/601], loss:4.4524 class:wood
+[Train] epoch [39/601], loss:4.4049 class:wood
+[Train] epoch [40/601], loss:4.3628 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9263 localization: 0.8103111982345581 at epoch 40
+[Train] epoch [41/601], loss:4.3615 class:wood
+[Train] epoch [42/601], loss:4.3681 class:wood
+[Train] epoch [43/601], loss:4.3119 class:wood
+[Train] epoch [44/601], loss:4.2591 class:wood
+[Train] epoch [45/601], loss:4.2220 class:wood
+[Train] epoch [46/601], loss:4.1758 class:wood
+[Train] epoch [47/601], loss:4.1391 class:wood
+[Train] epoch [48/601], loss:4.1028 class:wood
+[Train] epoch [49/601], loss:4.0739 class:wood
+[Train] epoch [50/601], loss:4.0472 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9272 localization: 0.8119428157806396 at epoch 50
+[Eval] best localization_roc_auc at epoch 50
+[Train] epoch [51/601], loss:4.0381 class:wood
+[Train] epoch [52/601], loss:4.0478 class:wood
+[Train] epoch [53/601], loss:4.0089 class:wood
+[Train] epoch [54/601], loss:3.9694 class:wood
+[Train] epoch [55/601], loss:3.9386 class:wood
+[Train] epoch [56/601], loss:3.8976 class:wood
+[Train] epoch [57/601], loss:3.8720 class:wood
+[Train] epoch [58/601], loss:3.8474 class:wood
+[Train] epoch [59/601], loss:3.8187 class:wood
+[Train] epoch [60/601], loss:3.7957 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9193 localization: 0.8147165775299072 at epoch 60
+[Eval] best localization_roc_auc at epoch 60
+[Train] epoch [61/601], loss:3.7913 class:wood
+[Train] epoch [62/601], loss:3.7975 class:wood
+[Train] epoch [63/601], loss:3.7660 class:wood
+[Train] epoch [64/601], loss:3.7311 class:wood
+[Train] epoch [65/601], loss:3.6998 class:wood
+[Train] epoch [66/601], loss:3.6819 class:wood
+[Train] epoch [67/601], loss:3.6508 class:wood
+[Train] epoch [68/601], loss:3.6246 class:wood
+[Train] epoch [69/601], loss:3.6075 class:wood
+[Train] epoch [70/601], loss:3.5761 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9149 localization: 0.8176996111869812 at epoch 70
+[Eval] best localization_roc_auc at epoch 70
+[Train] epoch [71/601], loss:3.6050 class:wood
+[Train] epoch [72/601], loss:3.6166 class:wood
+[Train] epoch [73/601], loss:3.5802 class:wood
+[Train] epoch [74/601], loss:3.5445 class:wood
+[Train] epoch [75/601], loss:3.5148 class:wood
+[Train] epoch [76/601], loss:3.4827 class:wood
+[Train] epoch [77/601], loss:3.4573 class:wood
+[Train] epoch [78/601], loss:3.4300 class:wood
+[Train] epoch [79/601], loss:3.4057 class:wood
+[Train] epoch [80/601], loss:3.3907 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9228 localization: 0.8206175565719604 at epoch 80
+[Eval] best localization_roc_auc at epoch 80
+[Train] epoch [81/601], loss:3.4089 class:wood
+[Train] epoch [82/601], loss:3.4174 class:wood
+[Train] epoch [83/601], loss:3.3893 class:wood
+[Train] epoch [84/601], loss:3.3566 class:wood
+[Train] epoch [85/601], loss:3.3251 class:wood
+[Train] epoch [86/601], loss:3.2976 class:wood
+[Train] epoch [87/601], loss:3.2689 class:wood
+[Train] epoch [88/601], loss:3.2463 class:wood
+[Train] epoch [89/601], loss:3.2304 class:wood
+[Train] epoch [90/601], loss:3.2134 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9211 localization: 0.8221371173858643 at epoch 90
+[Eval] best localization_roc_auc at epoch 90
+[Train] epoch [91/601], loss:3.3047 class:wood
+[Train] epoch [92/601], loss:3.3756 class:wood
+[Train] epoch [93/601], loss:3.3116 class:wood
+[Train] epoch [94/601], loss:3.2544 class:wood
+[Train] epoch [95/601], loss:3.2080 class:wood
+[Train] epoch [96/601], loss:3.1736 class:wood
+[Train] epoch [97/601], loss:3.1511 class:wood
+[Train] epoch [98/601], loss:3.1211 class:wood
+[Train] epoch [99/601], loss:3.1102 class:wood
+[Train] epoch [100/601], loss:3.0779 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9281 localization: 0.8216109275817871 at epoch 100
+[Train] epoch [101/601], loss:3.2289 class:wood
+[Train] epoch [102/601], loss:3.2897 class:wood
+[Train] epoch [103/601], loss:3.2186 class:wood
+[Train] epoch [104/601], loss:3.1587 class:wood
+[Train] epoch [105/601], loss:3.1198 class:wood
+[Train] epoch [106/601], loss:3.0873 class:wood
+[Train] epoch [107/601], loss:3.0485 class:wood
+[Train] epoch [108/601], loss:3.0155 class:wood
+[Train] epoch [109/601], loss:2.9901 class:wood
+[Train] epoch [110/601], loss:2.9759 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9184 localization: 0.8235188126564026 at epoch 110
+[Eval] best localization_roc_auc at epoch 110
+[Train] epoch [111/601], loss:3.0269 class:wood
+[Train] epoch [112/601], loss:3.1073 class:wood
+[Train] epoch [113/601], loss:3.0460 class:wood
+[Train] epoch [114/601], loss:3.0058 class:wood
+[Train] epoch [115/601], loss:2.9618 class:wood
+[Train] epoch [116/601], loss:2.9292 class:wood
+[Train] epoch [117/601], loss:2.9102 class:wood
+[Train] epoch [118/601], loss:2.8913 class:wood
+[Train] epoch [119/601], loss:2.8728 class:wood
+[Train] epoch [120/601], loss:2.8522 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9263 localization: 0.8200862407684326 at epoch 120
+[Train] epoch [121/601], loss:2.9659 class:wood
+[Train] epoch [122/601], loss:3.0541 class:wood
+[Train] epoch [123/601], loss:2.9808 class:wood
+[Train] epoch [124/601], loss:2.9165 class:wood
+[Train] epoch [125/601], loss:2.8828 class:wood
+[Train] epoch [126/601], loss:2.8430 class:wood
+[Train] epoch [127/601], loss:2.8184 class:wood
+[Train] epoch [128/601], loss:2.8146 class:wood
+[Train] epoch [129/601], loss:2.7900 class:wood
+[Train] epoch [130/601], loss:2.7645 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9149 localization: 0.823749303817749 at epoch 130
+[Eval] best localization_roc_auc at epoch 130
+[Train] epoch [131/601], loss:2.8240 class:wood
+[Train] epoch [132/601], loss:2.8999 class:wood
+[Train] epoch [133/601], loss:2.8319 class:wood
+[Train] epoch [134/601], loss:2.7881 class:wood
+[Train] epoch [135/601], loss:2.7556 class:wood
+[Train] epoch [136/601], loss:2.7423 class:wood
+[Train] epoch [137/601], loss:2.7195 class:wood
+[Train] epoch [138/601], loss:2.6989 class:wood
+[Train] epoch [139/601], loss:2.6903 class:wood
+[Train] epoch [140/601], loss:2.6655 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9316 localization: 0.820233941078186 at epoch 140
+[Train] epoch [141/601], loss:2.7512 class:wood
+[Train] epoch [142/601], loss:2.8412 class:wood
+[Train] epoch [143/601], loss:2.7744 class:wood
+[Train] epoch [144/601], loss:2.7285 class:wood
+[Train] epoch [145/601], loss:2.6841 class:wood
+[Train] epoch [146/601], loss:2.6558 class:wood
+[Train] epoch [147/601], loss:2.6349 class:wood
+[Train] epoch [148/601], loss:2.6148 class:wood
+[Train] epoch [149/601], loss:2.5965 class:wood
+[Train] epoch [150/601], loss:2.5784 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9289 localization: 0.8306166529655457 at epoch 150
+[Eval] best localization_roc_auc at epoch 150
+[Train] epoch [151/601], loss:2.6525 class:wood
+[Train] epoch [152/601], loss:2.7482 class:wood
+[Train] epoch [153/601], loss:2.6780 class:wood
+[Train] epoch [154/601], loss:2.6366 class:wood
+[Train] epoch [155/601], loss:2.5904 class:wood
+[Train] epoch [156/601], loss:2.5704 class:wood
+[Train] epoch [157/601], loss:2.5483 class:wood
+[Train] epoch [158/601], loss:2.5304 class:wood
+[Train] epoch [159/601], loss:2.5086 class:wood
+[Train] epoch [160/601], loss:2.5034 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8318955898284912 at epoch 160
+[Eval] best localization_roc_auc at epoch 160
+[Train] epoch [161/601], loss:2.5494 class:wood
+[Train] epoch [162/601], loss:2.5939 class:wood
+[Train] epoch [163/601], loss:2.5444 class:wood
+[Train] epoch [164/601], loss:2.5185 class:wood
+[Train] epoch [165/601], loss:2.4866 class:wood
+[Train] epoch [166/601], loss:2.4697 class:wood
+[Train] epoch [167/601], loss:2.4569 class:wood
+[Train] epoch [168/601], loss:2.4410 class:wood
+[Train] epoch [169/601], loss:2.4293 class:wood
+[Train] epoch [170/601], loss:2.4247 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9351 localization: 0.8352422118186951 at epoch 170
+[Eval] best localization_roc_auc at epoch 170
+[Train] epoch [171/601], loss:2.5314 class:wood
+[Train] epoch [172/601], loss:2.6627 class:wood
+[Train] epoch [173/601], loss:2.5890 class:wood
+[Train] epoch [174/601], loss:2.5242 class:wood
+[Train] epoch [175/601], loss:2.4774 class:wood
+[Train] epoch [176/601], loss:2.4651 class:wood
+[Train] epoch [177/601], loss:2.4369 class:wood
+[Train] epoch [178/601], loss:2.4035 class:wood
+[Train] epoch [179/601], loss:2.3879 class:wood
+[Train] epoch [180/601], loss:2.3763 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9316 localization: 0.8362920880317688 at epoch 180
+[Eval] best localization_roc_auc at epoch 180
+[Train] epoch [181/601], loss:2.4394 class:wood
+[Train] epoch [182/601], loss:2.5129 class:wood
+[Train] epoch [183/601], loss:2.4426 class:wood
+[Train] epoch [184/601], loss:2.4249 class:wood
+[Train] epoch [185/601], loss:2.3999 class:wood
+[Train] epoch [186/601], loss:2.3759 class:wood
+[Train] epoch [187/601], loss:2.3626 class:wood
+[Train] epoch [188/601], loss:2.3491 class:wood
+[Train] epoch [189/601], loss:2.3370 class:wood
+[Train] epoch [190/601], loss:2.3202 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.8395 localization: 0.8011120557785034 at epoch 190
+[Train] epoch [191/601], loss:2.6675 class:wood
+[Train] epoch [192/601], loss:3.0949 class:wood
+[Train] epoch [193/601], loss:2.9403 class:wood
+[Train] epoch [194/601], loss:2.8025 class:wood
+[Train] epoch [195/601], loss:2.6807 class:wood
+[Train] epoch [196/601], loss:2.6109 class:wood
+[Train] epoch [197/601], loss:2.5390 class:wood
+[Train] epoch [198/601], loss:2.4917 class:wood
+[Train] epoch [199/601], loss:2.4577 class:wood
+[Train] epoch [200/601], loss:2.4202 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9377 localization: 0.8356980681419373 at epoch 200
+[Train] epoch [201/601], loss:2.4146 class:wood
+[Train] epoch [202/601], loss:2.4220 class:wood
+[Train] epoch [203/601], loss:2.3746 class:wood
+[Train] epoch [204/601], loss:2.3496 class:wood
+[Train] epoch [205/601], loss:2.3317 class:wood
+[Train] epoch [206/601], loss:2.3154 class:wood
+[Train] epoch [207/601], loss:2.2956 class:wood
+[Train] epoch [208/601], loss:2.2857 class:wood
+[Train] epoch [209/601], loss:2.2732 class:wood
+[Train] epoch [210/601], loss:2.2630 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9246 localization: 0.8335039615631104 at epoch 210
+[Train] epoch [211/601], loss:2.2973 class:wood
+[Train] epoch [212/601], loss:2.3214 class:wood
+[Train] epoch [213/601], loss:2.3061 class:wood
+[Train] epoch [214/601], loss:2.2779 class:wood
+[Train] epoch [215/601], loss:2.2680 class:wood
+[Train] epoch [216/601], loss:2.2607 class:wood
+[Train] epoch [217/601], loss:2.2418 class:wood
+[Train] epoch [218/601], loss:2.2247 class:wood
+[Train] epoch [219/601], loss:2.2176 class:wood
+[Train] epoch [220/601], loss:2.2118 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.936 localization: 0.8410362601280212 at epoch 220
+[Eval] best localization_roc_auc at epoch 220
+[Train] epoch [221/601], loss:2.2314 class:wood
+[Train] epoch [222/601], loss:2.2469 class:wood
+[Train] epoch [223/601], loss:2.2303 class:wood
+[Train] epoch [224/601], loss:2.2175 class:wood
+[Train] epoch [225/601], loss:2.1932 class:wood
+[Train] epoch [226/601], loss:2.1923 class:wood
+[Train] epoch [227/601], loss:2.1849 class:wood
+[Train] epoch [228/601], loss:2.1701 class:wood
+[Train] epoch [229/601], loss:2.1615 class:wood
+[Train] epoch [230/601], loss:2.1545 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9333 localization: 0.8353142738342285 at epoch 230
+[Train] epoch [231/601], loss:2.2224 class:wood
+[Train] epoch [232/601], loss:2.2744 class:wood
+[Train] epoch [233/601], loss:2.2553 class:wood
+[Train] epoch [234/601], loss:2.2054 class:wood
+[Train] epoch [235/601], loss:2.1858 class:wood
+[Train] epoch [236/601], loss:2.1727 class:wood
+[Train] epoch [237/601], loss:2.1529 class:wood
+[Train] epoch [238/601], loss:2.1394 class:wood
+[Train] epoch [239/601], loss:2.1399 class:wood
+[Train] epoch [240/601], loss:2.1237 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9333 localization: 0.8393220901489258 at epoch 240
+[Train] epoch [241/601], loss:2.2845 class:wood
+[Train] epoch [242/601], loss:2.4213 class:wood
+[Train] epoch [243/601], loss:2.2914 class:wood
+[Train] epoch [244/601], loss:2.2507 class:wood
+[Train] epoch [245/601], loss:2.1844 class:wood
+[Train] epoch [246/601], loss:2.1726 class:wood
+[Train] epoch [247/601], loss:2.1456 class:wood
+[Train] epoch [248/601], loss:2.1229 class:wood
+[Train] epoch [249/601], loss:2.1060 class:wood
+[Train] epoch [250/601], loss:2.1034 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.936 localization: 0.8348726630210876 at epoch 250
+[Train] epoch [251/601], loss:2.1534 class:wood
+[Train] epoch [252/601], loss:2.1870 class:wood
+[Train] epoch [253/601], loss:2.1548 class:wood
+[Train] epoch [254/601], loss:2.1307 class:wood
+[Train] epoch [255/601], loss:2.1185 class:wood
+[Train] epoch [256/601], loss:2.0873 class:wood
+[Train] epoch [257/601], loss:2.0784 class:wood
+[Train] epoch [258/601], loss:2.0651 class:wood
+[Train] epoch [259/601], loss:2.0615 class:wood
+[Train] epoch [260/601], loss:2.0535 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9368 localization: 0.841640293598175 at epoch 260
+[Eval] best localization_roc_auc at epoch 260
+[Train] epoch [261/601], loss:2.0776 class:wood
+[Train] epoch [262/601], loss:2.0924 class:wood
+[Train] epoch [263/601], loss:2.0754 class:wood
+[Train] epoch [264/601], loss:2.0568 class:wood
+[Train] epoch [265/601], loss:2.0482 class:wood
+[Train] epoch [266/601], loss:2.0379 class:wood
+[Train] epoch [267/601], loss:2.0317 class:wood
+[Train] epoch [268/601], loss:2.0204 class:wood
+[Train] epoch [269/601], loss:2.0167 class:wood
+[Train] epoch [270/601], loss:2.0113 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8413616418838501 at epoch 270
+[Train] epoch [271/601], loss:2.0430 class:wood
+[Train] epoch [272/601], loss:2.0569 class:wood
+[Train] epoch [273/601], loss:2.0378 class:wood
+[Train] epoch [274/601], loss:2.0208 class:wood
+[Train] epoch [275/601], loss:2.0119 class:wood
+[Train] epoch [276/601], loss:2.0023 class:wood
+[Train] epoch [277/601], loss:1.9926 class:wood
+[Train] epoch [278/601], loss:1.9999 class:wood
+[Train] epoch [279/601], loss:1.9902 class:wood
+[Train] epoch [280/601], loss:1.9850 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9377 localization: 0.8437506556510925 at epoch 280
+[Eval] best localization_roc_auc at epoch 280
+[Train] epoch [281/601], loss:1.9972 class:wood
+[Train] epoch [282/601], loss:2.0016 class:wood
+[Train] epoch [283/601], loss:1.9910 class:wood
+[Train] epoch [284/601], loss:1.9813 class:wood
+[Train] epoch [285/601], loss:1.9724 class:wood
+[Train] epoch [286/601], loss:1.9666 class:wood
+[Train] epoch [287/601], loss:1.9530 class:wood
+[Train] epoch [288/601], loss:1.9518 class:wood
+[Train] epoch [289/601], loss:1.9483 class:wood
+[Train] epoch [290/601], loss:1.9389 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9377 localization: 0.8455188274383545 at epoch 290
+[Eval] best localization_roc_auc at epoch 290
+[Train] epoch [291/601], loss:1.9685 class:wood
+[Train] epoch [292/601], loss:1.9733 class:wood
+[Train] epoch [293/601], loss:1.9551 class:wood
+[Train] epoch [294/601], loss:1.9464 class:wood
+[Train] epoch [295/601], loss:1.9434 class:wood
+[Train] epoch [296/601], loss:1.9459 class:wood
+[Train] epoch [297/601], loss:1.9371 class:wood
+[Train] epoch [298/601], loss:1.9214 class:wood
+[Train] epoch [299/601], loss:1.9145 class:wood
+[Train] epoch [300/601], loss:1.9070 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9404 localization: 0.8479890823364258 at epoch 300
+[Eval] best localization_roc_auc at epoch 300
+[Train] epoch [301/601], loss:1.9199 class:wood
+[Train] epoch [302/601], loss:1.9342 class:wood
+[Train] epoch [303/601], loss:1.9247 class:wood
+[Train] epoch [304/601], loss:1.9131 class:wood
+[Train] epoch [305/601], loss:1.8993 class:wood
+[Train] epoch [306/601], loss:1.8999 class:wood
+[Train] epoch [307/601], loss:1.8896 class:wood
+[Train] epoch [308/601], loss:1.8846 class:wood
+[Train] epoch [309/601], loss:1.8885 class:wood
+[Train] epoch [310/601], loss:1.8822 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8461119532585144 at epoch 310
+[Train] epoch [311/601], loss:1.9272 class:wood
+[Train] epoch [312/601], loss:1.9524 class:wood
+[Train] epoch [313/601], loss:1.9298 class:wood
+[Train] epoch [314/601], loss:1.9083 class:wood
+[Train] epoch [315/601], loss:1.8914 class:wood
+[Train] epoch [316/601], loss:1.8856 class:wood
+[Train] epoch [317/601], loss:1.8761 class:wood
+[Train] epoch [318/601], loss:1.8706 class:wood
+[Train] epoch [319/601], loss:1.8645 class:wood
+[Train] epoch [320/601], loss:1.8634 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8472267389297485 at epoch 320
+[Train] epoch [321/601], loss:1.8897 class:wood
+[Train] epoch [322/601], loss:1.9040 class:wood
+[Train] epoch [323/601], loss:1.8919 class:wood
+[Train] epoch [324/601], loss:1.8659 class:wood
+[Train] epoch [325/601], loss:1.8773 class:wood
+[Train] epoch [326/601], loss:1.8558 class:wood
+[Train] epoch [327/601], loss:1.8535 class:wood
+[Train] epoch [328/601], loss:1.8390 class:wood
+[Train] epoch [329/601], loss:1.8312 class:wood
+[Train] epoch [330/601], loss:1.8370 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9404 localization: 0.8456009030342102 at epoch 330
+[Train] epoch [331/601], loss:1.8924 class:wood
+[Train] epoch [332/601], loss:1.9389 class:wood
+[Train] epoch [333/601], loss:1.8948 class:wood
+[Train] epoch [334/601], loss:1.8694 class:wood
+[Train] epoch [335/601], loss:1.8605 class:wood
+[Train] epoch [336/601], loss:1.8453 class:wood
+[Train] epoch [337/601], loss:1.8286 class:wood
+[Train] epoch [338/601], loss:1.8310 class:wood
+[Train] epoch [339/601], loss:1.8284 class:wood
+[Train] epoch [340/601], loss:1.8091 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.846807599067688 at epoch 340
+[Train] epoch [341/601], loss:1.8471 class:wood
+[Train] epoch [342/601], loss:1.8602 class:wood
+[Train] epoch [343/601], loss:1.8399 class:wood
+[Train] epoch [344/601], loss:1.8186 class:wood
+[Train] epoch [345/601], loss:1.8135 class:wood
+[Train] epoch [346/601], loss:1.8120 class:wood
+[Train] epoch [347/601], loss:1.8013 class:wood
+[Train] epoch [348/601], loss:1.8076 class:wood
+[Train] epoch [349/601], loss:1.7901 class:wood
+[Train] epoch [350/601], loss:1.7860 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8436740040779114 at epoch 350
+[Train] epoch [351/601], loss:1.8554 class:wood
+[Train] epoch [352/601], loss:1.9062 class:wood
+[Train] epoch [353/601], loss:1.8760 class:wood
+[Train] epoch [354/601], loss:1.8372 class:wood
+[Train] epoch [355/601], loss:1.8308 class:wood
+[Train] epoch [356/601], loss:1.8040 class:wood
+[Train] epoch [357/601], loss:1.7998 class:wood
+[Train] epoch [358/601], loss:1.7885 class:wood
+[Train] epoch [359/601], loss:1.7731 class:wood
+[Train] epoch [360/601], loss:1.7748 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9404 localization: 0.8478533625602722 at epoch 360
+[Train] epoch [361/601], loss:1.8215 class:wood
+[Train] epoch [362/601], loss:1.8526 class:wood
+[Train] epoch [363/601], loss:1.8230 class:wood
+[Train] epoch [364/601], loss:1.8084 class:wood
+[Train] epoch [365/601], loss:1.7919 class:wood
+[Train] epoch [366/601], loss:1.7876 class:wood
+[Train] epoch [367/601], loss:1.7681 class:wood
+[Train] epoch [368/601], loss:1.7596 class:wood
+[Train] epoch [369/601], loss:1.7702 class:wood
+[Train] epoch [370/601], loss:1.7474 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9368 localization: 0.8430436253547668 at epoch 370
+[Train] epoch [371/601], loss:1.8818 class:wood
+[Train] epoch [372/601], loss:1.9408 class:wood
+[Train] epoch [373/601], loss:1.8948 class:wood
+[Train] epoch [374/601], loss:1.8479 class:wood
+[Train] epoch [375/601], loss:1.8166 class:wood
+[Train] epoch [376/601], loss:1.7933 class:wood
+[Train] epoch [377/601], loss:1.7723 class:wood
+[Train] epoch [378/601], loss:1.7668 class:wood
+[Train] epoch [379/601], loss:1.7543 class:wood
+[Train] epoch [380/601], loss:1.7516 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9325 localization: 0.8470620512962341 at epoch 380
+[Train] epoch [381/601], loss:1.9102 class:wood
+[Train] epoch [382/601], loss:2.0075 class:wood
+[Train] epoch [383/601], loss:1.9170 class:wood
+[Train] epoch [384/601], loss:1.8565 class:wood
+[Train] epoch [385/601], loss:1.8213 class:wood
+[Train] epoch [386/601], loss:1.8025 class:wood
+[Train] epoch [387/601], loss:1.7734 class:wood
+[Train] epoch [388/601], loss:1.7621 class:wood
+[Train] epoch [389/601], loss:1.7474 class:wood
+[Train] epoch [390/601], loss:1.7372 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9325 localization: 0.8442580699920654 at epoch 390
+[Train] epoch [391/601], loss:1.8996 class:wood
+[Train] epoch [392/601], loss:1.9992 class:wood
+[Train] epoch [393/601], loss:1.9237 class:wood
+[Train] epoch [394/601], loss:1.8486 class:wood
+[Train] epoch [395/601], loss:1.8355 class:wood
+[Train] epoch [396/601], loss:1.7948 class:wood
+[Train] epoch [397/601], loss:1.7671 class:wood
+[Train] epoch [398/601], loss:1.7540 class:wood
+[Train] epoch [399/601], loss:1.7530 class:wood
+[Train] epoch [400/601], loss:1.7354 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9289 localization: 0.8418774008750916 at epoch 400
+[Train] epoch [401/601], loss:1.9498 class:wood
+[Train] epoch [402/601], loss:2.1210 class:wood
+[Train] epoch [403/601], loss:1.9834 class:wood
+[Train] epoch [404/601], loss:1.9109 class:wood
+[Train] epoch [405/601], loss:1.8738 class:wood
+[Train] epoch [406/601], loss:1.8356 class:wood
+[Train] epoch [407/601], loss:1.7914 class:wood
+[Train] epoch [408/601], loss:1.7732 class:wood
+[Train] epoch [409/601], loss:1.7538 class:wood
+[Train] epoch [410/601], loss:1.7460 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9298 localization: 0.8409265875816345 at epoch 410
+[Train] epoch [411/601], loss:1.8762 class:wood
+[Train] epoch [412/601], loss:1.9517 class:wood
+[Train] epoch [413/601], loss:1.8899 class:wood
+[Train] epoch [414/601], loss:1.8416 class:wood
+[Train] epoch [415/601], loss:1.8102 class:wood
+[Train] epoch [416/601], loss:1.7712 class:wood
+[Train] epoch [417/601], loss:1.7466 class:wood
+[Train] epoch [418/601], loss:1.7297 class:wood
+[Train] epoch [419/601], loss:1.7375 class:wood
+[Train] epoch [420/601], loss:1.7188 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9246 localization: 0.8454647660255432 at epoch 420
+[Train] epoch [421/601], loss:1.8803 class:wood
+[Train] epoch [422/601], loss:2.0232 class:wood
+[Train] epoch [423/601], loss:1.9149 class:wood
+[Train] epoch [424/601], loss:1.8614 class:wood
+[Train] epoch [425/601], loss:1.8157 class:wood
+[Train] epoch [426/601], loss:1.7915 class:wood
+[Train] epoch [427/601], loss:1.7542 class:wood
+[Train] epoch [428/601], loss:1.7477 class:wood
+[Train] epoch [429/601], loss:1.7246 class:wood
+[Train] epoch [430/601], loss:1.7101 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9009 localization: 0.8247499465942383 at epoch 430
+[Train] epoch [431/601], loss:2.0043 class:wood
+[Train] epoch [432/601], loss:2.1591 class:wood
+[Train] epoch [433/601], loss:1.9673 class:wood
+[Train] epoch [434/601], loss:1.9495 class:wood
+[Train] epoch [435/601], loss:1.8703 class:wood
+[Train] epoch [436/601], loss:1.8202 class:wood
+[Train] epoch [437/601], loss:1.7878 class:wood
+[Train] epoch [438/601], loss:1.7610 class:wood
+[Train] epoch [439/601], loss:1.7578 class:wood
+[Train] epoch [440/601], loss:1.7283 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8473731875419617 at epoch 440
+[Train] epoch [441/601], loss:1.7636 class:wood
+[Train] epoch [442/601], loss:1.7836 class:wood
+[Train] epoch [443/601], loss:1.7548 class:wood
+[Train] epoch [444/601], loss:1.7314 class:wood
+[Train] epoch [445/601], loss:1.7170 class:wood
+[Train] epoch [446/601], loss:1.7085 class:wood
+[Train] epoch [447/601], loss:1.6954 class:wood
+[Train] epoch [448/601], loss:1.6923 class:wood
+[Train] epoch [449/601], loss:1.6902 class:wood
+[Train] epoch [450/601], loss:1.6812 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9377 localization: 0.8470055460929871 at epoch 450
+[Train] epoch [451/601], loss:1.6827 class:wood
+[Train] epoch [452/601], loss:1.6925 class:wood
+[Train] epoch [453/601], loss:1.6770 class:wood
+[Train] epoch [454/601], loss:1.6724 class:wood
+[Train] epoch [455/601], loss:1.6736 class:wood
+[Train] epoch [456/601], loss:1.6620 class:wood
+[Train] epoch [457/601], loss:1.6608 class:wood
+[Train] epoch [458/601], loss:1.6546 class:wood
+[Train] epoch [459/601], loss:1.6492 class:wood
+[Train] epoch [460/601], loss:1.6436 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9386 localization: 0.8530466556549072 at epoch 460
+[Eval] best localization_roc_auc at epoch 460
+[Train] epoch [461/601], loss:1.6710 class:wood
+[Train] epoch [462/601], loss:1.6727 class:wood
+[Train] epoch [463/601], loss:1.6595 class:wood
+[Train] epoch [464/601], loss:1.6508 class:wood
+[Train] epoch [465/601], loss:1.6475 class:wood
+[Train] epoch [466/601], loss:1.6365 class:wood
+[Train] epoch [467/601], loss:1.6424 class:wood
+[Train] epoch [468/601], loss:1.6401 class:wood
+[Train] epoch [469/601], loss:1.6303 class:wood
+[Train] epoch [470/601], loss:1.6290 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8498123288154602 at epoch 470
+[Train] epoch [471/601], loss:1.6340 class:wood
+[Train] epoch [472/601], loss:1.6507 class:wood
+[Train] epoch [473/601], loss:1.6417 class:wood
+[Train] epoch [474/601], loss:1.6292 class:wood
+[Train] epoch [475/601], loss:1.6305 class:wood
+[Train] epoch [476/601], loss:1.6205 class:wood
+[Train] epoch [477/601], loss:1.6211 class:wood
+[Train] epoch [478/601], loss:1.6174 class:wood
+[Train] epoch [479/601], loss:1.6221 class:wood
+[Train] epoch [480/601], loss:1.6246 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9404 localization: 0.8537116646766663 at epoch 480
+[Eval] best localization_roc_auc at epoch 480
+[Train] epoch [481/601], loss:1.6317 class:wood
+[Train] epoch [482/601], loss:1.6424 class:wood
+[Train] epoch [483/601], loss:1.6286 class:wood
+[Train] epoch [484/601], loss:1.6187 class:wood
+[Train] epoch [485/601], loss:1.6109 class:wood
+[Train] epoch [486/601], loss:1.6211 class:wood
+[Train] epoch [487/601], loss:1.6193 class:wood
+[Train] epoch [488/601], loss:1.6071 class:wood
+[Train] epoch [489/601], loss:1.5944 class:wood
+[Train] epoch [490/601], loss:1.5983 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9412 localization: 0.84996497631073 at epoch 490
+[Train] epoch [491/601], loss:1.6023 class:wood
+[Train] epoch [492/601], loss:1.6184 class:wood
+[Train] epoch [493/601], loss:1.6111 class:wood
+[Train] epoch [494/601], loss:1.5989 class:wood
+[Train] epoch [495/601], loss:1.6029 class:wood
+[Train] epoch [496/601], loss:1.5877 class:wood
+[Train] epoch [497/601], loss:1.5850 class:wood
+[Train] epoch [498/601], loss:1.5899 class:wood
+[Train] epoch [499/601], loss:1.5818 class:wood
+[Train] epoch [500/601], loss:1.5949 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9395 localization: 0.8532296419143677 at epoch 500
+[Train] epoch [501/601], loss:1.6027 class:wood
+[Train] epoch [502/601], loss:1.6262 class:wood
+[Train] epoch [503/601], loss:1.5978 class:wood
+[Train] epoch [504/601], loss:1.5864 class:wood
+[Train] epoch [505/601], loss:1.5854 class:wood
+[Train] epoch [506/601], loss:1.5740 class:wood
+[Train] epoch [507/601], loss:1.5833 class:wood
+[Train] epoch [508/601], loss:1.5746 class:wood
+[Train] epoch [509/601], loss:1.5630 class:wood
+[Train] epoch [510/601], loss:1.5599 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9412 localization: 0.8528670072555542 at epoch 510
+[Train] epoch [511/601], loss:1.5845 class:wood
+[Train] epoch [512/601], loss:1.6136 class:wood
+[Train] epoch [513/601], loss:1.5930 class:wood
+[Train] epoch [514/601], loss:1.5823 class:wood
+[Train] epoch [515/601], loss:1.5703 class:wood
+[Train] epoch [516/601], loss:1.5678 class:wood
+[Train] epoch [517/601], loss:1.5679 class:wood
+[Train] epoch [518/601], loss:1.5629 class:wood
+[Train] epoch [519/601], loss:1.5555 class:wood
+[Train] epoch [520/601], loss:1.5604 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9404 localization: 0.8518128395080566 at epoch 520
+[Train] epoch [521/601], loss:1.5913 class:wood
+[Train] epoch [522/601], loss:1.6200 class:wood
+[Train] epoch [523/601], loss:1.5936 class:wood
+[Train] epoch [524/601], loss:1.5742 class:wood
+[Train] epoch [525/601], loss:1.5642 class:wood
+[Train] epoch [526/601], loss:1.5564 class:wood
+[Train] epoch [527/601], loss:1.5574 class:wood
+[Train] epoch [528/601], loss:1.5696 class:wood
+[Train] epoch [529/601], loss:1.5463 class:wood
+[Train] epoch [530/601], loss:1.5391 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9386 localization: 0.8496953845024109 at epoch 530
+[Train] epoch [531/601], loss:1.5934 class:wood
+[Train] epoch [532/601], loss:1.6181 class:wood
+[Train] epoch [533/601], loss:1.5984 class:wood
+[Train] epoch [534/601], loss:1.5712 class:wood
+[Train] epoch [535/601], loss:1.5640 class:wood
+[Train] epoch [536/601], loss:1.5639 class:wood
+[Train] epoch [537/601], loss:1.5431 class:wood
+[Train] epoch [538/601], loss:1.5431 class:wood
+[Train] epoch [539/601], loss:1.5344 class:wood
+[Train] epoch [540/601], loss:1.5332 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9351 localization: 0.8492020964622498 at epoch 540
+[Train] epoch [541/601], loss:1.6030 class:wood
+[Train] epoch [542/601], loss:1.6433 class:wood
+[Train] epoch [543/601], loss:1.5976 class:wood
+[Train] epoch [544/601], loss:1.5690 class:wood
+[Train] epoch [545/601], loss:1.5600 class:wood
+[Train] epoch [546/601], loss:1.5490 class:wood
+[Train] epoch [547/601], loss:1.5332 class:wood
+[Train] epoch [548/601], loss:1.5367 class:wood
+[Train] epoch [549/601], loss:1.5256 class:wood
+[Train] epoch [550/601], loss:1.5200 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9325 localization: 0.8449300527572632 at epoch 550
+[Train] epoch [551/601], loss:1.6177 class:wood
+[Train] epoch [552/601], loss:1.6801 class:wood
+[Train] epoch [553/601], loss:1.6212 class:wood
+[Train] epoch [554/601], loss:1.5887 class:wood
+[Train] epoch [555/601], loss:1.5779 class:wood
+[Train] epoch [556/601], loss:1.5476 class:wood
+[Train] epoch [557/601], loss:1.5390 class:wood
+[Train] epoch [558/601], loss:1.5365 class:wood
+[Train] epoch [559/601], loss:1.5307 class:wood
+[Train] epoch [560/601], loss:1.5297 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9351 localization: 0.8466008901596069 at epoch 560
+[Train] epoch [561/601], loss:1.5756 class:wood
+[Train] epoch [562/601], loss:1.6142 class:wood
+[Train] epoch [563/601], loss:1.5739 class:wood
+[Train] epoch [564/601], loss:1.5465 class:wood
+[Train] epoch [565/601], loss:1.5511 class:wood
+[Train] epoch [566/601], loss:1.5330 class:wood
+[Train] epoch [567/601], loss:1.5248 class:wood
+[Train] epoch [568/601], loss:1.5100 class:wood
+[Train] epoch [569/601], loss:1.5069 class:wood
+[Train] epoch [570/601], loss:1.5229 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.936 localization: 0.8484631776809692 at epoch 570
+[Train] epoch [571/601], loss:1.5957 class:wood
+[Train] epoch [572/601], loss:1.6262 class:wood
+[Train] epoch [573/601], loss:1.5799 class:wood
+[Train] epoch [574/601], loss:1.5442 class:wood
+[Train] epoch [575/601], loss:1.5418 class:wood
+[Train] epoch [576/601], loss:1.5233 class:wood
+[Train] epoch [577/601], loss:1.5137 class:wood
+[Train] epoch [578/601], loss:1.5083 class:wood
+[Train] epoch [579/601], loss:1.5034 class:wood
+[Train] epoch [580/601], loss:1.4940 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9325 localization: 0.84626305103302 at epoch 580
+[Train] epoch [581/601], loss:1.5662 class:wood
+[Train] epoch [582/601], loss:1.5815 class:wood
+[Train] epoch [583/601], loss:1.5512 class:wood
+[Train] epoch [584/601], loss:1.5305 class:wood
+[Train] epoch [585/601], loss:1.5194 class:wood
+[Train] epoch [586/601], loss:1.5079 class:wood
+[Train] epoch [587/601], loss:1.5039 class:wood
+[Train] epoch [588/601], loss:1.4890 class:wood
+[Train] epoch [589/601], loss:1.4905 class:wood
+[Train] epoch [590/601], loss:1.4834 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9333 localization: 0.8482407927513123 at epoch 590
+[Train] epoch [591/601], loss:1.5645 class:wood
+[Train] epoch [592/601], loss:1.6041 class:wood
+[Train] epoch [593/601], loss:1.5721 class:wood
+[Train] epoch [594/601], loss:1.5456 class:wood
+[Train] epoch [595/601], loss:1.5364 class:wood
+[Train] epoch [596/601], loss:1.5068 class:wood
+[Train] epoch [597/601], loss:1.5068 class:wood
+[Train] epoch [598/601], loss:1.4980 class:wood
+[Train] epoch [599/601], loss:1.4847 class:wood
+[Train] epoch [600/601], loss:1.4783 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9298 localization: 0.8454533815383911 at epoch 600
+[Train] epoch [601/601], loss:1.5527 class:wood
+Vanilla Backpropagation:
+[Eval] wood class RocAUC detection: 0.9439 localization: 0.7912225127220154 at epoch 601

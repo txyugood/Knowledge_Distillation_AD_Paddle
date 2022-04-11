@@ -1,0 +1,722 @@
+W0410 18:40:44.504981 25084 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 18:40:44.509666 25084 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:22.4286 class:tile
+[Eval] tile class RocAUC at epoch 0: 0.6706
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:18.0156 class:tile
+[Train] epoch [2/601], loss:15.7470 class:tile
+[Train] epoch [3/601], loss:14.3918 class:tile
+[Train] epoch [4/601], loss:13.4119 class:tile
+[Train] epoch [5/601], loss:12.5721 class:tile
+[Train] epoch [6/601], loss:11.9708 class:tile
+[Train] epoch [7/601], loss:11.4899 class:tile
+[Train] epoch [8/601], loss:11.0982 class:tile
+[Train] epoch [9/601], loss:10.6897 class:tile
+[Train] epoch [10/601], loss:10.3746 class:tile
+[Eval] tile class RocAUC at epoch 10: 0.8066
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:10.0947 class:tile
+[Train] epoch [12/601], loss:9.8433 class:tile
+[Train] epoch [13/601], loss:9.6361 class:tile
+[Train] epoch [14/601], loss:9.4169 class:tile
+[Train] epoch [15/601], loss:9.2027 class:tile
+[Train] epoch [16/601], loss:9.0345 class:tile
+[Train] epoch [17/601], loss:8.8431 class:tile
+[Train] epoch [18/601], loss:8.6767 class:tile
+[Train] epoch [19/601], loss:8.5397 class:tile
+[Train] epoch [20/601], loss:8.3885 class:tile
+[Eval] tile class RocAUC at epoch 20: 0.8492
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:8.2394 class:tile
+[Train] epoch [22/601], loss:8.1202 class:tile
+[Train] epoch [23/601], loss:7.9894 class:tile
+[Train] epoch [24/601], loss:7.8404 class:tile
+[Train] epoch [25/601], loss:7.7431 class:tile
+[Train] epoch [26/601], loss:7.6144 class:tile
+[Train] epoch [27/601], loss:7.5252 class:tile
+[Train] epoch [28/601], loss:7.4228 class:tile
+[Train] epoch [29/601], loss:7.3151 class:tile
+[Train] epoch [30/601], loss:7.2155 class:tile
+[Eval] tile class RocAUC at epoch 30: 0.8452
+[Train] epoch [31/601], loss:7.1205 class:tile
+[Train] epoch [32/601], loss:7.0529 class:tile
+[Train] epoch [33/601], loss:6.9347 class:tile
+[Train] epoch [34/601], loss:6.8461 class:tile
+[Train] epoch [35/601], loss:6.7658 class:tile
+[Train] epoch [36/601], loss:6.7168 class:tile
+[Train] epoch [37/601], loss:6.6193 class:tile
+[Train] epoch [38/601], loss:6.5575 class:tile
+[Train] epoch [39/601], loss:6.4818 class:tile
+[Train] epoch [40/601], loss:6.4197 class:tile
+[Eval] tile class RocAUC at epoch 40: 0.8698
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:6.3468 class:tile
+[Train] epoch [42/601], loss:6.2954 class:tile
+[Train] epoch [43/601], loss:6.2058 class:tile
+[Train] epoch [44/601], loss:6.1450 class:tile
+[Train] epoch [45/601], loss:6.0913 class:tile
+[Train] epoch [46/601], loss:6.0277 class:tile
+[Train] epoch [47/601], loss:5.9670 class:tile
+[Train] epoch [48/601], loss:5.9323 class:tile
+[Train] epoch [49/601], loss:5.8842 class:tile
+[Train] epoch [50/601], loss:5.8115 class:tile
+[Eval] tile class RocAUC at epoch 50: 0.8763
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:5.7685 class:tile
+[Train] epoch [52/601], loss:5.7316 class:tile
+[Train] epoch [53/601], loss:5.6840 class:tile
+[Train] epoch [54/601], loss:5.6193 class:tile
+[Train] epoch [55/601], loss:5.5874 class:tile
+[Train] epoch [56/601], loss:5.5293 class:tile
+[Train] epoch [57/601], loss:5.4995 class:tile
+[Train] epoch [58/601], loss:5.4554 class:tile
+[Train] epoch [59/601], loss:5.4282 class:tile
+[Train] epoch [60/601], loss:5.3814 class:tile
+[Eval] tile class RocAUC at epoch 60: 0.8654
+[Train] epoch [61/601], loss:5.3316 class:tile
+[Train] epoch [62/601], loss:5.3007 class:tile
+[Train] epoch [63/601], loss:5.2499 class:tile
+[Train] epoch [64/601], loss:5.2127 class:tile
+[Train] epoch [65/601], loss:5.1884 class:tile
+[Train] epoch [66/601], loss:5.1404 class:tile
+[Train] epoch [67/601], loss:5.0910 class:tile
+[Train] epoch [68/601], loss:5.0811 class:tile
+[Train] epoch [69/601], loss:5.0457 class:tile
+[Train] epoch [70/601], loss:4.9782 class:tile
+[Eval] tile class RocAUC at epoch 70: 0.8932
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:4.9660 class:tile
+[Train] epoch [72/601], loss:4.9342 class:tile
+[Train] epoch [73/601], loss:4.8939 class:tile
+[Train] epoch [74/601], loss:4.8612 class:tile
+[Train] epoch [75/601], loss:4.8318 class:tile
+[Train] epoch [76/601], loss:4.7944 class:tile
+[Train] epoch [77/601], loss:4.7690 class:tile
+[Train] epoch [78/601], loss:4.7304 class:tile
+[Train] epoch [79/601], loss:4.6996 class:tile
+[Train] epoch [80/601], loss:4.6575 class:tile
+[Eval] tile class RocAUC at epoch 80: 0.8975
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:4.6356 class:tile
+[Train] epoch [82/601], loss:4.6107 class:tile
+[Train] epoch [83/601], loss:4.5939 class:tile
+[Train] epoch [84/601], loss:4.5576 class:tile
+[Train] epoch [85/601], loss:4.5442 class:tile
+[Train] epoch [86/601], loss:4.4957 class:tile
+[Train] epoch [87/601], loss:4.4582 class:tile
+[Train] epoch [88/601], loss:4.4370 class:tile
+[Train] epoch [89/601], loss:4.4080 class:tile
+[Train] epoch [90/601], loss:4.3881 class:tile
+[Eval] tile class RocAUC at epoch 90: 0.8943
+[Train] epoch [91/601], loss:4.3562 class:tile
+[Train] epoch [92/601], loss:4.3299 class:tile
+[Train] epoch [93/601], loss:4.3071 class:tile
+[Train] epoch [94/601], loss:4.2899 class:tile
+[Train] epoch [95/601], loss:4.2608 class:tile
+[Train] epoch [96/601], loss:4.2371 class:tile
+[Train] epoch [97/601], loss:4.2151 class:tile
+[Train] epoch [98/601], loss:4.1880 class:tile
+[Train] epoch [99/601], loss:4.1695 class:tile
+[Train] epoch [100/601], loss:4.1585 class:tile
+[Eval] tile class RocAUC at epoch 100: 0.8885
+[Train] epoch [101/601], loss:4.1380 class:tile
+[Train] epoch [102/601], loss:4.1049 class:tile
+[Train] epoch [103/601], loss:4.0850 class:tile
+[Train] epoch [104/601], loss:4.0730 class:tile
+[Train] epoch [105/601], loss:4.0290 class:tile
+[Train] epoch [106/601], loss:4.0068 class:tile
+[Train] epoch [107/601], loss:3.9897 class:tile
+[Train] epoch [108/601], loss:3.9672 class:tile
+[Train] epoch [109/601], loss:3.9477 class:tile
+[Train] epoch [110/601], loss:3.9306 class:tile
+[Eval] tile class RocAUC at epoch 110: 0.9012
+[Eval] save best model at epoch 110
+[Train] epoch [111/601], loss:3.9090 class:tile
+[Train] epoch [112/601], loss:3.8799 class:tile
+[Train] epoch [113/601], loss:3.8803 class:tile
+[Train] epoch [114/601], loss:3.8629 class:tile
+[Train] epoch [115/601], loss:3.8359 class:tile
+[Train] epoch [116/601], loss:3.8295 class:tile
+[Train] epoch [117/601], loss:3.8010 class:tile
+[Train] epoch [118/601], loss:3.7814 class:tile
+[Train] epoch [119/601], loss:3.7621 class:tile
+[Train] epoch [120/601], loss:3.7599 class:tile
+[Eval] tile class RocAUC at epoch 120: 0.9073
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:3.7317 class:tile
+[Train] epoch [122/601], loss:3.7128 class:tile
+[Train] epoch [123/601], loss:3.6993 class:tile
+[Train] epoch [124/601], loss:3.7041 class:tile
+[Train] epoch [125/601], loss:3.6863 class:tile
+[Train] epoch [126/601], loss:3.6578 class:tile
+[Train] epoch [127/601], loss:3.6320 class:tile
+[Train] epoch [128/601], loss:3.6377 class:tile
+[Train] epoch [129/601], loss:3.6108 class:tile
+[Train] epoch [130/601], loss:3.5959 class:tile
+[Eval] tile class RocAUC at epoch 130: 0.8972
+[Train] epoch [131/601], loss:3.5894 class:tile
+[Train] epoch [132/601], loss:3.5682 class:tile
+[Train] epoch [133/601], loss:3.5472 class:tile
+[Train] epoch [134/601], loss:3.5359 class:tile
+[Train] epoch [135/601], loss:3.5285 class:tile
+[Train] epoch [136/601], loss:3.4955 class:tile
+[Train] epoch [137/601], loss:3.5211 class:tile
+[Train] epoch [138/601], loss:3.4793 class:tile
+[Train] epoch [139/601], loss:3.4849 class:tile
+[Train] epoch [140/601], loss:3.4591 class:tile
+[Eval] tile class RocAUC at epoch 140: 0.9048
+[Train] epoch [141/601], loss:3.4379 class:tile
+[Train] epoch [142/601], loss:3.4357 class:tile
+[Train] epoch [143/601], loss:3.4323 class:tile
+[Train] epoch [144/601], loss:3.4142 class:tile
+[Train] epoch [145/601], loss:3.4024 class:tile
+[Train] epoch [146/601], loss:3.3944 class:tile
+[Train] epoch [147/601], loss:3.3823 class:tile
+[Train] epoch [148/601], loss:3.3692 class:tile
+[Train] epoch [149/601], loss:3.3508 class:tile
+[Train] epoch [150/601], loss:3.3383 class:tile
+[Eval] tile class RocAUC at epoch 150: 0.9084
+[Eval] save best model at epoch 150
+[Train] epoch [151/601], loss:3.3332 class:tile
+[Train] epoch [152/601], loss:3.3281 class:tile
+[Train] epoch [153/601], loss:3.3071 class:tile
+[Train] epoch [154/601], loss:3.3028 class:tile
+[Train] epoch [155/601], loss:3.2851 class:tile
+[Train] epoch [156/601], loss:3.2727 class:tile
+[Train] epoch [157/601], loss:3.2633 class:tile
+[Train] epoch [158/601], loss:3.2574 class:tile
+[Train] epoch [159/601], loss:3.2617 class:tile
+[Train] epoch [160/601], loss:3.2414 class:tile
+[Eval] tile class RocAUC at epoch 160: 0.9044
+[Train] epoch [161/601], loss:3.2318 class:tile
+[Train] epoch [162/601], loss:3.2203 class:tile
+[Train] epoch [163/601], loss:3.2153 class:tile
+[Train] epoch [164/601], loss:3.2069 class:tile
+[Train] epoch [165/601], loss:3.1905 class:tile
+[Train] epoch [166/601], loss:3.1839 class:tile
+[Train] epoch [167/601], loss:3.1838 class:tile
+[Train] epoch [168/601], loss:3.1740 class:tile
+[Train] epoch [169/601], loss:3.1591 class:tile
+[Train] epoch [170/601], loss:3.1482 class:tile
+[Eval] tile class RocAUC at epoch 170: 0.9048
+[Train] epoch [171/601], loss:3.1394 class:tile
+[Train] epoch [172/601], loss:3.1388 class:tile
+[Train] epoch [173/601], loss:3.1284 class:tile
+[Train] epoch [174/601], loss:3.1371 class:tile
+[Train] epoch [175/601], loss:3.1139 class:tile
+[Train] epoch [176/601], loss:3.1193 class:tile
+[Train] epoch [177/601], loss:3.0998 class:tile
+[Train] epoch [178/601], loss:3.0903 class:tile
+[Train] epoch [179/601], loss:3.0844 class:tile
+[Train] epoch [180/601], loss:3.0822 class:tile
+[Eval] tile class RocAUC at epoch 180: 0.9069
+[Train] epoch [181/601], loss:3.0701 class:tile
+[Train] epoch [182/601], loss:3.0569 class:tile
+[Train] epoch [183/601], loss:3.0528 class:tile
+[Train] epoch [184/601], loss:3.0392 class:tile
+[Train] epoch [185/601], loss:3.0399 class:tile
+[Train] epoch [186/601], loss:3.0343 class:tile
+[Train] epoch [187/601], loss:3.0301 class:tile
+[Train] epoch [188/601], loss:3.0117 class:tile
+[Train] epoch [189/601], loss:3.0058 class:tile
+[Train] epoch [190/601], loss:3.0167 class:tile
+[Eval] tile class RocAUC at epoch 190: 0.9102
+[Eval] save best model at epoch 190
+[Train] epoch [191/601], loss:2.9996 class:tile
+[Train] epoch [192/601], loss:2.9924 class:tile
+[Train] epoch [193/601], loss:2.9795 class:tile
+[Train] epoch [194/601], loss:2.9791 class:tile
+[Train] epoch [195/601], loss:2.9713 class:tile
+[Train] epoch [196/601], loss:2.9741 class:tile
+[Train] epoch [197/601], loss:2.9726 class:tile
+[Train] epoch [198/601], loss:2.9583 class:tile
+[Train] epoch [199/601], loss:2.9506 class:tile
+[Train] epoch [200/601], loss:2.9444 class:tile
+[Eval] tile class RocAUC at epoch 200: 0.9109
+[Eval] save best model at epoch 200
+[Train] epoch [201/601], loss:2.9291 class:tile
+[Train] epoch [202/601], loss:2.9242 class:tile
+[Train] epoch [203/601], loss:2.9285 class:tile
+[Train] epoch [204/601], loss:2.9153 class:tile
+[Train] epoch [205/601], loss:2.9057 class:tile
+[Train] epoch [206/601], loss:2.9090 class:tile
+[Train] epoch [207/601], loss:2.9081 class:tile
+[Train] epoch [208/601], loss:2.9073 class:tile
+[Train] epoch [209/601], loss:2.8879 class:tile
+[Train] epoch [210/601], loss:2.9012 class:tile
+[Eval] tile class RocAUC at epoch 210: 0.9214
+[Eval] save best model at epoch 210
+[Train] epoch [211/601], loss:2.8990 class:tile
+[Train] epoch [212/601], loss:2.8907 class:tile
+[Train] epoch [213/601], loss:2.8787 class:tile
+[Train] epoch [214/601], loss:2.8662 class:tile
+[Train] epoch [215/601], loss:2.8648 class:tile
+[Train] epoch [216/601], loss:2.8615 class:tile
+[Train] epoch [217/601], loss:2.8499 class:tile
+[Train] epoch [218/601], loss:2.8510 class:tile
+[Train] epoch [219/601], loss:2.8421 class:tile
+[Train] epoch [220/601], loss:2.8328 class:tile
+[Eval] tile class RocAUC at epoch 220: 0.917
+[Train] epoch [221/601], loss:2.8255 class:tile
+[Train] epoch [222/601], loss:2.8263 class:tile
+[Train] epoch [223/601], loss:2.8107 class:tile
+[Train] epoch [224/601], loss:2.8126 class:tile
+[Train] epoch [225/601], loss:2.8023 class:tile
+[Train] epoch [226/601], loss:2.8006 class:tile
+[Train] epoch [227/601], loss:2.8075 class:tile
+[Train] epoch [228/601], loss:2.7899 class:tile
+[Train] epoch [229/601], loss:2.8023 class:tile
+[Train] epoch [230/601], loss:2.7905 class:tile
+[Eval] tile class RocAUC at epoch 230: 0.9051
+[Train] epoch [231/601], loss:2.7849 class:tile
+[Train] epoch [232/601], loss:2.7775 class:tile
+[Train] epoch [233/601], loss:2.7795 class:tile
+[Train] epoch [234/601], loss:2.7733 class:tile
+[Train] epoch [235/601], loss:2.7599 class:tile
+[Train] epoch [236/601], loss:2.7578 class:tile
+[Train] epoch [237/601], loss:2.7656 class:tile
+[Train] epoch [238/601], loss:2.7653 class:tile
+[Train] epoch [239/601], loss:2.7463 class:tile
+[Train] epoch [240/601], loss:2.7409 class:tile
+[Eval] tile class RocAUC at epoch 240: 0.9022
+[Train] epoch [241/601], loss:2.7390 class:tile
+[Train] epoch [242/601], loss:2.7419 class:tile
+[Train] epoch [243/601], loss:2.7370 class:tile
+[Train] epoch [244/601], loss:2.7318 class:tile
+[Train] epoch [245/601], loss:2.7383 class:tile
+[Train] epoch [246/601], loss:2.7376 class:tile
+[Train] epoch [247/601], loss:2.7328 class:tile
+[Train] epoch [248/601], loss:2.7247 class:tile
+[Train] epoch [249/601], loss:2.7056 class:tile
+[Train] epoch [250/601], loss:2.7159 class:tile
+[Eval] tile class RocAUC at epoch 250: 0.9073
+[Train] epoch [251/601], loss:2.7016 class:tile
+[Train] epoch [252/601], loss:2.6977 class:tile
+[Train] epoch [253/601], loss:2.7044 class:tile
+[Train] epoch [254/601], loss:2.6959 class:tile
+[Train] epoch [255/601], loss:2.6840 class:tile
+[Train] epoch [256/601], loss:2.6832 class:tile
+[Train] epoch [257/601], loss:2.6727 class:tile
+[Train] epoch [258/601], loss:2.6877 class:tile
+[Train] epoch [259/601], loss:2.6785 class:tile
+[Train] epoch [260/601], loss:2.6639 class:tile
+[Eval] tile class RocAUC at epoch 260: 0.9113
+[Train] epoch [261/601], loss:2.6742 class:tile
+[Train] epoch [262/601], loss:2.6660 class:tile
+[Train] epoch [263/601], loss:2.6803 class:tile
+[Train] epoch [264/601], loss:2.6624 class:tile
+[Train] epoch [265/601], loss:2.6525 class:tile
+[Train] epoch [266/601], loss:2.6428 class:tile
+[Train] epoch [267/601], loss:2.6444 class:tile
+[Train] epoch [268/601], loss:2.6371 class:tile
+[Train] epoch [269/601], loss:2.6379 class:tile
+[Train] epoch [270/601], loss:2.6278 class:tile
+[Eval] tile class RocAUC at epoch 270: 0.9181
+[Train] epoch [271/601], loss:2.6335 class:tile
+[Train] epoch [272/601], loss:2.6280 class:tile
+[Train] epoch [273/601], loss:2.6366 class:tile
+[Train] epoch [274/601], loss:2.6183 class:tile
+[Train] epoch [275/601], loss:2.6108 class:tile
+[Train] epoch [276/601], loss:2.6079 class:tile
+[Train] epoch [277/601], loss:2.6117 class:tile
+[Train] epoch [278/601], loss:2.6020 class:tile
+[Train] epoch [279/601], loss:2.6077 class:tile
+[Train] epoch [280/601], loss:2.6225 class:tile
+[Eval] tile class RocAUC at epoch 280: 0.908
+[Train] epoch [281/601], loss:2.6088 class:tile
+[Train] epoch [282/601], loss:2.6078 class:tile
+[Train] epoch [283/601], loss:2.5988 class:tile
+[Train] epoch [284/601], loss:2.5886 class:tile
+[Train] epoch [285/601], loss:2.5778 class:tile
+[Train] epoch [286/601], loss:2.5815 class:tile
+[Train] epoch [287/601], loss:2.5794 class:tile
+[Train] epoch [288/601], loss:2.5810 class:tile
+[Train] epoch [289/601], loss:2.5733 class:tile
+[Train] epoch [290/601], loss:2.5677 class:tile
+[Eval] tile class RocAUC at epoch 290: 0.9095
+[Train] epoch [291/601], loss:2.5673 class:tile
+[Train] epoch [292/601], loss:2.5611 class:tile
+[Train] epoch [293/601], loss:2.5637 class:tile
+[Train] epoch [294/601], loss:2.5687 class:tile
+[Train] epoch [295/601], loss:2.5644 class:tile
+[Train] epoch [296/601], loss:2.5640 class:tile
+[Train] epoch [297/601], loss:2.5644 class:tile
+[Train] epoch [298/601], loss:2.5574 class:tile
+[Train] epoch [299/601], loss:2.5488 class:tile
+[Train] epoch [300/601], loss:2.5439 class:tile
+[Eval] tile class RocAUC at epoch 300: 0.9113
+[Train] epoch [301/601], loss:2.5428 class:tile
+[Train] epoch [302/601], loss:2.5705 class:tile
+[Train] epoch [303/601], loss:2.5571 class:tile
+[Train] epoch [304/601], loss:2.5484 class:tile
+[Train] epoch [305/601], loss:2.5586 class:tile
+[Train] epoch [306/601], loss:2.5347 class:tile
+[Train] epoch [307/601], loss:2.5308 class:tile
+[Train] epoch [308/601], loss:2.5291 class:tile
+[Train] epoch [309/601], loss:2.5266 class:tile
+[Train] epoch [310/601], loss:2.5258 class:tile
+[Eval] tile class RocAUC at epoch 310: 0.9098
+[Train] epoch [311/601], loss:2.5302 class:tile
+[Train] epoch [312/601], loss:2.5167 class:tile
+[Train] epoch [313/601], loss:2.5160 class:tile
+[Train] epoch [314/601], loss:2.5110 class:tile
+[Train] epoch [315/601], loss:2.5176 class:tile
+[Train] epoch [316/601], loss:2.5074 class:tile
+[Train] epoch [317/601], loss:2.5008 class:tile
+[Train] epoch [318/601], loss:2.4986 class:tile
+[Train] epoch [319/601], loss:2.4908 class:tile
+[Train] epoch [320/601], loss:2.4908 class:tile
+[Eval] tile class RocAUC at epoch 320: 0.9149
+[Train] epoch [321/601], loss:2.4894 class:tile
+[Train] epoch [322/601], loss:2.4825 class:tile
+[Train] epoch [323/601], loss:2.4842 class:tile
+[Train] epoch [324/601], loss:2.4823 class:tile
+[Train] epoch [325/601], loss:2.4808 class:tile
+[Train] epoch [326/601], loss:2.4773 class:tile
+[Train] epoch [327/601], loss:2.4907 class:tile
+[Train] epoch [328/601], loss:2.4709 class:tile
+[Train] epoch [329/601], loss:2.4741 class:tile
+[Train] epoch [330/601], loss:2.4688 class:tile
+[Eval] tile class RocAUC at epoch 330: 0.908
+[Train] epoch [331/601], loss:2.4765 class:tile
+[Train] epoch [332/601], loss:2.4736 class:tile
+[Train] epoch [333/601], loss:2.4707 class:tile
+[Train] epoch [334/601], loss:2.4650 class:tile
+[Train] epoch [335/601], loss:2.4630 class:tile
+[Train] epoch [336/601], loss:2.4580 class:tile
+[Train] epoch [337/601], loss:2.4605 class:tile
+[Train] epoch [338/601], loss:2.4585 class:tile
+[Train] epoch [339/601], loss:2.4697 class:tile
+[Train] epoch [340/601], loss:2.4513 class:tile
+[Eval] tile class RocAUC at epoch 340: 0.9235
+[Eval] save best model at epoch 340
+[Train] epoch [341/601], loss:2.4490 class:tile
+[Train] epoch [342/601], loss:2.4413 class:tile
+[Train] epoch [343/601], loss:2.4437 class:tile
+[Train] epoch [344/601], loss:2.4364 class:tile
+[Train] epoch [345/601], loss:2.4459 class:tile
+[Train] epoch [346/601], loss:2.4386 class:tile
+[Train] epoch [347/601], loss:2.4462 class:tile
+[Train] epoch [348/601], loss:2.4395 class:tile
+[Train] epoch [349/601], loss:2.4389 class:tile
+[Train] epoch [350/601], loss:2.4316 class:tile
+[Eval] tile class RocAUC at epoch 350: 0.9141
+[Train] epoch [351/601], loss:2.4255 class:tile
+[Train] epoch [352/601], loss:2.4299 class:tile
+[Train] epoch [353/601], loss:2.4214 class:tile
+[Train] epoch [354/601], loss:2.4250 class:tile
+[Train] epoch [355/601], loss:2.4174 class:tile
+[Train] epoch [356/601], loss:2.4139 class:tile
+[Train] epoch [357/601], loss:2.4126 class:tile
+[Train] epoch [358/601], loss:2.4103 class:tile
+[Train] epoch [359/601], loss:2.4083 class:tile
+[Train] epoch [360/601], loss:2.4215 class:tile
+[Eval] tile class RocAUC at epoch 360: 0.908
+[Train] epoch [361/601], loss:2.4299 class:tile
+[Train] epoch [362/601], loss:2.4043 class:tile
+[Train] epoch [363/601], loss:2.4100 class:tile
+[Train] epoch [364/601], loss:2.4049 class:tile
+[Train] epoch [365/601], loss:2.4048 class:tile
+[Train] epoch [366/601], loss:2.4065 class:tile
+[Train] epoch [367/601], loss:2.4054 class:tile
+[Train] epoch [368/601], loss:2.4181 class:tile
+[Train] epoch [369/601], loss:2.3987 class:tile
+[Train] epoch [370/601], loss:2.3930 class:tile
+[Eval] tile class RocAUC at epoch 370: 0.9192
+[Train] epoch [371/601], loss:2.3955 class:tile
+[Train] epoch [372/601], loss:2.3858 class:tile
+[Train] epoch [373/601], loss:2.3792 class:tile
+[Train] epoch [374/601], loss:2.3819 class:tile
+[Train] epoch [375/601], loss:2.3779 class:tile
+[Train] epoch [376/601], loss:2.3902 class:tile
+[Train] epoch [377/601], loss:2.3810 class:tile
+[Train] epoch [378/601], loss:2.3751 class:tile
+[Train] epoch [379/601], loss:2.3783 class:tile
+[Train] epoch [380/601], loss:2.3732 class:tile
+[Eval] tile class RocAUC at epoch 380: 0.9098
+[Train] epoch [381/601], loss:2.3685 class:tile
+[Train] epoch [382/601], loss:2.3685 class:tile
+[Train] epoch [383/601], loss:2.3594 class:tile
+[Train] epoch [384/601], loss:2.3704 class:tile
+[Train] epoch [385/601], loss:2.3598 class:tile
+[Train] epoch [386/601], loss:2.3676 class:tile
+[Train] epoch [387/601], loss:2.3523 class:tile
+[Train] epoch [388/601], loss:2.3507 class:tile
+[Train] epoch [389/601], loss:2.3670 class:tile
+[Train] epoch [390/601], loss:2.3617 class:tile
+[Eval] tile class RocAUC at epoch 390: 0.9076
+[Train] epoch [391/601], loss:2.3627 class:tile
+[Train] epoch [392/601], loss:2.3575 class:tile
+[Train] epoch [393/601], loss:2.3611 class:tile
+[Train] epoch [394/601], loss:2.3596 class:tile
+[Train] epoch [395/601], loss:2.3533 class:tile
+[Train] epoch [396/601], loss:2.3483 class:tile
+[Train] epoch [397/601], loss:2.3447 class:tile
+[Train] epoch [398/601], loss:2.3488 class:tile
+[Train] epoch [399/601], loss:2.3427 class:tile
+[Train] epoch [400/601], loss:2.3458 class:tile
+[Eval] tile class RocAUC at epoch 400: 0.9192
+[Train] epoch [401/601], loss:2.3396 class:tile
+[Train] epoch [402/601], loss:2.3348 class:tile
+[Train] epoch [403/601], loss:2.3338 class:tile
+[Train] epoch [404/601], loss:2.3305 class:tile
+[Train] epoch [405/601], loss:2.3348 class:tile
+[Train] epoch [406/601], loss:2.3267 class:tile
+[Train] epoch [407/601], loss:2.3325 class:tile
+[Train] epoch [408/601], loss:2.3218 class:tile
+[Train] epoch [409/601], loss:2.3263 class:tile
+[Train] epoch [410/601], loss:2.3160 class:tile
+[Eval] tile class RocAUC at epoch 410: 0.9159
+[Train] epoch [411/601], loss:2.3259 class:tile
+[Train] epoch [412/601], loss:2.3184 class:tile
+[Train] epoch [413/601], loss:2.3114 class:tile
+[Train] epoch [414/601], loss:2.3066 class:tile
+[Train] epoch [415/601], loss:2.3077 class:tile
+[Train] epoch [416/601], loss:2.3085 class:tile
+[Train] epoch [417/601], loss:2.3207 class:tile
+[Train] epoch [418/601], loss:2.3047 class:tile
+[Train] epoch [419/601], loss:2.3117 class:tile
+[Train] epoch [420/601], loss:2.3096 class:tile
+[Eval] tile class RocAUC at epoch 420: 0.9051
+[Train] epoch [421/601], loss:2.3150 class:tile
+[Train] epoch [422/601], loss:2.3076 class:tile
+[Train] epoch [423/601], loss:2.3006 class:tile
+[Train] epoch [424/601], loss:2.2968 class:tile
+[Train] epoch [425/601], loss:2.2936 class:tile
+[Train] epoch [426/601], loss:2.3014 class:tile
+[Train] epoch [427/601], loss:2.2958 class:tile
+[Train] epoch [428/601], loss:2.2894 class:tile
+[Train] epoch [429/601], loss:2.2939 class:tile
+[Train] epoch [430/601], loss:2.2967 class:tile
+[Eval] tile class RocAUC at epoch 430: 0.9131
+[Train] epoch [431/601], loss:2.2953 class:tile
+[Train] epoch [432/601], loss:2.2854 class:tile
+[Train] epoch [433/601], loss:2.3017 class:tile
+[Train] epoch [434/601], loss:2.2892 class:tile
+[Train] epoch [435/601], loss:2.2976 class:tile
+[Train] epoch [436/601], loss:2.2843 class:tile
+[Train] epoch [437/601], loss:2.2814 class:tile
+[Train] epoch [438/601], loss:2.2872 class:tile
+[Train] epoch [439/601], loss:2.2849 class:tile
+[Train] epoch [440/601], loss:2.2857 class:tile
+[Eval] tile class RocAUC at epoch 440: 0.9177
+[Train] epoch [441/601], loss:2.2762 class:tile
+[Train] epoch [442/601], loss:2.2851 class:tile
+[Train] epoch [443/601], loss:2.2701 class:tile
+[Train] epoch [444/601], loss:2.2815 class:tile
+[Train] epoch [445/601], loss:2.2713 class:tile
+[Train] epoch [446/601], loss:2.2750 class:tile
+[Train] epoch [447/601], loss:2.2683 class:tile
+[Train] epoch [448/601], loss:2.2802 class:tile
+[Train] epoch [449/601], loss:2.2766 class:tile
+[Train] epoch [450/601], loss:2.2824 class:tile
+[Eval] tile class RocAUC at epoch 450: 0.9156
+[Train] epoch [451/601], loss:2.2813 class:tile
+[Train] epoch [452/601], loss:2.2632 class:tile
+[Train] epoch [453/601], loss:2.2627 class:tile
+[Train] epoch [454/601], loss:2.2605 class:tile
+[Train] epoch [455/601], loss:2.2566 class:tile
+[Train] epoch [456/601], loss:2.2608 class:tile
+[Train] epoch [457/601], loss:2.2512 class:tile
+[Train] epoch [458/601], loss:2.2554 class:tile
+[Train] epoch [459/601], loss:2.2535 class:tile
+[Train] epoch [460/601], loss:2.2540 class:tile
+[Eval] tile class RocAUC at epoch 460: 0.9181
+[Train] epoch [461/601], loss:2.2563 class:tile
+[Train] epoch [462/601], loss:2.2612 class:tile
+[Train] epoch [463/601], loss:2.2535 class:tile
+[Train] epoch [464/601], loss:2.2517 class:tile
+[Train] epoch [465/601], loss:2.2457 class:tile
+[Train] epoch [466/601], loss:2.2459 class:tile
+[Train] epoch [467/601], loss:2.2393 class:tile
+[Train] epoch [468/601], loss:2.2427 class:tile
+[Train] epoch [469/601], loss:2.2405 class:tile
+[Train] epoch [470/601], loss:2.2429 class:tile
+[Eval] tile class RocAUC at epoch 470: 0.9131
+[Train] epoch [471/601], loss:2.2464 class:tile
+[Train] epoch [472/601], loss:2.2314 class:tile
+[Train] epoch [473/601], loss:2.2329 class:tile
+[Train] epoch [474/601], loss:2.2336 class:tile
+[Train] epoch [475/601], loss:2.2434 class:tile
+[Train] epoch [476/601], loss:2.2294 class:tile
+[Train] epoch [477/601], loss:2.2253 class:tile
+[Train] epoch [478/601], loss:2.2370 class:tile
+[Train] epoch [479/601], loss:2.2244 class:tile
+[Train] epoch [480/601], loss:2.2266 class:tile
+[Eval] tile class RocAUC at epoch 480: 0.917
+[Train] epoch [481/601], loss:2.2276 class:tile
+[Train] epoch [482/601], loss:2.2262 class:tile
+[Train] epoch [483/601], loss:2.2237 class:tile
+[Train] epoch [484/601], loss:2.2166 class:tile
+[Train] epoch [485/601], loss:2.2215 class:tile
+[Train] epoch [486/601], loss:2.2257 class:tile
+[Train] epoch [487/601], loss:2.2193 class:tile
+[Train] epoch [488/601], loss:2.2122 class:tile
+[Train] epoch [489/601], loss:2.2148 class:tile
+[Train] epoch [490/601], loss:2.2196 class:tile
+[Eval] tile class RocAUC at epoch 490: 0.9159
+[Train] epoch [491/601], loss:2.2217 class:tile
+[Train] epoch [492/601], loss:2.2341 class:tile
+[Train] epoch [493/601], loss:2.2225 class:tile
+[Train] epoch [494/601], loss:2.2223 class:tile
+[Train] epoch [495/601], loss:2.2163 class:tile
+[Train] epoch [496/601], loss:2.2115 class:tile
+[Train] epoch [497/601], loss:2.2145 class:tile
+[Train] epoch [498/601], loss:2.2140 class:tile
+[Train] epoch [499/601], loss:2.2101 class:tile
+[Train] epoch [500/601], loss:2.2011 class:tile
+[Eval] tile class RocAUC at epoch 500: 0.9102
+[Train] epoch [501/601], loss:2.2110 class:tile
+[Train] epoch [502/601], loss:2.2013 class:tile
+[Train] epoch [503/601], loss:2.2017 class:tile
+[Train] epoch [504/601], loss:2.2077 class:tile
+[Train] epoch [505/601], loss:2.2052 class:tile
+[Train] epoch [506/601], loss:2.2063 class:tile
+[Train] epoch [507/601], loss:2.1972 class:tile
+[Train] epoch [508/601], loss:2.2012 class:tile
+[Train] epoch [509/601], loss:2.2113 class:tile
+[Train] epoch [510/601], loss:2.2017 class:tile
+[Eval] tile class RocAUC at epoch 510: 0.9149
+[Train] epoch [511/601], loss:2.1929 class:tile
+[Train] epoch [512/601], loss:2.1943 class:tile
+[Train] epoch [513/601], loss:2.1901 class:tile
+[Train] epoch [514/601], loss:2.1935 class:tile
+[Train] epoch [515/601], loss:2.1866 class:tile
+[Train] epoch [516/601], loss:2.1859 class:tile
+[Train] epoch [517/601], loss:2.1969 class:tile
+[Train] epoch [518/601], loss:2.1898 class:tile
+[Train] epoch [519/601], loss:2.1872 class:tile
+[Train] epoch [520/601], loss:2.1841 class:tile
+[Eval] tile class RocAUC at epoch 520: 0.9177
+[Train] epoch [521/601], loss:2.1835 class:tile
+[Train] epoch [522/601], loss:2.1821 class:tile
+[Train] epoch [523/601], loss:2.1834 class:tile
+[Train] epoch [524/601], loss:2.1914 class:tile
+[Train] epoch [525/601], loss:2.1856 class:tile
+[Train] epoch [526/601], loss:2.1967 class:tile
+[Train] epoch [527/601], loss:2.1891 class:tile
+[Train] epoch [528/601], loss:2.1797 class:tile
+[Train] epoch [529/601], loss:2.1872 class:tile
+[Train] epoch [530/601], loss:2.1811 class:tile
+[Eval] tile class RocAUC at epoch 530: 0.9196
+[Train] epoch [531/601], loss:2.1735 class:tile
+[Train] epoch [532/601], loss:2.1864 class:tile
+[Train] epoch [533/601], loss:2.1890 class:tile
+[Train] epoch [534/601], loss:2.1815 class:tile
+[Train] epoch [535/601], loss:2.1766 class:tile
+[Train] epoch [536/601], loss:2.1832 class:tile
+[Train] epoch [537/601], loss:2.1813 class:tile
+[Train] epoch [538/601], loss:2.1689 class:tile
+[Train] epoch [539/601], loss:2.1649 class:tile
+[Train] epoch [540/601], loss:2.1735 class:tile
+[Eval] tile class RocAUC at epoch 540: 0.9192
+[Train] epoch [541/601], loss:2.1613 class:tile
+[Train] epoch [542/601], loss:2.1616 class:tile
+[Train] epoch [543/601], loss:2.1631 class:tile
+[Train] epoch [544/601], loss:2.1669 class:tile
+[Train] epoch [545/601], loss:2.1563 class:tile
+[Train] epoch [546/601], loss:2.1704 class:tile
+[Train] epoch [547/601], loss:2.1623 class:tile
+[Train] epoch [548/601], loss:2.1525 class:tile
+[Train] epoch [549/601], loss:2.1580 class:tile
+[Train] epoch [550/601], loss:2.1531 class:tile
+[Eval] tile class RocAUC at epoch 550: 0.925
+[Eval] save best model at epoch 550
+[Train] epoch [551/601], loss:2.1589 class:tile
+[Train] epoch [552/601], loss:2.1450 class:tile
+[Train] epoch [553/601], loss:2.1599 class:tile
+[Train] epoch [554/601], loss:2.1520 class:tile
+[Train] epoch [555/601], loss:2.1519 class:tile
+[Train] epoch [556/601], loss:2.1499 class:tile
+[Train] epoch [557/601], loss:2.1528 class:tile
+[Train] epoch [558/601], loss:2.1464 class:tile
+[Train] epoch [559/601], loss:2.1537 class:tile
+[Train] epoch [560/601], loss:2.1563 class:tile
+[Eval] tile class RocAUC at epoch 560: 0.9113
+[Train] epoch [561/601], loss:2.1669 class:tile
+[Train] epoch [562/601], loss:2.1560 class:tile
+[Train] epoch [563/601], loss:2.1665 class:tile
+[Train] epoch [564/601], loss:2.1620 class:tile
+[Train] epoch [565/601], loss:2.1525 class:tile
+[Train] epoch [566/601], loss:2.1503 class:tile
+[Train] epoch [567/601], loss:2.1418 class:tile
+[Train] epoch [568/601], loss:2.1511 class:tile
+[Train] epoch [569/601], loss:2.1372 class:tile
+[Train] epoch [570/601], loss:2.1390 class:tile
+[Eval] tile class RocAUC at epoch 570: 0.9123
+[Train] epoch [571/601], loss:2.1440 class:tile
+[Train] epoch [572/601], loss:2.1380 class:tile
+[Train] epoch [573/601], loss:2.1352 class:tile
+[Train] epoch [574/601], loss:2.1305 class:tile
+[Train] epoch [575/601], loss:2.1344 class:tile
+[Train] epoch [576/601], loss:2.1360 class:tile
+[Train] epoch [577/601], loss:2.1389 class:tile
+[Train] epoch [578/601], loss:2.1322 class:tile
+[Train] epoch [579/601], loss:2.1285 class:tile
+[Train] epoch [580/601], loss:2.1342 class:tile
+[Eval] tile class RocAUC at epoch 580: 0.9138
+[Train] epoch [581/601], loss:2.1234 class:tile
+[Train] epoch [582/601], loss:2.1226 class:tile
+[Train] epoch [583/601], loss:2.1254 class:tile
+[Train] epoch [584/601], loss:2.1237 class:tile
+[Train] epoch [585/601], loss:2.1197 class:tile
+[Train] epoch [586/601], loss:2.1203 class:tile
+[Train] epoch [587/601], loss:2.1189 class:tile
+[Train] epoch [588/601], loss:2.1241 class:tile
+[Train] epoch [589/601], loss:2.1183 class:tile
+[Train] epoch [590/601], loss:2.1182 class:tile
+[Eval] tile class RocAUC at epoch 590: 0.9159
+[Train] epoch [591/601], loss:2.1145 class:tile
+[Train] epoch [592/601], loss:2.1163 class:tile
+[Train] epoch [593/601], loss:2.1283 class:tile
+[Train] epoch [594/601], loss:2.1279 class:tile
+[Train] epoch [595/601], loss:2.1352 class:tile
+[Train] epoch [596/601], loss:2.1180 class:tile
+[Train] epoch [597/601], loss:2.1126 class:tile
+[Train] epoch [598/601], loss:2.1151 class:tile
+[Train] epoch [599/601], loss:2.1187 class:tile
+[Train] epoch [600/601], loss:2.1161 class:tile
+[Eval] tile class RocAUC at epoch 600: 0.9199
+[Train] epoch [601/601], loss:2.1151 class:tile
+[Eval] tile class RocAUC at epoch 601: 0.9235

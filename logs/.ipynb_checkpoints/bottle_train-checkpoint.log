@@ -1,0 +1,847 @@
+/home/aistudio/Knowledge_Distillation_AD_Paddle/utils/utils.py:11: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  return yaml.load(stream)
+W0410 13:59:39.403460 23777 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 13:59:39.408687 23777 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [0/601], loss:40.4228 class:bottle
+[Eval] bottle class RocAUC at epoch 0: 0.6587
+[Eval] save best model at epoch 0
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [1/601], loss:36.0179 class:bottle
+[Train] epoch [2/601], loss:33.2550 class:bottle
+[Train] epoch [3/601], loss:31.2648 class:bottle
+[Train] epoch [4/601], loss:29.7347 class:bottle
+[Train] epoch [5/601], loss:28.3865 class:bottle
+[Train] epoch [6/601], loss:27.0942 class:bottle
+[Train] epoch [7/601], loss:25.9751 class:bottle
+[Train] epoch [8/601], loss:24.8661 class:bottle
+[Train] epoch [9/601], loss:23.8734 class:bottle
+[Train] epoch [10/601], loss:22.9040 class:bottle
+[Eval] bottle class RocAUC at epoch 10: 0.8349
+[Eval] save best model at epoch 10
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [11/601], loss:21.9520 class:bottle
+[Train] epoch [12/601], loss:21.0635 class:bottle
+[Train] epoch [13/601], loss:20.3348 class:bottle
+[Train] epoch [14/601], loss:19.5168 class:bottle
+[Train] epoch [15/601], loss:18.7835 class:bottle
+[Train] epoch [16/601], loss:18.1415 class:bottle
+[Train] epoch [17/601], loss:17.4713 class:bottle
+[Train] epoch [18/601], loss:16.8908 class:bottle
+[Train] epoch [19/601], loss:16.3538 class:bottle
+[Train] epoch [20/601], loss:15.7571 class:bottle
+[Eval] bottle class RocAUC at epoch 20: 0.9214
+[Eval] save best model at epoch 20
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [21/601], loss:15.2645 class:bottle
+[Train] epoch [22/601], loss:14.7741 class:bottle
+[Train] epoch [23/601], loss:14.3275 class:bottle
+[Train] epoch [24/601], loss:13.8992 class:bottle
+[Train] epoch [25/601], loss:13.4379 class:bottle
+[Train] epoch [26/601], loss:13.0848 class:bottle
+[Train] epoch [27/601], loss:12.6866 class:bottle
+[Train] epoch [28/601], loss:12.3248 class:bottle
+[Train] epoch [29/601], loss:11.9557 class:bottle
+[Train] epoch [30/601], loss:11.6572 class:bottle
+[Eval] bottle class RocAUC at epoch 30: 0.9492
+[Eval] save best model at epoch 30
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [31/601], loss:11.3220 class:bottle
+[Train] epoch [32/601], loss:11.0148 class:bottle
+[Train] epoch [33/601], loss:10.7265 class:bottle
+[Train] epoch [34/601], loss:10.4336 class:bottle
+[Train] epoch [35/601], loss:10.1641 class:bottle
+[Train] epoch [36/601], loss:9.8726 class:bottle
+[Train] epoch [37/601], loss:9.5969 class:bottle
+[Train] epoch [38/601], loss:9.3921 class:bottle
+[Train] epoch [39/601], loss:9.1318 class:bottle
+[Train] epoch [40/601], loss:8.8790 class:bottle
+[Eval] bottle class RocAUC at epoch 40: 0.9698
+[Eval] save best model at epoch 40
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [41/601], loss:8.7035 class:bottle
+[Train] epoch [42/601], loss:8.4998 class:bottle
+[Train] epoch [43/601], loss:8.2857 class:bottle
+[Train] epoch [44/601], loss:8.0793 class:bottle
+[Train] epoch [45/601], loss:7.8753 class:bottle
+[Train] epoch [46/601], loss:7.7059 class:bottle
+[Train] epoch [47/601], loss:7.5058 class:bottle
+[Train] epoch [48/601], loss:7.3459 class:bottle
+[Train] epoch [49/601], loss:7.1790 class:bottle
+[Train] epoch [50/601], loss:7.0183 class:bottle
+[Eval] bottle class RocAUC at epoch 50: 0.9833
+[Eval] save best model at epoch 50
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [51/601], loss:6.8339 class:bottle
+[Train] epoch [52/601], loss:6.6945 class:bottle
+[Train] epoch [53/601], loss:6.5476 class:bottle
+[Train] epoch [54/601], loss:6.4219 class:bottle
+[Train] epoch [55/601], loss:6.2712 class:bottle
+[Train] epoch [56/601], loss:6.1216 class:bottle
+[Train] epoch [57/601], loss:6.0014 class:bottle
+[Train] epoch [58/601], loss:5.8770 class:bottle
+[Train] epoch [59/601], loss:5.7597 class:bottle
+[Train] epoch [60/601], loss:5.6163 class:bottle
+[Eval] bottle class RocAUC at epoch 60: 0.9865
+[Eval] save best model at epoch 60
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [61/601], loss:5.5169 class:bottle
+[Train] epoch [62/601], loss:5.3883 class:bottle
+[Train] epoch [63/601], loss:5.3124 class:bottle
+[Train] epoch [64/601], loss:5.1791 class:bottle
+[Train] epoch [65/601], loss:5.1205 class:bottle
+[Train] epoch [66/601], loss:5.0173 class:bottle
+[Train] epoch [67/601], loss:4.9362 class:bottle
+[Train] epoch [68/601], loss:4.8244 class:bottle
+[Train] epoch [69/601], loss:4.7342 class:bottle
+[Train] epoch [70/601], loss:4.6333 class:bottle
+[Eval] bottle class RocAUC at epoch 70: 0.9897
+[Eval] save best model at epoch 70
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [71/601], loss:4.5697 class:bottle
+[Train] epoch [72/601], loss:4.4814 class:bottle
+[Train] epoch [73/601], loss:4.4158 class:bottle
+[Train] epoch [74/601], loss:4.3488 class:bottle
+[Train] epoch [75/601], loss:4.2704 class:bottle
+[Train] epoch [76/601], loss:4.1988 class:bottle
+[Train] epoch [77/601], loss:4.1151 class:bottle
+[Train] epoch [78/601], loss:4.0340 class:bottle
+[Train] epoch [79/601], loss:3.9836 class:bottle
+[Train] epoch [80/601], loss:3.9135 class:bottle
+[Eval] bottle class RocAUC at epoch 80: 0.9905
+[Eval] save best model at epoch 80
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [81/601], loss:3.8747 class:bottle
+[Train] epoch [82/601], loss:3.8046 class:bottle
+[Train] epoch [83/601], loss:3.7493 class:bottle
+[Train] epoch [84/601], loss:3.7088 class:bottle
+[Train] epoch [85/601], loss:3.6521 class:bottle
+[Train] epoch [86/601], loss:3.5858 class:bottle
+[Train] epoch [87/601], loss:3.5331 class:bottle
+[Train] epoch [88/601], loss:3.4833 class:bottle
+[Train] epoch [89/601], loss:3.4603 class:bottle
+[Train] epoch [90/601], loss:3.4085 class:bottle
+[Eval] bottle class RocAUC at epoch 90: 0.9897
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [91/601], loss:3.3458 class:bottle
+[Train] epoch [92/601], loss:3.3190 class:bottle
+[Train] epoch [93/601], loss:3.2760 class:bottle
+[Train] epoch [94/601], loss:3.2252 class:bottle
+[Train] epoch [95/601], loss:3.1795 class:bottle
+[Train] epoch [96/601], loss:3.1606 class:bottle
+[Train] epoch [97/601], loss:3.0985 class:bottle
+[Train] epoch [98/601], loss:3.0777 class:bottle
+[Train] epoch [99/601], loss:3.0441 class:bottle
+[Train] epoch [100/601], loss:2.9938 class:bottle
+[Eval] bottle class RocAUC at epoch 100: 0.9905
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [101/601], loss:2.9684 class:bottle
+[Train] epoch [102/601], loss:2.9539 class:bottle
+[Train] epoch [103/601], loss:2.9248 class:bottle
+[Train] epoch [104/601], loss:2.8733 class:bottle
+[Train] epoch [105/601], loss:2.8512 class:bottle
+[Train] epoch [106/601], loss:2.8242 class:bottle
+[Train] epoch [107/601], loss:2.7904 class:bottle
+[Train] epoch [108/601], loss:2.7657 class:bottle
+[Train] epoch [109/601], loss:2.7374 class:bottle
+[Train] epoch [110/601], loss:2.7147 class:bottle
+[Eval] bottle class RocAUC at epoch 110: 0.9905
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [111/601], loss:2.6924 class:bottle
+[Train] epoch [112/601], loss:2.6556 class:bottle
+[Train] epoch [113/601], loss:2.6392 class:bottle
+[Train] epoch [114/601], loss:2.5975 class:bottle
+[Train] epoch [115/601], loss:2.5868 class:bottle
+[Train] epoch [116/601], loss:2.5639 class:bottle
+[Train] epoch [117/601], loss:2.5457 class:bottle
+[Train] epoch [118/601], loss:2.5136 class:bottle
+[Train] epoch [119/601], loss:2.5044 class:bottle
+[Train] epoch [120/601], loss:2.5008 class:bottle
+[Eval] bottle class RocAUC at epoch 120: 0.9913
+[Eval] save best model at epoch 120
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [121/601], loss:2.4599 class:bottle
+[Train] epoch [122/601], loss:2.4568 class:bottle
+[Train] epoch [123/601], loss:2.4412 class:bottle
+[Train] epoch [124/601], loss:2.4115 class:bottle
+[Train] epoch [125/601], loss:2.3936 class:bottle
+[Train] epoch [126/601], loss:2.3672 class:bottle
+[Train] epoch [127/601], loss:2.3627 class:bottle
+[Train] epoch [128/601], loss:2.3353 class:bottle
+[Train] epoch [129/601], loss:2.3272 class:bottle
+[Train] epoch [130/601], loss:2.3099 class:bottle
+[Eval] bottle class RocAUC at epoch 130: 0.9913
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [131/601], loss:2.2793 class:bottle
+[Train] epoch [132/601], loss:2.2750 class:bottle
+[Train] epoch [133/601], loss:2.2541 class:bottle
+[Train] epoch [134/601], loss:2.2575 class:bottle
+[Train] epoch [135/601], loss:2.2345 class:bottle
+[Train] epoch [136/601], loss:2.2044 class:bottle
+[Train] epoch [137/601], loss:2.2178 class:bottle
+[Train] epoch [138/601], loss:2.1825 class:bottle
+[Train] epoch [139/601], loss:2.1750 class:bottle
+[Train] epoch [140/601], loss:2.1679 class:bottle
+[Eval] bottle class RocAUC at epoch 140: 0.9929
+[Eval] save best model at epoch 140
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [141/601], loss:2.1453 class:bottle
+[Train] epoch [142/601], loss:2.1365 class:bottle
+[Train] epoch [143/601], loss:2.1115 class:bottle
+[Train] epoch [144/601], loss:2.1033 class:bottle
+[Train] epoch [145/601], loss:2.1014 class:bottle
+[Train] epoch [146/601], loss:2.0841 class:bottle
+[Train] epoch [147/601], loss:2.0775 class:bottle
+[Train] epoch [148/601], loss:2.0666 class:bottle
+[Train] epoch [149/601], loss:2.0607 class:bottle
+[Train] epoch [150/601], loss:2.0569 class:bottle
+[Eval] bottle class RocAUC at epoch 150: 0.9913
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [151/601], loss:2.0291 class:bottle
+[Train] epoch [152/601], loss:2.0294 class:bottle
+[Train] epoch [153/601], loss:2.0165 class:bottle
+[Train] epoch [154/601], loss:2.0030 class:bottle
+[Train] epoch [155/601], loss:1.9880 class:bottle
+[Train] epoch [156/601], loss:1.9814 class:bottle
+[Train] epoch [157/601], loss:1.9748 class:bottle
+[Train] epoch [158/601], loss:1.9664 class:bottle
+[Train] epoch [159/601], loss:1.9587 class:bottle
+[Train] epoch [160/601], loss:1.9381 class:bottle
+[Eval] bottle class RocAUC at epoch 160: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [161/601], loss:1.9516 class:bottle
+[Train] epoch [162/601], loss:1.9240 class:bottle
+[Train] epoch [163/601], loss:1.9178 class:bottle
+[Train] epoch [164/601], loss:1.9141 class:bottle
+[Train] epoch [165/601], loss:1.9011 class:bottle
+[Train] epoch [166/601], loss:1.8941 class:bottle
+[Train] epoch [167/601], loss:1.8895 class:bottle
+[Train] epoch [168/601], loss:1.8782 class:bottle
+[Train] epoch [169/601], loss:1.8676 class:bottle
+[Train] epoch [170/601], loss:1.8855 class:bottle
+[Eval] bottle class RocAUC at epoch 170: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [171/601], loss:1.8537 class:bottle
+[Train] epoch [172/601], loss:1.8465 class:bottle
+[Train] epoch [173/601], loss:1.8528 class:bottle
+[Train] epoch [174/601], loss:1.8263 class:bottle
+[Train] epoch [175/601], loss:1.8251 class:bottle
+[Train] epoch [176/601], loss:1.8137 class:bottle
+[Train] epoch [177/601], loss:1.8148 class:bottle
+[Train] epoch [178/601], loss:1.8149 class:bottle
+[Train] epoch [179/601], loss:1.7898 class:bottle
+[Train] epoch [180/601], loss:1.7873 class:bottle
+[Eval] bottle class RocAUC at epoch 180: 0.9921
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [181/601], loss:1.7899 class:bottle
+[Train] epoch [182/601], loss:1.7903 class:bottle
+[Train] epoch [183/601], loss:1.7707 class:bottle
+[Train] epoch [184/601], loss:1.7718 class:bottle
+[Train] epoch [185/601], loss:1.7588 class:bottle
+[Train] epoch [186/601], loss:1.7485 class:bottle
+[Train] epoch [187/601], loss:1.7390 class:bottle
+[Train] epoch [188/601], loss:1.7436 class:bottle
+[Train] epoch [189/601], loss:1.7388 class:bottle
+[Train] epoch [190/601], loss:1.7356 class:bottle
+[Eval] bottle class RocAUC at epoch 190: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [191/601], loss:1.7102 class:bottle
+[Train] epoch [192/601], loss:1.7333 class:bottle
+[Train] epoch [193/601], loss:1.7134 class:bottle
+[Train] epoch [194/601], loss:1.7013 class:bottle
+[Train] epoch [195/601], loss:1.7003 class:bottle
+[Train] epoch [196/601], loss:1.6979 class:bottle
+[Train] epoch [197/601], loss:1.6884 class:bottle
+[Train] epoch [198/601], loss:1.6790 class:bottle
+[Train] epoch [199/601], loss:1.6700 class:bottle
+[Train] epoch [200/601], loss:1.6818 class:bottle
+[Eval] bottle class RocAUC at epoch 200: 0.9937
+[Eval] save best model at epoch 200
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [201/601], loss:1.6799 class:bottle
+[Train] epoch [202/601], loss:1.6700 class:bottle
+[Train] epoch [203/601], loss:1.6524 class:bottle
+[Train] epoch [204/601], loss:1.6451 class:bottle
+[Train] epoch [205/601], loss:1.6476 class:bottle
+[Train] epoch [206/601], loss:1.6571 class:bottle
+[Train] epoch [207/601], loss:1.6309 class:bottle
+[Train] epoch [208/601], loss:1.6329 class:bottle
+[Train] epoch [209/601], loss:1.6278 class:bottle
+[Train] epoch [210/601], loss:1.6294 class:bottle
+[Eval] bottle class RocAUC at epoch 210: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [211/601], loss:1.6103 class:bottle
+[Train] epoch [212/601], loss:1.6156 class:bottle
+[Train] epoch [213/601], loss:1.6322 class:bottle
+[Train] epoch [214/601], loss:1.6092 class:bottle
+[Train] epoch [215/601], loss:1.6095 class:bottle
+[Train] epoch [216/601], loss:1.5997 class:bottle
+[Train] epoch [217/601], loss:1.5882 class:bottle
+[Train] epoch [218/601], loss:1.5891 class:bottle
+[Train] epoch [219/601], loss:1.5970 class:bottle
+[Train] epoch [220/601], loss:1.5757 class:bottle
+[Eval] bottle class RocAUC at epoch 220: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [221/601], loss:1.5891 class:bottle
+[Train] epoch [222/601], loss:1.5783 class:bottle
+[Train] epoch [223/601], loss:1.5792 class:bottle
+[Train] epoch [224/601], loss:1.5512 class:bottle
+[Train] epoch [225/601], loss:1.5704 class:bottle
+[Train] epoch [226/601], loss:1.5636 class:bottle
+[Train] epoch [227/601], loss:1.5508 class:bottle
+[Train] epoch [228/601], loss:1.5732 class:bottle
+[Train] epoch [229/601], loss:1.5465 class:bottle
+[Train] epoch [230/601], loss:1.5420 class:bottle
+[Eval] bottle class RocAUC at epoch 230: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [231/601], loss:1.5536 class:bottle
+[Train] epoch [232/601], loss:1.5401 class:bottle
+[Train] epoch [233/601], loss:1.5492 class:bottle
+[Train] epoch [234/601], loss:1.5400 class:bottle
+[Train] epoch [235/601], loss:1.5303 class:bottle
+[Train] epoch [236/601], loss:1.5329 class:bottle
+[Train] epoch [237/601], loss:1.5317 class:bottle
+[Train] epoch [238/601], loss:1.5230 class:bottle
+[Train] epoch [239/601], loss:1.5125 class:bottle
+[Train] epoch [240/601], loss:1.5149 class:bottle
+[Eval] bottle class RocAUC at epoch 240: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [241/601], loss:1.5236 class:bottle
+[Train] epoch [242/601], loss:1.5034 class:bottle
+[Train] epoch [243/601], loss:1.4915 class:bottle
+[Train] epoch [244/601], loss:1.5068 class:bottle
+[Train] epoch [245/601], loss:1.5186 class:bottle
+[Train] epoch [246/601], loss:1.5024 class:bottle
+[Train] epoch [247/601], loss:1.4985 class:bottle
+[Train] epoch [248/601], loss:1.4965 class:bottle
+[Train] epoch [249/601], loss:1.4890 class:bottle
+[Train] epoch [250/601], loss:1.4830 class:bottle
+[Eval] bottle class RocAUC at epoch 250: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [251/601], loss:1.4761 class:bottle
+[Train] epoch [252/601], loss:1.4738 class:bottle
+[Train] epoch [253/601], loss:1.4739 class:bottle
+[Train] epoch [254/601], loss:1.4857 class:bottle
+[Train] epoch [255/601], loss:1.4649 class:bottle
+[Train] epoch [256/601], loss:1.4719 class:bottle
+[Train] epoch [257/601], loss:1.4524 class:bottle
+[Train] epoch [258/601], loss:1.4681 class:bottle
+[Train] epoch [259/601], loss:1.4710 class:bottle
+[Train] epoch [260/601], loss:1.4577 class:bottle
+[Eval] bottle class RocAUC at epoch 260: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [261/601], loss:1.4827 class:bottle
+[Train] epoch [262/601], loss:1.4439 class:bottle
+[Train] epoch [263/601], loss:1.4594 class:bottle
+[Train] epoch [264/601], loss:1.4516 class:bottle
+[Train] epoch [265/601], loss:1.4562 class:bottle
+[Train] epoch [266/601], loss:1.4337 class:bottle
+[Train] epoch [267/601], loss:1.4428 class:bottle
+[Train] epoch [268/601], loss:1.4423 class:bottle
+[Train] epoch [269/601], loss:1.4367 class:bottle
+[Train] epoch [270/601], loss:1.4514 class:bottle
+[Eval] bottle class RocAUC at epoch 270: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [271/601], loss:1.4408 class:bottle
+[Train] epoch [272/601], loss:1.4309 class:bottle
+[Train] epoch [273/601], loss:1.4353 class:bottle
+[Train] epoch [274/601], loss:1.4257 class:bottle
+[Train] epoch [275/601], loss:1.4132 class:bottle
+[Train] epoch [276/601], loss:1.4245 class:bottle
+[Train] epoch [277/601], loss:1.4094 class:bottle
+[Train] epoch [278/601], loss:1.4097 class:bottle
+[Train] epoch [279/601], loss:1.4162 class:bottle
+[Train] epoch [280/601], loss:1.4004 class:bottle
+[Eval] bottle class RocAUC at epoch 280: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [281/601], loss:1.4133 class:bottle
+[Train] epoch [282/601], loss:1.4052 class:bottle
+[Train] epoch [283/601], loss:1.4077 class:bottle
+[Train] epoch [284/601], loss:1.3971 class:bottle
+[Train] epoch [285/601], loss:1.4054 class:bottle
+[Train] epoch [286/601], loss:1.3990 class:bottle
+[Train] epoch [287/601], loss:1.3881 class:bottle
+[Train] epoch [288/601], loss:1.3943 class:bottle
+[Train] epoch [289/601], loss:1.3819 class:bottle
+[Train] epoch [290/601], loss:1.3887 class:bottle
+[Eval] bottle class RocAUC at epoch 290: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [291/601], loss:1.3810 class:bottle
+[Train] epoch [292/601], loss:1.3842 class:bottle
+[Train] epoch [293/601], loss:1.3871 class:bottle
+[Train] epoch [294/601], loss:1.3920 class:bottle
+[Train] epoch [295/601], loss:1.3718 class:bottle
+[Train] epoch [296/601], loss:1.3796 class:bottle
+[Train] epoch [297/601], loss:1.3789 class:bottle
+[Train] epoch [298/601], loss:1.3777 class:bottle
+[Train] epoch [299/601], loss:1.3661 class:bottle
+[Train] epoch [300/601], loss:1.3679 class:bottle
+[Eval] bottle class RocAUC at epoch 300: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [301/601], loss:1.3577 class:bottle
+[Train] epoch [302/601], loss:1.3581 class:bottle
+[Train] epoch [303/601], loss:1.3613 class:bottle
+[Train] epoch [304/601], loss:1.3775 class:bottle
+[Train] epoch [305/601], loss:1.3758 class:bottle
+[Train] epoch [306/601], loss:1.3561 class:bottle
+[Train] epoch [307/601], loss:1.3661 class:bottle
+[Train] epoch [308/601], loss:1.3495 class:bottle
+[Train] epoch [309/601], loss:1.3469 class:bottle
+[Train] epoch [310/601], loss:1.3556 class:bottle
+[Eval] bottle class RocAUC at epoch 310: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [311/601], loss:1.3519 class:bottle
+[Train] epoch [312/601], loss:1.3488 class:bottle
+[Train] epoch [313/601], loss:1.3439 class:bottle
+[Train] epoch [314/601], loss:1.3388 class:bottle
+[Train] epoch [315/601], loss:1.3357 class:bottle
+[Train] epoch [316/601], loss:1.3312 class:bottle
+[Train] epoch [317/601], loss:1.3294 class:bottle
+[Train] epoch [318/601], loss:1.3465 class:bottle
+[Train] epoch [319/601], loss:1.3335 class:bottle
+[Train] epoch [320/601], loss:1.3183 class:bottle
+[Eval] bottle class RocAUC at epoch 320: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [321/601], loss:1.3184 class:bottle
+[Train] epoch [322/601], loss:1.3273 class:bottle
+[Train] epoch [323/601], loss:1.3257 class:bottle
+[Train] epoch [324/601], loss:1.3201 class:bottle
+[Train] epoch [325/601], loss:1.3336 class:bottle
+[Train] epoch [326/601], loss:1.3249 class:bottle
+[Train] epoch [327/601], loss:1.3216 class:bottle
+[Train] epoch [328/601], loss:1.3176 class:bottle
+[Train] epoch [329/601], loss:1.3246 class:bottle
+[Train] epoch [330/601], loss:1.3181 class:bottle
+[Eval] bottle class RocAUC at epoch 330: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [331/601], loss:1.3156 class:bottle
+[Train] epoch [332/601], loss:1.3166 class:bottle
+[Train] epoch [333/601], loss:1.3037 class:bottle
+[Train] epoch [334/601], loss:1.3090 class:bottle
+[Train] epoch [335/601], loss:1.2932 class:bottle
+[Train] epoch [336/601], loss:1.3094 class:bottle
+[Train] epoch [337/601], loss:1.3119 class:bottle
+[Train] epoch [338/601], loss:1.2935 class:bottle
+[Train] epoch [339/601], loss:1.2999 class:bottle
+[Train] epoch [340/601], loss:1.2973 class:bottle
+[Eval] bottle class RocAUC at epoch 340: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [341/601], loss:1.2938 class:bottle
+[Train] epoch [342/601], loss:1.2780 class:bottle
+[Train] epoch [343/601], loss:1.2891 class:bottle
+[Train] epoch [344/601], loss:1.2822 class:bottle
+[Train] epoch [345/601], loss:1.2830 class:bottle
+[Train] epoch [346/601], loss:1.2821 class:bottle
+[Train] epoch [347/601], loss:1.2861 class:bottle
+[Train] epoch [348/601], loss:1.2990 class:bottle
+[Train] epoch [349/601], loss:1.2844 class:bottle
+[Train] epoch [350/601], loss:1.2843 class:bottle
+[Eval] bottle class RocAUC at epoch 350: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [351/601], loss:1.2851 class:bottle
+[Train] epoch [352/601], loss:1.2808 class:bottle
+[Train] epoch [353/601], loss:1.2620 class:bottle
+[Train] epoch [354/601], loss:1.2672 class:bottle
+[Train] epoch [355/601], loss:1.2754 class:bottle
+[Train] epoch [356/601], loss:1.2618 class:bottle
+[Train] epoch [357/601], loss:1.2713 class:bottle
+[Train] epoch [358/601], loss:1.2684 class:bottle
+[Train] epoch [359/601], loss:1.2756 class:bottle
+[Train] epoch [360/601], loss:1.2523 class:bottle
+[Eval] bottle class RocAUC at epoch 360: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [361/601], loss:1.2689 class:bottle
+[Train] epoch [362/601], loss:1.2642 class:bottle
+[Train] epoch [363/601], loss:1.2568 class:bottle
+[Train] epoch [364/601], loss:1.2725 class:bottle
+[Train] epoch [365/601], loss:1.2579 class:bottle
+[Train] epoch [366/601], loss:1.2530 class:bottle
+[Train] epoch [367/601], loss:1.2547 class:bottle
+[Train] epoch [368/601], loss:1.2783 class:bottle
+[Train] epoch [369/601], loss:1.2527 class:bottle
+[Train] epoch [370/601], loss:1.2523 class:bottle
+[Eval] bottle class RocAUC at epoch 370: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [371/601], loss:1.2630 class:bottle
+[Train] epoch [372/601], loss:1.2593 class:bottle
+[Train] epoch [373/601], loss:1.2489 class:bottle
+[Train] epoch [374/601], loss:1.2425 class:bottle
+[Train] epoch [375/601], loss:1.2506 class:bottle
+[Train] epoch [376/601], loss:1.2489 class:bottle
+[Train] epoch [377/601], loss:1.2507 class:bottle
+[Train] epoch [378/601], loss:1.2444 class:bottle
+[Train] epoch [379/601], loss:1.2557 class:bottle
+[Train] epoch [380/601], loss:1.2356 class:bottle
+[Eval] bottle class RocAUC at epoch 380: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [381/601], loss:1.2361 class:bottle
+[Train] epoch [382/601], loss:1.2395 class:bottle
+[Train] epoch [383/601], loss:1.2494 class:bottle
+[Train] epoch [384/601], loss:1.2378 class:bottle
+[Train] epoch [385/601], loss:1.2435 class:bottle
+[Train] epoch [386/601], loss:1.2415 class:bottle
+[Train] epoch [387/601], loss:1.2310 class:bottle
+[Train] epoch [388/601], loss:1.2410 class:bottle
+[Train] epoch [389/601], loss:1.2298 class:bottle
+[Train] epoch [390/601], loss:1.2222 class:bottle
+[Eval] bottle class RocAUC at epoch 390: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [391/601], loss:1.2396 class:bottle
+[Train] epoch [392/601], loss:1.2313 class:bottle
+[Train] epoch [393/601], loss:1.2276 class:bottle
+[Train] epoch [394/601], loss:1.2247 class:bottle
+[Train] epoch [395/601], loss:1.2166 class:bottle
+[Train] epoch [396/601], loss:1.2212 class:bottle
+[Train] epoch [397/601], loss:1.2160 class:bottle
+[Train] epoch [398/601], loss:1.2090 class:bottle
+[Train] epoch [399/601], loss:1.2150 class:bottle
+[Train] epoch [400/601], loss:1.2275 class:bottle
+[Eval] bottle class RocAUC at epoch 400: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [401/601], loss:1.2052 class:bottle
+[Train] epoch [402/601], loss:1.2059 class:bottle
+[Train] epoch [403/601], loss:1.2147 class:bottle
+[Train] epoch [404/601], loss:1.1998 class:bottle
+[Train] epoch [405/601], loss:1.2043 class:bottle
+[Train] epoch [406/601], loss:1.1992 class:bottle
+[Train] epoch [407/601], loss:1.2171 class:bottle
+[Train] epoch [408/601], loss:1.1980 class:bottle
+[Train] epoch [409/601], loss:1.2086 class:bottle
+[Train] epoch [410/601], loss:1.1979 class:bottle
+[Eval] bottle class RocAUC at epoch 410: 0.9929
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [411/601], loss:1.2128 class:bottle
+[Train] epoch [412/601], loss:1.2148 class:bottle
+[Train] epoch [413/601], loss:1.1865 class:bottle
+[Train] epoch [414/601], loss:1.2039 class:bottle
+[Train] epoch [415/601], loss:1.2089 class:bottle
+[Train] epoch [416/601], loss:1.1905 class:bottle
+[Train] epoch [417/601], loss:1.2141 class:bottle
+[Train] epoch [418/601], loss:1.1919 class:bottle
+[Train] epoch [419/601], loss:1.1958 class:bottle
+[Train] epoch [420/601], loss:1.1994 class:bottle
+[Eval] bottle class RocAUC at epoch 420: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [421/601], loss:1.1957 class:bottle
+[Train] epoch [422/601], loss:1.2001 class:bottle
+[Train] epoch [423/601], loss:1.1958 class:bottle
+[Train] epoch [424/601], loss:1.1912 class:bottle
+[Train] epoch [425/601], loss:1.1994 class:bottle
+[Train] epoch [426/601], loss:1.1898 class:bottle
+[Train] epoch [427/601], loss:1.1890 class:bottle
+[Train] epoch [428/601], loss:1.1902 class:bottle
+[Train] epoch [429/601], loss:1.1797 class:bottle
+[Train] epoch [430/601], loss:1.1726 class:bottle
+[Eval] bottle class RocAUC at epoch 430: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [431/601], loss:1.1895 class:bottle
+[Train] epoch [432/601], loss:1.1825 class:bottle
+[Train] epoch [433/601], loss:1.1771 class:bottle
+[Train] epoch [434/601], loss:1.1749 class:bottle
+[Train] epoch [435/601], loss:1.1819 class:bottle
+[Train] epoch [436/601], loss:1.1792 class:bottle
+[Train] epoch [437/601], loss:1.1851 class:bottle
+[Train] epoch [438/601], loss:1.1759 class:bottle
+[Train] epoch [439/601], loss:1.1718 class:bottle
+[Train] epoch [440/601], loss:1.1700 class:bottle
+[Eval] bottle class RocAUC at epoch 440: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [441/601], loss:1.1743 class:bottle
+[Train] epoch [442/601], loss:1.1644 class:bottle
+[Train] epoch [443/601], loss:1.1646 class:bottle
+[Train] epoch [444/601], loss:1.1741 class:bottle
+[Train] epoch [445/601], loss:1.1576 class:bottle
+[Train] epoch [446/601], loss:1.1659 class:bottle
+[Train] epoch [447/601], loss:1.1622 class:bottle
+[Train] epoch [448/601], loss:1.1724 class:bottle
+[Train] epoch [449/601], loss:1.1608 class:bottle
+[Train] epoch [450/601], loss:1.1606 class:bottle
+[Eval] bottle class RocAUC at epoch 450: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [451/601], loss:1.1603 class:bottle
+[Train] epoch [452/601], loss:1.1581 class:bottle
+[Train] epoch [453/601], loss:1.1523 class:bottle
+[Train] epoch [454/601], loss:1.1710 class:bottle
+[Train] epoch [455/601], loss:1.1626 class:bottle
+[Train] epoch [456/601], loss:1.1680 class:bottle
+[Train] epoch [457/601], loss:1.1687 class:bottle
+[Train] epoch [458/601], loss:1.1696 class:bottle
+[Train] epoch [459/601], loss:1.1595 class:bottle
+[Train] epoch [460/601], loss:1.1499 class:bottle
+[Eval] bottle class RocAUC at epoch 460: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [461/601], loss:1.1550 class:bottle
+[Train] epoch [462/601], loss:1.1502 class:bottle
+[Train] epoch [463/601], loss:1.1573 class:bottle
+[Train] epoch [464/601], loss:1.1445 class:bottle
+[Train] epoch [465/601], loss:1.1405 class:bottle
+[Train] epoch [466/601], loss:1.1533 class:bottle
+[Train] epoch [467/601], loss:1.1465 class:bottle
+[Train] epoch [468/601], loss:1.1393 class:bottle
+[Train] epoch [469/601], loss:1.1433 class:bottle
+[Train] epoch [470/601], loss:1.1380 class:bottle
+[Eval] bottle class RocAUC at epoch 470: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [471/601], loss:1.1378 class:bottle
+[Train] epoch [472/601], loss:1.1545 class:bottle
+[Train] epoch [473/601], loss:1.1388 class:bottle
+[Train] epoch [474/601], loss:1.1430 class:bottle
+[Train] epoch [475/601], loss:1.1395 class:bottle
+[Train] epoch [476/601], loss:1.1477 class:bottle
+[Train] epoch [477/601], loss:1.1340 class:bottle
+[Train] epoch [478/601], loss:1.1322 class:bottle
+[Train] epoch [479/601], loss:1.1260 class:bottle
+[Train] epoch [480/601], loss:1.1466 class:bottle
+[Eval] bottle class RocAUC at epoch 480: 0.9944
+[Eval] save best model at epoch 480
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [481/601], loss:1.1336 class:bottle
+[Train] epoch [482/601], loss:1.1448 class:bottle
+[Train] epoch [483/601], loss:1.1318 class:bottle
+[Train] epoch [484/601], loss:1.1445 class:bottle
+[Train] epoch [485/601], loss:1.1295 class:bottle
+[Train] epoch [486/601], loss:1.1450 class:bottle
+[Train] epoch [487/601], loss:1.1352 class:bottle
+[Train] epoch [488/601], loss:1.1339 class:bottle
+[Train] epoch [489/601], loss:1.1287 class:bottle
+[Train] epoch [490/601], loss:1.1352 class:bottle
+[Eval] bottle class RocAUC at epoch 490: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [491/601], loss:1.1158 class:bottle
+[Train] epoch [492/601], loss:1.1367 class:bottle
+[Train] epoch [493/601], loss:1.1238 class:bottle
+[Train] epoch [494/601], loss:1.1334 class:bottle
+[Train] epoch [495/601], loss:1.1134 class:bottle
+[Train] epoch [496/601], loss:1.1289 class:bottle
+[Train] epoch [497/601], loss:1.1304 class:bottle
+[Train] epoch [498/601], loss:1.1243 class:bottle
+[Train] epoch [499/601], loss:1.1280 class:bottle
+[Train] epoch [500/601], loss:1.1279 class:bottle
+[Eval] bottle class RocAUC at epoch 500: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [501/601], loss:1.1144 class:bottle
+[Train] epoch [502/601], loss:1.1189 class:bottle
+[Train] epoch [503/601], loss:1.1128 class:bottle
+[Train] epoch [504/601], loss:1.1252 class:bottle
+[Train] epoch [505/601], loss:1.1252 class:bottle
+[Train] epoch [506/601], loss:1.1274 class:bottle
+[Train] epoch [507/601], loss:1.1183 class:bottle
+[Train] epoch [508/601], loss:1.1104 class:bottle
+[Train] epoch [509/601], loss:1.1047 class:bottle
+[Train] epoch [510/601], loss:1.1134 class:bottle
+[Eval] bottle class RocAUC at epoch 510: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [511/601], loss:1.1088 class:bottle
+[Train] epoch [512/601], loss:1.1065 class:bottle
+[Train] epoch [513/601], loss:1.1018 class:bottle
+[Train] epoch [514/601], loss:1.1088 class:bottle
+[Train] epoch [515/601], loss:1.1112 class:bottle
+[Train] epoch [516/601], loss:1.1037 class:bottle
+[Train] epoch [517/601], loss:1.1126 class:bottle
+[Train] epoch [518/601], loss:1.1065 class:bottle
+[Train] epoch [519/601], loss:1.1024 class:bottle
+[Train] epoch [520/601], loss:1.1035 class:bottle
+[Eval] bottle class RocAUC at epoch 520: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [521/601], loss:1.1015 class:bottle
+[Train] epoch [522/601], loss:1.1047 class:bottle
+[Train] epoch [523/601], loss:1.1105 class:bottle
+[Train] epoch [524/601], loss:1.1015 class:bottle
+[Train] epoch [525/601], loss:1.0995 class:bottle
+[Train] epoch [526/601], loss:1.0969 class:bottle
+[Train] epoch [527/601], loss:1.1132 class:bottle
+[Train] epoch [528/601], loss:1.0930 class:bottle
+[Train] epoch [529/601], loss:1.0912 class:bottle
+[Train] epoch [530/601], loss:1.0888 class:bottle
+[Eval] bottle class RocAUC at epoch 530: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [531/601], loss:1.1021 class:bottle
+[Train] epoch [532/601], loss:1.0983 class:bottle
+[Train] epoch [533/601], loss:1.0964 class:bottle
+[Train] epoch [534/601], loss:1.0905 class:bottle
+[Train] epoch [535/601], loss:1.0859 class:bottle
+[Train] epoch [536/601], loss:1.0914 class:bottle
+[Train] epoch [537/601], loss:1.0926 class:bottle
+[Train] epoch [538/601], loss:1.0880 class:bottle
+[Train] epoch [539/601], loss:1.0891 class:bottle
+[Train] epoch [540/601], loss:1.0952 class:bottle
+[Eval] bottle class RocAUC at epoch 540: 0.9952
+[Eval] save best model at epoch 540
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [541/601], loss:1.0964 class:bottle
+[Train] epoch [542/601], loss:1.1066 class:bottle
+[Train] epoch [543/601], loss:1.0959 class:bottle
+[Train] epoch [544/601], loss:1.0905 class:bottle
+[Train] epoch [545/601], loss:1.0942 class:bottle
+[Train] epoch [546/601], loss:1.0889 class:bottle
+[Train] epoch [547/601], loss:1.0762 class:bottle
+[Train] epoch [548/601], loss:1.0923 class:bottle
+[Train] epoch [549/601], loss:1.0803 class:bottle
+[Train] epoch [550/601], loss:1.0742 class:bottle
+[Eval] bottle class RocAUC at epoch 550: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [551/601], loss:1.0724 class:bottle
+[Train] epoch [552/601], loss:1.0796 class:bottle
+[Train] epoch [553/601], loss:1.0782 class:bottle
+[Train] epoch [554/601], loss:1.0851 class:bottle
+[Train] epoch [555/601], loss:1.0756 class:bottle
+[Train] epoch [556/601], loss:1.0766 class:bottle
+[Train] epoch [557/601], loss:1.0786 class:bottle
+[Train] epoch [558/601], loss:1.0888 class:bottle
+[Train] epoch [559/601], loss:1.0769 class:bottle
+[Train] epoch [560/601], loss:1.0763 class:bottle
+[Eval] bottle class RocAUC at epoch 560: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [561/601], loss:1.0748 class:bottle
+[Train] epoch [562/601], loss:1.0774 class:bottle
+[Train] epoch [563/601], loss:1.0771 class:bottle
+[Train] epoch [564/601], loss:1.0734 class:bottle
+[Train] epoch [565/601], loss:1.0699 class:bottle
+[Train] epoch [566/601], loss:1.0855 class:bottle
+[Train] epoch [567/601], loss:1.0753 class:bottle
+[Train] epoch [568/601], loss:1.0671 class:bottle
+[Train] epoch [569/601], loss:1.0749 class:bottle
+[Train] epoch [570/601], loss:1.0809 class:bottle
+[Eval] bottle class RocAUC at epoch 570: 0.9937
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [571/601], loss:1.0783 class:bottle
+[Train] epoch [572/601], loss:1.0671 class:bottle
+[Train] epoch [573/601], loss:1.0705 class:bottle
+[Train] epoch [574/601], loss:1.0738 class:bottle
+[Train] epoch [575/601], loss:1.0790 class:bottle
+[Train] epoch [576/601], loss:1.0733 class:bottle
+[Train] epoch [577/601], loss:1.0663 class:bottle
+[Train] epoch [578/601], loss:1.0742 class:bottle
+[Train] epoch [579/601], loss:1.0775 class:bottle
+[Train] epoch [580/601], loss:1.0622 class:bottle
+[Eval] bottle class RocAUC at epoch 580: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [581/601], loss:1.0630 class:bottle
+[Train] epoch [582/601], loss:1.0631 class:bottle
+[Train] epoch [583/601], loss:1.0549 class:bottle
+[Train] epoch [584/601], loss:1.0607 class:bottle
+[Train] epoch [585/601], loss:1.0556 class:bottle
+[Train] epoch [586/601], loss:1.0579 class:bottle
+[Train] epoch [587/601], loss:1.0601 class:bottle
+[Train] epoch [588/601], loss:1.0581 class:bottle
+[Train] epoch [589/601], loss:1.0623 class:bottle
+[Train] epoch [590/601], loss:1.0662 class:bottle
+[Eval] bottle class RocAUC at epoch 590: 0.9952
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [591/601], loss:1.0627 class:bottle
+[Train] epoch [592/601], loss:1.0678 class:bottle
+[Train] epoch [593/601], loss:1.0604 class:bottle
+[Train] epoch [594/601], loss:1.0578 class:bottle
+[Train] epoch [595/601], loss:1.0598 class:bottle
+[Train] epoch [596/601], loss:1.0577 class:bottle
+[Train] epoch [597/601], loss:1.0570 class:bottle
+[Train] epoch [598/601], loss:1.0580 class:bottle
+[Train] epoch [599/601], loss:1.0472 class:bottle
+[Train] epoch [600/601], loss:1.0539 class:bottle
+[Eval] bottle class RocAUC at epoch 600: 0.9944
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/paddle/nn/layer/norm.py:653: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+[Train] epoch [601/601], loss:1.0556 class:bottle
+[Eval] bottle class RocAUC at epoch 601: 0.9944

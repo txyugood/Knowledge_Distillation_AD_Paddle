@@ -1,0 +1,713 @@
+W0410 16:12:32.594619   780 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 16:12:32.599117   780 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:26.9890 class:carpet
+[Eval] carpet class RocAUC at epoch 0: 0.6617
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:19.4520 class:carpet
+[Train] epoch [2/601], loss:16.2463 class:carpet
+[Train] epoch [3/601], loss:14.4508 class:carpet
+[Train] epoch [4/601], loss:13.1057 class:carpet
+[Train] epoch [5/601], loss:12.0384 class:carpet
+[Train] epoch [6/601], loss:11.1651 class:carpet
+[Train] epoch [7/601], loss:10.3451 class:carpet
+[Train] epoch [8/601], loss:9.6128 class:carpet
+[Train] epoch [9/601], loss:8.9787 class:carpet
+[Train] epoch [10/601], loss:8.3700 class:carpet
+[Eval] carpet class RocAUC at epoch 10: 0.7757
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:7.8528 class:carpet
+[Train] epoch [12/601], loss:7.3830 class:carpet
+[Train] epoch [13/601], loss:6.9263 class:carpet
+[Train] epoch [14/601], loss:6.5409 class:carpet
+[Train] epoch [15/601], loss:6.2050 class:carpet
+[Train] epoch [16/601], loss:5.8795 class:carpet
+[Train] epoch [17/601], loss:5.5956 class:carpet
+[Train] epoch [18/601], loss:5.3356 class:carpet
+[Train] epoch [19/601], loss:5.1001 class:carpet
+[Train] epoch [20/601], loss:4.8915 class:carpet
+[Eval] carpet class RocAUC at epoch 20: 0.6713
+[Train] epoch [21/601], loss:4.6939 class:carpet
+[Train] epoch [22/601], loss:4.5211 class:carpet
+[Train] epoch [23/601], loss:4.3492 class:carpet
+[Train] epoch [24/601], loss:4.2093 class:carpet
+[Train] epoch [25/601], loss:4.0522 class:carpet
+[Train] epoch [26/601], loss:3.9301 class:carpet
+[Train] epoch [27/601], loss:3.8070 class:carpet
+[Train] epoch [28/601], loss:3.6946 class:carpet
+[Train] epoch [29/601], loss:3.6015 class:carpet
+[Train] epoch [30/601], loss:3.5091 class:carpet
+[Eval] carpet class RocAUC at epoch 30: 0.6705
+[Train] epoch [31/601], loss:3.4260 class:carpet
+[Train] epoch [32/601], loss:3.3441 class:carpet
+[Train] epoch [33/601], loss:3.2748 class:carpet
+[Train] epoch [34/601], loss:3.2159 class:carpet
+[Train] epoch [35/601], loss:3.1494 class:carpet
+[Train] epoch [36/601], loss:3.0810 class:carpet
+[Train] epoch [37/601], loss:3.0353 class:carpet
+[Train] epoch [38/601], loss:2.9837 class:carpet
+[Train] epoch [39/601], loss:2.9464 class:carpet
+[Train] epoch [40/601], loss:2.9127 class:carpet
+[Eval] carpet class RocAUC at epoch 40: 0.6525
+[Train] epoch [41/601], loss:2.8690 class:carpet
+[Train] epoch [42/601], loss:2.8334 class:carpet
+[Train] epoch [43/601], loss:2.8073 class:carpet
+[Train] epoch [44/601], loss:2.7689 class:carpet
+[Train] epoch [45/601], loss:2.7397 class:carpet
+[Train] epoch [46/601], loss:2.7211 class:carpet
+[Train] epoch [47/601], loss:2.6874 class:carpet
+[Train] epoch [48/601], loss:2.6643 class:carpet
+[Train] epoch [49/601], loss:2.6459 class:carpet
+[Train] epoch [50/601], loss:2.6139 class:carpet
+[Eval] carpet class RocAUC at epoch 50: 0.7797
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:2.5993 class:carpet
+[Train] epoch [52/601], loss:2.5796 class:carpet
+[Train] epoch [53/601], loss:2.5471 class:carpet
+[Train] epoch [54/601], loss:2.5347 class:carpet
+[Train] epoch [55/601], loss:2.5132 class:carpet
+[Train] epoch [56/601], loss:2.4927 class:carpet
+[Train] epoch [57/601], loss:2.4701 class:carpet
+[Train] epoch [58/601], loss:2.4537 class:carpet
+[Train] epoch [59/601], loss:2.4442 class:carpet
+[Train] epoch [60/601], loss:2.4297 class:carpet
+[Eval] carpet class RocAUC at epoch 60: 0.7685
+[Train] epoch [61/601], loss:2.4102 class:carpet
+[Train] epoch [62/601], loss:2.3987 class:carpet
+[Train] epoch [63/601], loss:2.3876 class:carpet
+[Train] epoch [64/601], loss:2.3713 class:carpet
+[Train] epoch [65/601], loss:2.3580 class:carpet
+[Train] epoch [66/601], loss:2.3367 class:carpet
+[Train] epoch [67/601], loss:2.3235 class:carpet
+[Train] epoch [68/601], loss:2.3146 class:carpet
+[Train] epoch [69/601], loss:2.3057 class:carpet
+[Train] epoch [70/601], loss:2.2796 class:carpet
+[Eval] carpet class RocAUC at epoch 70: 0.7524
+[Train] epoch [71/601], loss:2.2738 class:carpet
+[Train] epoch [72/601], loss:2.2616 class:carpet
+[Train] epoch [73/601], loss:2.2453 class:carpet
+[Train] epoch [74/601], loss:2.2401 class:carpet
+[Train] epoch [75/601], loss:2.2246 class:carpet
+[Train] epoch [76/601], loss:2.2102 class:carpet
+[Train] epoch [77/601], loss:2.1942 class:carpet
+[Train] epoch [78/601], loss:2.1884 class:carpet
+[Train] epoch [79/601], loss:2.1770 class:carpet
+[Train] epoch [80/601], loss:2.1574 class:carpet
+[Eval] carpet class RocAUC at epoch 80: 0.7817
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:2.1482 class:carpet
+[Train] epoch [82/601], loss:2.1466 class:carpet
+[Train] epoch [83/601], loss:2.1301 class:carpet
+[Train] epoch [84/601], loss:2.1169 class:carpet
+[Train] epoch [85/601], loss:2.1037 class:carpet
+[Train] epoch [86/601], loss:2.0911 class:carpet
+[Train] epoch [87/601], loss:2.0897 class:carpet
+[Train] epoch [88/601], loss:2.0713 class:carpet
+[Train] epoch [89/601], loss:2.0651 class:carpet
+[Train] epoch [90/601], loss:2.0549 class:carpet
+[Eval] carpet class RocAUC at epoch 90: 0.7685
+[Train] epoch [91/601], loss:2.0448 class:carpet
+[Train] epoch [92/601], loss:2.0331 class:carpet
+[Train] epoch [93/601], loss:2.0163 class:carpet
+[Train] epoch [94/601], loss:2.0158 class:carpet
+[Train] epoch [95/601], loss:2.0019 class:carpet
+[Train] epoch [96/601], loss:1.9946 class:carpet
+[Train] epoch [97/601], loss:1.9803 class:carpet
+[Train] epoch [98/601], loss:1.9658 class:carpet
+[Train] epoch [99/601], loss:1.9534 class:carpet
+[Train] epoch [100/601], loss:1.9514 class:carpet
+[Eval] carpet class RocAUC at epoch 100: 0.7661
+[Train] epoch [101/601], loss:1.9418 class:carpet
+[Train] epoch [102/601], loss:1.9255 class:carpet
+[Train] epoch [103/601], loss:1.9166 class:carpet
+[Train] epoch [104/601], loss:1.9031 class:carpet
+[Train] epoch [105/601], loss:1.8947 class:carpet
+[Train] epoch [106/601], loss:1.8962 class:carpet
+[Train] epoch [107/601], loss:1.8774 class:carpet
+[Train] epoch [108/601], loss:1.8804 class:carpet
+[Train] epoch [109/601], loss:1.8621 class:carpet
+[Train] epoch [110/601], loss:1.8544 class:carpet
+[Eval] carpet class RocAUC at epoch 110: 0.7681
+[Train] epoch [111/601], loss:1.8483 class:carpet
+[Train] epoch [112/601], loss:1.8373 class:carpet
+[Train] epoch [113/601], loss:1.8314 class:carpet
+[Train] epoch [114/601], loss:1.8219 class:carpet
+[Train] epoch [115/601], loss:1.8148 class:carpet
+[Train] epoch [116/601], loss:1.8049 class:carpet
+[Train] epoch [117/601], loss:1.8030 class:carpet
+[Train] epoch [118/601], loss:1.7894 class:carpet
+[Train] epoch [119/601], loss:1.7789 class:carpet
+[Train] epoch [120/601], loss:1.7725 class:carpet
+[Eval] carpet class RocAUC at epoch 120: 0.7628
+[Train] epoch [121/601], loss:1.7712 class:carpet
+[Train] epoch [122/601], loss:1.7612 class:carpet
+[Train] epoch [123/601], loss:1.7572 class:carpet
+[Train] epoch [124/601], loss:1.7511 class:carpet
+[Train] epoch [125/601], loss:1.7405 class:carpet
+[Train] epoch [126/601], loss:1.7360 class:carpet
+[Train] epoch [127/601], loss:1.7201 class:carpet
+[Train] epoch [128/601], loss:1.7118 class:carpet
+[Train] epoch [129/601], loss:1.7108 class:carpet
+[Train] epoch [130/601], loss:1.7018 class:carpet
+[Eval] carpet class RocAUC at epoch 130: 0.7693
+[Train] epoch [131/601], loss:1.6980 class:carpet
+[Train] epoch [132/601], loss:1.6923 class:carpet
+[Train] epoch [133/601], loss:1.6773 class:carpet
+[Train] epoch [134/601], loss:1.6742 class:carpet
+[Train] epoch [135/601], loss:1.6635 class:carpet
+[Train] epoch [136/601], loss:1.6595 class:carpet
+[Train] epoch [137/601], loss:1.6526 class:carpet
+[Train] epoch [138/601], loss:1.6447 class:carpet
+[Train] epoch [139/601], loss:1.6411 class:carpet
+[Train] epoch [140/601], loss:1.6317 class:carpet
+[Eval] carpet class RocAUC at epoch 140: 0.7452
+[Train] epoch [141/601], loss:1.6274 class:carpet
+[Train] epoch [142/601], loss:1.6174 class:carpet
+[Train] epoch [143/601], loss:1.6116 class:carpet
+[Train] epoch [144/601], loss:1.6075 class:carpet
+[Train] epoch [145/601], loss:1.5952 class:carpet
+[Train] epoch [146/601], loss:1.5962 class:carpet
+[Train] epoch [147/601], loss:1.5914 class:carpet
+[Train] epoch [148/601], loss:1.5849 class:carpet
+[Train] epoch [149/601], loss:1.5822 class:carpet
+[Train] epoch [150/601], loss:1.5735 class:carpet
+[Eval] carpet class RocAUC at epoch 150: 0.764
+[Train] epoch [151/601], loss:1.5683 class:carpet
+[Train] epoch [152/601], loss:1.5556 class:carpet
+[Train] epoch [153/601], loss:1.5557 class:carpet
+[Train] epoch [154/601], loss:1.5504 class:carpet
+[Train] epoch [155/601], loss:1.5498 class:carpet
+[Train] epoch [156/601], loss:1.5403 class:carpet
+[Train] epoch [157/601], loss:1.5394 class:carpet
+[Train] epoch [158/601], loss:1.5302 class:carpet
+[Train] epoch [159/601], loss:1.5229 class:carpet
+[Train] epoch [160/601], loss:1.5153 class:carpet
+[Eval] carpet class RocAUC at epoch 160: 0.7652
+[Train] epoch [161/601], loss:1.5176 class:carpet
+[Train] epoch [162/601], loss:1.5069 class:carpet
+[Train] epoch [163/601], loss:1.5028 class:carpet
+[Train] epoch [164/601], loss:1.5063 class:carpet
+[Train] epoch [165/601], loss:1.4933 class:carpet
+[Train] epoch [166/601], loss:1.4988 class:carpet
+[Train] epoch [167/601], loss:1.4851 class:carpet
+[Train] epoch [168/601], loss:1.4844 class:carpet
+[Train] epoch [169/601], loss:1.4823 class:carpet
+[Train] epoch [170/601], loss:1.4708 class:carpet
+[Eval] carpet class RocAUC at epoch 170: 0.7648
+[Train] epoch [171/601], loss:1.4619 class:carpet
+[Train] epoch [172/601], loss:1.4691 class:carpet
+[Train] epoch [173/601], loss:1.4548 class:carpet
+[Train] epoch [174/601], loss:1.4594 class:carpet
+[Train] epoch [175/601], loss:1.4571 class:carpet
+[Train] epoch [176/601], loss:1.4489 class:carpet
+[Train] epoch [177/601], loss:1.4471 class:carpet
+[Train] epoch [178/601], loss:1.4421 class:carpet
+[Train] epoch [179/601], loss:1.4371 class:carpet
+[Train] epoch [180/601], loss:1.4323 class:carpet
+[Eval] carpet class RocAUC at epoch 180: 0.7424
+[Train] epoch [181/601], loss:1.4275 class:carpet
+[Train] epoch [182/601], loss:1.4271 class:carpet
+[Train] epoch [183/601], loss:1.4183 class:carpet
+[Train] epoch [184/601], loss:1.4145 class:carpet
+[Train] epoch [185/601], loss:1.4106 class:carpet
+[Train] epoch [186/601], loss:1.4123 class:carpet
+[Train] epoch [187/601], loss:1.4078 class:carpet
+[Train] epoch [188/601], loss:1.4013 class:carpet
+[Train] epoch [189/601], loss:1.3946 class:carpet
+[Train] epoch [190/601], loss:1.3917 class:carpet
+[Eval] carpet class RocAUC at epoch 190: 0.7572
+[Train] epoch [191/601], loss:1.3935 class:carpet
+[Train] epoch [192/601], loss:1.3869 class:carpet
+[Train] epoch [193/601], loss:1.3807 class:carpet
+[Train] epoch [194/601], loss:1.3766 class:carpet
+[Train] epoch [195/601], loss:1.3824 class:carpet
+[Train] epoch [196/601], loss:1.3759 class:carpet
+[Train] epoch [197/601], loss:1.3695 class:carpet
+[Train] epoch [198/601], loss:1.3592 class:carpet
+[Train] epoch [199/601], loss:1.3656 class:carpet
+[Train] epoch [200/601], loss:1.3551 class:carpet
+[Eval] carpet class RocAUC at epoch 200: 0.7677
+[Train] epoch [201/601], loss:1.3530 class:carpet
+[Train] epoch [202/601], loss:1.3555 class:carpet
+[Train] epoch [203/601], loss:1.3451 class:carpet
+[Train] epoch [204/601], loss:1.3479 class:carpet
+[Train] epoch [205/601], loss:1.3410 class:carpet
+[Train] epoch [206/601], loss:1.3350 class:carpet
+[Train] epoch [207/601], loss:1.3314 class:carpet
+[Train] epoch [208/601], loss:1.3330 class:carpet
+[Train] epoch [209/601], loss:1.3271 class:carpet
+[Train] epoch [210/601], loss:1.3228 class:carpet
+[Eval] carpet class RocAUC at epoch 210: 0.758
+[Train] epoch [211/601], loss:1.3149 class:carpet
+[Train] epoch [212/601], loss:1.3185 class:carpet
+[Train] epoch [213/601], loss:1.3150 class:carpet
+[Train] epoch [214/601], loss:1.3105 class:carpet
+[Train] epoch [215/601], loss:1.3078 class:carpet
+[Train] epoch [216/601], loss:1.3108 class:carpet
+[Train] epoch [217/601], loss:1.3128 class:carpet
+[Train] epoch [218/601], loss:1.3054 class:carpet
+[Train] epoch [219/601], loss:1.3004 class:carpet
+[Train] epoch [220/601], loss:1.2998 class:carpet
+[Eval] carpet class RocAUC at epoch 220: 0.7628
+[Train] epoch [221/601], loss:1.3003 class:carpet
+[Train] epoch [222/601], loss:1.2907 class:carpet
+[Train] epoch [223/601], loss:1.2913 class:carpet
+[Train] epoch [224/601], loss:1.2884 class:carpet
+[Train] epoch [225/601], loss:1.2823 class:carpet
+[Train] epoch [226/601], loss:1.2788 class:carpet
+[Train] epoch [227/601], loss:1.2724 class:carpet
+[Train] epoch [228/601], loss:1.2703 class:carpet
+[Train] epoch [229/601], loss:1.2715 class:carpet
+[Train] epoch [230/601], loss:1.2709 class:carpet
+[Eval] carpet class RocAUC at epoch 230: 0.7657
+[Train] epoch [231/601], loss:1.2633 class:carpet
+[Train] epoch [232/601], loss:1.2601 class:carpet
+[Train] epoch [233/601], loss:1.2585 class:carpet
+[Train] epoch [234/601], loss:1.2561 class:carpet
+[Train] epoch [235/601], loss:1.2518 class:carpet
+[Train] epoch [236/601], loss:1.2521 class:carpet
+[Train] epoch [237/601], loss:1.2510 class:carpet
+[Train] epoch [238/601], loss:1.2458 class:carpet
+[Train] epoch [239/601], loss:1.2467 class:carpet
+[Train] epoch [240/601], loss:1.2420 class:carpet
+[Eval] carpet class RocAUC at epoch 240: 0.75
+[Train] epoch [241/601], loss:1.2382 class:carpet
+[Train] epoch [242/601], loss:1.2341 class:carpet
+[Train] epoch [243/601], loss:1.2365 class:carpet
+[Train] epoch [244/601], loss:1.2344 class:carpet
+[Train] epoch [245/601], loss:1.2304 class:carpet
+[Train] epoch [246/601], loss:1.2253 class:carpet
+[Train] epoch [247/601], loss:1.2272 class:carpet
+[Train] epoch [248/601], loss:1.2192 class:carpet
+[Train] epoch [249/601], loss:1.2201 class:carpet
+[Train] epoch [250/601], loss:1.2184 class:carpet
+[Eval] carpet class RocAUC at epoch 250: 0.7769
+[Train] epoch [251/601], loss:1.2152 class:carpet
+[Train] epoch [252/601], loss:1.2128 class:carpet
+[Train] epoch [253/601], loss:1.2106 class:carpet
+[Train] epoch [254/601], loss:1.2101 class:carpet
+[Train] epoch [255/601], loss:1.2058 class:carpet
+[Train] epoch [256/601], loss:1.2065 class:carpet
+[Train] epoch [257/601], loss:1.2031 class:carpet
+[Train] epoch [258/601], loss:1.2033 class:carpet
+[Train] epoch [259/601], loss:1.1999 class:carpet
+[Train] epoch [260/601], loss:1.1917 class:carpet
+[Eval] carpet class RocAUC at epoch 260: 0.7673
+[Train] epoch [261/601], loss:1.1887 class:carpet
+[Train] epoch [262/601], loss:1.1895 class:carpet
+[Train] epoch [263/601], loss:1.1904 class:carpet
+[Train] epoch [264/601], loss:1.1868 class:carpet
+[Train] epoch [265/601], loss:1.1881 class:carpet
+[Train] epoch [266/601], loss:1.1837 class:carpet
+[Train] epoch [267/601], loss:1.1808 class:carpet
+[Train] epoch [268/601], loss:1.1809 class:carpet
+[Train] epoch [269/601], loss:1.1760 class:carpet
+[Train] epoch [270/601], loss:1.1815 class:carpet
+[Eval] carpet class RocAUC at epoch 270: 0.7721
+[Train] epoch [271/601], loss:1.1758 class:carpet
+[Train] epoch [272/601], loss:1.1702 class:carpet
+[Train] epoch [273/601], loss:1.1686 class:carpet
+[Train] epoch [274/601], loss:1.1653 class:carpet
+[Train] epoch [275/601], loss:1.1646 class:carpet
+[Train] epoch [276/601], loss:1.1600 class:carpet
+[Train] epoch [277/601], loss:1.1617 class:carpet
+[Train] epoch [278/601], loss:1.1586 class:carpet
+[Train] epoch [279/601], loss:1.1592 class:carpet
+[Train] epoch [280/601], loss:1.1556 class:carpet
+[Eval] carpet class RocAUC at epoch 280: 0.7689
+[Train] epoch [281/601], loss:1.1543 class:carpet
+[Train] epoch [282/601], loss:1.1508 class:carpet
+[Train] epoch [283/601], loss:1.1510 class:carpet
+[Train] epoch [284/601], loss:1.1517 class:carpet
+[Train] epoch [285/601], loss:1.1501 class:carpet
+[Train] epoch [286/601], loss:1.1494 class:carpet
+[Train] epoch [287/601], loss:1.1447 class:carpet
+[Train] epoch [288/601], loss:1.1441 class:carpet
+[Train] epoch [289/601], loss:1.1427 class:carpet
+[Train] epoch [290/601], loss:1.1427 class:carpet
+[Eval] carpet class RocAUC at epoch 290: 0.7937
+[Eval] save best model at epoch 290
+[Train] epoch [291/601], loss:1.1418 class:carpet
+[Train] epoch [292/601], loss:1.1384 class:carpet
+[Train] epoch [293/601], loss:1.1331 class:carpet
+[Train] epoch [294/601], loss:1.1341 class:carpet
+[Train] epoch [295/601], loss:1.1325 class:carpet
+[Train] epoch [296/601], loss:1.1271 class:carpet
+[Train] epoch [297/601], loss:1.1295 class:carpet
+[Train] epoch [298/601], loss:1.1268 class:carpet
+[Train] epoch [299/601], loss:1.1219 class:carpet
+[Train] epoch [300/601], loss:1.1265 class:carpet
+[Eval] carpet class RocAUC at epoch 300: 0.7624
+[Train] epoch [301/601], loss:1.1232 class:carpet
+[Train] epoch [302/601], loss:1.1242 class:carpet
+[Train] epoch [303/601], loss:1.1244 class:carpet
+[Train] epoch [304/601], loss:1.1142 class:carpet
+[Train] epoch [305/601], loss:1.1155 class:carpet
+[Train] epoch [306/601], loss:1.1115 class:carpet
+[Train] epoch [307/601], loss:1.1081 class:carpet
+[Train] epoch [308/601], loss:1.1098 class:carpet
+[Train] epoch [309/601], loss:1.1054 class:carpet
+[Train] epoch [310/601], loss:1.1056 class:carpet
+[Eval] carpet class RocAUC at epoch 310: 0.7661
+[Train] epoch [311/601], loss:1.1022 class:carpet
+[Train] epoch [312/601], loss:1.1050 class:carpet
+[Train] epoch [313/601], loss:1.1003 class:carpet
+[Train] epoch [314/601], loss:1.0977 class:carpet
+[Train] epoch [315/601], loss:1.0965 class:carpet
+[Train] epoch [316/601], loss:1.0940 class:carpet
+[Train] epoch [317/601], loss:1.0926 class:carpet
+[Train] epoch [318/601], loss:1.0921 class:carpet
+[Train] epoch [319/601], loss:1.0910 class:carpet
+[Train] epoch [320/601], loss:1.0880 class:carpet
+[Eval] carpet class RocAUC at epoch 320: 0.7685
+[Train] epoch [321/601], loss:1.0897 class:carpet
+[Train] epoch [322/601], loss:1.0856 class:carpet
+[Train] epoch [323/601], loss:1.0841 class:carpet
+[Train] epoch [324/601], loss:1.0835 class:carpet
+[Train] epoch [325/601], loss:1.0822 class:carpet
+[Train] epoch [326/601], loss:1.0824 class:carpet
+[Train] epoch [327/601], loss:1.0835 class:carpet
+[Train] epoch [328/601], loss:1.0777 class:carpet
+[Train] epoch [329/601], loss:1.0735 class:carpet
+[Train] epoch [330/601], loss:1.0763 class:carpet
+[Eval] carpet class RocAUC at epoch 330: 0.7665
+[Train] epoch [331/601], loss:1.0734 class:carpet
+[Train] epoch [332/601], loss:1.0715 class:carpet
+[Train] epoch [333/601], loss:1.0732 class:carpet
+[Train] epoch [334/601], loss:1.0692 class:carpet
+[Train] epoch [335/601], loss:1.0666 class:carpet
+[Train] epoch [336/601], loss:1.0690 class:carpet
+[Train] epoch [337/601], loss:1.0608 class:carpet
+[Train] epoch [338/601], loss:1.0652 class:carpet
+[Train] epoch [339/601], loss:1.0619 class:carpet
+[Train] epoch [340/601], loss:1.0632 class:carpet
+[Eval] carpet class RocAUC at epoch 340: 0.7749
+[Train] epoch [341/601], loss:1.0652 class:carpet
+[Train] epoch [342/601], loss:1.0594 class:carpet
+[Train] epoch [343/601], loss:1.0574 class:carpet
+[Train] epoch [344/601], loss:1.0574 class:carpet
+[Train] epoch [345/601], loss:1.0520 class:carpet
+[Train] epoch [346/601], loss:1.0556 class:carpet
+[Train] epoch [347/601], loss:1.0515 class:carpet
+[Train] epoch [348/601], loss:1.0494 class:carpet
+[Train] epoch [349/601], loss:1.0524 class:carpet
+[Train] epoch [350/601], loss:1.0480 class:carpet
+[Eval] carpet class RocAUC at epoch 350: 0.7648
+[Train] epoch [351/601], loss:1.0514 class:carpet
+[Train] epoch [352/601], loss:1.0446 class:carpet
+[Train] epoch [353/601], loss:1.0429 class:carpet
+[Train] epoch [354/601], loss:1.0425 class:carpet
+[Train] epoch [355/601], loss:1.0420 class:carpet
+[Train] epoch [356/601], loss:1.0439 class:carpet
+[Train] epoch [357/601], loss:1.0412 class:carpet
+[Train] epoch [358/601], loss:1.0414 class:carpet
+[Train] epoch [359/601], loss:1.0408 class:carpet
+[Train] epoch [360/601], loss:1.0398 class:carpet
+[Eval] carpet class RocAUC at epoch 360: 0.7893
+[Train] epoch [361/601], loss:1.0373 class:carpet
+[Train] epoch [362/601], loss:1.0351 class:carpet
+[Train] epoch [363/601], loss:1.0314 class:carpet
+[Train] epoch [364/601], loss:1.0285 class:carpet
+[Train] epoch [365/601], loss:1.0322 class:carpet
+[Train] epoch [366/601], loss:1.0296 class:carpet
+[Train] epoch [367/601], loss:1.0283 class:carpet
+[Train] epoch [368/601], loss:1.0239 class:carpet
+[Train] epoch [369/601], loss:1.0250 class:carpet
+[Train] epoch [370/601], loss:1.0194 class:carpet
+[Eval] carpet class RocAUC at epoch 370: 0.7681
+[Train] epoch [371/601], loss:1.0201 class:carpet
+[Train] epoch [372/601], loss:1.0193 class:carpet
+[Train] epoch [373/601], loss:1.0168 class:carpet
+[Train] epoch [374/601], loss:1.0178 class:carpet
+[Train] epoch [375/601], loss:1.0178 class:carpet
+[Train] epoch [376/601], loss:1.0160 class:carpet
+[Train] epoch [377/601], loss:1.0152 class:carpet
+[Train] epoch [378/601], loss:1.0124 class:carpet
+[Train] epoch [379/601], loss:1.0127 class:carpet
+[Train] epoch [380/601], loss:1.0117 class:carpet
+[Eval] carpet class RocAUC at epoch 380: 0.7813
+[Train] epoch [381/601], loss:1.0129 class:carpet
+[Train] epoch [382/601], loss:1.0121 class:carpet
+[Train] epoch [383/601], loss:1.0088 class:carpet
+[Train] epoch [384/601], loss:1.0049 class:carpet
+[Train] epoch [385/601], loss:1.0074 class:carpet
+[Train] epoch [386/601], loss:1.0077 class:carpet
+[Train] epoch [387/601], loss:1.0095 class:carpet
+[Train] epoch [388/601], loss:1.0045 class:carpet
+[Train] epoch [389/601], loss:1.0091 class:carpet
+[Train] epoch [390/601], loss:1.0033 class:carpet
+[Eval] carpet class RocAUC at epoch 390: 0.7725
+[Train] epoch [391/601], loss:1.0043 class:carpet
+[Train] epoch [392/601], loss:1.0010 class:carpet
+[Train] epoch [393/601], loss:1.0016 class:carpet
+[Train] epoch [394/601], loss:0.9943 class:carpet
+[Train] epoch [395/601], loss:0.9985 class:carpet
+[Train] epoch [396/601], loss:1.0001 class:carpet
+[Train] epoch [397/601], loss:0.9975 class:carpet
+[Train] epoch [398/601], loss:0.9955 class:carpet
+[Train] epoch [399/601], loss:0.9940 class:carpet
+[Train] epoch [400/601], loss:0.9978 class:carpet
+[Eval] carpet class RocAUC at epoch 400: 0.7881
+[Train] epoch [401/601], loss:0.9918 class:carpet
+[Train] epoch [402/601], loss:0.9938 class:carpet
+[Train] epoch [403/601], loss:0.9876 class:carpet
+[Train] epoch [404/601], loss:0.9899 class:carpet
+[Train] epoch [405/601], loss:0.9851 class:carpet
+[Train] epoch [406/601], loss:0.9907 class:carpet
+[Train] epoch [407/601], loss:0.9872 class:carpet
+[Train] epoch [408/601], loss:0.9893 class:carpet
+[Train] epoch [409/601], loss:0.9830 class:carpet
+[Train] epoch [410/601], loss:0.9814 class:carpet
+[Eval] carpet class RocAUC at epoch 410: 0.7769
+[Train] epoch [411/601], loss:0.9841 class:carpet
+[Train] epoch [412/601], loss:0.9804 class:carpet
+[Train] epoch [413/601], loss:0.9788 class:carpet
+[Train] epoch [414/601], loss:0.9755 class:carpet
+[Train] epoch [415/601], loss:0.9820 class:carpet
+[Train] epoch [416/601], loss:0.9784 class:carpet
+[Train] epoch [417/601], loss:0.9809 class:carpet
+[Train] epoch [418/601], loss:0.9809 class:carpet
+[Train] epoch [419/601], loss:0.9762 class:carpet
+[Train] epoch [420/601], loss:0.9755 class:carpet
+[Eval] carpet class RocAUC at epoch 420: 0.801
+[Eval] save best model at epoch 420
+[Train] epoch [421/601], loss:0.9801 class:carpet
+[Train] epoch [422/601], loss:0.9732 class:carpet
+[Train] epoch [423/601], loss:0.9718 class:carpet
+[Train] epoch [424/601], loss:0.9734 class:carpet
+[Train] epoch [425/601], loss:0.9708 class:carpet
+[Train] epoch [426/601], loss:0.9674 class:carpet
+[Train] epoch [427/601], loss:0.9691 class:carpet
+[Train] epoch [428/601], loss:0.9685 class:carpet
+[Train] epoch [429/601], loss:0.9666 class:carpet
+[Train] epoch [430/601], loss:0.9693 class:carpet
+[Eval] carpet class RocAUC at epoch 430: 0.7721
+[Train] epoch [431/601], loss:0.9675 class:carpet
+[Train] epoch [432/601], loss:0.9650 class:carpet
+[Train] epoch [433/601], loss:0.9657 class:carpet
+[Train] epoch [434/601], loss:0.9633 class:carpet
+[Train] epoch [435/601], loss:0.9620 class:carpet
+[Train] epoch [436/601], loss:0.9587 class:carpet
+[Train] epoch [437/601], loss:0.9574 class:carpet
+[Train] epoch [438/601], loss:0.9593 class:carpet
+[Train] epoch [439/601], loss:0.9568 class:carpet
+[Train] epoch [440/601], loss:0.9603 class:carpet
+[Eval] carpet class RocAUC at epoch 440: 0.7857
+[Train] epoch [441/601], loss:0.9618 class:carpet
+[Train] epoch [442/601], loss:0.9606 class:carpet
+[Train] epoch [443/601], loss:0.9586 class:carpet
+[Train] epoch [444/601], loss:0.9528 class:carpet
+[Train] epoch [445/601], loss:0.9533 class:carpet
+[Train] epoch [446/601], loss:0.9594 class:carpet
+[Train] epoch [447/601], loss:0.9521 class:carpet
+[Train] epoch [448/601], loss:0.9515 class:carpet
+[Train] epoch [449/601], loss:0.9552 class:carpet
+[Train] epoch [450/601], loss:0.9503 class:carpet
+[Eval] carpet class RocAUC at epoch 450: 0.7937
+[Train] epoch [451/601], loss:0.9472 class:carpet
+[Train] epoch [452/601], loss:0.9456 class:carpet
+[Train] epoch [453/601], loss:0.9507 class:carpet
+[Train] epoch [454/601], loss:0.9454 class:carpet
+[Train] epoch [455/601], loss:0.9472 class:carpet
+[Train] epoch [456/601], loss:0.9476 class:carpet
+[Train] epoch [457/601], loss:0.9477 class:carpet
+[Train] epoch [458/601], loss:0.9452 class:carpet
+[Train] epoch [459/601], loss:0.9511 class:carpet
+[Train] epoch [460/601], loss:0.9461 class:carpet
+[Eval] carpet class RocAUC at epoch 460: 0.7897
+[Train] epoch [461/601], loss:0.9461 class:carpet
+[Train] epoch [462/601], loss:0.9401 class:carpet
+[Train] epoch [463/601], loss:0.9392 class:carpet
+[Train] epoch [464/601], loss:0.9456 class:carpet
+[Train] epoch [465/601], loss:0.9394 class:carpet
+[Train] epoch [466/601], loss:0.9342 class:carpet
+[Train] epoch [467/601], loss:0.9349 class:carpet
+[Train] epoch [468/601], loss:0.9334 class:carpet
+[Train] epoch [469/601], loss:0.9342 class:carpet
+[Train] epoch [470/601], loss:0.9345 class:carpet
+[Eval] carpet class RocAUC at epoch 470: 0.7853
+[Train] epoch [471/601], loss:0.9326 class:carpet
+[Train] epoch [472/601], loss:0.9326 class:carpet
+[Train] epoch [473/601], loss:0.9322 class:carpet
+[Train] epoch [474/601], loss:0.9348 class:carpet
+[Train] epoch [475/601], loss:0.9306 class:carpet
+[Train] epoch [476/601], loss:0.9318 class:carpet
+[Train] epoch [477/601], loss:0.9321 class:carpet
+[Train] epoch [478/601], loss:0.9269 class:carpet
+[Train] epoch [479/601], loss:0.9258 class:carpet
+[Train] epoch [480/601], loss:0.9309 class:carpet
+[Eval] carpet class RocAUC at epoch 480: 0.7849
+[Train] epoch [481/601], loss:0.9262 class:carpet
+[Train] epoch [482/601], loss:0.9276 class:carpet
+[Train] epoch [483/601], loss:0.9285 class:carpet
+[Train] epoch [484/601], loss:0.9255 class:carpet
+[Train] epoch [485/601], loss:0.9267 class:carpet
+[Train] epoch [486/601], loss:0.9267 class:carpet
+[Train] epoch [487/601], loss:0.9252 class:carpet
+[Train] epoch [488/601], loss:0.9246 class:carpet
+[Train] epoch [489/601], loss:0.9184 class:carpet
+[Train] epoch [490/601], loss:0.9199 class:carpet
+[Eval] carpet class RocAUC at epoch 490: 0.7781
+[Train] epoch [491/601], loss:0.9224 class:carpet
+[Train] epoch [492/601], loss:0.9190 class:carpet
+[Train] epoch [493/601], loss:0.9196 class:carpet
+[Train] epoch [494/601], loss:0.9201 class:carpet
+[Train] epoch [495/601], loss:0.9207 class:carpet
+[Train] epoch [496/601], loss:0.9147 class:carpet
+[Train] epoch [497/601], loss:0.9199 class:carpet
+[Train] epoch [498/601], loss:0.9171 class:carpet
+[Train] epoch [499/601], loss:0.9158 class:carpet
+[Train] epoch [500/601], loss:0.9142 class:carpet
+[Eval] carpet class RocAUC at epoch 500: 0.7998
+[Train] epoch [501/601], loss:0.9187 class:carpet
+[Train] epoch [502/601], loss:0.9104 class:carpet
+[Train] epoch [503/601], loss:0.9133 class:carpet
+[Train] epoch [504/601], loss:0.9107 class:carpet
+[Train] epoch [505/601], loss:0.9118 class:carpet
+[Train] epoch [506/601], loss:0.9088 class:carpet
+[Train] epoch [507/601], loss:0.9125 class:carpet
+[Train] epoch [508/601], loss:0.9140 class:carpet
+[Train] epoch [509/601], loss:0.9143 class:carpet
+[Train] epoch [510/601], loss:0.9121 class:carpet
+[Eval] carpet class RocAUC at epoch 510: 0.7873
+[Train] epoch [511/601], loss:0.9099 class:carpet
+[Train] epoch [512/601], loss:0.9084 class:carpet
+[Train] epoch [513/601], loss:0.9046 class:carpet
+[Train] epoch [514/601], loss:0.9076 class:carpet
+[Train] epoch [515/601], loss:0.9065 class:carpet
+[Train] epoch [516/601], loss:0.9050 class:carpet
+[Train] epoch [517/601], loss:0.9018 class:carpet
+[Train] epoch [518/601], loss:0.9046 class:carpet
+[Train] epoch [519/601], loss:0.9063 class:carpet
+[Train] epoch [520/601], loss:0.9040 class:carpet
+[Eval] carpet class RocAUC at epoch 520: 0.7905
+[Train] epoch [521/601], loss:0.9009 class:carpet
+[Train] epoch [522/601], loss:0.8998 class:carpet
+[Train] epoch [523/601], loss:0.8970 class:carpet
+[Train] epoch [524/601], loss:0.8988 class:carpet
+[Train] epoch [525/601], loss:0.8993 class:carpet
+[Train] epoch [526/601], loss:0.9025 class:carpet
+[Train] epoch [527/601], loss:0.8983 class:carpet
+[Train] epoch [528/601], loss:0.8958 class:carpet
+[Train] epoch [529/601], loss:0.8964 class:carpet
+[Train] epoch [530/601], loss:0.8976 class:carpet
+[Eval] carpet class RocAUC at epoch 530: 0.7873
+[Train] epoch [531/601], loss:0.8936 class:carpet
+[Train] epoch [532/601], loss:0.8950 class:carpet
+[Train] epoch [533/601], loss:0.9018 class:carpet
+[Train] epoch [534/601], loss:0.8976 class:carpet
+[Train] epoch [535/601], loss:0.8959 class:carpet
+[Train] epoch [536/601], loss:0.8988 class:carpet
+[Train] epoch [537/601], loss:0.8968 class:carpet
+[Train] epoch [538/601], loss:0.8933 class:carpet
+[Train] epoch [539/601], loss:0.8939 class:carpet
+[Train] epoch [540/601], loss:0.8927 class:carpet
+[Eval] carpet class RocAUC at epoch 540: 0.7925
+[Train] epoch [541/601], loss:0.8915 class:carpet
+[Train] epoch [542/601], loss:0.8960 class:carpet
+[Train] epoch [543/601], loss:0.8990 class:carpet
+[Train] epoch [544/601], loss:0.8905 class:carpet
+[Train] epoch [545/601], loss:0.8914 class:carpet
+[Train] epoch [546/601], loss:0.8875 class:carpet
+[Train] epoch [547/601], loss:0.8912 class:carpet
+[Train] epoch [548/601], loss:0.8871 class:carpet
+[Train] epoch [549/601], loss:0.8886 class:carpet
+[Train] epoch [550/601], loss:0.8905 class:carpet
+[Eval] carpet class RocAUC at epoch 550: 0.7889
+[Train] epoch [551/601], loss:0.8908 class:carpet
+[Train] epoch [552/601], loss:0.8873 class:carpet
+[Train] epoch [553/601], loss:0.8841 class:carpet
+[Train] epoch [554/601], loss:0.8828 class:carpet
+[Train] epoch [555/601], loss:0.8851 class:carpet
+[Train] epoch [556/601], loss:0.8839 class:carpet
+[Train] epoch [557/601], loss:0.8860 class:carpet
+[Train] epoch [558/601], loss:0.8839 class:carpet
+[Train] epoch [559/601], loss:0.8844 class:carpet
+[Train] epoch [560/601], loss:0.8814 class:carpet
+[Eval] carpet class RocAUC at epoch 560: 0.7881
+[Train] epoch [561/601], loss:0.8830 class:carpet
+[Train] epoch [562/601], loss:0.8785 class:carpet
+[Train] epoch [563/601], loss:0.8791 class:carpet
+[Train] epoch [564/601], loss:0.8800 class:carpet
+[Train] epoch [565/601], loss:0.8794 class:carpet
+[Train] epoch [566/601], loss:0.8824 class:carpet
+[Train] epoch [567/601], loss:0.8794 class:carpet
+[Train] epoch [568/601], loss:0.8758 class:carpet
+[Train] epoch [569/601], loss:0.8737 class:carpet
+[Train] epoch [570/601], loss:0.8768 class:carpet
+[Eval] carpet class RocAUC at epoch 570: 0.7773
+[Train] epoch [571/601], loss:0.8775 class:carpet
+[Train] epoch [572/601], loss:0.8783 class:carpet
+[Train] epoch [573/601], loss:0.8761 class:carpet
+[Train] epoch [574/601], loss:0.8790 class:carpet
+[Train] epoch [575/601], loss:0.8760 class:carpet
+[Train] epoch [576/601], loss:0.8728 class:carpet
+[Train] epoch [577/601], loss:0.8786 class:carpet
+[Train] epoch [578/601], loss:0.8776 class:carpet
+[Train] epoch [579/601], loss:0.8729 class:carpet
+[Train] epoch [580/601], loss:0.8773 class:carpet
+[Eval] carpet class RocAUC at epoch 580: 0.7845
+[Train] epoch [581/601], loss:0.8722 class:carpet
+[Train] epoch [582/601], loss:0.8745 class:carpet
+[Train] epoch [583/601], loss:0.8734 class:carpet
+[Train] epoch [584/601], loss:0.8735 class:carpet
+[Train] epoch [585/601], loss:0.8705 class:carpet
+[Train] epoch [586/601], loss:0.8714 class:carpet
+[Train] epoch [587/601], loss:0.8714 class:carpet
+[Train] epoch [588/601], loss:0.8710 class:carpet
+[Train] epoch [589/601], loss:0.8709 class:carpet
+[Train] epoch [590/601], loss:0.8693 class:carpet
+[Eval] carpet class RocAUC at epoch 590: 0.7953
+[Train] epoch [591/601], loss:0.8712 class:carpet
+[Train] epoch [592/601], loss:0.8727 class:carpet
+[Train] epoch [593/601], loss:0.8681 class:carpet
+[Train] epoch [594/601], loss:0.8675 class:carpet
+[Train] epoch [595/601], loss:0.8652 class:carpet
+[Train] epoch [596/601], loss:0.8640 class:carpet
+[Train] epoch [597/601], loss:0.8662 class:carpet
+[Train] epoch [598/601], loss:0.8645 class:carpet
+[Train] epoch [599/601], loss:0.8653 class:carpet
+[Train] epoch [600/601], loss:0.8642 class:carpet
+[Eval] carpet class RocAUC at epoch 600: 0.7881
+[Train] epoch [601/601], loss:0.8608 class:carpet
+[Eval] carpet class RocAUC at epoch 601: 0.7897

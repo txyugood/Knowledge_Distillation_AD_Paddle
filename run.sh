@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {bottle,hazelnut,capsule,grid,cable,screw}
+for i in {capsule,}
   do
    echo $i
    rm -rf logs/${i}_train.log

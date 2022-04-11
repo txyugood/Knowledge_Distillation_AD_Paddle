@@ -1,0 +1,736 @@
+W0410 19:07:12.542466  3735 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0410 19:07:12.548177  3735 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+Loading pretrained model from ./vgg16.pdparams
+There are 32/32 variables loaded into VGG.
+layer : 0 Conv2D(3, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 1 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 2 ReLU()
+layer : 3 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 4 ReLU()
+layer : 5 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 6 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 7 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 8 ReLU()
+layer : 9 Conv2D(16, 128, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 10 ReLU()
+layer : 11 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 12 Conv2D(128, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 13 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 14 ReLU()
+layer : 15 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 16 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 17 ReLU()
+layer : 18 Conv2D(16, 256, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 19 ReLU()
+layer : 20 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 21 Conv2D(256, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 22 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 23 ReLU()
+layer : 24 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 25 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 26 ReLU()
+layer : 27 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 28 ReLU()
+layer : 29 MaxPool2D(kernel_size=2, stride=2, padding=0)
+layer : 30 Conv2D(512, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 31 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 32 ReLU()
+layer : 33 Conv2D(16, 16, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 34 BatchNorm2D(num_features=16, momentum=0.9, epsilon=1e-05)
+layer : 35 ReLU()
+layer : 36 Conv2D(16, 512, kernel_size=[3, 3], padding=1, data_format=NCHW)
+layer : 37 ReLU()
+layer : 38 MaxPool2D(kernel_size=2, stride=2, padding=0)
+[Train] epoch [0/601], loss:8.5830 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 0: 0.4056
+[Eval] save best model at epoch 0
+[Train] epoch [1/601], loss:8.2291 class:toothbrush
+[Train] epoch [2/601], loss:7.9053 class:toothbrush
+[Train] epoch [3/601], loss:7.5979 class:toothbrush
+[Train] epoch [4/601], loss:7.3303 class:toothbrush
+[Train] epoch [5/601], loss:7.0983 class:toothbrush
+[Train] epoch [6/601], loss:6.8991 class:toothbrush
+[Train] epoch [7/601], loss:6.7206 class:toothbrush
+[Train] epoch [8/601], loss:6.5628 class:toothbrush
+[Train] epoch [9/601], loss:6.4155 class:toothbrush
+[Train] epoch [10/601], loss:6.2862 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 10: 0.4083
+[Eval] save best model at epoch 10
+[Train] epoch [11/601], loss:6.1649 class:toothbrush
+[Train] epoch [12/601], loss:6.0550 class:toothbrush
+[Train] epoch [13/601], loss:5.9505 class:toothbrush
+[Train] epoch [14/601], loss:5.8540 class:toothbrush
+[Train] epoch [15/601], loss:5.7632 class:toothbrush
+[Train] epoch [16/601], loss:5.6762 class:toothbrush
+[Train] epoch [17/601], loss:5.5929 class:toothbrush
+[Train] epoch [18/601], loss:5.5136 class:toothbrush
+[Train] epoch [19/601], loss:5.4387 class:toothbrush
+[Train] epoch [20/601], loss:5.3664 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 20: 0.4222
+[Eval] save best model at epoch 20
+[Train] epoch [21/601], loss:5.2968 class:toothbrush
+[Train] epoch [22/601], loss:5.2281 class:toothbrush
+[Train] epoch [23/601], loss:5.1624 class:toothbrush
+[Train] epoch [24/601], loss:5.0979 class:toothbrush
+[Train] epoch [25/601], loss:5.0354 class:toothbrush
+[Train] epoch [26/601], loss:4.9737 class:toothbrush
+[Train] epoch [27/601], loss:4.9129 class:toothbrush
+[Train] epoch [28/601], loss:4.8538 class:toothbrush
+[Train] epoch [29/601], loss:4.7948 class:toothbrush
+[Train] epoch [30/601], loss:4.7376 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 30: 0.4889
+[Eval] save best model at epoch 30
+[Train] epoch [31/601], loss:4.6813 class:toothbrush
+[Train] epoch [32/601], loss:4.6264 class:toothbrush
+[Train] epoch [33/601], loss:4.5728 class:toothbrush
+[Train] epoch [34/601], loss:4.5199 class:toothbrush
+[Train] epoch [35/601], loss:4.4689 class:toothbrush
+[Train] epoch [36/601], loss:4.4199 class:toothbrush
+[Train] epoch [37/601], loss:4.3710 class:toothbrush
+[Train] epoch [38/601], loss:4.3204 class:toothbrush
+[Train] epoch [39/601], loss:4.2733 class:toothbrush
+[Train] epoch [40/601], loss:4.2275 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 40: 0.5611
+[Eval] save best model at epoch 40
+[Train] epoch [41/601], loss:4.1811 class:toothbrush
+[Train] epoch [42/601], loss:4.1363 class:toothbrush
+[Train] epoch [43/601], loss:4.0921 class:toothbrush
+[Train] epoch [44/601], loss:4.0489 class:toothbrush
+[Train] epoch [45/601], loss:4.0062 class:toothbrush
+[Train] epoch [46/601], loss:3.9642 class:toothbrush
+[Train] epoch [47/601], loss:3.9233 class:toothbrush
+[Train] epoch [48/601], loss:3.8829 class:toothbrush
+[Train] epoch [49/601], loss:3.8430 class:toothbrush
+[Train] epoch [50/601], loss:3.8047 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 50: 0.6
+[Eval] save best model at epoch 50
+[Train] epoch [51/601], loss:3.7668 class:toothbrush
+[Train] epoch [52/601], loss:3.7295 class:toothbrush
+[Train] epoch [53/601], loss:3.6930 class:toothbrush
+[Train] epoch [54/601], loss:3.6586 class:toothbrush
+[Train] epoch [55/601], loss:3.6236 class:toothbrush
+[Train] epoch [56/601], loss:3.5883 class:toothbrush
+[Train] epoch [57/601], loss:3.5546 class:toothbrush
+[Train] epoch [58/601], loss:3.5216 class:toothbrush
+[Train] epoch [59/601], loss:3.4900 class:toothbrush
+[Train] epoch [60/601], loss:3.4591 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 60: 0.6444
+[Eval] save best model at epoch 60
+[Train] epoch [61/601], loss:3.4268 class:toothbrush
+[Train] epoch [62/601], loss:3.3952 class:toothbrush
+[Train] epoch [63/601], loss:3.3647 class:toothbrush
+[Train] epoch [64/601], loss:3.3356 class:toothbrush
+[Train] epoch [65/601], loss:3.3062 class:toothbrush
+[Train] epoch [66/601], loss:3.2764 class:toothbrush
+[Train] epoch [67/601], loss:3.2478 class:toothbrush
+[Train] epoch [68/601], loss:3.2195 class:toothbrush
+[Train] epoch [69/601], loss:3.1927 class:toothbrush
+[Train] epoch [70/601], loss:3.1652 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 70: 0.6889
+[Eval] save best model at epoch 70
+[Train] epoch [71/601], loss:3.1371 class:toothbrush
+[Train] epoch [72/601], loss:3.1124 class:toothbrush
+[Train] epoch [73/601], loss:3.0867 class:toothbrush
+[Train] epoch [74/601], loss:3.0641 class:toothbrush
+[Train] epoch [75/601], loss:3.0476 class:toothbrush
+[Train] epoch [76/601], loss:3.0293 class:toothbrush
+[Train] epoch [77/601], loss:2.9927 class:toothbrush
+[Train] epoch [78/601], loss:2.9748 class:toothbrush
+[Train] epoch [79/601], loss:2.9475 class:toothbrush
+[Train] epoch [80/601], loss:2.9233 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 80: 0.7
+[Eval] save best model at epoch 80
+[Train] epoch [81/601], loss:2.9018 class:toothbrush
+[Train] epoch [82/601], loss:2.8755 class:toothbrush
+[Train] epoch [83/601], loss:2.8548 class:toothbrush
+[Train] epoch [84/601], loss:2.8305 class:toothbrush
+[Train] epoch [85/601], loss:2.8104 class:toothbrush
+[Train] epoch [86/601], loss:2.7890 class:toothbrush
+[Train] epoch [87/601], loss:2.7664 class:toothbrush
+[Train] epoch [88/601], loss:2.7463 class:toothbrush
+[Train] epoch [89/601], loss:2.7236 class:toothbrush
+[Train] epoch [90/601], loss:2.7046 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 90: 0.7194
+[Eval] save best model at epoch 90
+[Train] epoch [91/601], loss:2.6845 class:toothbrush
+[Train] epoch [92/601], loss:2.6662 class:toothbrush
+[Train] epoch [93/601], loss:2.6487 class:toothbrush
+[Train] epoch [94/601], loss:2.6263 class:toothbrush
+[Train] epoch [95/601], loss:2.6039 class:toothbrush
+[Train] epoch [96/601], loss:2.5856 class:toothbrush
+[Train] epoch [97/601], loss:2.5691 class:toothbrush
+[Train] epoch [98/601], loss:2.5495 class:toothbrush
+[Train] epoch [99/601], loss:2.5289 class:toothbrush
+[Train] epoch [100/601], loss:2.5105 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 100: 0.7639
+[Eval] save best model at epoch 100
+[Train] epoch [101/601], loss:2.4934 class:toothbrush
+[Train] epoch [102/601], loss:2.4766 class:toothbrush
+[Train] epoch [103/601], loss:2.4568 class:toothbrush
+[Train] epoch [104/601], loss:2.4396 class:toothbrush
+[Train] epoch [105/601], loss:2.4232 class:toothbrush
+[Train] epoch [106/601], loss:2.4055 class:toothbrush
+[Train] epoch [107/601], loss:2.3882 class:toothbrush
+[Train] epoch [108/601], loss:2.3710 class:toothbrush
+[Train] epoch [109/601], loss:2.3555 class:toothbrush
+[Train] epoch [110/601], loss:2.3402 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 110: 0.7778
+[Eval] save best model at epoch 110
+[Train] epoch [111/601], loss:2.3221 class:toothbrush
+[Train] epoch [112/601], loss:2.3060 class:toothbrush
+[Train] epoch [113/601], loss:2.2909 class:toothbrush
+[Train] epoch [114/601], loss:2.2754 class:toothbrush
+[Train] epoch [115/601], loss:2.2610 class:toothbrush
+[Train] epoch [116/601], loss:2.2463 class:toothbrush
+[Train] epoch [117/601], loss:2.2355 class:toothbrush
+[Train] epoch [118/601], loss:2.2211 class:toothbrush
+[Train] epoch [119/601], loss:2.2049 class:toothbrush
+[Train] epoch [120/601], loss:2.1873 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 120: 0.8028
+[Eval] save best model at epoch 120
+[Train] epoch [121/601], loss:2.1743 class:toothbrush
+[Train] epoch [122/601], loss:2.1606 class:toothbrush
+[Train] epoch [123/601], loss:2.1449 class:toothbrush
+[Train] epoch [124/601], loss:2.1311 class:toothbrush
+[Train] epoch [125/601], loss:2.1179 class:toothbrush
+[Train] epoch [126/601], loss:2.1032 class:toothbrush
+[Train] epoch [127/601], loss:2.0896 class:toothbrush
+[Train] epoch [128/601], loss:2.0774 class:toothbrush
+[Train] epoch [129/601], loss:2.0636 class:toothbrush
+[Train] epoch [130/601], loss:2.0489 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 130: 0.8278
+[Eval] save best model at epoch 130
+[Train] epoch [131/601], loss:2.0370 class:toothbrush
+[Train] epoch [132/601], loss:2.0248 class:toothbrush
+[Train] epoch [133/601], loss:2.0110 class:toothbrush
+[Train] epoch [134/601], loss:1.9985 class:toothbrush
+[Train] epoch [135/601], loss:1.9868 class:toothbrush
+[Train] epoch [136/601], loss:1.9742 class:toothbrush
+[Train] epoch [137/601], loss:1.9626 class:toothbrush
+[Train] epoch [138/601], loss:1.9514 class:toothbrush
+[Train] epoch [139/601], loss:1.9386 class:toothbrush
+[Train] epoch [140/601], loss:1.9259 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 140: 0.8361
+[Eval] save best model at epoch 140
+[Train] epoch [141/601], loss:1.9146 class:toothbrush
+[Train] epoch [142/601], loss:1.9040 class:toothbrush
+[Train] epoch [143/601], loss:1.8934 class:toothbrush
+[Train] epoch [144/601], loss:1.8816 class:toothbrush
+[Train] epoch [145/601], loss:1.8688 class:toothbrush
+[Train] epoch [146/601], loss:1.8560 class:toothbrush
+[Train] epoch [147/601], loss:1.8453 class:toothbrush
+[Train] epoch [148/601], loss:1.8358 class:toothbrush
+[Train] epoch [149/601], loss:1.8241 class:toothbrush
+[Train] epoch [150/601], loss:1.8115 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 150: 0.85
+[Eval] save best model at epoch 150
+[Train] epoch [151/601], loss:1.8011 class:toothbrush
+[Train] epoch [152/601], loss:1.7913 class:toothbrush
+[Train] epoch [153/601], loss:1.7808 class:toothbrush
+[Train] epoch [154/601], loss:1.7693 class:toothbrush
+[Train] epoch [155/601], loss:1.7588 class:toothbrush
+[Train] epoch [156/601], loss:1.7499 class:toothbrush
+[Train] epoch [157/601], loss:1.7412 class:toothbrush
+[Train] epoch [158/601], loss:1.7347 class:toothbrush
+[Train] epoch [159/601], loss:1.7246 class:toothbrush
+[Train] epoch [160/601], loss:1.7122 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 160: 0.8583
+[Eval] save best model at epoch 160
+[Train] epoch [161/601], loss:1.7045 class:toothbrush
+[Train] epoch [162/601], loss:1.6937 class:toothbrush
+[Train] epoch [163/601], loss:1.6831 class:toothbrush
+[Train] epoch [164/601], loss:1.6742 class:toothbrush
+[Train] epoch [165/601], loss:1.6629 class:toothbrush
+[Train] epoch [166/601], loss:1.6530 class:toothbrush
+[Train] epoch [167/601], loss:1.6432 class:toothbrush
+[Train] epoch [168/601], loss:1.6328 class:toothbrush
+[Train] epoch [169/601], loss:1.6242 class:toothbrush
+[Train] epoch [170/601], loss:1.6143 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 170: 0.8583
+[Train] epoch [171/601], loss:1.6055 class:toothbrush
+[Train] epoch [172/601], loss:1.5956 class:toothbrush
+[Train] epoch [173/601], loss:1.5865 class:toothbrush
+[Train] epoch [174/601], loss:1.5777 class:toothbrush
+[Train] epoch [175/601], loss:1.5680 class:toothbrush
+[Train] epoch [176/601], loss:1.5595 class:toothbrush
+[Train] epoch [177/601], loss:1.5506 class:toothbrush
+[Train] epoch [178/601], loss:1.5422 class:toothbrush
+[Train] epoch [179/601], loss:1.5334 class:toothbrush
+[Train] epoch [180/601], loss:1.5255 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 180: 0.8528
+[Train] epoch [181/601], loss:1.5179 class:toothbrush
+[Train] epoch [182/601], loss:1.5120 class:toothbrush
+[Train] epoch [183/601], loss:1.5094 class:toothbrush
+[Train] epoch [184/601], loss:1.5029 class:toothbrush
+[Train] epoch [185/601], loss:1.4894 class:toothbrush
+[Train] epoch [186/601], loss:1.4777 class:toothbrush
+[Train] epoch [187/601], loss:1.4731 class:toothbrush
+[Train] epoch [188/601], loss:1.4636 class:toothbrush
+[Train] epoch [189/601], loss:1.4550 class:toothbrush
+[Train] epoch [190/601], loss:1.4485 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 190: 0.8583
+[Train] epoch [191/601], loss:1.4391 class:toothbrush
+[Train] epoch [192/601], loss:1.4326 class:toothbrush
+[Train] epoch [193/601], loss:1.4251 class:toothbrush
+[Train] epoch [194/601], loss:1.4159 class:toothbrush
+[Train] epoch [195/601], loss:1.4096 class:toothbrush
+[Train] epoch [196/601], loss:1.4018 class:toothbrush
+[Train] epoch [197/601], loss:1.3933 class:toothbrush
+[Train] epoch [198/601], loss:1.3875 class:toothbrush
+[Train] epoch [199/601], loss:1.3787 class:toothbrush
+[Train] epoch [200/601], loss:1.3718 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 200: 0.8583
+[Train] epoch [201/601], loss:1.3654 class:toothbrush
+[Train] epoch [202/601], loss:1.3572 class:toothbrush
+[Train] epoch [203/601], loss:1.3508 class:toothbrush
+[Train] epoch [204/601], loss:1.3431 class:toothbrush
+[Train] epoch [205/601], loss:1.3368 class:toothbrush
+[Train] epoch [206/601], loss:1.3300 class:toothbrush
+[Train] epoch [207/601], loss:1.3231 class:toothbrush
+[Train] epoch [208/601], loss:1.3162 class:toothbrush
+[Train] epoch [209/601], loss:1.3100 class:toothbrush
+[Train] epoch [210/601], loss:1.3031 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 210: 0.8667
+[Eval] save best model at epoch 210
+[Train] epoch [211/601], loss:1.2968 class:toothbrush
+[Train] epoch [212/601], loss:1.2905 class:toothbrush
+[Train] epoch [213/601], loss:1.2835 class:toothbrush
+[Train] epoch [214/601], loss:1.2779 class:toothbrush
+[Train] epoch [215/601], loss:1.2711 class:toothbrush
+[Train] epoch [216/601], loss:1.2647 class:toothbrush
+[Train] epoch [217/601], loss:1.2588 class:toothbrush
+[Train] epoch [218/601], loss:1.2525 class:toothbrush
+[Train] epoch [219/601], loss:1.2464 class:toothbrush
+[Train] epoch [220/601], loss:1.2408 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 220: 0.8667
+[Train] epoch [221/601], loss:1.2347 class:toothbrush
+[Train] epoch [222/601], loss:1.2289 class:toothbrush
+[Train] epoch [223/601], loss:1.2238 class:toothbrush
+[Train] epoch [224/601], loss:1.2192 class:toothbrush
+[Train] epoch [225/601], loss:1.2160 class:toothbrush
+[Train] epoch [226/601], loss:1.2158 class:toothbrush
+[Train] epoch [227/601], loss:1.2064 class:toothbrush
+[Train] epoch [228/601], loss:1.1977 class:toothbrush
+[Train] epoch [229/601], loss:1.1935 class:toothbrush
+[Train] epoch [230/601], loss:1.1871 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 230: 0.8694
+[Eval] save best model at epoch 230
+[Train] epoch [231/601], loss:1.1816 class:toothbrush
+[Train] epoch [232/601], loss:1.1768 class:toothbrush
+[Train] epoch [233/601], loss:1.1711 class:toothbrush
+[Train] epoch [234/601], loss:1.1652 class:toothbrush
+[Train] epoch [235/601], loss:1.1597 class:toothbrush
+[Train] epoch [236/601], loss:1.1551 class:toothbrush
+[Train] epoch [237/601], loss:1.1494 class:toothbrush
+[Train] epoch [238/601], loss:1.1444 class:toothbrush
+[Train] epoch [239/601], loss:1.1392 class:toothbrush
+[Train] epoch [240/601], loss:1.1343 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 240: 0.8806
+[Eval] save best model at epoch 240
+[Train] epoch [241/601], loss:1.1294 class:toothbrush
+[Train] epoch [242/601], loss:1.1246 class:toothbrush
+[Train] epoch [243/601], loss:1.1194 class:toothbrush
+[Train] epoch [244/601], loss:1.1145 class:toothbrush
+[Train] epoch [245/601], loss:1.1101 class:toothbrush
+[Train] epoch [246/601], loss:1.1051 class:toothbrush
+[Train] epoch [247/601], loss:1.1004 class:toothbrush
+[Train] epoch [248/601], loss:1.0960 class:toothbrush
+[Train] epoch [249/601], loss:1.0911 class:toothbrush
+[Train] epoch [250/601], loss:1.0866 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 250: 0.8778
+[Train] epoch [251/601], loss:1.0821 class:toothbrush
+[Train] epoch [252/601], loss:1.0775 class:toothbrush
+[Train] epoch [253/601], loss:1.0731 class:toothbrush
+[Train] epoch [254/601], loss:1.0686 class:toothbrush
+[Train] epoch [255/601], loss:1.0644 class:toothbrush
+[Train] epoch [256/601], loss:1.0601 class:toothbrush
+[Train] epoch [257/601], loss:1.0561 class:toothbrush
+[Train] epoch [258/601], loss:1.0524 class:toothbrush
+[Train] epoch [259/601], loss:1.0491 class:toothbrush
+[Train] epoch [260/601], loss:1.0462 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 260: 0.8778
+[Train] epoch [261/601], loss:1.0431 class:toothbrush
+[Train] epoch [262/601], loss:1.0378 class:toothbrush
+[Train] epoch [263/601], loss:1.0317 class:toothbrush
+[Train] epoch [264/601], loss:1.0272 class:toothbrush
+[Train] epoch [265/601], loss:1.0242 class:toothbrush
+[Train] epoch [266/601], loss:1.0211 class:toothbrush
+[Train] epoch [267/601], loss:1.0170 class:toothbrush
+[Train] epoch [268/601], loss:1.0141 class:toothbrush
+[Train] epoch [269/601], loss:1.0136 class:toothbrush
+[Train] epoch [270/601], loss:1.0119 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 270: 0.85
+[Train] epoch [271/601], loss:1.0062 class:toothbrush
+[Train] epoch [272/601], loss:0.9994 class:toothbrush
+[Train] epoch [273/601], loss:0.9957 class:toothbrush
+[Train] epoch [274/601], loss:0.9918 class:toothbrush
+[Train] epoch [275/601], loss:0.9879 class:toothbrush
+[Train] epoch [276/601], loss:0.9840 class:toothbrush
+[Train] epoch [277/601], loss:0.9810 class:toothbrush
+[Train] epoch [278/601], loss:0.9759 class:toothbrush
+[Train] epoch [279/601], loss:0.9727 class:toothbrush
+[Train] epoch [280/601], loss:0.9697 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 280: 0.8833
+[Eval] save best model at epoch 280
+[Train] epoch [281/601], loss:0.9651 class:toothbrush
+[Train] epoch [282/601], loss:0.9622 class:toothbrush
+[Train] epoch [283/601], loss:0.9582 class:toothbrush
+[Train] epoch [284/601], loss:0.9545 class:toothbrush
+[Train] epoch [285/601], loss:0.9518 class:toothbrush
+[Train] epoch [286/601], loss:0.9474 class:toothbrush
+[Train] epoch [287/601], loss:0.9443 class:toothbrush
+[Train] epoch [288/601], loss:0.9409 class:toothbrush
+[Train] epoch [289/601], loss:0.9373 class:toothbrush
+[Train] epoch [290/601], loss:0.9341 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 290: 0.8917
+[Eval] save best model at epoch 290
+[Train] epoch [291/601], loss:0.9309 class:toothbrush
+[Train] epoch [292/601], loss:0.9275 class:toothbrush
+[Train] epoch [293/601], loss:0.9241 class:toothbrush
+[Train] epoch [294/601], loss:0.9213 class:toothbrush
+[Train] epoch [295/601], loss:0.9180 class:toothbrush
+[Train] epoch [296/601], loss:0.9147 class:toothbrush
+[Train] epoch [297/601], loss:0.9117 class:toothbrush
+[Train] epoch [298/601], loss:0.9085 class:toothbrush
+[Train] epoch [299/601], loss:0.9055 class:toothbrush
+[Train] epoch [300/601], loss:0.9025 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 300: 0.8889
+[Train] epoch [301/601], loss:0.8994 class:toothbrush
+[Train] epoch [302/601], loss:0.8967 class:toothbrush
+[Train] epoch [303/601], loss:0.8939 class:toothbrush
+[Train] epoch [304/601], loss:0.8912 class:toothbrush
+[Train] epoch [305/601], loss:0.8887 class:toothbrush
+[Train] epoch [306/601], loss:0.8864 class:toothbrush
+[Train] epoch [307/601], loss:0.8833 class:toothbrush
+[Train] epoch [308/601], loss:0.8803 class:toothbrush
+[Train] epoch [309/601], loss:0.8772 class:toothbrush
+[Train] epoch [310/601], loss:0.8741 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 310: 0.8944
+[Eval] save best model at epoch 310
+[Train] epoch [311/601], loss:0.8716 class:toothbrush
+[Train] epoch [312/601], loss:0.8693 class:toothbrush
+[Train] epoch [313/601], loss:0.8669 class:toothbrush
+[Train] epoch [314/601], loss:0.8641 class:toothbrush
+[Train] epoch [315/601], loss:0.8617 class:toothbrush
+[Train] epoch [316/601], loss:0.8600 class:toothbrush
+[Train] epoch [317/601], loss:0.8590 class:toothbrush
+[Train] epoch [318/601], loss:0.8582 class:toothbrush
+[Train] epoch [319/601], loss:0.8534 class:toothbrush
+[Train] epoch [320/601], loss:0.8478 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 320: 0.8944
+[Train] epoch [321/601], loss:0.8457 class:toothbrush
+[Train] epoch [322/601], loss:0.8449 class:toothbrush
+[Train] epoch [323/601], loss:0.8412 class:toothbrush
+[Train] epoch [324/601], loss:0.8378 class:toothbrush
+[Train] epoch [325/601], loss:0.8359 class:toothbrush
+[Train] epoch [326/601], loss:0.8340 class:toothbrush
+[Train] epoch [327/601], loss:0.8307 class:toothbrush
+[Train] epoch [328/601], loss:0.8277 class:toothbrush
+[Train] epoch [329/601], loss:0.8259 class:toothbrush
+[Train] epoch [330/601], loss:0.8236 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 330: 0.8972
+[Eval] save best model at epoch 330
+[Train] epoch [331/601], loss:0.8206 class:toothbrush
+[Train] epoch [332/601], loss:0.8181 class:toothbrush
+[Train] epoch [333/601], loss:0.8163 class:toothbrush
+[Train] epoch [334/601], loss:0.8138 class:toothbrush
+[Train] epoch [335/601], loss:0.8111 class:toothbrush
+[Train] epoch [336/601], loss:0.8089 class:toothbrush
+[Train] epoch [337/601], loss:0.8070 class:toothbrush
+[Train] epoch [338/601], loss:0.8049 class:toothbrush
+[Train] epoch [339/601], loss:0.8031 class:toothbrush
+[Train] epoch [340/601], loss:0.8020 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 340: 0.8972
+[Train] epoch [341/601], loss:0.8030 class:toothbrush
+[Train] epoch [342/601], loss:0.8027 class:toothbrush
+[Train] epoch [343/601], loss:0.8017 class:toothbrush
+[Train] epoch [344/601], loss:0.7973 class:toothbrush
+[Train] epoch [345/601], loss:0.7950 class:toothbrush
+[Train] epoch [346/601], loss:0.7916 class:toothbrush
+[Train] epoch [347/601], loss:0.7889 class:toothbrush
+[Train] epoch [348/601], loss:0.7866 class:toothbrush
+[Train] epoch [349/601], loss:0.7846 class:toothbrush
+[Train] epoch [350/601], loss:0.7812 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 350: 0.8972
+[Train] epoch [351/601], loss:0.7796 class:toothbrush
+[Train] epoch [352/601], loss:0.7775 class:toothbrush
+[Train] epoch [353/601], loss:0.7750 class:toothbrush
+[Train] epoch [354/601], loss:0.7730 class:toothbrush
+[Train] epoch [355/601], loss:0.7707 class:toothbrush
+[Train] epoch [356/601], loss:0.7690 class:toothbrush
+[Train] epoch [357/601], loss:0.7664 class:toothbrush
+[Train] epoch [358/601], loss:0.7647 class:toothbrush
+[Train] epoch [359/601], loss:0.7624 class:toothbrush
+[Train] epoch [360/601], loss:0.7607 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 360: 0.9
+[Eval] save best model at epoch 360
+[Train] epoch [361/601], loss:0.7584 class:toothbrush
+[Train] epoch [362/601], loss:0.7567 class:toothbrush
+[Train] epoch [363/601], loss:0.7545 class:toothbrush
+[Train] epoch [364/601], loss:0.7529 class:toothbrush
+[Train] epoch [365/601], loss:0.7510 class:toothbrush
+[Train] epoch [366/601], loss:0.7489 class:toothbrush
+[Train] epoch [367/601], loss:0.7472 class:toothbrush
+[Train] epoch [368/601], loss:0.7453 class:toothbrush
+[Train] epoch [369/601], loss:0.7435 class:toothbrush
+[Train] epoch [370/601], loss:0.7417 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 370: 0.9
+[Train] epoch [371/601], loss:0.7398 class:toothbrush
+[Train] epoch [372/601], loss:0.7382 class:toothbrush
+[Train] epoch [373/601], loss:0.7365 class:toothbrush
+[Train] epoch [374/601], loss:0.7351 class:toothbrush
+[Train] epoch [375/601], loss:0.7339 class:toothbrush
+[Train] epoch [376/601], loss:0.7337 class:toothbrush
+[Train] epoch [377/601], loss:0.7350 class:toothbrush
+[Train] epoch [378/601], loss:0.7361 class:toothbrush
+[Train] epoch [379/601], loss:0.7340 class:toothbrush
+[Train] epoch [380/601], loss:0.7290 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 380: 0.8944
+[Train] epoch [381/601], loss:0.7271 class:toothbrush
+[Train] epoch [382/601], loss:0.7263 class:toothbrush
+[Train] epoch [383/601], loss:0.7223 class:toothbrush
+[Train] epoch [384/601], loss:0.7212 class:toothbrush
+[Train] epoch [385/601], loss:0.7209 class:toothbrush
+[Train] epoch [386/601], loss:0.7166 class:toothbrush
+[Train] epoch [387/601], loss:0.7155 class:toothbrush
+[Train] epoch [388/601], loss:0.7148 class:toothbrush
+[Train] epoch [389/601], loss:0.7117 class:toothbrush
+[Train] epoch [390/601], loss:0.7107 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 390: 0.9111
+[Eval] save best model at epoch 390
+[Train] epoch [391/601], loss:0.7090 class:toothbrush
+[Train] epoch [392/601], loss:0.7067 class:toothbrush
+[Train] epoch [393/601], loss:0.7061 class:toothbrush
+[Train] epoch [394/601], loss:0.7039 class:toothbrush
+[Train] epoch [395/601], loss:0.7021 class:toothbrush
+[Train] epoch [396/601], loss:0.7010 class:toothbrush
+[Train] epoch [397/601], loss:0.6990 class:toothbrush
+[Train] epoch [398/601], loss:0.6978 class:toothbrush
+[Train] epoch [399/601], loss:0.6963 class:toothbrush
+[Train] epoch [400/601], loss:0.6944 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 400: 0.9056
+[Train] epoch [401/601], loss:0.6933 class:toothbrush
+[Train] epoch [402/601], loss:0.6917 class:toothbrush
+[Train] epoch [403/601], loss:0.6901 class:toothbrush
+[Train] epoch [404/601], loss:0.6889 class:toothbrush
+[Train] epoch [405/601], loss:0.6873 class:toothbrush
+[Train] epoch [406/601], loss:0.6858 class:toothbrush
+[Train] epoch [407/601], loss:0.6845 class:toothbrush
+[Train] epoch [408/601], loss:0.6830 class:toothbrush
+[Train] epoch [409/601], loss:0.6816 class:toothbrush
+[Train] epoch [410/601], loss:0.6805 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 410: 0.9028
+[Train] epoch [411/601], loss:0.6794 class:toothbrush
+[Train] epoch [412/601], loss:0.6789 class:toothbrush
+[Train] epoch [413/601], loss:0.6798 class:toothbrush
+[Train] epoch [414/601], loss:0.6813 class:toothbrush
+[Train] epoch [415/601], loss:0.6802 class:toothbrush
+[Train] epoch [416/601], loss:0.6760 class:toothbrush
+[Train] epoch [417/601], loss:0.6732 class:toothbrush
+[Train] epoch [418/601], loss:0.6724 class:toothbrush
+[Train] epoch [419/601], loss:0.6711 class:toothbrush
+[Train] epoch [420/601], loss:0.6697 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 420: 0.9083
+[Train] epoch [421/601], loss:0.6675 class:toothbrush
+[Train] epoch [422/601], loss:0.6662 class:toothbrush
+[Train] epoch [423/601], loss:0.6659 class:toothbrush
+[Train] epoch [424/601], loss:0.6639 class:toothbrush
+[Train] epoch [425/601], loss:0.6617 class:toothbrush
+[Train] epoch [426/601], loss:0.6610 class:toothbrush
+[Train] epoch [427/601], loss:0.6600 class:toothbrush
+[Train] epoch [428/601], loss:0.6581 class:toothbrush
+[Train] epoch [429/601], loss:0.6567 class:toothbrush
+[Train] epoch [430/601], loss:0.6563 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 430: 0.9056
+[Train] epoch [431/601], loss:0.6544 class:toothbrush
+[Train] epoch [432/601], loss:0.6529 class:toothbrush
+[Train] epoch [433/601], loss:0.6523 class:toothbrush
+[Train] epoch [434/601], loss:0.6511 class:toothbrush
+[Train] epoch [435/601], loss:0.6496 class:toothbrush
+[Train] epoch [436/601], loss:0.6487 class:toothbrush
+[Train] epoch [437/601], loss:0.6479 class:toothbrush
+[Train] epoch [438/601], loss:0.6468 class:toothbrush
+[Train] epoch [439/601], loss:0.6459 class:toothbrush
+[Train] epoch [440/601], loss:0.6453 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 440: 0.9083
+[Train] epoch [441/601], loss:0.6446 class:toothbrush
+[Train] epoch [442/601], loss:0.6448 class:toothbrush
+[Train] epoch [443/601], loss:0.6454 class:toothbrush
+[Train] epoch [444/601], loss:0.6466 class:toothbrush
+[Train] epoch [445/601], loss:0.6441 class:toothbrush
+[Train] epoch [446/601], loss:0.6407 class:toothbrush
+[Train] epoch [447/601], loss:0.6410 class:toothbrush
+[Train] epoch [448/601], loss:0.6398 class:toothbrush
+[Train] epoch [449/601], loss:0.6374 class:toothbrush
+[Train] epoch [450/601], loss:0.6360 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 450: 0.9028
+[Train] epoch [451/601], loss:0.6340 class:toothbrush
+[Train] epoch [452/601], loss:0.6335 class:toothbrush
+[Train] epoch [453/601], loss:0.6332 class:toothbrush
+[Train] epoch [454/601], loss:0.6303 class:toothbrush
+[Train] epoch [455/601], loss:0.6295 class:toothbrush
+[Train] epoch [456/601], loss:0.6289 class:toothbrush
+[Train] epoch [457/601], loss:0.6273 class:toothbrush
+[Train] epoch [458/601], loss:0.6263 class:toothbrush
+[Train] epoch [459/601], loss:0.6252 class:toothbrush
+[Train] epoch [460/601], loss:0.6238 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 460: 0.9056
+[Train] epoch [461/601], loss:0.6230 class:toothbrush
+[Train] epoch [462/601], loss:0.6217 class:toothbrush
+[Train] epoch [463/601], loss:0.6208 class:toothbrush
+[Train] epoch [464/601], loss:0.6201 class:toothbrush
+[Train] epoch [465/601], loss:0.6187 class:toothbrush
+[Train] epoch [466/601], loss:0.6176 class:toothbrush
+[Train] epoch [467/601], loss:0.6171 class:toothbrush
+[Train] epoch [468/601], loss:0.6160 class:toothbrush
+[Train] epoch [469/601], loss:0.6149 class:toothbrush
+[Train] epoch [470/601], loss:0.6146 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 470: 0.9167
+[Eval] save best model at epoch 470
+[Train] epoch [471/601], loss:0.6142 class:toothbrush
+[Train] epoch [472/601], loss:0.6140 class:toothbrush
+[Train] epoch [473/601], loss:0.6138 class:toothbrush
+[Train] epoch [474/601], loss:0.6140 class:toothbrush
+[Train] epoch [475/601], loss:0.6119 class:toothbrush
+[Train] epoch [476/601], loss:0.6113 class:toothbrush
+[Train] epoch [477/601], loss:0.6093 class:toothbrush
+[Train] epoch [478/601], loss:0.6075 class:toothbrush
+[Train] epoch [479/601], loss:0.6072 class:toothbrush
+[Train] epoch [480/601], loss:0.6062 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 480: 0.9083
+[Train] epoch [481/601], loss:0.6043 class:toothbrush
+[Train] epoch [482/601], loss:0.6041 class:toothbrush
+[Train] epoch [483/601], loss:0.6037 class:toothbrush
+[Train] epoch [484/601], loss:0.6015 class:toothbrush
+[Train] epoch [485/601], loss:0.6005 class:toothbrush
+[Train] epoch [486/601], loss:0.6002 class:toothbrush
+[Train] epoch [487/601], loss:0.5991 class:toothbrush
+[Train] epoch [488/601], loss:0.5981 class:toothbrush
+[Train] epoch [489/601], loss:0.5977 class:toothbrush
+[Train] epoch [490/601], loss:0.5969 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 490: 0.9167
+[Train] epoch [491/601], loss:0.5961 class:toothbrush
+[Train] epoch [492/601], loss:0.5972 class:toothbrush
+[Train] epoch [493/601], loss:0.5988 class:toothbrush
+[Train] epoch [494/601], loss:0.5994 class:toothbrush
+[Train] epoch [495/601], loss:0.5990 class:toothbrush
+[Train] epoch [496/601], loss:0.5948 class:toothbrush
+[Train] epoch [497/601], loss:0.5929 class:toothbrush
+[Train] epoch [498/601], loss:0.5931 class:toothbrush
+[Train] epoch [499/601], loss:0.5928 class:toothbrush
+[Train] epoch [500/601], loss:0.5898 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 500: 0.9111
+[Train] epoch [501/601], loss:0.5891 class:toothbrush
+[Train] epoch [502/601], loss:0.5900 class:toothbrush
+[Train] epoch [503/601], loss:0.5868 class:toothbrush
+[Train] epoch [504/601], loss:0.5861 class:toothbrush
+[Train] epoch [505/601], loss:0.5867 class:toothbrush
+[Train] epoch [506/601], loss:0.5842 class:toothbrush
+[Train] epoch [507/601], loss:0.5833 class:toothbrush
+[Train] epoch [508/601], loss:0.5832 class:toothbrush
+[Train] epoch [509/601], loss:0.5816 class:toothbrush
+[Train] epoch [510/601], loss:0.5809 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 510: 0.9111
+[Train] epoch [511/601], loss:0.5804 class:toothbrush
+[Train] epoch [512/601], loss:0.5792 class:toothbrush
+[Train] epoch [513/601], loss:0.5785 class:toothbrush
+[Train] epoch [514/601], loss:0.5781 class:toothbrush
+[Train] epoch [515/601], loss:0.5774 class:toothbrush
+[Train] epoch [516/601], loss:0.5767 class:toothbrush
+[Train] epoch [517/601], loss:0.5773 class:toothbrush
+[Train] epoch [518/601], loss:0.5764 class:toothbrush
+[Train] epoch [519/601], loss:0.5757 class:toothbrush
+[Train] epoch [520/601], loss:0.5741 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 520: 0.9139
+[Train] epoch [521/601], loss:0.5727 class:toothbrush
+[Train] epoch [522/601], loss:0.5718 class:toothbrush
+[Train] epoch [523/601], loss:0.5715 class:toothbrush
+[Train] epoch [524/601], loss:0.5710 class:toothbrush
+[Train] epoch [525/601], loss:0.5699 class:toothbrush
+[Train] epoch [526/601], loss:0.5691 class:toothbrush
+[Train] epoch [527/601], loss:0.5683 class:toothbrush
+[Train] epoch [528/601], loss:0.5679 class:toothbrush
+[Train] epoch [529/601], loss:0.5674 class:toothbrush
+[Train] epoch [530/601], loss:0.5669 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 530: 0.9167
+[Train] epoch [531/601], loss:0.5671 class:toothbrush
+[Train] epoch [532/601], loss:0.5674 class:toothbrush
+[Train] epoch [533/601], loss:0.5679 class:toothbrush
+[Train] epoch [534/601], loss:0.5690 class:toothbrush
+[Train] epoch [535/601], loss:0.5656 class:toothbrush
+[Train] epoch [536/601], loss:0.5651 class:toothbrush
+[Train] epoch [537/601], loss:0.5649 class:toothbrush
+[Train] epoch [538/601], loss:0.5627 class:toothbrush
+[Train] epoch [539/601], loss:0.5617 class:toothbrush
+[Train] epoch [540/601], loss:0.5621 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 540: 0.9167
+[Train] epoch [541/601], loss:0.5604 class:toothbrush
+[Train] epoch [542/601], loss:0.5596 class:toothbrush
+[Train] epoch [543/601], loss:0.5591 class:toothbrush
+[Train] epoch [544/601], loss:0.5578 class:toothbrush
+[Train] epoch [545/601], loss:0.5573 class:toothbrush
+[Train] epoch [546/601], loss:0.5568 class:toothbrush
+[Train] epoch [547/601], loss:0.5554 class:toothbrush
+[Train] epoch [548/601], loss:0.5549 class:toothbrush
+[Train] epoch [549/601], loss:0.5541 class:toothbrush
+[Train] epoch [550/601], loss:0.5532 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 550: 0.9139
+[Train] epoch [551/601], loss:0.5528 class:toothbrush
+[Train] epoch [552/601], loss:0.5521 class:toothbrush
+[Train] epoch [553/601], loss:0.5514 class:toothbrush
+[Train] epoch [554/601], loss:0.5509 class:toothbrush
+[Train] epoch [555/601], loss:0.5502 class:toothbrush
+[Train] epoch [556/601], loss:0.5498 class:toothbrush
+[Train] epoch [557/601], loss:0.5496 class:toothbrush
+[Train] epoch [558/601], loss:0.5494 class:toothbrush
+[Train] epoch [559/601], loss:0.5495 class:toothbrush
+[Train] epoch [560/601], loss:0.5504 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 560: 0.9194
+[Eval] save best model at epoch 560
+[Train] epoch [561/601], loss:0.5504 class:toothbrush
+[Train] epoch [562/601], loss:0.5525 class:toothbrush
+[Train] epoch [563/601], loss:0.5519 class:toothbrush
+[Train] epoch [564/601], loss:0.5515 class:toothbrush
+[Train] epoch [565/601], loss:0.5492 class:toothbrush
+[Train] epoch [566/601], loss:0.5474 class:toothbrush
+[Train] epoch [567/601], loss:0.5467 class:toothbrush
+[Train] epoch [568/601], loss:0.5454 class:toothbrush
+[Train] epoch [569/601], loss:0.5445 class:toothbrush
+[Train] epoch [570/601], loss:0.5444 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 570: 0.9056
+[Train] epoch [571/601], loss:0.5427 class:toothbrush
+[Train] epoch [572/601], loss:0.5423 class:toothbrush
+[Train] epoch [573/601], loss:0.5427 class:toothbrush
+[Train] epoch [574/601], loss:0.5399 class:toothbrush
+[Train] epoch [575/601], loss:0.5401 class:toothbrush
+[Train] epoch [576/601], loss:0.5401 class:toothbrush
+[Train] epoch [577/601], loss:0.5378 class:toothbrush
+[Train] epoch [578/601], loss:0.5385 class:toothbrush
+[Train] epoch [579/601], loss:0.5375 class:toothbrush
+[Train] epoch [580/601], loss:0.5361 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 580: 0.9139
+[Train] epoch [581/601], loss:0.5365 class:toothbrush
+[Train] epoch [582/601], loss:0.5358 class:toothbrush
+[Train] epoch [583/601], loss:0.5362 class:toothbrush
+[Train] epoch [584/601], loss:0.5365 class:toothbrush
+[Train] epoch [585/601], loss:0.5381 class:toothbrush
+[Train] epoch [586/601], loss:0.5348 class:toothbrush
+[Train] epoch [587/601], loss:0.5335 class:toothbrush
+[Train] epoch [588/601], loss:0.5337 class:toothbrush
+[Train] epoch [589/601], loss:0.5330 class:toothbrush
+[Train] epoch [590/601], loss:0.5319 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 590: 0.9139
+[Train] epoch [591/601], loss:0.5314 class:toothbrush
+[Train] epoch [592/601], loss:0.5302 class:toothbrush
+[Train] epoch [593/601], loss:0.5304 class:toothbrush
+[Train] epoch [594/601], loss:0.5293 class:toothbrush
+[Train] epoch [595/601], loss:0.5282 class:toothbrush
+[Train] epoch [596/601], loss:0.5281 class:toothbrush
+[Train] epoch [597/601], loss:0.5272 class:toothbrush
+[Train] epoch [598/601], loss:0.5265 class:toothbrush
+[Train] epoch [599/601], loss:0.5257 class:toothbrush
+[Train] epoch [600/601], loss:0.5255 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 600: 0.925
+[Eval] save best model at epoch 600
+[Train] epoch [601/601], loss:0.5246 class:toothbrush
+[Eval] toothbrush class RocAUC at epoch 601: 0.9167
