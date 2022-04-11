@@ -36,7 +36,7 @@ Detection test的Mean为88.30。
 
 Localization test的Mean为90.94。
 
-超越达到指标。
+达到验收指标。
 
 
 ## 3.数据集
