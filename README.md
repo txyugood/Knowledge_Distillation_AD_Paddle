@@ -199,7 +199,7 @@ threshold: 热力图显示阈值，默认为0.5，只有大于0.5值才会在热
 模型导出可执行以下命令：
 
 ```shell
-export_model.py --config configs/config.yaml --model_path ./output/capsule/best_model.pdparams --save_dir ./output/
+python export_model.py --config configs/config.yaml --model_path ./output/capsule/best_model.pdparams --save_dir ./output/
 ```
 
 参数说明：
