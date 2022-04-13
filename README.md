@@ -212,7 +212,7 @@ save_dir: 输出图片保存路径
 
 ### Inference推理
 
-可使用以下命令进行模型推理。但由于本论文中推理预测生成heatmap的方法都需要计算梯度，所以Inference并没有实际的使用意义。如果希望生成heatmap需要使用上面提到的predict.py脚本。本脚本的意义在于可以跑通tipc，运行命令如下：
+可使用以下命令进行模型推理。但由于本论文中推理预测生成heatmap的方法都需要计算梯度，所以Inference并没有实际的使用意义。如果希望生成heatmap需要使用上面提到的predict.py脚本。本脚本的意义在于可以跑通tipc。该脚本依赖auto_log, 请参考下面TIPC部分先安装auto_log。infer命令运行如下：
 
 ```shell
 python infer.py
@@ -246,10 +246,11 @@ params_file: 模型权重文件，由export_model.py脚本导出。
 auto_log的详细介绍参考[https://github.com/LDOUBLEV/AutoLog](https://github.com/LDOUBLEV/AutoLog)。
 
 ```shell
-git clone https://github.com/LDOUBLEV/AutoLog
+git clone https://gitee.com/Double_V/AutoLog
+cd AutoLog/
 pip3 install -r requirements.txt
 python3 setup.py bdist_wheel
-pip3 install ./dist/auto_log-1.0.0-py3-none-any.whl
+pip3 install ./dist/auto_log-1.2.0-py3-none-any.whl
 ```
 
 
