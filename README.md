@@ -164,6 +164,81 @@ mvtec: toothbrush class detection test RocAUC: 0.925
 
 完整的验证日志保存在logs目录下，以<class_name>_val.log格式命名，<class_name>对应的类别的名称。
 
+
+
+### 单张图片预测
+本项目提供了单张图片的预测脚本，可生成标注异常部分的图片。使用方法如下：
+```shell
+python predict.py --image_path carpet.png --model_path pretrained_weights/carpet/best_model.pdparams --save_dir ./output --threshold 0.5
+```
+
+参数说明：
+
+image_path:需要预测的图片
+
+model_path: 模型路径
+
+save_dir: 输出图片保存路径
+
+threshold: 热力图显示阈值，默认为0.5，只有大于0.5值才会在热力图删显示。
+
+预测样例:
+
+<div>
+<img src=./imgs/capsule.png width=256></img>
+<img src=./imgs/capsule_pred.png width=256></img>
+</div>
+
+
+<div>
+<img src=./imgs/carpet.png width=256></img>
+<img src=./imgs/carpet_pred.png width=256></img>
+</div>
+
+### 模型导出
+模型导出可执行以下命令：
+
+```shell
+export_model.py --config configs/config.yaml --model_path ./output/capsule/best_model.pdparams --save_dir ./output/
+```
+
+参数说明：
+
+config: 配置文件路径
+
+model_path: 模型路径
+
+save_dir: 输出图片保存路径
+
+### Inference推理
+
+可使用以下命令进行模型推理。但由于本论文中推理预测生成heatmap的方法都需要计算梯度，所以Inference并没有实际的使用意义。如果希望生成heatmap需要使用上面提到的predict.py脚本。本脚本的意义在于可以跑通tipc，运行命令如下：
+
+```shell
+python infer.py
+--use_gpu=False --enable_mkldnn=False --cpu_threads=2 --model_file=./test_tipc/output/model.pdmodel --batch_size=2 --input_file=test_tipc/data/MVTec/capsule/test/good --enable_benchmark=True --precision=fp32 --params_file=./test_tipc/output/model.pdiparams
+```
+
+参数说明:
+
+use_gpu:是否使用GPU
+
+enable_mkldnn:是否使用mkldnn
+
+cpu_threads: cpu线程数
+ 
+model_file: 模型路径
+
+batch_size: 批次大小
+
+input_file: 输入文件路径
+
+enable_benchmark: 是否开启benchmark
+
+precision: 运算精度
+
+params_file: 模型权重文件，由export_model.py脚本导出。
+
 ### TIPC基础链条测试
 
 该部分依赖auto_log，需要进行安装，安装方式如下：
