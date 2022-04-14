@@ -27,7 +27,7 @@ null:null
 ===========================infer_params===========================
 Global.save_inference_dir:./test_tipc/output/
 Global.pretrained_model:
-norm_export:export_model.py --config configs/config.yaml --model_path ./test_tipc/output/capsule/best_model.pdparams --save_dir ./test_tipc/output/
+norm_export:export_model.py --config configs/config.yaml --model_path ./test_tipc/output/capsule/final_model.pdparams --save_dir ./test_tipc/output/
 quant_export:null
 fpgm_export:null
 distill_export:null
